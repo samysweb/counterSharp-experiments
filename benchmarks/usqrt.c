@@ -36,7 +36,7 @@
 
 #define TOP2BITS(x) ((x & (3L << (BITSPERINT-2))) >> (BITSPERINT-2))
 int usqrt(int x) {
-	assume(x>=0);
+	__counterSharp_assume(x>=0);
 	int input = x;
 	int a = 0, r = 0, e = 0;
 	for (int i = 0; i < 32; i++) {
@@ -51,7 +51,7 @@ int usqrt(int x) {
 	}
 	int lower = (((unsigned int) a)>>16);
 	unsigned int upper = lower+1;
-	assert(lower*lower<=input
-		&& upper*upper>input,"");
+	__counterSharp_assert(lower*lower<=input
+		&& upper*upper>input);
 	return a;
 }
