@@ -33,17 +33,17 @@ git --no-pager status
 {
 echo "** counterSharp **"
 echo "** counterSharp **" >&2
-nice --20 runlim -r 14400 -s 2048 python -m counterSharp --amm $resultDir/amm.dimacs --amh $resultDir/amh.dimacs --asm $resultDir/asm.dimacs --ash $resultDir/ash.dimacs -d $2 $inputFile
+chrt -b 0 runlim -r 14400 -s 2048 python -m counterSharp --amm $resultDir/amm.dimacs --amh $resultDir/amh.dimacs --asm $resultDir/asm.dimacs --ash $resultDir/ash.dimacs -d $2 $inputFile
 echo "** AMM **"
 echo "** AMM **" >&2
-nice --20 runlim -r 14400 -s 2048 approxmc --sparse 1 $resultDir/amm.dimacs
+chrt -b 0 runlim -r 14400 -s 2048 approxmc --sparse 1 $resultDir/amm.dimacs
 echo "** AMH **"
 echo "** AMH **" >&2
-nice --20 runlim -r 14400 -s 2048 approxmc --sparse 1 $resultDir/amh.dimacs
+chrt -b 0 runlim -r 14400 -s 2048 approxmc --sparse 1 $resultDir/amh.dimacs
 echo "** ASM **"
 echo "** ASM **" >&2
-nice --20 runlim -r 14400 -s 2048 approxmc --sparse 1 $resultDir/asm.dimacs
+chrt -b 0 runlim -r 14400 -s 2048 approxmc --sparse 1 $resultDir/asm.dimacs
 echo "** ASH **"
 echo "** ASH **" >&2
-runlim -r 14400 -s 2048 approxmc --sparse 1 $resultDir/ash.dimacs
+chrt -b 0 runlim -r 14400 -s 2048 approxmc --sparse 1 $resultDir/ash.dimacs
 } > $resultDir/stdout.log 2> $resultDir/stderr.log
