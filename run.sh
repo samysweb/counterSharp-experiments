@@ -4,6 +4,7 @@
 
 inputFile=`pwd`/benchmarks/$1
 resultDir=`pwd`/results/$1
+HOMEPATH=/home/steuber
 
 echo $resultDir
 
@@ -33,6 +34,8 @@ git --no-pager status
 {
 echo "** counterSharp **"
 echo "** counterSharp **" >&2
+source $HOMEPATH/anaconda3/etc/profile.d/conda.sh
+conda activate FP
 chrt -b 0 runlim -r 14400 -s 2048 python -m counterSharp --amm $resultDir/amm.dimacs --amh $resultDir/amh.dimacs --asm $resultDir/asm.dimacs --ash $resultDir/ash.dimacs -d $2 $inputFile
 echo "** AMM **"
 echo "** AMM **" >&2
@@ -47,3 +50,5 @@ echo "** ASH **"
 echo "** ASH **" >&2
 chrt -b 0 runlim -r 14400 -s 2048 approxmc --sparse 1 $resultDir/ash.dimacs
 } > $resultDir/stdout.log 2> $resultDir/stderr.log
+
+chmod -R a+rw $resultDir
