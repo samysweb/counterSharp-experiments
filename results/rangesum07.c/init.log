@@ -1,0 +1,23 @@
+** Experiment Repository **
+commit db008317b5405ad74ccdde3137e5659fb1cd10c9
+Author: Samuel Teuber <samuel@samweb.org>
+
+    Rangesum 7
+
+ 1 file changed, 81 insertions(+)
+Auf Branch master
+Unversionierte Dateien:
+  (benutzen Sie "git add <Datei>...", um die Änderungen zum Commit vorzumerken)
+	results/rangesum07.c/
+
+nichts zum Commit vorgemerkt, aber es gibt unversionierte Dateien
+(benutzen Sie "git add" zum Versionieren)
+** CounterSharp Repository **
+commit 2fec0e49b7e6cdf66908a2f94ffbda3fc3e5b229
+Author: Samuel Teuber <samuel@samweb.org>
+
+    Adjusted assertion building
+
+ 4 files changed, 32 insertions(+), 22 deletions(-)
+Auf Branch master
+nichts zu committen, Arbeitsverzeichnis unverändert

@@ -1,0 +1,605 @@
+** counterSharp **
+** AMM **
+c ApproxMC SHA revision df6d9fc8d112d758301d7527817e2eb1029fa5eb
+c ApproxMC version 4.0.1
+c ApproxMC compilation env CMAKE_CXX_COMPILER = /usr/bin/c++ | CMAKE_CXX_FLAGS =  -Wall -Wextra -Wunused -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -g -fvisibility=hidden -Wlogical-op -Wrestrict -Wnull-dereference -Wdouble-promotion -Wshadow -Wformat=2 -Wextra-semi -pedantic | COMPILE_DEFINES =  -DBOOST_TEST_DYN_LINK | STATICCOMPILE = OFF | Boost_FOUND = TRUE | ZLIB_FOUND = TRUE | VALGRIND_FOUND =  | GMP_FOUND = TRUE | ENABLE_ASSERTIONS = ON | MY_TARGETS =  | compilation date time = Jul 12 2020 07:22:12
+c ApproxMC compiled with gcc version 9.3.0
+c CryptoMiniSat version 5.8.0
+c CMS Copyright Mate Soos (soos.mate@gmail.com)
+c CMS SHA revision 6477e8bc43b0fda7038965bb148b64b8637c804b
+c CMS is GPL licensed due to M4RI being linked. Build without M4RI to get MIT version
+c Using VMTF code by Armin Biere from CaDiCaL
+c Using Yalsat by Armin Biere, see Balint et al. Improving implementation of SLS solvers [...], SAT'14
+c Using WalkSAT by Henry Kautz, see Kautz and Selman Pushing the envelope: planning, propositional logic, and stochastic search, AAAI'96,
+c Using code from 'When Boolean Satisfiability Meets Gauss-E. in a Simplex Way'
+c       by C.-S. Han and J.-H. Roland Jiang in CAV 2012. Fixes by M. Soos
+c Using CCAnr from 'CCAnr: A Conf. Checking Based Local Search Solver [...]'
+c       by Shaowei Cai, Chuan Luo, and Kaile Su, SAT 2015
+c CMS compilation env CMAKE_CXX_COMPILER = /usr/bin/c++ | CMAKE_CXX_FLAGS =  -fvisibility=hidden -Wall -Wextra -Wunused -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -g -Wno-class-memaccess -mpopcnt -msse4.2 -ggdb3 -Wlogical-op -Wrestrict -Wnull-dereference -Wdouble-promotion -Wshadow -Wformat=2 -Wextra-semi -pedantic | COMPILE_DEFINES =  -DEXTENDED_FEATURES -DUSE_GAUSS -DBOOST_TEST_DYN_LINK -DUSE_ZLIB -DYALSAT_FPU -DUSE_M4RI | STATICCOMPILE = OFF | ONLY_SIMPLE = OFF | Boost_FOUND = TRUE | STATS = OFF | SQLITE3_FOUND = FALSE | ZLIB_FOUND = TRUE | VALGRIND_FOUND =  | ENABLE_TESTING = OFF | M4RI_FOUND = TRUE | NOM4RI = OFF | SLOW_DEBUG = OFF | ENABLE_ASSERTIONS = ON | PYTHON_EXECUTABLE = /home/steuber/anaconda3/bin/python3 | PYTHON_LIBRARY = /home/steuber/anaconda3/lib/libpython3.7m.so | PYTHON_INCLUDE_DIRS = /home/steuber/anaconda3/include/python3.7m | MY_TARGETS =  | LARGEMEM = OFF | LIMITMEM = OFF | BREAKID_LIBRARIES =  | BREAKID-VER = . | BOSPHORUS_LIBRARIES =  | BOSPH-VER = . | compilation date time = Jul 12 2020 07:19:46
+c CMS compiled with gcc version 9.3.0
+c executed with command line: approxmc --sparse 1 /home/steuber/Dokumente/Hortus/Univ/KIT/Semester-10/FP-ModelCounting/experiments/results/rangesum07.c/amm.dimacs
+** AMH **
+c ApproxMC SHA revision df6d9fc8d112d758301d7527817e2eb1029fa5eb
+c ApproxMC version 4.0.1
+c ApproxMC compilation env CMAKE_CXX_COMPILER = /usr/bin/c++ | CMAKE_CXX_FLAGS =  -Wall -Wextra -Wunused -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -g -fvisibility=hidden -Wlogical-op -Wrestrict -Wnull-dereference -Wdouble-promotion -Wshadow -Wformat=2 -Wextra-semi -pedantic | COMPILE_DEFINES =  -DBOOST_TEST_DYN_LINK | STATICCOMPILE = OFF | Boost_FOUND = TRUE | ZLIB_FOUND = TRUE | VALGRIND_FOUND =  | GMP_FOUND = TRUE | ENABLE_ASSERTIONS = ON | MY_TARGETS =  | compilation date time = Jul 12 2020 07:22:12
+c ApproxMC compiled with gcc version 9.3.0
+c CryptoMiniSat version 5.8.0
+c CMS Copyright Mate Soos (soos.mate@gmail.com)
+c CMS SHA revision 6477e8bc43b0fda7038965bb148b64b8637c804b
+c CMS is GPL licensed due to M4RI being linked. Build without M4RI to get MIT version
+c Using VMTF code by Armin Biere from CaDiCaL
+c Using Yalsat by Armin Biere, see Balint et al. Improving implementation of SLS solvers [...], SAT'14
+c Using WalkSAT by Henry Kautz, see Kautz and Selman Pushing the envelope: planning, propositional logic, and stochastic search, AAAI'96,
+c Using code from 'When Boolean Satisfiability Meets Gauss-E. in a Simplex Way'
+c       by C.-S. Han and J.-H. Roland Jiang in CAV 2012. Fixes by M. Soos
+c Using CCAnr from 'CCAnr: A Conf. Checking Based Local Search Solver [...]'
+c       by Shaowei Cai, Chuan Luo, and Kaile Su, SAT 2015
+c CMS compilation env CMAKE_CXX_COMPILER = /usr/bin/c++ | CMAKE_CXX_FLAGS =  -fvisibility=hidden -Wall -Wextra -Wunused -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -g -Wno-class-memaccess -mpopcnt -msse4.2 -ggdb3 -Wlogical-op -Wrestrict -Wnull-dereference -Wdouble-promotion -Wshadow -Wformat=2 -Wextra-semi -pedantic | COMPILE_DEFINES =  -DEXTENDED_FEATURES -DUSE_GAUSS -DBOOST_TEST_DYN_LINK -DUSE_ZLIB -DYALSAT_FPU -DUSE_M4RI | STATICCOMPILE = OFF | ONLY_SIMPLE = OFF | Boost_FOUND = TRUE | STATS = OFF | SQLITE3_FOUND = FALSE | ZLIB_FOUND = TRUE | VALGRIND_FOUND =  | ENABLE_TESTING = OFF | M4RI_FOUND = TRUE | NOM4RI = OFF | SLOW_DEBUG = OFF | ENABLE_ASSERTIONS = ON | PYTHON_EXECUTABLE = /home/steuber/anaconda3/bin/python3 | PYTHON_LIBRARY = /home/steuber/anaconda3/lib/libpython3.7m.so | PYTHON_INCLUDE_DIRS = /home/steuber/anaconda3/include/python3.7m | MY_TARGETS =  | LARGEMEM = OFF | LIMITMEM = OFF | BREAKID_LIBRARIES =  | BREAKID-VER = . | BOSPHORUS_LIBRARIES =  | BOSPH-VER = . | compilation date time = Jul 12 2020 07:19:46
+c CMS compiled with gcc version 9.3.0
+c executed with command line: approxmc --sparse 1 /home/steuber/Dokumente/Hortus/Univ/KIT/Semester-10/FP-ModelCounting/experiments/results/rangesum07.c/amh.dimacs
+c -- header says num vars:           6438
+c -- header says num clauses:       22698
+c WARNING: Empty line at line number 22858 -- this is not part of the DIMACS specifications (http://www.satcompetition.org/2009/format-benchmarks2009.html). Ignoring.
+c -- clauses added: 22698
+c -- xor clauses added: 0
+c -- vars added 6438
+c [appmc] Sampling set size: 224
+c [appmc] Sampling var set contains over 100 variables, not displaying
+c [sparse] Using match: 4 sampling set size: 224 prev end inclusive is: 200 this end inclusive is: 250 next end inclusive is: 300 sampl size: 224
+c [appmc] threshold set to 80 sparse: 1
+c [appmc] Starting up, initial measurement
+c [appmc] Starting at hash count: 1
+c [appmc] [    0.00 ] round:  0 hashes:      1
+c [appmc] [    0.00 ] bounded_sol_count looking for   81 solutions -- hashes active: 1
+c [gauss] XOR-encoding clauses detached: 0 deleted: 0 T: 0.00
+c [appmc] [    0.11 ] round:  0 hashes:      2
+c [appmc] [    0.11 ] bounded_sol_count looking for   81 solutions -- hashes active: 2
+c [gauss] XOR-encoding clauses detached: 987 deleted: 15 T: 0.00
+c [appmc] [    0.16 ] round:  0 hashes:      4
+c [appmc] [    0.16 ] bounded_sol_count looking for   81 solutions -- hashes active: 4
+c [gauss] XOR-encoding clauses detached: 872 deleted: 0 T: 0.00
+c [appmc] [    0.20 ] round:  0 hashes:      8
+c [appmc] [    0.20 ] bounded_sol_count looking for   81 solutions -- hashes active: 8
+c [gauss] XOR-encoding clauses detached: 1784 deleted: 0 T: 0.00
+c [appmc] [    0.27 ] round:  0 hashes:     16
+c [appmc] [    0.27 ] bounded_sol_count looking for   81 solutions -- hashes active: 16
+c [gauss] XOR-encoding clauses detached: 3264 deleted: 0 T: 0.00
+c [appmc] [    0.37 ] round:  0 hashes:     32
+c [appmc] [    0.37 ] bounded_sol_count looking for   81 solutions -- hashes active: 32
+c [gauss] XOR-encoding clauses detached: 6208 deleted: 0 T: 0.00
+c [appmc] [    0.53 ] round:  0 hashes:     64
+c [appmc] [    0.53 ] bounded_sol_count looking for   81 solutions -- hashes active: 64
+c [gauss] XOR-encoding clauses detached: 10260 deleted: 0 T: 0.00
+c [appmc] [    0.81 ] round:  0 hashes:    128
+c [appmc] [    0.81 ] bounded_sol_count looking for   81 solutions -- hashes active: 128
+c [gauss] XOR-encoding clauses detached: 13064 deleted: 0 T: 0.00
+c [appmc] [    1.49 ] round:  0 hashes:    176
+c [appmc] [    1.49 ] bounded_sol_count looking for   81 solutions -- hashes active: 176
+c [gauss] XOR-encoding clauses detached: 6100 deleted: 0 T: 0.00
+c [appmc] [    2.73 ] round:  0 hashes:    200
+c [appmc] [    2.73 ] bounded_sol_count looking for   81 solutions -- hashes active: 200
+c [gauss] XOR-encoding clauses detached: 2332 deleted: 0 T: 0.01
+c [appmc] [    4.09 ] round:  0 hashes:    212
+c [appmc] [    4.09 ] bounded_sol_count looking for   81 solutions -- hashes active: 212
+c [gauss] XOR-encoding clauses detached: 792 deleted: 0 T: 0.02
+c [appmc] [    5.94 ] round:  0 hashes:    218
+c [appmc] [    5.94 ] bounded_sol_count looking for   81 solutions -- hashes active: 218
+c [gauss] XOR-encoding clauses detached: 456 deleted: 0 T: 0.01
+c [appmc] [    7.07 ] round:  0 hashes:    215
+c [appmc] [    7.07 ] bounded_sol_count looking for   81 solutions -- hashes active: 215
+c [appmc] [    7.28 ] round:  0 hashes:    216
+c [appmc] [    7.28 ] bounded_sol_count looking for   81 solutions -- hashes active: 216
+c [appmc] [    7.54 ] round:  0 hashes:    217
+c [appmc] [    7.54 ] bounded_sol_count looking for   81 solutions -- hashes active: 217
+c [appmc] simplifying
+c [gauss] XOR-encoding clauses reattached: 46119 T: 0.00
+c [appmc] [    8.96 ] round:  1 hashes:    218
+c [appmc] [    8.96 ] bounded_sol_count looking for   81 solutions -- hashes active: 218
+c [gauss] XOR-encoding clauses detached: 47046 deleted: 0 T: 0.00
+c [appmc] [    9.31 ] round:  1 hashes:    217
+c [appmc] [    9.31 ] bounded_sol_count looking for   81 solutions -- hashes active: 217
+c [appmc] simplifying
+c [gauss] XOR-encoding clauses reattached: 47046 T: 0.00
+c [appmc] [    9.63 ] round:  2 hashes:    218
+c [appmc] [    9.63 ] bounded_sol_count looking for   81 solutions -- hashes active: 218
+c [gauss] XOR-encoding clauses detached: 46706 deleted: 0 T: 0.00
+c [appmc] [    9.89 ] round:  2 hashes:    217
+c [appmc] [    9.89 ] bounded_sol_count looking for   81 solutions -- hashes active: 217
+c [appmc] simplifying
+c [gauss] XOR-encoding clauses reattached: 46706 T: 0.01
+c [appmc] [   10.70 ] round:  3 hashes:    218
+c [appmc] [   10.70 ] bounded_sol_count looking for   81 solutions -- hashes active: 218
+c [gauss] XOR-encoding clauses detached: 47022 deleted: 0 T: 0.00
+c [appmc] [   11.03 ] round:  3 hashes:    217
+c [appmc] [   11.03 ] bounded_sol_count looking for   81 solutions -- hashes active: 217
+c [appmc] simplifying
+c [gauss] XOR-encoding clauses reattached: 47022 T: 0.00
+c [appmc] [   11.54 ] round:  4 hashes:    218
+c [appmc] [   11.54 ] bounded_sol_count looking for   81 solutions -- hashes active: 218
+c [gauss] XOR-encoding clauses detached: 45762 deleted: 0 T: 0.00
+c [appmc] [   12.22 ] round:  4 hashes:    217
+c [appmc] [   12.22 ] bounded_sol_count looking for   81 solutions -- hashes active: 217
+c [appmc] simplifying
+c [gauss] XOR-encoding clauses reattached: 45762 T: 0.00
+c [appmc] [   12.66 ] round:  5 hashes:    218
+c [appmc] [   12.66 ] bounded_sol_count looking for   81 solutions -- hashes active: 218
+c [gauss] XOR-encoding clauses detached: 46514 deleted: 0 T: 0.00
+c [appmc] [   13.08 ] round:  5 hashes:    217
+c [appmc] [   13.08 ] bounded_sol_count looking for   81 solutions -- hashes active: 217
+c [appmc] simplifying
+c [gauss] XOR-encoding clauses reattached: 46514 T: 0.00
+c [appmc] [   13.43 ] round:  6 hashes:    218
+c [appmc] [   13.43 ] bounded_sol_count looking for   81 solutions -- hashes active: 218
+c [gauss] XOR-encoding clauses detached: 46190 deleted: 0 T: 0.00
+c [appmc] [   13.94 ] round:  6 hashes:    217
+c [appmc] [   13.94 ] bounded_sol_count looking for   81 solutions -- hashes active: 217
+c [appmc] simplifying
+c [gauss] XOR-encoding clauses reattached: 46190 T: 0.00
+c [appmc] [   14.29 ] round:  7 hashes:    218
+c [appmc] [   14.29 ] bounded_sol_count looking for   81 solutions -- hashes active: 218
+c [gauss] XOR-encoding clauses detached: 46642 deleted: 0 T: 0.00
+c [appmc] [   14.82 ] round:  7 hashes:    217
+c [appmc] [   14.82 ] bounded_sol_count looking for   81 solutions -- hashes active: 217
+c [appmc] simplifying
+c [gauss] XOR-encoding clauses reattached: 46642 T: 0.00
+c [appmc] [   15.21 ] round:  8 hashes:    218
+c [appmc] [   15.21 ] bounded_sol_count looking for   81 solutions -- hashes active: 218
+c [gauss] XOR-encoding clauses detached: 46358 deleted: 0 T: 0.00
+c [appmc] [   15.78 ] round:  8 hashes:    217
+c [appmc] [   15.78 ] bounded_sol_count looking for   81 solutions -- hashes active: 217
+c [appmc] FINISHED ApproxMC T: 15.93 s
+c [appmc] Number of solutions is: 64*2**218
+s mc 26959946667150639794667015087019630673637144422540572481103610249216
+** ASM **
+c ApproxMC SHA revision df6d9fc8d112d758301d7527817e2eb1029fa5eb
+c ApproxMC version 4.0.1
+c ApproxMC compilation env CMAKE_CXX_COMPILER = /usr/bin/c++ | CMAKE_CXX_FLAGS =  -Wall -Wextra -Wunused -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -g -fvisibility=hidden -Wlogical-op -Wrestrict -Wnull-dereference -Wdouble-promotion -Wshadow -Wformat=2 -Wextra-semi -pedantic | COMPILE_DEFINES =  -DBOOST_TEST_DYN_LINK | STATICCOMPILE = OFF | Boost_FOUND = TRUE | ZLIB_FOUND = TRUE | VALGRIND_FOUND =  | GMP_FOUND = TRUE | ENABLE_ASSERTIONS = ON | MY_TARGETS =  | compilation date time = Jul 12 2020 07:22:12
+c ApproxMC compiled with gcc version 9.3.0
+c CryptoMiniSat version 5.8.0
+c CMS Copyright Mate Soos (soos.mate@gmail.com)
+c CMS SHA revision 6477e8bc43b0fda7038965bb148b64b8637c804b
+c CMS is GPL licensed due to M4RI being linked. Build without M4RI to get MIT version
+c Using VMTF code by Armin Biere from CaDiCaL
+c Using Yalsat by Armin Biere, see Balint et al. Improving implementation of SLS solvers [...], SAT'14
+c Using WalkSAT by Henry Kautz, see Kautz and Selman Pushing the envelope: planning, propositional logic, and stochastic search, AAAI'96,
+c Using code from 'When Boolean Satisfiability Meets Gauss-E. in a Simplex Way'
+c       by C.-S. Han and J.-H. Roland Jiang in CAV 2012. Fixes by M. Soos
+c Using CCAnr from 'CCAnr: A Conf. Checking Based Local Search Solver [...]'
+c       by Shaowei Cai, Chuan Luo, and Kaile Su, SAT 2015
+c CMS compilation env CMAKE_CXX_COMPILER = /usr/bin/c++ | CMAKE_CXX_FLAGS =  -fvisibility=hidden -Wall -Wextra -Wunused -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -g -Wno-class-memaccess -mpopcnt -msse4.2 -ggdb3 -Wlogical-op -Wrestrict -Wnull-dereference -Wdouble-promotion -Wshadow -Wformat=2 -Wextra-semi -pedantic | COMPILE_DEFINES =  -DEXTENDED_FEATURES -DUSE_GAUSS -DBOOST_TEST_DYN_LINK -DUSE_ZLIB -DYALSAT_FPU -DUSE_M4RI | STATICCOMPILE = OFF | ONLY_SIMPLE = OFF | Boost_FOUND = TRUE | STATS = OFF | SQLITE3_FOUND = FALSE | ZLIB_FOUND = TRUE | VALGRIND_FOUND =  | ENABLE_TESTING = OFF | M4RI_FOUND = TRUE | NOM4RI = OFF | SLOW_DEBUG = OFF | ENABLE_ASSERTIONS = ON | PYTHON_EXECUTABLE = /home/steuber/anaconda3/bin/python3 | PYTHON_LIBRARY = /home/steuber/anaconda3/lib/libpython3.7m.so | PYTHON_INCLUDE_DIRS = /home/steuber/anaconda3/include/python3.7m | MY_TARGETS =  | LARGEMEM = OFF | LIMITMEM = OFF | BREAKID_LIBRARIES =  | BREAKID-VER = . | BOSPHORUS_LIBRARIES =  | BOSPH-VER = . | compilation date time = Jul 12 2020 07:19:46
+c CMS compiled with gcc version 9.3.0
+c executed with command line: approxmc --sparse 1 /home/steuber/Dokumente/Hortus/Univ/KIT/Semester-10/FP-ModelCounting/experiments/results/rangesum07.c/asm.dimacs
+c -- header says num vars:           6439
+c -- header says num clauses:       22701
+c WARNING: Empty line at line number 22861 -- this is not part of the DIMACS specifications (http://www.satcompetition.org/2009/format-benchmarks2009.html). Ignoring.
+c -- clauses added: 22701
+c -- xor clauses added: 0
+c -- vars added 6439
+c [appmc] Sampling set size: 224
+c [appmc] Sampling var set contains over 100 variables, not displaying
+c [sparse] Using match: 4 sampling set size: 224 prev end inclusive is: 200 this end inclusive is: 250 next end inclusive is: 300 sampl size: 224
+c [appmc] threshold set to 80 sparse: 1
+c [appmc] Starting up, initial measurement
+c [appmc] Starting at hash count: 1
+c [appmc] [    0.00 ] round:  0 hashes:      1
+c [appmc] [    0.00 ] bounded_sol_count looking for   81 solutions -- hashes active: 1
+c [gauss] XOR-encoding clauses detached: 0 deleted: 0 T: 0.00
+c [appmc] [    0.13 ] round:  0 hashes:      2
+c [appmc] [    0.13 ] bounded_sol_count looking for   81 solutions -- hashes active: 2
+c [gauss] XOR-encoding clauses detached: 995 deleted: 63 T: 0.00
+c [appmc] [    0.16 ] round:  0 hashes:      4
+c [appmc] [    0.16 ] bounded_sol_count looking for   81 solutions -- hashes active: 4
+c [gauss] XOR-encoding clauses detached: 872 deleted: 0 T: 0.00
+c [appmc] [    0.22 ] round:  0 hashes:      8
+c [appmc] [    0.22 ] bounded_sol_count looking for   81 solutions -- hashes active: 8
+c [gauss] XOR-encoding clauses detached: 1784 deleted: 0 T: 0.00
+c [appmc] [    0.81 ] round:  0 hashes:     16
+c [appmc] [    0.81 ] bounded_sol_count looking for   81 solutions -- hashes active: 16
+c [gauss] XOR-encoding clauses detached: 3264 deleted: 0 T: 0.01
+c [appmc] [    1.03 ] round:  0 hashes:     32
+c [appmc] [    1.03 ] bounded_sol_count looking for   81 solutions -- hashes active: 32
+c [gauss] XOR-encoding clauses detached: 6208 deleted: 0 T: 0.00
+c [appmc] [    1.25 ] round:  0 hashes:     64
+c [appmc] [    1.25 ] bounded_sol_count looking for   81 solutions -- hashes active: 64
+c [gauss] XOR-encoding clauses detached: 10260 deleted: 0 T: 0.00
+c [appmc] [    1.74 ] round:  0 hashes:    128
+c [appmc] [    1.74 ] bounded_sol_count looking for   81 solutions -- hashes active: 128
+c [gauss] XOR-encoding clauses detached: 13064 deleted: 0 T: 0.01
+c [appmc] [    2.24 ] round:  0 hashes:    176
+c [appmc] [    2.24 ] bounded_sol_count looking for   81 solutions -- hashes active: 176
+c [gauss] XOR-encoding clauses detached: 6100 deleted: 0 T: 0.00
+c [appmc] [    3.84 ] round:  0 hashes:    200
+c [appmc] [    3.84 ] bounded_sol_count looking for   81 solutions -- hashes active: 200
+c [gauss] XOR-encoding clauses detached: 2332 deleted: 0 T: 0.01
+c [appmc] [    5.43 ] round:  0 hashes:    212
+c [appmc] [    5.43 ] bounded_sol_count looking for   81 solutions -- hashes active: 212
+c [gauss] XOR-encoding clauses detached: 792 deleted: 0 T: 0.01
+c [appmc] [    6.17 ] round:  0 hashes:    218
+c [appmc] [    6.17 ] bounded_sol_count looking for   81 solutions -- hashes active: 218
+c [gauss] XOR-encoding clauses detached: 456 deleted: 0 T: 0.01
+c [appmc] [    6.63 ] round:  0 hashes:    215
+c [appmc] [    6.63 ] bounded_sol_count looking for   81 solutions -- hashes active: 215
+c [appmc] [    6.65 ] round:  0 hashes:    216
+c [appmc] [    6.65 ] bounded_sol_count looking for   81 solutions -- hashes active: 216
+c [appmc] [    6.70 ] round:  0 hashes:    217
+c [appmc] [    6.70 ] bounded_sol_count looking for   81 solutions -- hashes active: 217
+c [appmc] simplifying
+c [gauss] XOR-encoding clauses reattached: 46127 T: 0.00
+c [appmc] [    7.43 ] round:  1 hashes:    218
+c [appmc] [    7.43 ] bounded_sol_count looking for   81 solutions -- hashes active: 218
+c [gauss] XOR-encoding clauses detached: 47047 deleted: 0 T: 0.00
+c [appmc] [    7.68 ] round:  1 hashes:    217
+c [appmc] [    7.68 ] bounded_sol_count looking for   81 solutions -- hashes active: 217
+c [appmc] simplifying
+c [gauss] XOR-encoding clauses reattached: 47047 T: 0.00
+c [appmc] [    8.33 ] round:  2 hashes:    218
+c [appmc] [    8.33 ] bounded_sol_count looking for   81 solutions -- hashes active: 218
+c [gauss] XOR-encoding clauses detached: 46707 deleted: 0 T: 0.00
+c [appmc] [    8.78 ] round:  2 hashes:    217
+c [appmc] [    8.78 ] bounded_sol_count looking for   81 solutions -- hashes active: 217
+c [appmc] simplifying
+c [gauss] XOR-encoding clauses reattached: 46707 T: 0.00
+c [appmc] [    9.24 ] round:  3 hashes:    218
+c [appmc] [    9.24 ] bounded_sol_count looking for   81 solutions -- hashes active: 218
+c [gauss] XOR-encoding clauses detached: 47023 deleted: 0 T: 0.00
+c [appmc] [    9.63 ] round:  3 hashes:    217
+c [appmc] [    9.63 ] bounded_sol_count looking for   81 solutions -- hashes active: 217
+c [appmc] simplifying
+c [gauss] XOR-encoding clauses reattached: 47023 T: 0.00
+c [appmc] [   10.06 ] round:  4 hashes:    218
+c [appmc] [   10.06 ] bounded_sol_count looking for   81 solutions -- hashes active: 218
+c [gauss] XOR-encoding clauses detached: 45763 deleted: 0 T: 0.00
+c [appmc] [   10.56 ] round:  4 hashes:    217
+c [appmc] [   10.56 ] bounded_sol_count looking for   81 solutions -- hashes active: 217
+c [appmc] simplifying
+c [gauss] XOR-encoding clauses reattached: 45763 T: 0.00
+c [appmc] [   10.90 ] round:  5 hashes:    218
+c [appmc] [   10.90 ] bounded_sol_count looking for   81 solutions -- hashes active: 218
+c [gauss] XOR-encoding clauses detached: 46515 deleted: 0 T: 0.00
+c [appmc] [   11.36 ] round:  5 hashes:    217
+c [appmc] [   11.36 ] bounded_sol_count looking for   81 solutions -- hashes active: 217
+c [appmc] simplifying
+c [gauss] XOR-encoding clauses reattached: 46515 T: 0.00
+c [appmc] [   11.72 ] round:  6 hashes:    218
+c [appmc] [   11.72 ] bounded_sol_count looking for   81 solutions -- hashes active: 218
+c [gauss] XOR-encoding clauses detached: 46191 deleted: 0 T: 0.00
+c [appmc] [   12.19 ] round:  6 hashes:    217
+c [appmc] [   12.19 ] bounded_sol_count looking for   81 solutions -- hashes active: 217
+c [appmc] simplifying
+c [gauss] XOR-encoding clauses reattached: 46191 T: 0.00
+c [appmc] [   12.59 ] round:  7 hashes:    218
+c [appmc] [   12.59 ] bounded_sol_count looking for   81 solutions -- hashes active: 218
+c [gauss] XOR-encoding clauses detached: 46643 deleted: 0 T: 0.00
+c [appmc] [   13.25 ] round:  7 hashes:    217
+c [appmc] [   13.25 ] bounded_sol_count looking for   81 solutions -- hashes active: 217
+c [appmc] simplifying
+c [gauss] XOR-encoding clauses reattached: 46643 T: 0.00
+c [appmc] [   13.65 ] round:  8 hashes:    218
+c [appmc] [   13.65 ] bounded_sol_count looking for   81 solutions -- hashes active: 218
+c [gauss] XOR-encoding clauses detached: 46359 deleted: 0 T: 0.00
+c [appmc] [   14.24 ] round:  8 hashes:    217
+c [appmc] [   14.24 ] bounded_sol_count looking for   81 solutions -- hashes active: 217
+c [appmc] FINISHED ApproxMC T: 14.40 s
+c [appmc] Number of solutions is: 64*2**218
+s mc 26959946667150639794667015087019630673637144422540572481103610249216
+** ASH **
+c ApproxMC SHA revision df6d9fc8d112d758301d7527817e2eb1029fa5eb
+c ApproxMC version 4.0.1
+c ApproxMC compilation env CMAKE_CXX_COMPILER = /usr/bin/c++ | CMAKE_CXX_FLAGS =  -Wall -Wextra -Wunused -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -g -fvisibility=hidden -Wlogical-op -Wrestrict -Wnull-dereference -Wdouble-promotion -Wshadow -Wformat=2 -Wextra-semi -pedantic | COMPILE_DEFINES =  -DBOOST_TEST_DYN_LINK | STATICCOMPILE = OFF | Boost_FOUND = TRUE | ZLIB_FOUND = TRUE | VALGRIND_FOUND =  | GMP_FOUND = TRUE | ENABLE_ASSERTIONS = ON | MY_TARGETS =  | compilation date time = Jul 12 2020 07:22:12
+c ApproxMC compiled with gcc version 9.3.0
+c CryptoMiniSat version 5.8.0
+c CMS Copyright Mate Soos (soos.mate@gmail.com)
+c CMS SHA revision 6477e8bc43b0fda7038965bb148b64b8637c804b
+c CMS is GPL licensed due to M4RI being linked. Build without M4RI to get MIT version
+c Using VMTF code by Armin Biere from CaDiCaL
+c Using Yalsat by Armin Biere, see Balint et al. Improving implementation of SLS solvers [...], SAT'14
+c Using WalkSAT by Henry Kautz, see Kautz and Selman Pushing the envelope: planning, propositional logic, and stochastic search, AAAI'96,
+c Using code from 'When Boolean Satisfiability Meets Gauss-E. in a Simplex Way'
+c       by C.-S. Han and J.-H. Roland Jiang in CAV 2012. Fixes by M. Soos
+c Using CCAnr from 'CCAnr: A Conf. Checking Based Local Search Solver [...]'
+c       by Shaowei Cai, Chuan Luo, and Kaile Su, SAT 2015
+c CMS compilation env CMAKE_CXX_COMPILER = /usr/bin/c++ | CMAKE_CXX_FLAGS =  -fvisibility=hidden -Wall -Wextra -Wunused -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -g -Wno-class-memaccess -mpopcnt -msse4.2 -ggdb3 -Wlogical-op -Wrestrict -Wnull-dereference -Wdouble-promotion -Wshadow -Wformat=2 -Wextra-semi -pedantic | COMPILE_DEFINES =  -DEXTENDED_FEATURES -DUSE_GAUSS -DBOOST_TEST_DYN_LINK -DUSE_ZLIB -DYALSAT_FPU -DUSE_M4RI | STATICCOMPILE = OFF | ONLY_SIMPLE = OFF | Boost_FOUND = TRUE | STATS = OFF | SQLITE3_FOUND = FALSE | ZLIB_FOUND = TRUE | VALGRIND_FOUND =  | ENABLE_TESTING = OFF | M4RI_FOUND = TRUE | NOM4RI = OFF | SLOW_DEBUG = OFF | ENABLE_ASSERTIONS = ON | PYTHON_EXECUTABLE = /home/steuber/anaconda3/bin/python3 | PYTHON_LIBRARY = /home/steuber/anaconda3/lib/libpython3.7m.so | PYTHON_INCLUDE_DIRS = /home/steuber/anaconda3/include/python3.7m | MY_TARGETS =  | LARGEMEM = OFF | LIMITMEM = OFF | BREAKID_LIBRARIES =  | BREAKID-VER = . | BOSPHORUS_LIBRARIES =  | BOSPH-VER = . | compilation date time = Jul 12 2020 07:19:46
+c CMS compiled with gcc version 9.3.0
+c executed with command line: approxmc --sparse 1 /home/steuber/Dokumente/Hortus/Univ/KIT/Semester-10/FP-ModelCounting/experiments/results/rangesum07.c/ash.dimacs
+c -- header says num vars:           6439
+c -- header says num clauses:       22701
+c WARNING: Empty line at line number 22861 -- this is not part of the DIMACS specifications (http://www.satcompetition.org/2009/format-benchmarks2009.html). Ignoring.
+c -- clauses added: 22701
+c -- xor clauses added: 0
+c -- vars added 6439
+c [appmc] Sampling set size: 224
+c [appmc] Sampling var set contains over 100 variables, not displaying
+c [sparse] Using match: 4 sampling set size: 224 prev end inclusive is: 200 this end inclusive is: 250 next end inclusive is: 300 sampl size: 224
+c [appmc] threshold set to 80 sparse: 1
+c [appmc] Starting up, initial measurement
+c [appmc] Starting at hash count: 1
+c [appmc] [    0.00 ] round:  0 hashes:      1
+c [appmc] [    0.00 ] bounded_sol_count looking for   81 solutions -- hashes active: 1
+c [gauss] XOR-encoding clauses detached: 0 deleted: 0 T: 0.00
+c [appmc] [    0.11 ] round:  0 hashes:      2
+c [appmc] [    0.11 ] bounded_sol_count looking for   81 solutions -- hashes active: 2
+c [gauss] XOR-encoding clauses detached: 987 deleted: 12 T: 0.00
+c [appmc] [    0.13 ] round:  0 hashes:      4
+c [appmc] [    0.13 ] bounded_sol_count looking for   81 solutions -- hashes active: 4
+c [gauss] XOR-encoding clauses detached: 872 deleted: 0 T: 0.00
+c [appmc] [    0.17 ] round:  0 hashes:      8
+c [appmc] [    0.17 ] bounded_sol_count looking for   81 solutions -- hashes active: 8
+c [gauss] XOR-encoding clauses detached: 1784 deleted: 0 T: 0.00
+c [appmc] [    0.25 ] round:  0 hashes:     16
+c [appmc] [    0.25 ] bounded_sol_count looking for   81 solutions -- hashes active: 16
+c [gauss] XOR-encoding clauses detached: 3264 deleted: 0 T: 0.00
+c [appmc] [    0.38 ] round:  0 hashes:     32
+c [appmc] [    0.38 ] bounded_sol_count looking for   81 solutions -- hashes active: 32
+c [gauss] XOR-encoding clauses detached: 6208 deleted: 0 T: 0.00
+c [appmc] [    0.57 ] round:  0 hashes:     64
+c [appmc] [    0.57 ] bounded_sol_count looking for   81 solutions -- hashes active: 64
+c [gauss] XOR-encoding clauses detached: 10260 deleted: 0 T: 0.00
+c [appmc] [    1.01 ] round:  0 hashes:    128
+c [appmc] [    1.01 ] bounded_sol_count looking for   81 solutions -- hashes active: 128
+c [gauss] XOR-encoding clauses detached: 13064 deleted: 0 T: 0.00
+c [appmc] [   18.94 ] round:  0 hashes:    176
+c [appmc] [   18.94 ] bounded_sol_count looking for   81 solutions -- hashes active: 176
+c [gauss] XOR-encoding clauses detached: 6100 deleted: 0 T: 0.01
+c [gauss] XOR-encoding clauses reattached: 42539 T: 0.00
+c [gauss] XOR-encoding clauses detached: 42202 deleted: 0 T: 0.01
+c [gauss] XOR-encoding clauses reattached: 42202 T: 0.00
+c [gauss] XOR-encoding clauses detached: 42274 deleted: 0 T: 0.01
+c [gauss] XOR-encoding clauses reattached: 42274 T: 0.00
+c [gauss] XOR-encoding clauses detached: 42274 deleted: 0 T: 0.01
+c [gauss] XOR-encoding clauses reattached: 42274 T: 0.00
+c [gauss] XOR-encoding clauses detached: 42274 deleted: 0 T: 0.02
+c [gauss] XOR-encoding clauses reattached: 42274 T: 0.00
+c [gauss] XOR-encoding clauses detached: 42274 deleted: 0 T: 0.02
+c [gauss] XOR-encoding clauses reattached: 42274 T: 0.00
+c [gauss] XOR-encoding clauses detached: 42274 deleted: 0 T: 0.02
+c [gauss] XOR-encoding clauses reattached: 42274 T: 0.00
+c [gauss] XOR-encoding clauses detached: 42274 deleted: 0 T: 0.02
+c [gauss] XOR-encoding clauses reattached: 42274 T: 0.00
+c [gauss] XOR-encoding clauses detached: 42273 deleted: 0 T: 0.02
+c [gauss] XOR-encoding clauses reattached: 42273 T: 0.00
+c [gauss] XOR-encoding clauses detached: 42273 deleted: 0 T: 0.02
+c [gauss] XOR-encoding clauses reattached: 42273 T: 0.00
+c [gauss] XOR-encoding clauses detached: 42273 deleted: 0 T: 0.02
+c [gauss] XOR-encoding clauses reattached: 42273 T: 0.00
+c [gauss] XOR-encoding clauses detached: 42273 deleted: 0 T: 0.02
+c [gauss] XOR-encoding clauses reattached: 42273 T: 0.00
+c [gauss] XOR-encoding clauses detached: 42273 deleted: 0 T: 0.02
+c [gauss] XOR-encoding clauses reattached: 42273 T: 0.00
+c [gauss] XOR-encoding clauses detached: 42272 deleted: 0 T: 0.02
+c [gauss] XOR-encoding clauses reattached: 42272 T: 0.00
+c [gauss] XOR-encoding clauses detached: 42272 deleted: 0 T: 0.02
+c [gauss] XOR-encoding clauses reattached: 42272 T: 0.00
+c [gauss] XOR-encoding clauses detached: 42272 deleted: 0 T: 0.02
+c [gauss] XOR-encoding clauses reattached: 42272 T: 0.00
+c [gauss] XOR-encoding clauses detached: 42272 deleted: 0 T: 0.02
+c [gauss] XOR-encoding clauses reattached: 42272 T: 0.00
+c [gauss] XOR-encoding clauses detached: 42270 deleted: 0 T: 0.02
+c [gauss] XOR-encoding clauses reattached: 42270 T: 0.00
+c [gauss] XOR-encoding clauses detached: 42270 deleted: 0 T: 0.02
+c [gauss] XOR-encoding clauses reattached: 42270 T: 0.00
+c [gauss] XOR-encoding clauses detached: 42270 deleted: 0 T: 0.02
+c [gauss] XOR-encoding clauses reattached: 42270 T: 0.00
+c [gauss] XOR-encoding clauses detached: 42270 deleted: 0 T: 0.02
+c [gauss] XOR-encoding clauses reattached: 42270 T: 0.00
+c [gauss] XOR-encoding clauses detached: 42270 deleted: 0 T: 0.02
+c [gauss] XOR-encoding clauses reattached: 42270 T: 0.00
+c [gauss] XOR-encoding clauses detached: 42270 deleted: 0 T: 0.02
+c [gauss] XOR-encoding clauses reattached: 42270 T: 0.00
+c [gauss] XOR-encoding clauses detached: 42270 deleted: 0 T: 0.02
+c [gauss] XOR-encoding clauses reattached: 42270 T: 0.00
+c [gauss] XOR-encoding clauses detached: 42270 deleted: 0 T: 0.01
+c [gauss] XOR-encoding clauses reattached: 42270 T: 0.00
+c [gauss] XOR-encoding clauses detached: 42270 deleted: 0 T: 0.02
+c [gauss] XOR-encoding clauses reattached: 42270 T: 0.00
+c [gauss] XOR-encoding clauses detached: 42270 deleted: 0 T: 0.02
+c [gauss] XOR-encoding clauses reattached: 42270 T: 0.00
+c [gauss] XOR-encoding clauses detached: 42270 deleted: 0 T: 0.04
+c [gauss] XOR-encoding clauses reattached: 42270 T: 0.00
+c [gauss] XOR-encoding clauses detached: 42270 deleted: 0 T: 0.02
+c [gauss] XOR-encoding clauses reattached: 42270 T: 0.00
+c [gauss] XOR-encoding clauses detached: 42270 deleted: 0 T: 0.02
+c [gauss] XOR-encoding clauses reattached: 42270 T: 0.00
+c [gauss] XOR-encoding clauses detached: 42270 deleted: 0 T: 0.02
+c [gauss] XOR-encoding clauses reattached: 42270 T: 0.00
+c [gauss] XOR-encoding clauses detached: 42270 deleted: 0 T: 0.02
+c [gauss] XOR-encoding clauses reattached: 42270 T: 0.00
+c [gauss] XOR-encoding clauses detached: 42270 deleted: 0 T: 0.02
+c [gauss] XOR-encoding clauses reattached: 42270 T: 0.00
+c [gauss] XOR-encoding clauses detached: 42270 deleted: 0 T: 0.02
+c [gauss] XOR-encoding clauses reattached: 42270 T: 0.00
+c [gauss] XOR-encoding clauses detached: 42270 deleted: 0 T: 0.02
+c [gauss] XOR-encoding clauses reattached: 42270 T: 0.00
+c [gauss] XOR-encoding clauses detached: 42270 deleted: 0 T: 0.02
+c [gauss] XOR-encoding clauses reattached: 42270 T: 0.00
+c [gauss] XOR-encoding clauses detached: 42270 deleted: 0 T: 0.02
+c [gauss] XOR-encoding clauses reattached: 42270 T: 0.00
+c [gauss] XOR-encoding clauses detached: 42270 deleted: 0 T: 0.02
+c [gauss] XOR-encoding clauses reattached: 42270 T: 0.00
+c [gauss] XOR-encoding clauses detached: 42270 deleted: 0 T: 0.02
+c [gauss] XOR-encoding clauses reattached: 42270 T: 0.01
+c [gauss] XOR-encoding clauses detached: 42269 deleted: 0 T: 0.02
+c [gauss] XOR-encoding clauses reattached: 42269 T: 0.00
+c [gauss] XOR-encoding clauses detached: 42269 deleted: 0 T: 0.04
+c [gauss] XOR-encoding clauses reattached: 42269 T: 0.00
+c [gauss] XOR-encoding clauses detached: 42269 deleted: 0 T: 0.09
+c [gauss] XOR-encoding clauses reattached: 42269 T: 0.00
+c [gauss] XOR-encoding clauses detached: 42269 deleted: 0 T: 0.02
+c [gauss] XOR-encoding clauses reattached: 42269 T: 0.00
+c [gauss] XOR-encoding clauses detached: 42269 deleted: 0 T: 0.02
+c [gauss] XOR-encoding clauses reattached: 42269 T: 0.00
+c [gauss] XOR-encoding clauses detached: 42269 deleted: 0 T: 0.03
+c [gauss] XOR-encoding clauses reattached: 42269 T: 0.00
+c [gauss] XOR-encoding clauses detached: 42269 deleted: 0 T: 0.02
+c [gauss] XOR-encoding clauses reattached: 42269 T: 0.00
+c [gauss] XOR-encoding clauses detached: 42269 deleted: 0 T: 0.02
+c [gauss] XOR-encoding clauses reattached: 42269 T: 0.00
+c [gauss] XOR-encoding clauses detached: 42269 deleted: 0 T: 0.02
+c [gauss] XOR-encoding clauses reattached: 42269 T: 0.00
+c [gauss] XOR-encoding clauses detached: 42269 deleted: 0 T: 0.02
+c [gauss] XOR-encoding clauses reattached: 42269 T: 0.00
+c [gauss] XOR-encoding clauses detached: 42269 deleted: 0 T: 0.02
+c [gauss] XOR-encoding clauses reattached: 42269 T: 0.00
+c [gauss] XOR-encoding clauses detached: 42269 deleted: 0 T: 0.02
+c [appmc] [ 2126.23 ] round:  0 hashes:    200
+c [appmc] [ 2126.23 ] bounded_sol_count looking for   81 solutions -- hashes active: 200
+c [gauss] XOR-encoding clauses detached: 2332 deleted: 0 T: 0.02
+c [gauss] XOR-encoding clauses reattached: 44601 T: 0.00
+c [gauss] XOR-encoding clauses detached: 44601 deleted: 0 T: 0.03
+c [gauss] XOR-encoding clauses reattached: 44601 T: 0.00
+c [gauss] XOR-encoding clauses detached: 44601 deleted: 0 T: 0.03
+c [gauss] XOR-encoding clauses reattached: 44601 T: 0.00
+c [gauss] XOR-encoding clauses detached: 44601 deleted: 0 T: 0.03
+c [gauss] XOR-encoding clauses reattached: 44601 T: 0.00
+c [gauss] XOR-encoding clauses detached: 44601 deleted: 0 T: 0.03
+c [gauss] XOR-encoding clauses reattached: 44601 T: 0.00
+c [gauss] XOR-encoding clauses detached: 44601 deleted: 0 T: 0.02
+c [gauss] XOR-encoding clauses reattached: 44601 T: 0.00
+c [gauss] XOR-encoding clauses detached: 44600 deleted: 0 T: 0.03
+c [gauss] XOR-encoding clauses reattached: 44600 T: 0.00
+c [gauss] XOR-encoding clauses detached: 44600 deleted: 0 T: 0.05
+c [gauss] XOR-encoding clauses reattached: 44600 T: 0.00
+c [gauss] XOR-encoding clauses detached: 44600 deleted: 0 T: 0.04
+c [gauss] XOR-encoding clauses reattached: 44600 T: 0.00
+c [gauss] XOR-encoding clauses detached: 44600 deleted: 0 T: 0.04
+c [gauss] XOR-encoding clauses reattached: 44600 T: 0.00
+c [gauss] XOR-encoding clauses detached: 44600 deleted: 0 T: 0.03
+c [appmc] [ 3302.37 ] round:  0 hashes:    188
+c [appmc] [ 3302.37 ] bounded_sol_count looking for   81 solutions -- hashes active: 188
+c [gauss] XOR-encoding clauses reattached: 44600 T: 0.00
+c [gauss] XOR-encoding clauses detached: 43532 deleted: 0 T: 0.03
+c [gauss] XOR-encoding clauses reattached: 43532 T: 0.00
+c [gauss] XOR-encoding clauses detached: 43532 deleted: 0 T: 0.03
+c [gauss] XOR-encoding clauses reattached: 43532 T: 0.00
+c [gauss] XOR-encoding clauses detached: 43532 deleted: 0 T: 0.02
+c [gauss] XOR-encoding clauses reattached: 43532 T: 0.00
+c [gauss] XOR-encoding clauses detached: 43532 deleted: 0 T: 0.03
+c [gauss] XOR-encoding clauses reattached: 43532 T: 0.00
+c [gauss] XOR-encoding clauses detached: 43532 deleted: 0 T: 0.03
+c [gauss] XOR-encoding clauses reattached: 43532 T: 0.00
+c [gauss] XOR-encoding clauses detached: 43532 deleted: 0 T: 0.03
+c [gauss] XOR-encoding clauses reattached: 43532 T: 0.00
+c [gauss] XOR-encoding clauses detached: 43532 deleted: 0 T: 0.02
+c [gauss] XOR-encoding clauses reattached: 43532 T: 0.00
+c [gauss] XOR-encoding clauses detached: 43532 deleted: 0 T: 0.02
+c [gauss] XOR-encoding clauses reattached: 43532 T: 0.00
+c [gauss] XOR-encoding clauses detached: 43532 deleted: 0 T: 0.03
+c [gauss] XOR-encoding clauses reattached: 43532 T: 0.00
+c [gauss] XOR-encoding clauses detached: 43532 deleted: 0 T: 0.03
+c [gauss] XOR-encoding clauses reattached: 43532 T: 0.00
+c [gauss] XOR-encoding clauses detached: 43532 deleted: 0 T: 0.03
+c [gauss] XOR-encoding clauses reattached: 43532 T: 0.00
+c [gauss] XOR-encoding clauses detached: 43532 deleted: 0 T: 0.03
+c [gauss] XOR-encoding clauses reattached: 43532 T: 0.00
+c [gauss] XOR-encoding clauses detached: 43532 deleted: 0 T: 0.02
+c [gauss] XOR-encoding clauses reattached: 43532 T: 0.00
+c [gauss] XOR-encoding clauses detached: 43532 deleted: 0 T: 0.03
+c [gauss] XOR-encoding clauses reattached: 43532 T: 0.00
+c [gauss] XOR-encoding clauses detached: 43532 deleted: 0 T: 0.03
+c [gauss] XOR-encoding clauses reattached: 43532 T: 0.00
+c [gauss] XOR-encoding clauses detached: 43532 deleted: 0 T: 0.03
+c [gauss] XOR-encoding clauses reattached: 43532 T: 0.00
+c [gauss] XOR-encoding clauses detached: 43532 deleted: 0 T: 0.06
+c [gauss] XOR-encoding clauses reattached: 43532 T: 0.00
+c [gauss] XOR-encoding clauses detached: 43532 deleted: 0 T: 0.03
+c [gauss] XOR-encoding clauses reattached: 43532 T: 0.00
+c [gauss] XOR-encoding clauses detached: 43532 deleted: 0 T: 0.04
+c [gauss] XOR-encoding clauses reattached: 43532 T: 0.00
+c [gauss] XOR-encoding clauses detached: 43532 deleted: 0 T: 0.03
+c [gauss] XOR-encoding clauses reattached: 43532 T: 0.00
+c [gauss] XOR-encoding clauses detached: 43532 deleted: 0 T: 0.04
+c [gauss] XOR-encoding clauses reattached: 43532 T: 0.00
+c [gauss] XOR-encoding clauses detached: 43532 deleted: 0 T: 0.04
+c [gauss] XOR-encoding clauses reattached: 43532 T: 0.00
+c [gauss] XOR-encoding clauses detached: 43532 deleted: 0 T: 0.03
+c [gauss] XOR-encoding clauses reattached: 43532 T: 0.00
+c [gauss] XOR-encoding clauses detached: 43532 deleted: 0 T: 0.03
+c [gauss] XOR-encoding clauses reattached: 43532 T: 0.00
+c [gauss] XOR-encoding clauses detached: 43532 deleted: 0 T: 0.03
+c [gauss] XOR-encoding clauses reattached: 43532 T: 0.00
+c [gauss] XOR-encoding clauses detached: 43532 deleted: 0 T: 0.03
+c [gauss] XOR-encoding clauses reattached: 43532 T: 0.00
+c [gauss] XOR-encoding clauses detached: 43532 deleted: 0 T: 0.03
+c [gauss] XOR-encoding clauses reattached: 43532 T: 0.00
+c [gauss] XOR-encoding clauses detached: 43532 deleted: 0 T: 0.03
+c [gauss] XOR-encoding clauses reattached: 43532 T: 0.00
+c [gauss] XOR-encoding clauses detached: 43532 deleted: 0 T: 0.04
+c [gauss] XOR-encoding clauses reattached: 43532 T: 0.00
+c [gauss] XOR-encoding clauses detached: 43532 deleted: 0 T: 0.03
+c [gauss] XOR-encoding clauses reattached: 43532 T: 0.00
+c [gauss] XOR-encoding clauses detached: 43532 deleted: 0 T: 0.04
+c [gauss] XOR-encoding clauses reattached: 43532 T: 0.00
+c [gauss] XOR-encoding clauses detached: 43532 deleted: 0 T: 0.04
+c [gauss] XOR-encoding clauses reattached: 43532 T: 0.00
+c [gauss] XOR-encoding clauses detached: 43532 deleted: 0 T: 0.03
+c [gauss] XOR-encoding clauses reattached: 43532 T: 0.00
+c [gauss] XOR-encoding clauses detached: 43532 deleted: 0 T: 0.03
+c [gauss] XOR-encoding clauses reattached: 43532 T: 0.00
+c [gauss] XOR-encoding clauses detached: 43532 deleted: 0 T: 0.03
+c [gauss] XOR-encoding clauses reattached: 43532 T: 0.00
+c [gauss] XOR-encoding clauses detached: 43532 deleted: 0 T: 0.04
+c [gauss] XOR-encoding clauses reattached: 43532 T: 0.00
+c [gauss] XOR-encoding clauses detached: 43532 deleted: 0 T: 0.06
+c [gauss] XOR-encoding clauses reattached: 43532 T: 0.00
+c [gauss] XOR-encoding clauses detached: 43532 deleted: 0 T: 0.04
+c [gauss] XOR-encoding clauses reattached: 43532 T: 0.00
+c [gauss] XOR-encoding clauses detached: 43532 deleted: 0 T: 0.06
+c [gauss] XOR-encoding clauses reattached: 43532 T: 0.00
+c [gauss] XOR-encoding clauses detached: 43526 deleted: 0 T: 0.03
+c [gauss] XOR-encoding clauses reattached: 43526 T: 0.00
+c [gauss] XOR-encoding clauses detached: 43526 deleted: 0 T: 0.04
+c [gauss] XOR-encoding clauses reattached: 43526 T: 0.00
+c [gauss] XOR-encoding clauses detached: 43526 deleted: 0 T: 0.03
+c [gauss] XOR-encoding clauses reattached: 43526 T: 0.00
+c [gauss] XOR-encoding clauses detached: 43526 deleted: 0 T: 0.03
+c [gauss] XOR-encoding clauses reattached: 43526 T: 0.00
+c [gauss] XOR-encoding clauses detached: 43526 deleted: 0 T: 0.04
+c [gauss] XOR-encoding clauses reattached: 43526 T: 0.00
+c [gauss] XOR-encoding clauses detached: 43526 deleted: 0 T: 0.04
+c [gauss] XOR-encoding clauses reattached: 43526 T: 0.00
+c [gauss] XOR-encoding clauses detached: 43526 deleted: 0 T: 0.04
+c [gauss] XOR-encoding clauses reattached: 43526 T: 0.00
+c [gauss] XOR-encoding clauses detached: 43526 deleted: 0 T: 0.03
+c [gauss] XOR-encoding clauses reattached: 43526 T: 0.00
+c [gauss] XOR-encoding clauses detached: 43526 deleted: 0 T: 0.04
+c [gauss] XOR-encoding clauses reattached: 43526 T: 0.00
+c [gauss] XOR-encoding clauses detached: 43526 deleted: 0 T: 0.04
+c [gauss] XOR-encoding clauses reattached: 43526 T: 0.00
+c [gauss] XOR-encoding clauses detached: 43526 deleted: 0 T: 0.04
+c [gauss] XOR-encoding clauses reattached: 43526 T: 0.00
+c [gauss] XOR-encoding clauses detached: 43526 deleted: 0 T: 0.04
+c [gauss] XOR-encoding clauses reattached: 43526 T: 0.00
+c [gauss] XOR-encoding clauses detached: 43526 deleted: 0 T: 0.04
+c [gauss] XOR-encoding clauses reattached: 43526 T: 0.00
+c [gauss] XOR-encoding clauses detached: 43526 deleted: 0 T: 0.03
+c [gauss] XOR-encoding clauses reattached: 43526 T: 0.00
+c [gauss] XOR-encoding clauses detached: 43526 deleted: 0 T: 0.04
+c [gauss] XOR-encoding clauses reattached: 43526 T: 0.00
+c [gauss] XOR-encoding clauses detached: 43526 deleted: 0 T: 0.04
+c [gauss] XOR-encoding clauses reattached: 43526 T: 0.00
+c [gauss] XOR-encoding clauses detached: 43525 deleted: 0 T: 0.04
+c [gauss] XOR-encoding clauses reattached: 43525 T: 0.00
+c [gauss] XOR-encoding clauses detached: 43525 deleted: 0 T: 0.04
+c [gauss] XOR-encoding clauses reattached: 43525 T: 0.00
+c [gauss] XOR-encoding clauses detached: 43525 deleted: 0 T: 0.04
+c [gauss] XOR-encoding clauses reattached: 43525 T: 0.00
+c [gauss] XOR-encoding clauses detached: 43525 deleted: 0 T: 0.04
+c [gauss] XOR-encoding clauses reattached: 43525 T: 0.00
+c [gauss] XOR-encoding clauses detached: 43525 deleted: 0 T: 0.04
+c [gauss] XOR-encoding clauses reattached: 43525 T: 0.00
+c [gauss] XOR-encoding clauses detached: 43525 deleted: 0 T: 0.04
+c [gauss] XOR-encoding clauses reattached: 43525 T: 0.00
+c [gauss] XOR-encoding clauses detached: 43525 deleted: 0 T: 0.04
+c [gauss] XOR-encoding clauses reattached: 43525 T: 0.00
+c [gauss] XOR-encoding clauses detached: 43525 deleted: 0 T: 0.04
+c [gauss] XOR-encoding clauses reattached: 43525 T: 0.00
+c [gauss] XOR-encoding clauses detached: 43525 deleted: 0 T: 0.04
+c [gauss] XOR-encoding clauses reattached: 43525 T: 0.00
+c [gauss] XOR-encoding clauses detached: 43525 deleted: 0 T: 0.04
+c [gauss] XOR-encoding clauses reattached: 43525 T: 0.00
+c [gauss] XOR-encoding clauses detached: 43525 deleted: 0 T: 0.04
+c [gauss] XOR-encoding clauses reattached: 43525 T: 0.00
+c [gauss] XOR-encoding clauses detached: 43525 deleted: 0 T: 0.03
+c [gauss] XOR-encoding clauses reattached: 43525 T: 0.00
+c [gauss] XOR-encoding clauses detached: 43525 deleted: 0 T: 0.04
+c [gauss] XOR-encoding clauses reattached: 43525 T: 0.00
+c [gauss] XOR-encoding clauses detached: 43525 deleted: 0 T: 0.04
