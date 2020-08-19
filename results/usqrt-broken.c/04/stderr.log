@@ -1,0 +1,116 @@
+** counterSharp **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	14400 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		python
+[runlim] argv[1]:		-m
+[runlim] argv[2]:		counterSharp
+[runlim] argv[3]:		--amm
+[runlim] argv[4]:		/home/steuber/Dokumente/Bench/FP/experiments/results/usqrt-broken.c/04/amm.dimacs
+[runlim] argv[5]:		--amh
+[runlim] argv[6]:		/home/steuber/Dokumente/Bench/FP/experiments/results/usqrt-broken.c/04/amh.dimacs
+[runlim] argv[7]:		--asm
+[runlim] argv[8]:		/home/steuber/Dokumente/Bench/FP/experiments/results/usqrt-broken.c/04/asm.dimacs
+[runlim] argv[9]:		--ash
+[runlim] argv[10]:		/home/steuber/Dokumente/Bench/FP/experiments/results/usqrt-broken.c/04/ash.dimacs
+[runlim] argv[11]:		-d
+[runlim] argv[12]:		--function
+[runlim] argv[13]:		usqrt
+[runlim] argv[14]:		--unwind
+[runlim] argv[15]:		33
+[runlim] argv[16]:		/home/steuber/Dokumente/Bench/FP/experiments/benchmarks/usqrt-broken.c
+[runlim] start:			Mon Aug 17 11:43:18 2020
+[runlim] main pid:		3608
+[counterSharp.util.Config] DEBUG: Input files: ['/home/steuber/Dokumente/Bench/FP/experiments/benchmarks/usqrt-broken.c']
+[counterSharp.source.SourceManager] DEBUG: /tmp/tmp8hs0iixd.c
+[counterSharp.cbmc.CBMCManager] DEBUG: cbmc --verbosity 4 --function usqrt --dimacs --unwind 33 --property usqrt.assertion.1 /tmp/tmp8hs0iixd.c
+[counterSharp.cbmc.CBMCManager] DEBUG: cbmc --verbosity 4 --function usqrt --dimacs --unwind 33 --property usqrt.assertion.2 /tmp/tmp8hs0iixd.c
+[counterSharp.cbmc.CBMCManager] DEBUG: cbmc --verbosity 4 --function usqrt --dimacs --unwind 33 --property usqrt.assertion.3 /tmp/tmp8hs0iixd.c
+[counterSharp.cbmc.CBMCManager] DEBUG: cbmc --verbosity 4 --function usqrt --dimacs --unwind 33 --property usqrt.assertion.4 /tmp/tmp8hs0iixd.c
+[runlim] end:			Mon Aug 17 11:43:19 2020
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		7
+[runlim] real:			1.02 seconds
+[runlim] time:			0.30 seconds
+[runlim] space:			33.7 MB
+[runlim] samples:		6
+** AMM **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	14400 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		approxmc
+[runlim] argv[1]:		--sparse
+[runlim] argv[2]:		1
+[runlim] argv[3]:		/home/steuber/Dokumente/Bench/FP/experiments/results/usqrt-broken.c/04/amm.dimacs
+[runlim] start:			Mon Aug 17 11:43:19 2020
+[runlim] main pid:		3628
+[runlim] end:			Mon Aug 17 11:43:20 2020
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			1.97 seconds
+[runlim] time:			1.89 seconds
+[runlim] space:			17.7 MB
+[runlim] samples:		19
+** AMH **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	14400 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		approxmc
+[runlim] argv[1]:		--sparse
+[runlim] argv[2]:		1
+[runlim] argv[3]:		/home/steuber/Dokumente/Bench/FP/experiments/results/usqrt-broken.c/04/amh.dimacs
+[runlim] start:			Mon Aug 17 11:43:20 2020
+[runlim] main pid:		3630
+[runlim] end:			Mon Aug 17 11:43:22 2020
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			2.87 seconds
+[runlim] time:			1.79 seconds
+[runlim] space:			17.2 MB
+[runlim] samples:		18
+** ASM **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	14400 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		approxmc
+[runlim] argv[1]:		--sparse
+[runlim] argv[2]:		1
+[runlim] argv[3]:		/home/steuber/Dokumente/Bench/FP/experiments/results/usqrt-broken.c/04/asm.dimacs
+[runlim] start:			Mon Aug 17 11:43:22 2020
+[runlim] main pid:		3632
+[runlim] sample:		10.0 time, 10.9 real, 21.5 MB
+[runlim] sample:		20.0 time, 20.9 real, 19.4 MB
+[runlim] end:			Mon Aug 17 11:43:48 2020
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			26.21 seconds
+[runlim] time:			25.26 seconds
+[runlim] space:			26.0 MB
+[runlim] samples:		253
+** ASH **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	14400 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		approxmc
+[runlim] argv[1]:		--sparse
+[runlim] argv[2]:		1
+[runlim] argv[3]:		/home/steuber/Dokumente/Bench/FP/experiments/results/usqrt-broken.c/04/ash.dimacs
+[runlim] start:			Mon Aug 17 11:43:48 2020
+[runlim] main pid:		3634
+[runlim] end:			Mon Aug 17 11:43:53 2020
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			5.98 seconds
+[runlim] time:			5.69 seconds
+[runlim] space:			17.9 MB
+[runlim] samples:		57
