@@ -1,4 +1,3 @@
-#include<assert.h>
 #include<malloc.h>
 
 int testfun(int x) {
@@ -7,6 +6,6 @@ int testfun(int x) {
 	}
 	int *y = malloc(sizeof(int));
 	int div = (*y) * x;
-	assert(div!=0);
+	__counterSharp_assert(div!=0);
 	return 100/div;
 }
