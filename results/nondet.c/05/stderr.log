@@ -1,0 +1,116 @@
+** counterSharp **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	14400 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		python
+[runlim] argv[1]:		-m
+[runlim] argv[2]:		counterSharp
+[runlim] argv[3]:		--amm
+[runlim] argv[4]:		/home/steuber/Dokumente/Bench/FP/experiments/results/nondet.c/05/amm.dimacs
+[runlim] argv[5]:		--amh
+[runlim] argv[6]:		/home/steuber/Dokumente/Bench/FP/experiments/results/nondet.c/05/amh.dimacs
+[runlim] argv[7]:		--asm
+[runlim] argv[8]:		/home/steuber/Dokumente/Bench/FP/experiments/results/nondet.c/05/asm.dimacs
+[runlim] argv[9]:		--ash
+[runlim] argv[10]:		/home/steuber/Dokumente/Bench/FP/experiments/results/nondet.c/05/ash.dimacs
+[runlim] argv[11]:		-d
+[runlim] argv[12]:		--function
+[runlim] argv[13]:		testfun
+[runlim] argv[14]:		--unwind
+[runlim] argv[15]:		1
+[runlim] argv[16]:		/home/steuber/Dokumente/Bench/FP/experiments/benchmarks/nondet.c
+[runlim] start:			Sat Aug 22 11:28:23 2020
+[runlim] main pid:		3816
+[counterSharp.util.Config] DEBUG: Input files: ['/home/steuber/Dokumente/Bench/FP/experiments/benchmarks/nondet.c']
+[counterSharp.source.SourceManager] DEBUG: /tmp/tmphprxzv36.c
+[counterSharp.cbmc.CBMCManager] DEBUG: cbmc --verbosity 4 --function testfun --dimacs --unwind 1 --property testfun.assertion.1 /tmp/tmphprxzv36.c
+[counterSharp.cbmc.CBMCManager] DEBUG: cbmc --verbosity 4 --function testfun --dimacs --unwind 1 --property testfun.assertion.2 /tmp/tmphprxzv36.c
+[counterSharp.cbmc.CBMCManager] DEBUG: cbmc --verbosity 4 --function testfun --dimacs --unwind 1 --property testfun.assertion.3 /tmp/tmphprxzv36.c
+[counterSharp.cbmc.CBMCManager] DEBUG: cbmc --verbosity 4 --function testfun --dimacs --unwind 1 --property testfun.assertion.4 /tmp/tmphprxzv36.c
+[counterSharp.cbmc.CBMCManager] INFO: Did not write file /home/steuber/Dokumente/Bench/FP/experiments/results/nondet.c/05/amm.dimacs: State not reachable
+[runlim] end:			Sat Aug 22 11:28:24 2020
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		8
+[runlim] real:			1.30 seconds
+[runlim] time:			0.22 seconds
+[runlim] space:			27.4 MB
+[runlim] samples:		5
+** AMM **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	14400 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		approxmc
+[runlim] argv[1]:		--sparse
+[runlim] argv[2]:		1
+[runlim] argv[3]:		/home/steuber/Dokumente/Bench/FP/experiments/results/nondet.c/05/amm.dimacs
+[runlim] start:			Sat Aug 22 11:28:24 2020
+[runlim] main pid:		3848
+ERROR! Could not open file '/home/steuber/Dokumente/Bench/FP/experiments/results/nondet.c/05/amm.dimacs' for reading: No such file or directory
+[runlim] end:			Sat Aug 22 11:28:24 2020
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			0.32 seconds
+[runlim] time:			0.00 seconds
+[runlim] space:			0.0 MB
+[runlim] samples:		0
+** AMH **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	14400 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		approxmc
+[runlim] argv[1]:		--sparse
+[runlim] argv[2]:		1
+[runlim] argv[3]:		/home/steuber/Dokumente/Bench/FP/experiments/results/nondet.c/05/amh.dimacs
+[runlim] start:			Sat Aug 22 11:28:24 2020
+[runlim] main pid:		3850
+[runlim] end:			Sat Aug 22 11:28:25 2020
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			1.89 seconds
+[runlim] time:			1.49 seconds
+[runlim] space:			13.4 MB
+[runlim] samples:		15
+** ASM **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	14400 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		approxmc
+[runlim] argv[1]:		--sparse
+[runlim] argv[2]:		1
+[runlim] argv[3]:		/home/steuber/Dokumente/Bench/FP/experiments/results/nondet.c/05/asm.dimacs
+[runlim] start:			Sat Aug 22 11:28:25 2020
+[runlim] main pid:		3852
+[runlim] end:			Sat Aug 22 11:28:26 2020
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			1.61 seconds
+[runlim] time:			0.69 seconds
+[runlim] space:			12.2 MB
+[runlim] samples:		7
+** ASH **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	14400 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		approxmc
+[runlim] argv[1]:		--sparse
+[runlim] argv[2]:		1
+[runlim] argv[3]:		/home/steuber/Dokumente/Bench/FP/experiments/results/nondet.c/05/ash.dimacs
+[runlim] start:			Sat Aug 22 11:28:26 2020
+[runlim] main pid:		3854
+[runlim] end:			Sat Aug 22 11:28:28 2020
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			2.79 seconds
+[runlim] time:			2.09 seconds
+[runlim] space:			15.9 MB
+[runlim] samples:		21
