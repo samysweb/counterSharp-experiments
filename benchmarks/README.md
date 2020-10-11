@@ -8,5 +8,7 @@ rangesum07.c		| sv-benchmarks			| reducercommutativity		| yes (7 instead of 5/10
 Problem10_16.c		| sv-benchmarks			| eca-rers2018				| yes (input variables, unwinding to depth 16)
 Problem13_16.c		| sv-benchmarks			| eca-rers2018				| yes (input variables, unwinding to depth 16)
 Problem13_4.c		| sv-benchmarks			| eca-rers2018				| yes (input variables, unwinding to depth 4)
-nondet.c | --- | --- | crafted
-confidence.c | --- | --- | crafted
+nondet.c 			| --- 					| --- 						| crafted
+confidence.c 		| --- 					| ---						| crafted
+floor.c				| c-snippets			| ---						| yes (added assertion/assumption)
+floor-broken.c		| c-snippets			| ---						| yes (added assertion/assumption, broke bit ops)
