@@ -1,704 +1,104 @@
 extern int __VERIFIER_nondet_int();
-void reach_error_0(){__counterSharp_assert(0);}
-void reach_error_1(){__counterSharp_assert(0);}
-void reach_error_2(){__counterSharp_assert(0);}
-void reach_error_3(){__counterSharp_assert(0);}
-void reach_error_4(){__counterSharp_assert(0);}
-void reach_error_5(){__counterSharp_assert(0);}
-void reach_error_6(){__counterSharp_assert(0);}
-void reach_error_7(){__counterSharp_assert(0);}
-void reach_error_8(){__counterSharp_assert(0);}
-void reach_error_9(){__counterSharp_assert(0);}
-void reach_error_10(){__counterSharp_assert(0);}
-void reach_error_11(){__counterSharp_assert(0);}
-void reach_error_12(){__counterSharp_assert(0);}
-void reach_error_13(){__counterSharp_assert(0);}
-void reach_error_14(){__counterSharp_assert(0);}
-void reach_error_15(){__counterSharp_assert(0);}
-void reach_error_16(){__counterSharp_assert(0);}
-void reach_error_17(){__counterSharp_assert(0);}
-void reach_error_18(){__counterSharp_assert(0);}
-void reach_error_19(){__counterSharp_assert(0);}
-void reach_error_20(){__counterSharp_assert(0);}
-void reach_error_21(){__counterSharp_assert(0);}
-void reach_error_22(){__counterSharp_assert(0);}
-void reach_error_23(){__counterSharp_assert(0);}
-void reach_error_24(){__counterSharp_assert(0);}
-void reach_error_25(){__counterSharp_assert(0);}
-void reach_error_26(){__counterSharp_assert(0);}
-void reach_error_27(){__counterSharp_assert(0);}
-void reach_error_28(){__counterSharp_assert(0);}
-void reach_error_29(){__counterSharp_assert(0);}
-void reach_error_30(){__counterSharp_assert(0);}
-void reach_error_31(){__counterSharp_assert(0);}
-void reach_error_32(){__counterSharp_assert(0);}
-void reach_error_33(){__counterSharp_assert(0);}
-void reach_error_34(){__counterSharp_assert(0);}
-void reach_error_35(){__counterSharp_assert(0);}
-void reach_error_36(){__counterSharp_assert(0);}
-void reach_error_37(){__counterSharp_assert(0);}
-void reach_error_38(){__counterSharp_assert(0);}
-void reach_error_39(){__counterSharp_assert(0);}
-void reach_error_40(){__counterSharp_assert(0);}
-void reach_error_41(){__counterSharp_assert(0);}
-void reach_error_42(){__counterSharp_assert(0);}
-void reach_error_43(){__counterSharp_assert(0);}
-void reach_error_44(){__counterSharp_assert(0);}
-void reach_error_45(){__counterSharp_assert(0);}
-void reach_error_46(){__counterSharp_assert(0);}
-void reach_error_47(){__counterSharp_assert(0);}
-void reach_error_48(){__counterSharp_assert(0);}
-void reach_error_49(){__counterSharp_assert(0);}
-void reach_error_50(){__counterSharp_assert(0);}
-void reach_error_51(){__counterSharp_assert(0);}
-void reach_error_52(){__counterSharp_assert(0);}
-void reach_error_53(){__counterSharp_assert(0);}
-void reach_error_54(){__counterSharp_assert(0);}
-void reach_error_55(){__counterSharp_assert(0);}
-void reach_error_56(){__counterSharp_assert(0);}
-void reach_error_57(){__counterSharp_assert(0);}
-void reach_error_58(){__counterSharp_assert(0);}
-void reach_error_59(){__counterSharp_assert(0);}
-void reach_error_60(){__counterSharp_assert(0);}
-void reach_error_61(){__counterSharp_assert(0);}
-void reach_error_62(){__counterSharp_assert(0);}
-void reach_error_63(){__counterSharp_assert(0);}
-void reach_error_64(){__counterSharp_assert(0);}
-void reach_error_65(){__counterSharp_assert(0);}
-void reach_error_66(){__counterSharp_assert(0);}
-void reach_error_67(){__counterSharp_assert(0);}
-void reach_error_68(){__counterSharp_assert(0);}
-void reach_error_69(){__counterSharp_assert(0);}
-void reach_error_70(){__counterSharp_assert(0);}
-void reach_error_71(){__counterSharp_assert(0);}
-void reach_error_72(){__counterSharp_assert(0);}
-void reach_error_73(){__counterSharp_assert(0);}
-void reach_error_74(){__counterSharp_assert(0);}
-void reach_error_75(){__counterSharp_assert(0);}
-void reach_error_76(){__counterSharp_assert(0);}
-void reach_error_77(){__counterSharp_assert(0);}
-void reach_error_78(){__counterSharp_assert(0);}
-void reach_error_79(){__counterSharp_assert(0);}
-void reach_error_80(){__counterSharp_assert(0);}
-void reach_error_81(){__counterSharp_assert(0);}
-void reach_error_82(){__counterSharp_assert(0);}
-void reach_error_83(){__counterSharp_assert(0);}
-void reach_error_84(){__counterSharp_assert(0);}
-void reach_error_85(){__counterSharp_assert(0);}
-void reach_error_86(){__counterSharp_assert(0);}
-void reach_error_87(){__counterSharp_assert(0);}
-void reach_error_88(){__counterSharp_assert(0);}
-void reach_error_89(){__counterSharp_assert(0);}
-void reach_error_90(){__counterSharp_assert(0);}
-void reach_error_91(){__counterSharp_assert(0);}
-void reach_error_92(){__counterSharp_assert(0);}
-void reach_error_93(){__counterSharp_assert(0);}
-void reach_error_94(){__counterSharp_assert(0);}
-void reach_error_95(){__counterSharp_assert(0);}
-void reach_error_96(){__counterSharp_assert(0);}
-void reach_error_97(){__counterSharp_assert(0);}
-void reach_error_98(){__counterSharp_assert(0);}
-void reach_error_99(){__counterSharp_assert(0);}
-
-
-	// inputs
-	int inputs[] = {1,8,4,10,7,9,5,6,3,2};
-
-	void errorCheck();
-	void calculate_output(int);
-	void calculate_outputm1(int);
-	void calculate_outputm2(int);
-	void calculate_outputm3(int);
-	void calculate_outputm4(int);
-	void calculate_outputm5(int);
-	void calculate_outputm6(int);
-	void calculate_outputm7(int);
-	void calculate_outputm8(int);
-	void calculate_outputm9(int);
-	void calculate_outputm10(int);
-	void calculate_outputm11(int);
-	void calculate_outputm12(int);
-	void calculate_outputm13(int);
-	void calculate_outputm14(int);
-	void calculate_outputm15(int);
-	void calculate_outputm16(int);
-	void calculate_outputm17(int);
-	void calculate_outputm18(int);
-	void calculate_outputm19(int);
-	void calculate_outputm20(int);
-	void calculate_outputm21(int);
-	void calculate_outputm22(int);
-	void calculate_outputm23(int);
-	void calculate_outputm24(int);
-	void calculate_outputm25(int);
-	void calculate_outputm26(int);
-	void calculate_outputm27(int);
-	void calculate_outputm28(int);
-	void calculate_outputm29(int);
-	void calculate_outputm30(int);
-	void calculate_outputm31(int);
-	void calculate_outputm32(int);
-	void calculate_outputm33(int);
-	void calculate_outputm34(int);
-	void calculate_outputm35(int);
-	void calculate_outputm36(int);
-	void calculate_outputm37(int);
-	void calculate_outputm38(int);
-	void calculate_outputm39(int);
-	void calculate_outputm40(int);
-	void calculate_outputm41(int);
-	void calculate_outputm42(int);
-	void calculate_outputm43(int);
-	void calculate_outputm44(int);
-	void calculate_outputm45(int);
-	void calculate_outputm46(int);
-	void calculate_outputm47(int);
-	void calculate_outputm48(int);
-	void calculate_outputm49(int);
-	void calculate_outputm50(int);
-	void calculate_outputm51(int);
-	void calculate_outputm52(int);
-	void calculate_outputm53(int);
-	void calculate_outputm54(int);
-	void calculate_outputm55(int);
-	void calculate_outputm56(int);
-	void calculate_outputm57(int);
-	void calculate_outputm58(int);
-	void calculate_outputm59(int);
-	void calculate_outputm60(int);
-	void calculate_outputm61(int);
-	void calculate_outputm62(int);
-	void calculate_outputm63(int);
-	void calculate_outputm64(int);
-	void calculate_outputm65(int);
-	void calculate_outputm66(int);
-	void calculate_outputm67(int);
-	void calculate_outputm68(int);
-	void calculate_outputm69(int);
-	void calculate_outputm70(int);
-	void calculate_outputm71(int);
-	void calculate_outputm72(int);
-	void calculate_outputm73(int);
-	void calculate_outputm74(int);
-	void calculate_outputm75(int);
-	void calculate_outputm76(int);
-	void calculate_outputm77(int);
-	void calculate_outputm78(int);
-	void calculate_outputm79(int);
-	void calculate_outputm80(int);
-	void calculate_outputm81(int);
-	void calculate_outputm82(int);
-	void calculate_outputm83(int);
-	void calculate_outputm84(int);
-	void calculate_outputm85(int);
-	void calculate_outputm86(int);
-	void calculate_outputm87(int);
-	void calculate_outputm88(int);
-	void calculate_outputm89(int);
-	void calculate_outputm90(int);
-	void calculate_outputm91(int);
-	void calculate_outputm92(int);
-	void calculate_outputm93(int);
-	void calculate_outputm94(int);
-	void calculate_outputm95(int);
-	void calculate_outputm96(int);
-	void calculate_outputm97(int);
-	void calculate_outputm98(int);
-	void calculate_outputm99(int);
-	void calculate_outputm100(int);
-	void calculate_outputm101(int);
-	void calculate_outputm102(int);
-	void calculate_outputm103(int);
-	void calculate_outputm104(int);
-	void calculate_outputm105(int);
-	void calculate_outputm106(int);
-	void calculate_outputm107(int);
-	void calculate_outputm108(int);
-	void calculate_outputm109(int);
-	void calculate_outputm110(int);
-	void calculate_outputm111(int);
-	void calculate_outputm112(int);
-	void calculate_outputm113(int);
-	void calculate_outputm114(int);
-	void calculate_outputm115(int);
-	void calculate_outputm116(int);
-	void calculate_outputm117(int);
-	void calculate_outputm118(int);
-	void calculate_outputm119(int);
-	void calculate_outputm120(int);
-	void calculate_outputm121(int);
-	void calculate_outputm122(int);
-	void calculate_outputm123(int);
-	void calculate_outputm124(int);
-	void calculate_outputm125(int);
-	void calculate_outputm126(int);
-	void calculate_outputm127(int);
-	void calculate_outputm128(int);
-	void calculate_outputm129(int);
-	void calculate_outputm130(int);
-	void calculate_outputm131(int);
-	void calculate_outputm132(int);
-	void calculate_outputm133(int);
-	void calculate_outputm134(int);
-	void calculate_outputm135(int);
-	void calculate_outputm136(int);
-	void calculate_outputm137(int);
-	void calculate_outputm138(int);
-	void calculate_outputm139(int);
-	void calculate_outputm140(int);
-	void calculate_outputm141(int);
-	void calculate_outputm142(int);
-	void calculate_outputm143(int);
-	void calculate_outputm144(int);
-	void calculate_outputm145(int);
-	void calculate_outputm146(int);
-	void calculate_outputm147(int);
-	void calculate_outputm148(int);
-	void calculate_outputm149(int);
-	void calculate_outputm150(int);
-	void calculate_outputm151(int);
-	void calculate_outputm152(int);
-	void calculate_outputm153(int);
-	void calculate_outputm154(int);
-	void calculate_outputm155(int);
-	void calculate_outputm156(int);
-	void calculate_outputm157(int);
-	void calculate_outputm158(int);
-	void calculate_outputm159(int);
-	void calculate_outputm160(int);
-	void calculate_outputm161(int);
-	void calculate_outputm162(int);
-	void calculate_outputm163(int);
-	void calculate_outputm164(int);
-	void calculate_outputm165(int);
-	void calculate_outputm166(int);
-	void calculate_outputm167(int);
-	void calculate_outputm168(int);
-	void calculate_outputm169(int);
-	void calculate_outputm170(int);
-	void calculate_outputm171(int);
-	void calculate_outputm172(int);
-	void calculate_outputm173(int);
-	void calculate_outputm174(int);
-	void calculate_outputm175(int);
-	void calculate_outputm176(int);
-	void calculate_outputm177(int);
-	void calculate_outputm178(int);
-	void calculate_outputm179(int);
-	void calculate_outputm180(int);
-	void calculate_outputm181(int);
-	void calculate_outputm182(int);
-	void calculate_outputm183(int);
-	void calculate_outputm184(int);
-	void calculate_outputm185(int);
-	void calculate_outputm186(int);
-	void calculate_outputm187(int);
-	void calculate_outputm188(int);
-	void calculate_outputm189(int);
-	void calculate_outputm190(int);
-	void calculate_outputm191(int);
-	void calculate_outputm192(int);
-	void calculate_outputm193(int);
-	void calculate_outputm194(int);
-	void calculate_outputm195(int);
-	void calculate_outputm196(int);
-	void calculate_outputm197(int);
-	void calculate_outputm198(int);
-	void calculate_outputm199(int);
-	void calculate_outputm200(int);
-	void calculate_outputm201(int);
-	void calculate_outputm202(int);
-	void calculate_outputm203(int);
-	void calculate_outputm204(int);
-	void calculate_outputm205(int);
-	void calculate_outputm206(int);
-	void calculate_outputm207(int);
-	void calculate_outputm208(int);
-	void calculate_outputm209(int);
-	void calculate_outputm210(int);
-	void calculate_outputm211(int);
-	void calculate_outputm212(int);
-	void calculate_outputm213(int);
-	void calculate_outputm214(int);
-	void calculate_outputm215(int);
-	void calculate_outputm216(int);
-	void calculate_outputm217(int);
-	void calculate_outputm218(int);
-	void calculate_outputm219(int);
-	void calculate_outputm220(int);
-	void calculate_outputm221(int);
-	void calculate_outputm222(int);
-	void calculate_outputm223(int);
-	void calculate_outputm224(int);
-	void calculate_outputm225(int);
-	void calculate_outputm226(int);
-	void calculate_outputm227(int);
-	void calculate_outputm228(int);
-	void calculate_outputm229(int);
-	void calculate_outputm230(int);
-	void calculate_outputm231(int);
-	void calculate_outputm232(int);
-	void calculate_outputm233(int);
-	void calculate_outputm234(int);
-	void calculate_outputm235(int);
-	void calculate_outputm236(int);
-	void calculate_outputm237(int);
-	void calculate_outputm238(int);
-	void calculate_outputm239(int);
-	void calculate_outputm240(int);
-	void calculate_outputm241(int);
-	void calculate_outputm242(int);
-	void calculate_outputm243(int);
-	void calculate_outputm244(int);
-	void calculate_outputm245(int);
-	void calculate_outputm246(int);
-	void calculate_outputm247(int);
-	void calculate_outputm248(int);
-	void calculate_outputm249(int);
-	void calculate_outputm250(int);
-	void calculate_outputm251(int);
-	void calculate_outputm252(int);
-	void calculate_outputm253(int);
-	void calculate_outputm254(int);
-	void calculate_outputm255(int);
-	void calculate_outputm256(int);
-	void calculate_outputm257(int);
-	void calculate_outputm258(int);
-	void calculate_outputm259(int);
-	void calculate_outputm260(int);
-	void calculate_outputm261(int);
-	void calculate_outputm262(int);
-	void calculate_outputm263(int);
-	void calculate_outputm264(int);
-	void calculate_outputm265(int);
-	void calculate_outputm266(int);
-	void calculate_outputm267(int);
-	void calculate_outputm268(int);
-	void calculate_outputm269(int);
-	void calculate_outputm270(int);
-	void calculate_outputm271(int);
-	void calculate_outputm272(int);
-	void calculate_outputm273(int);
-	void calculate_outputm274(int);
-	void calculate_outputm275(int);
-	void calculate_outputm276(int);
-	void calculate_outputm277(int);
-	void calculate_outputm278(int);
-	void calculate_outputm279(int);
-	void calculate_outputm280(int);
-	void calculate_outputm281(int);
-	void calculate_outputm282(int);
-	void calculate_outputm283(int);
-	void calculate_outputm284(int);
-	void calculate_outputm285(int);
-	void calculate_outputm286(int);
-	void calculate_outputm287(int);
-	void calculate_outputm288(int);
-	void calculate_outputm289(int);
-	void calculate_outputm290(int);
-	void calculate_outputm291(int);
-	void calculate_outputm292(int);
-	void calculate_outputm293(int);
-	void calculate_outputm294(int);
-	void calculate_outputm295(int);
-	void calculate_outputm296(int);
-	void calculate_outputm297(int);
-	void calculate_outputm298(int);
-	void calculate_outputm299(int);
-	void calculate_outputm300(int);
-	void calculate_outputm301(int);
-	void calculate_outputm302(int);
-	void calculate_outputm303(int);
-	void calculate_outputm304(int);
-	void calculate_outputm305(int);
-	void calculate_outputm306(int);
-	void calculate_outputm307(int);
-	void calculate_outputm308(int);
-	void calculate_outputm309(int);
-	void calculate_outputm310(int);
-	void calculate_outputm311(int);
-	void calculate_outputm312(int);
-	void calculate_outputm313(int);
-	void calculate_outputm314(int);
-	void calculate_outputm315(int);
-	void calculate_outputm316(int);
-	void calculate_outputm317(int);
-	void calculate_outputm318(int);
-	void calculate_outputm319(int);
-	void calculate_outputm320(int);
-	void calculate_outputm321(int);
-	void calculate_outputm322(int);
-	void calculate_outputm323(int);
-	void calculate_outputm324(int);
-	void calculate_outputm325(int);
-	void calculate_outputm326(int);
-	void calculate_outputm327(int);
-	void calculate_outputm328(int);
-	void calculate_outputm329(int);
-	void calculate_outputm330(int);
-	void calculate_outputm331(int);
-	void calculate_outputm332(int);
-	void calculate_outputm333(int);
-	void calculate_outputm334(int);
-	void calculate_outputm335(int);
-	void calculate_outputm336(int);
-	void calculate_outputm337(int);
-	void calculate_outputm338(int);
-	void calculate_outputm339(int);
-	void calculate_outputm340(int);
-	void calculate_outputm341(int);
-	void calculate_outputm342(int);
-	void calculate_outputm343(int);
-	void calculate_outputm344(int);
-	void calculate_outputm345(int);
-	void calculate_outputm346(int);
-	void calculate_outputm347(int);
-	void calculate_outputm348(int);
-	void calculate_outputm349(int);
-	void calculate_outputm350(int);
-	void calculate_outputm351(int);
-	void calculate_outputm352(int);
-	void calculate_outputm353(int);
-	void calculate_outputm354(int);
-	void calculate_outputm355(int);
-	void calculate_outputm356(int);
-	void calculate_outputm357(int);
-	void calculate_outputm358(int);
-	void calculate_outputm359(int);
-	void calculate_outputm360(int);
-	void calculate_outputm361(int);
-	void calculate_outputm362(int);
-	void calculate_outputm363(int);
-	void calculate_outputm364(int);
-	void calculate_outputm365(int);
-	void calculate_outputm366(int);
-	void calculate_outputm367(int);
-	void calculate_outputm368(int);
-	void calculate_outputm369(int);
-	void calculate_outputm370(int);
-	void calculate_outputm371(int);
-	void calculate_outputm372(int);
-	void calculate_outputm373(int);
-	void calculate_outputm374(int);
-	void calculate_outputm375(int);
-	void calculate_outputm376(int);
-	void calculate_outputm377(int);
-	void calculate_outputm378(int);
-	void calculate_outputm379(int);
-	void calculate_outputm380(int);
-	void calculate_outputm381(int);
-	void calculate_outputm382(int);
-	void calculate_outputm383(int);
-	void calculate_outputm384(int);
-	void calculate_outputm385(int);
-	void calculate_outputm386(int);
-	void calculate_outputm387(int);
-	void calculate_outputm388(int);
-	void calculate_outputm389(int);
-	void calculate_outputm390(int);
-	void calculate_outputm391(int);
-	void calculate_outputm392(int);
-	void calculate_outputm393(int);
-	void calculate_outputm394(int);
-	void calculate_outputm395(int);
-	void calculate_outputm396(int);
-	void calculate_outputm397(int);
-	void calculate_outputm398(int);
-	void calculate_outputm399(int);
-	void calculate_outputm400(int);
-	void calculate_outputm401(int);
-	void calculate_outputm402(int);
-	void calculate_outputm403(int);
-	void calculate_outputm404(int);
-	void calculate_outputm405(int);
-	void calculate_outputm406(int);
-	void calculate_outputm407(int);
-	void calculate_outputm408(int);
-	void calculate_outputm409(int);
-	void calculate_outputm410(int);
-	void calculate_outputm411(int);
-	void calculate_outputm412(int);
-	void calculate_outputm413(int);
-	void calculate_outputm414(int);
-	void calculate_outputm415(int);
-	void calculate_outputm416(int);
-	void calculate_outputm417(int);
-	void calculate_outputm418(int);
-	void calculate_outputm419(int);
-	void calculate_outputm420(int);
-	void calculate_outputm421(int);
-	void calculate_outputm422(int);
-	void calculate_outputm423(int);
-	void calculate_outputm424(int);
-	void calculate_outputm425(int);
-	void calculate_outputm426(int);
-	void calculate_outputm427(int);
-	void calculate_outputm428(int);
-	void calculate_outputm429(int);
-	void calculate_outputm430(int);
-	void calculate_outputm431(int);
-	void calculate_outputm432(int);
-	void calculate_outputm433(int);
-	void calculate_outputm434(int);
-	void calculate_outputm435(int);
-	void calculate_outputm436(int);
-	void calculate_outputm437(int);
-	void calculate_outputm438(int);
-	void calculate_outputm439(int);
-	void calculate_outputm440(int);
-	void calculate_outputm441(int);
-	void calculate_outputm442(int);
-	void calculate_outputm443(int);
-	void calculate_outputm444(int);
-	void calculate_outputm445(int);
-	void calculate_outputm446(int);
-	void calculate_outputm447(int);
-	void calculate_outputm448(int);
-	void calculate_outputm449(int);
-	void calculate_outputm450(int);
-	void calculate_outputm451(int);
-	void calculate_outputm452(int);
-	void calculate_outputm453(int);
-	void calculate_outputm454(int);
-	void calculate_outputm455(int);
-	void calculate_outputm456(int);
-	void calculate_outputm457(int);
-	void calculate_outputm458(int);
-	void calculate_outputm459(int);
-	void calculate_outputm460(int);
-	void calculate_outputm461(int);
-	void calculate_outputm462(int);
-	void calculate_outputm463(int);
-	void calculate_outputm464(int);
-	void calculate_outputm465(int);
-	void calculate_outputm466(int);
-	void calculate_outputm467(int);
-	void calculate_outputm468(int);
-	void calculate_outputm469(int);
-	void calculate_outputm470(int);
-	void calculate_outputm471(int);
-	void calculate_outputm472(int);
-	void calculate_outputm473(int);
-	void calculate_outputm474(int);
-	void calculate_outputm475(int);
-	void calculate_outputm476(int);
-	void calculate_outputm477(int);
-	void calculate_outputm478(int);
-	void calculate_outputm479(int);
-	void calculate_outputm480(int);
-	void calculate_outputm481(int);
-	void calculate_outputm482(int);
-	void calculate_outputm483(int);
-	void calculate_outputm484(int);
-	void calculate_outputm485(int);
-	void calculate_outputm486(int);
-	void calculate_outputm487(int);
-	void calculate_outputm488(int);
-	void calculate_outputm489(int);
-	void calculate_outputm490(int);
-	void calculate_outputm491(int);
-	void calculate_outputm492(int);
-	void calculate_outputm493(int);
-	void calculate_outputm494(int);
-	void calculate_outputm495(int);
-	void calculate_outputm496(int);
-	void calculate_outputm497(int);
-	void calculate_outputm498(int);
-	void calculate_outputm499(int);
-	void calculate_outputm500(int);
-	void calculate_outputm501(int);
-	void calculate_outputm502(int);
-	void calculate_outputm503(int);
-	void calculate_outputm504(int);
-	void calculate_outputm505(int);
-	void calculate_outputm506(int);
-	void calculate_outputm507(int);
-	void calculate_outputm508(int);
-	void calculate_outputm509(int);
-	void calculate_outputm510(int);
-	void calculate_outputm511(int);
-	void calculate_outputm512(int);
-	void calculate_outputm513(int);
-	void calculate_outputm514(int);
-	void calculate_outputm515(int);
-	void calculate_outputm516(int);
-	void calculate_outputm517(int);
-	void calculate_outputm518(int);
-	void calculate_outputm519(int);
-	void calculate_outputm520(int);
-	void calculate_outputm521(int);
-	void calculate_outputm522(int);
-	void calculate_outputm523(int);
-	void calculate_outputm524(int);
-	void calculate_outputm525(int);
-	void calculate_outputm526(int);
-	void calculate_outputm527(int);
-	void calculate_outputm528(int);
-	void calculate_outputm529(int);
-	void calculate_outputm530(int);
-	void calculate_outputm531(int);
-	void calculate_outputm532(int);
-	void calculate_outputm533(int);
-	void calculate_outputm534(int);
-	void calculate_outputm535(int);
-	void calculate_outputm536(int);
-	void calculate_outputm537(int);
-	void calculate_outputm538(int);
-	void calculate_outputm539(int);
-	void calculate_outputm540(int);
-	void calculate_outputm541(int);
-	void calculate_outputm542(int);
-	void calculate_outputm543(int);
-	void calculate_outputm544(int);
-	void calculate_outputm545(int);
-	void calculate_outputm546(int);
-	void calculate_outputm547(int);
-	void calculate_outputm548(int);
-	void calculate_outputm549(int);
-	void calculate_outputm550(int);
-	void calculate_outputm551(int);
-	void calculate_outputm552(int);
-	void calculate_outputm553(int);
-	void calculate_outputm554(int);
-	void calculate_outputm555(int);
-	void calculate_outputm556(int);
-	void calculate_outputm557(int);
-	void calculate_outputm558(int);
-	void calculate_outputm559(int);
-	void calculate_outputm560(int);
-	void calculate_outputm561(int);
-	void calculate_outputm562(int);
-	void calculate_outputm563(int);
-	void calculate_outputm564(int);
-	void calculate_outputm565(int);
-	void calculate_outputm566(int);
-	void calculate_outputm567(int);
-	void calculate_outputm568(int);
-	void calculate_outputm569(int);
-	void calculate_outputm570(int);
-	void calculate_outputm571(int);
-	void calculate_outputm572(int);
-	void calculate_outputm573(int);
-	void calculate_outputm574(int);
-	void calculate_outputm575(int);
-	void calculate_outputm576(int);
-	void calculate_outputm577(int);
-	void calculate_outputm578(int);
-	void calculate_outputm579(int);
-	void calculate_outputm580(int);
-	void calculate_outputm581(int);
-	void calculate_outputm582(int);
-	void calculate_outputm583(int);
-	void calculate_outputm584(int);
-	void calculate_outputm585(int);
-	void calculate_outputm586(int);
-	void calculate_outputm587(int);
-	void calculate_outputm588(int);
-	void calculate_outputm589(int);
-	void calculate_outputm590(int);
-	void calculate_outputm591(int);
-	void calculate_outputm592(int);
-	void calculate_outputm593(int);
+void reach_error_0(){assert(0);}
+void reach_error_1(){assert(0);}
+void reach_error_2(){assert(0);}
+void reach_error_3(){assert(0);}
+void reach_error_4(){assert(0);}
+void reach_error_5(){assert(0);}
+void reach_error_6(){assert(0);}
+void reach_error_7(){assert(0);}
+void reach_error_8(){assert(0);}
+void reach_error_9(){assert(0);}
+void reach_error_10(){assert(0);}
+void reach_error_11(){assert(0);}
+void reach_error_12(){assert(0);}
+void reach_error_13(){assert(0);}
+void reach_error_14(){assert(0);}
+void reach_error_15(){assert(0);}
+void reach_error_16(){assert(0);}
+void reach_error_17(){assert(0);}
+void reach_error_18(){assert(0);}
+void reach_error_19(){assert(0);}
+void reach_error_20(){assert(0);}
+void reach_error_21(){assert(0);}
+void reach_error_22(){assert(0);}
+void reach_error_23(){assert(0);}
+void reach_error_24(){assert(0);}
+void reach_error_25(){assert(0);}
+void reach_error_26(){assert(0);}
+void reach_error_27(){assert(0);}
+void reach_error_28(){assert(0);}
+void reach_error_29(){assert(0);}
+void reach_error_30(){assert(0);}
+void reach_error_31(){assert(0);}
+void reach_error_32(){assert(0);}
+void reach_error_33(){assert(0);}
+void reach_error_34(){assert(0);}
+void reach_error_35(){assert(0);}
+void reach_error_36(){assert(0);}
+void reach_error_37(){assert(0);}
+void reach_error_38(){assert(0);}
+void reach_error_39(){assert(0);}
+void reach_error_40(){assert(0);}
+void reach_error_41(){assert(0);}
+void reach_error_42(){assert(0);}
+void reach_error_43(){assert(0);}
+void reach_error_44(){assert(0);}
+void reach_error_45(){assert(0);}
+void reach_error_46(){assert(0);}
+void reach_error_47(){assert(0);}
+void reach_error_48(){assert(0);}
+void reach_error_49(){assert(0);}
+void reach_error_50(){assert(0);}
+void reach_error_51(){assert(0);}
+void reach_error_52(){assert(0);}
+void reach_error_53(){assert(0);}
+void reach_error_54(){assert(0);}
+void reach_error_55(){assert(0);}
+void reach_error_56(){assert(0);}
+void reach_error_57(){assert(0);}
+void reach_error_58(){assert(0);}
+void reach_error_59(){assert(0);}
+void reach_error_60(){assert(0);}
+void reach_error_61(){assert(0);}
+void reach_error_62(){assert(0);}
+void reach_error_63(){assert(0);}
+void reach_error_64(){assert(0);}
+void reach_error_65(){assert(0);}
+void reach_error_66(){assert(0);}
+void reach_error_67(){assert(0);}
+void reach_error_68(){assert(0);}
+void reach_error_69(){assert(0);}
+void reach_error_70(){assert(0);}
+void reach_error_71(){assert(0);}
+void reach_error_72(){assert(0);}
+void reach_error_73(){assert(0);}
+void reach_error_74(){assert(0);}
+void reach_error_75(){assert(0);}
+void reach_error_76(){assert(0);}
+void reach_error_77(){assert(0);}
+void reach_error_78(){assert(0);}
+void reach_error_79(){assert(0);}
+void reach_error_80(){assert(0);}
+void reach_error_81(){assert(0);}
+void reach_error_82(){assert(0);}
+void reach_error_83(){assert(0);}
+void reach_error_84(){assert(0);}
+void reach_error_85(){assert(0);}
+void reach_error_86(){assert(0);}
+void reach_error_87(){assert(0);}
+void reach_error_88(){assert(0);}
+void reach_error_89(){assert(0);}
+void reach_error_90(){assert(0);}
+void reach_error_91(){assert(0);}
+void reach_error_92(){assert(0);}
+void reach_error_93(){assert(0);}
+void reach_error_94(){assert(0);}
+void reach_error_95(){assert(0);}
+void reach_error_96(){assert(0);}
+void reach_error_97(){assert(0);}
+void reach_error_98(){assert(0);}
+void reach_error_99(){assert(0);}
 
 	 int a1473103703  = 35;
 	 int a801116378 = 9;
@@ -114312,39 +113712,12 @@ void reach_error_99(){__counterSharp_assert(0);}
     errorCheck();
 }
 
-int testfun(char input1, char input2, char input3, char input4, char input5, char input6, char input7, char input8, char input9, char input10, char input11, char input12, char input13, char input14, char input15, char input16)
+void main()
 {
-    __counterSharp_assume((input1 == 6)||(input1 == 7)||(input1 == 8)||(input1 == 9)||(input1 == 10)||(input1 == 5) || (input1 == 1) || (input1 == 3) || (input1 == 2) || (input1 == 4));
-	__counterSharp_assume((input2 == 6)||(input2 == 7)||(input2 == 8)||(input2 == 9)||(input2 == 10)||(input2 == 5) || (input2 == 1) || (input2 == 3) || (input2 == 2) || (input2 == 4));
-	__counterSharp_assume((input3 == 6)||(input3 == 7)||(input3 == 8)||(input3 == 9)||(input3 == 10)||(input3 == 5) || (input3 == 1) || (input3 == 3) || (input3 == 2) || (input3 == 4));
-	__counterSharp_assume((input4 == 6)||(input4 == 7)||(input4 == 8)||(input4 == 9)||(input4 == 10)||(input4 == 5) || (input4 == 1) || (input4 == 3) || (input4 == 2) || (input4 == 4));
-	__counterSharp_assume((input5 == 6)||(input5 == 7)||(input5 == 8)||(input5 == 9)||(input5 == 10)||(input5 == 5) || (input5 == 1) || (input5 == 3) || (input5 == 2) || (input5 == 4));
-	__counterSharp_assume((input6 == 6)||(input6 == 7)||(input6 == 8)||(input6 == 9)||(input6 == 10)||(input6 == 5) || (input6 == 1) || (input6 == 3) || (input6 == 2) || (input6 == 4));
-	__counterSharp_assume((input7 == 6)||(input7 == 7)||(input7 == 8)||(input7 == 9)||(input7 == 10)||(input7 == 5) || (input7 == 1) || (input7 == 3) || (input7 == 2) || (input7 == 4));
-	__counterSharp_assume((input8 == 6)||(input8 == 7)||(input8 == 8)||(input8 == 9)||(input8 == 10)||(input8 == 5) || (input8 == 1) || (input8 == 3) || (input8 == 2) || (input8 == 4));
-	__counterSharp_assume((input9 == 6)||(input9 == 7)||(input9 == 8)||(input9 == 9)||(input9 == 10)||(input9 == 5) || (input9 == 1) || (input9 == 3) || (input9 == 2) || (input9 == 4));
-	__counterSharp_assume((input10 == 6)||(input10 == 7)||(input10 == 8)||(input10 == 9)||(input10 == 10)||(input10 == 5) || (input10 == 1) || (input10 == 3) || (input10 == 2) || (input10 == 4));
-	__counterSharp_assume((input11 == 6)||(input11 == 7)||(input11 == 8)||(input11 == 9)||(input11 == 10)||(input11 == 5) || (input11 == 1) || (input11 == 3) || (input11 == 2) || (input11 == 4));
-	__counterSharp_assume((input12 == 6)||(input12 == 7)||(input12 == 8)||(input12 == 9)||(input12 == 10)||(input12 == 5) || (input12 == 1) || (input12 == 3) || (input12 == 2) || (input12 == 4));
-	__counterSharp_assume((input13 == 6)||(input13 == 7)||(input13 == 8)||(input13 == 9)||(input13 == 10)||(input13 == 5) || (input13 == 1) || (input13 == 3) || (input13 == 2) || (input13 == 4));
-	__counterSharp_assume((input14 == 6)||(input14 == 7)||(input14 == 8)||(input14 == 9)||(input14 == 10)||(input14 == 5) || (input14 == 1) || (input14 == 3) || (input14 == 2) || (input14 == 4));
-	__counterSharp_assume((input15 == 6)||(input15 == 7)||(input15 == 8)||(input15 == 9)||(input15 == 10)||(input15 == 5) || (input15 == 1) || (input15 == 3) || (input15 == 2) || (input15 == 4));
-	__counterSharp_assume((input16 == 6)||(input16 == 7)||(input16 == 8)||(input16 == 9)||(input16 == 10)||(input16 == 5) || (input16 == 1) || (input16 == 3) || (input16 == 2) || (input16 == 4));
+	int input1 = [1,9],input2 = [1,9],input3 = [1,9],input4 = [1,9]; input:
 	
 	calculate_output(input1);
 	calculate_output(input2);
 	calculate_output(input3);
 	calculate_output(input4);
-	calculate_output(input5);
-	calculate_output(input6);
-	calculate_output(input7);
-	calculate_output(input8);
-	calculate_output(input9);
-	calculate_output(input10);
-	calculate_output(input11);
-	calculate_output(input12);
-	calculate_output(input13);
-	calculate_output(input14);
-	calculate_output(input15);
-	calculate_output(input16);
 }
