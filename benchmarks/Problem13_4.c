@@ -114312,7 +114312,7 @@ void reach_error_99(){__counterSharp_assert(0);}
     errorCheck();
 }
 
-int testfun(char input1, char input2, char input3, char input4, char input5, char input6, char input7, char input8, char input9, char input10, char input11, char input12, char input13, char input14, char input15, char input16)
+int testfun(char input1, char input2, char input3, char input4)
 {
     __counterSharp_assume((input1 == 6)||(input1 == 7)||(input1 == 8)||(input1 == 9)||(input1 == 10)||(input1 == 5) || (input1 == 1) || (input1 == 3) || (input1 == 2) || (input1 == 4));
 	__counterSharp_assume((input2 == 6)||(input2 == 7)||(input2 == 8)||(input2 == 9)||(input2 == 10)||(input2 == 5) || (input2 == 1) || (input2 == 3) || (input2 == 2) || (input2 == 4));
