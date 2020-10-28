@@ -1,4 +1,3 @@
-bliblablub.txt,
 usqrt-broken.c,--function usqrt --unwind 33
 usqrt.c,--function usqrt --unwind 33
 rangesum05.c,--function testfun --unwind 6
