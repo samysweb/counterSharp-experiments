@@ -17,7 +17,7 @@ bwd_loop7-2.c, --function testfun --unwind 101
 bwd_loop10.c, --function testfun --unwind 32768
 bwd_loop10-2.c, --function testfun --unwind 32768
 count_up_down_true-unreach-call_true-termination.c,  --function testfun --unwind 5
-count_up_down_true-unreach-call_true-termination.c,  --function testfun --unwind 500
+count_up_down_true-unreach-call_true-termination-2.c,  --function testfun --unwind 500
 example1a.c,  --function testfun --unwind 102
 example1a-2.c,  --function testfun --unwind 102
 example7a.c,  --function testfun --unwind 11
