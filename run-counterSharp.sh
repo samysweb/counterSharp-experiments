@@ -3,9 +3,13 @@ CUR_DIR=`pwd`
 exec_bench(){
 	if [ `hostname` = "hal9000" ]; then
 		HOMEPATH=/home/steuber
+		TMPDIR=/tmp/experiment
 	else
 		HOMEPATH=/home/i12/steuber
+		TMPDIR=/tmp/steuber/experiment
 	fi
+
+	mkdir -p $TMPDIR
 
 	cd $CUR_DIR
 
@@ -18,6 +22,7 @@ exec_bench(){
 	resultDirOverall=`pwd`/results/$1
 	mkdir -p $resultDirOverall
 
+	
 
 		
 	# Sample for second argument: --function=testfun --unwind 1
@@ -30,6 +35,10 @@ exec_bench(){
 		fi
 
 		mkdir -p $resultDir
+
+		rm -rf $TMPDIR/*
+		outputDir=$resultDir
+		resultDir=$TMPDIR
 		
 		{
 		echo "******* Machine details *******"
@@ -60,7 +69,9 @@ exec_bench(){
 		eval chrt -b 0 runlim -r 600 -s 2048 python -m counterSharp --amm $resultDir/amm.dimacs --amh $resultDir/amh.dimacs --asm $resultDir/asm.dimacs --ash $resultDir/ash.dimacs --con $resultDir/con.dimacs -d $2 $inputFile
 		} > $resultDir/stdout.log 2> $resultDir/stderr.log
 
-		chmod -R a+rw $resultDir
+		cp $resultDir/* $outputDir
+
+		chmod -R a+rw $outputDir
 	done
 }
 
