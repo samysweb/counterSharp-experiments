@@ -5,6 +5,7 @@ This repository contains the experiments of the [counterSharp Tool](https://gith
 - **Log summarization** is possible through the python script in `logParsing/parse.py`
 - **Running benchmarks**:
 	- Run counterSharp on the benchmarks: `./run-counterSharp.sh instances.csv`
+		- Requires counterSharp to be installed properly (see requirements in README there)
 	- Run ApproxMC on benchmarks: `docker-compose run benchmarking run-approxmc.sh instances.csv`
 		- Only after counterSharp has been run
 	- Run GANAK on benchmarks: `docker-compose run benchmarking run-ganak.sh instances.csv`
