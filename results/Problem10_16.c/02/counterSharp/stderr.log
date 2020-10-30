@@ -1,0 +1,105 @@
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	900 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		python
+[runlim] argv[1]:		-m
+[runlim] argv[2]:		counterSharp
+[runlim] argv[3]:		--amm
+[runlim] argv[4]:		/tmp/steuber/experiment/amm.dimacs
+[runlim] argv[5]:		--amh
+[runlim] argv[6]:		/tmp/steuber/experiment/amh.dimacs
+[runlim] argv[7]:		--asm
+[runlim] argv[8]:		/tmp/steuber/experiment/asm.dimacs
+[runlim] argv[9]:		--ash
+[runlim] argv[10]:		/tmp/steuber/experiment/ash.dimacs
+[runlim] argv[11]:		--con
+[runlim] argv[12]:		/tmp/steuber/experiment/con.dimacs
+[runlim] argv[13]:		-d
+[runlim] argv[14]:		--function
+[runlim] argv[15]:		testfun
+[runlim] argv[16]:		--unwind
+[runlim] argv[17]:		1
+[runlim] argv[18]:		/home/i12/steuber/counting/counterSharp-experiments/benchmarks/Problem10_16.c
+[runlim] start:			Thu Oct 29 11:10:04 2020
+[runlim] main pid:		26046
+[counterSharp.util.Config] DEBUG: Input files: ['/home/i12/steuber/counting/counterSharp-experiments/benchmarks/Problem10_16.c']
+[counterSharp.source.SourceManager] DEBUG: /tmp/steuber/experiment/tmpr0zfful0.c
+[counterSharp.cbmc.CBMCManager] DEBUG: cbmc --verbosity 4 --function testfun --dimacs --slice-formula --unwind 1 --no-assertions --no-assumptions --unwinding-assertions /tmp/steuber/experiment/tmpr0zfful0.c
+[runlim] sample:		9.2 time, 10.9 real, 75.4 MB
+[runlim] sample:		19.2 time, 20.9 real, 90.6 MB
+[runlim] sample:		29.2 time, 30.9 real, 100.2 MB
+[runlim] sample:		39.2 time, 40.9 real, 106.6 MB
+[runlim] sample:		49.2 time, 50.9 real, 114.6 MB
+[runlim] sample:		59.2 time, 60.9 real, 119.5 MB
+[runlim] sample:		8.4 time, 70.9 real, 75.4 MB
+[runlim] sample:		18.4 time, 80.9 real, 90.6 MB
+[runlim] sample:		28.4 time, 90.9 real, 100.1 MB
+[runlim] sample:		38.4 time, 100.9 real, 105.0 MB
+[runlim] sample:		48.4 time, 110.9 real, 114.6 MB
+[runlim] sample:		58.4 time, 120.9 real, 119.5 MB
+[counterSharp.cbmc.CBMCManager] INFO: Did not write file /tmp/steuber/experiment/con.dimacs: State not reachable
+[counterSharp.cbmc.CBMCManager] DEBUG: cbmc --verbosity 4 --function testfun --dimacs --slice-formula --unwind 1 --property testfun.assertion.1 /tmp/steuber/experiment/tmpr0zfful0.c
+[runlim] sample:		7.5 time, 130.9 real, 71.9 MB
+[runlim] sample:		17.5 time, 140.9 real, 88.9 MB
+[runlim] sample:		27.5 time, 150.9 real, 100.2 MB
+[runlim] sample:		37.5 time, 160.9 real, 105.1 MB
+[runlim] sample:		47.5 time, 170.9 real, 114.1 MB
+[runlim] sample:		57.5 time, 180.9 real, 119.6 MB
+[runlim] sample:		1.6 time, 190.9 real, 81.5 MB
+[runlim] sample:		11.6 time, 200.9 real, 105.5 MB
+[runlim] sample:		21.6 time, 210.9 real, 116.8 MB
+[runlim] sample:		31.6 time, 220.9 real, 125.3 MB
+[runlim] sample:		41.6 time, 230.9 real, 134.9 MB
+[runlim] sample:		51.6 time, 240.9 real, 139.8 MB
+[runlim] sample:		61.6 time, 250.9 real, 144.9 MB
+[counterSharp.cbmc.CBMCManager] DEBUG: cbmc --verbosity 4 --function testfun --dimacs --slice-formula --unwind 1 --property testfun.assertion.2 /tmp/steuber/experiment/tmpr0zfful0.c
+[runlim] sample:		5.4 time, 260.9 real, 120.7 MB
+[runlim] sample:		15.3 time, 270.9 real, 139.8 MB
+[runlim] sample:		25.3 time, 280.9 real, 149.8 MB
+[runlim] sample:		35.4 time, 290.9 real, 159.7 MB
+[runlim] sample:		45.3 time, 300.9 real, 164.4 MB
+[runlim] sample:		55.3 time, 310.9 real, 169.3 MB
+[runlim] sample:		65.3 time, 320.9 real, 179.3 MB
+[runlim] sample:		9.3 time, 330.9 real, 147.5 MB
+[runlim] sample:		19.4 time, 340.9 real, 162.8 MB
+[runlim] sample:		29.3 time, 350.9 real, 172.3 MB
+[runlim] sample:		39.3 time, 360.9 real, 182.1 MB
+[runlim] sample:		49.3 time, 370.9 real, 186.7 MB
+[runlim] sample:		59.3 time, 380.9 real, 196.6 MB
+[counterSharp.cbmc.CBMCManager] DEBUG: cbmc --verbosity 4 --function testfun --dimacs --slice-formula --unwind 1 --property testfun.assertion.3 /tmp/steuber/experiment/tmpr0zfful0.c
+[runlim] sample:		9.7 time, 390.9 real, 150.6 MB
+[runlim] sample:		19.7 time, 400.9 real, 166.8 MB
+[runlim] sample:		29.7 time, 410.9 real, 176.6 MB
+[runlim] sample:		39.7 time, 420.9 real, 181.5 MB
+[runlim] sample:		49.7 time, 430.9 real, 191.0 MB
+[runlim] sample:		59.7 time, 440.9 real, 195.9 MB
+[runlim] sample:		4.1 time, 450.9 real, 147.2 MB
+[runlim] sample:		14.1 time, 460.9 real, 169.4 MB
+[runlim] sample:		24.1 time, 470.9 real, 184.1 MB
+[runlim] sample:		34.1 time, 480.9 real, 191.0 MB
+[runlim] sample:		44.1 time, 490.9 real, 198.8 MB
+[runlim] sample:		54.1 time, 500.9 real, 203.7 MB
+[runlim] sample:		64.1 time, 510.9 real, 208.8 MB
+[counterSharp.cbmc.CBMCManager] DEBUG: cbmc --verbosity 4 --function testfun --dimacs --slice-formula --unwind 1 --property testfun.assertion.4 /tmp/steuber/experiment/tmpr0zfful0.c
+[runlim] sample:		8.0 time, 520.9 real, 142.2 MB
+[runlim] sample:		18.0 time, 530.9 real, 161.2 MB
+[runlim] sample:		28.0 time, 540.9 real, 171.3 MB
+[runlim] sample:		38.0 time, 550.9 real, 181.1 MB
+[runlim] sample:		48.0 time, 560.9 real, 185.7 MB
+[runlim] sample:		58.0 time, 570.9 real, 192.7 MB
+[runlim] sample:		68.0 time, 580.9 real, 204.3 MB
+[runlim] sample:		12.2 time, 590.9 real, 163.9 MB
+[runlim] sample:		22.2 time, 600.9 real, 179.1 MB
+[runlim] sample:		32.2 time, 610.9 real, 188.6 MB
+[runlim] sample:		42.2 time, 620.9 real, 195.6 MB
+[runlim] sample:		52.2 time, 630.9 real, 203.1 MB
+[runlim] sample:		62.2 time, 640.9 real, 208.0 MB
+[runlim] end:			Thu Oct 29 11:20:53 2020
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		6436
+[runlim] real:			649.31 seconds
+[runlim] time:			69.62 seconds
+[runlim] space:			251.3 MB
+[runlim] samples:		6483

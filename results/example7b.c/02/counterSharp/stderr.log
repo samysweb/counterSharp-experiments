@@ -1,0 +1,40 @@
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	900 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		python
+[runlim] argv[1]:		-m
+[runlim] argv[2]:		counterSharp
+[runlim] argv[3]:		--amm
+[runlim] argv[4]:		/tmp/steuber/experiment/amm.dimacs
+[runlim] argv[5]:		--amh
+[runlim] argv[6]:		/tmp/steuber/experiment/amh.dimacs
+[runlim] argv[7]:		--asm
+[runlim] argv[8]:		/tmp/steuber/experiment/asm.dimacs
+[runlim] argv[9]:		--ash
+[runlim] argv[10]:		/tmp/steuber/experiment/ash.dimacs
+[runlim] argv[11]:		--con
+[runlim] argv[12]:		/tmp/steuber/experiment/con.dimacs
+[runlim] argv[13]:		-d
+[runlim] argv[14]:		--function
+[runlim] argv[15]:		testfun
+[runlim] argv[16]:		--unwind
+[runlim] argv[17]:		11
+[runlim] argv[18]:		/home/i12/steuber/counting/counterSharp-experiments/benchmarks/example7b.c
+[runlim] start:			Thu Oct 29 15:01:58 2020
+[runlim] main pid:		9660
+[counterSharp.util.Config] DEBUG: Input files: ['/home/i12/steuber/counting/counterSharp-experiments/benchmarks/example7b.c']
+[counterSharp.source.SourceManager] DEBUG: /tmp/steuber/experiment/tmpnionn0gi.c
+[counterSharp.cbmc.CBMCManager] DEBUG: cbmc --verbosity 4 --function testfun --dimacs --slice-formula --unwind 11 --no-assertions --no-assumptions --unwinding-assertions /tmp/steuber/experiment/tmpnionn0gi.c
+[counterSharp.cbmc.CBMCManager] DEBUG: cbmc --verbosity 4 --function testfun --dimacs --slice-formula --unwind 11 --property testfun.assertion.1 /tmp/steuber/experiment/tmpnionn0gi.c
+[counterSharp.cbmc.CBMCManager] DEBUG: cbmc --verbosity 4 --function testfun --dimacs --slice-formula --unwind 11 --property testfun.assertion.2 /tmp/steuber/experiment/tmpnionn0gi.c
+[counterSharp.cbmc.CBMCManager] DEBUG: cbmc --verbosity 4 --function testfun --dimacs --slice-formula --unwind 11 --property testfun.assertion.3 /tmp/steuber/experiment/tmpnionn0gi.c
+[counterSharp.cbmc.CBMCManager] DEBUG: cbmc --verbosity 4 --function testfun --dimacs --slice-formula --unwind 11 --property testfun.assertion.4 /tmp/steuber/experiment/tmpnionn0gi.c
+[runlim] end:			Thu Oct 29 15:01:59 2020
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		3
+[runlim] real:			1.26 seconds
+[runlim] time:			0.15 seconds
+[runlim] space:			30.0 MB
+[runlim] samples:		4
