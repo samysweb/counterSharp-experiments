@@ -36,12 +36,10 @@ RUN cd /probab_analyzer && chmod u+x compile.sh && ./compile.sh
 COPY dimovski-fix/compile.sh compile.sh
 RUN pwd
 RUN chmod u+x compile.sh
-# && ./compile.sh
-#RUN mv Main.native Probab.native && chmod u+x Probab.native && cd ..
 
 #RUN rm -rf /var/lib/apt/lists/*
 
-# RUN curl http://fmv.jku.at/runlim/runlim-1.10.tar.gz > runlim.tar.gz && mkdir runlim && tar -xzvf runlim.tar.gz -C runlim && cd runlim/runlim-1.10 && ./configure.sh && make && cd ../../
+RUN curl http://fmv.jku.at/runlim/runlim-1.10.tar.gz > runlim.tar.gz && mkdir runlim && tar -xzvf runlim.tar.gz -C runlim && cd runlim/runlim-1.10 && ./configure.sh && make && cd ../../
 
 
 ENV PATH="${PATH}:/ADDMC:/ganak/bin:/runlim/runlim-1.10:/latte/bin:/probab_analyzer:/experiments"
