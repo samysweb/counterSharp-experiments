@@ -23,16 +23,28 @@ RUN apt-get install -y autoconf tar unzip
 RUN git clone https://github.com/vardigroup/ADDMC.git && cd ADDMC && git checkout mc-2020 && ./INSTALL.sh && export PATH=$PATH:`pwd` && cd ../
 
 # # Probab Analyzer
-RUN apt-get install -y curl ocaml-interp ocaml-findlib menhir opam
-# RUN opam install ounit && opam install apron && opam install bddapron && opam install zarith
-# RUN curl https://www.math.ucdavis.edu/~latte/software/packages/binary/latte-integrale-1.6-x86_64-unknown-linux-gnu.zip > latte.zip & mkdir latte && unzip latte.zip -d latte
+RUN apt-get install -y curl ocaml-interp ocaml-findlib menhir opam libapron-ocaml
+RUN opam init --disable-sandboxing && eval $(opam env) && opam install -y ounit && opam install -y apron && opam install -y bddapron && opam install -y zarith
+RUN curl -k https://www.math.ucdavis.edu/\~latte/software/packages/binary/latte-integrale-1.6-x86_64-unknown-linux-gnu.zip > latte.zip
+RUN mkdir latte && unzip latte.zip -d latte
+RUN git clone https://github.com/aleksdimovski/probab_analyzer.git && cd probab_analyzer && git checkout 0997eb4
+# Repair tool
+RUN rm -f /probab_analyzer/banal/banal_rat.ml && rm -f /probab_analyzer/Main.native
+COPY dimovski-fix/banal_rat.ml /probab_analyzer/banal/banal_rat.ml
+COPY dimovski-fix/compile.sh /probab_analyzer/compile.sh
+RUN cd /probab_analyzer && chmod u+x compile.sh && ./compile.sh
+COPY dimovski-fix/compile.sh compile.sh
+RUN pwd
+RUN chmod u+x compile.sh
+# && ./compile.sh
+#RUN mv Main.native Probab.native && chmod u+x Probab.native && cd ..
 
-RUN rm -rf /var/lib/apt/lists/*
+#RUN rm -rf /var/lib/apt/lists/*
 
-RUN curl http://fmv.jku.at/runlim/runlim-1.10.tar.gz > runlim.tar.gz && mkdir runlim && tar -xzvf runlim.tar.gz -C runlim && cd runlim/runlim-1.10 && ./configure.sh && make && cd ../../
+# RUN curl http://fmv.jku.at/runlim/runlim-1.10.tar.gz > runlim.tar.gz && mkdir runlim && tar -xzvf runlim.tar.gz -C runlim && cd runlim/runlim-1.10 && ./configure.sh && make && cd ../../
 
 
-ENV PATH="${PATH}:/ADDMC:/ganak/bin:/runlim/runlim-1.10:/experiments"
+ENV PATH="${PATH}:/ADDMC:/ganak/bin:/runlim/runlim-1.10:/latte/bin:/probab_analyzer:/experiments"
 
 RUN mkdir /experiments
 WORKDIR /experiments
