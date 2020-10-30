@@ -1,0 +1,110 @@
+******* Machine details *******
+$ hostname
+i57pool5
+$ lscpu
+Architektur:                   x86_64
+CPU Operationsmodus:           32-bit, 64-bit
+Byte-Reihenfolge:              Little Endian
+Address sizes:                 39 bits physical, 48 bits virtual
+CPU(s):                        4
+Liste der Online-CPU(s):       0-3
+Thread(s) pro Kern:            1
+Kern(e) pro Socket:            4
+Sockel:                        1
+NUMA-Knoten:                   1
+Anbieterkennung:               GenuineIntel
+Prozessorfamilie:              6
+Modell:                        94
+Modellname:                    Intel(R) Core(TM) i5-6500 CPU @ 3.20GHz
+Stepping:                      3
+CPU MHz:                       3200.000
+Maximale Taktfrequenz der CPU: 3600,0000
+Minimale Taktfrequenz der CPU: 800,0000
+BogoMIPS:                      6384.00
+Virtualisierung:               VT-x
+L1d Cache:                     32K
+L1i Cache:                     32K
+L2 Cache:                      256K
+L3 Cache:                      6144K
+NUMA-Knoten0 CPU(s):           0-3
+Markierungen:                  fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb invpcid_single pti ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm mpx rdseed adx smap clflushopt intel_pt xsaveopt xsavec xgetbv1 xsaves dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp md_clear flush_l1d
+$ cat /proc/meminfo
+MemTotal:       15982188 kB
+MemFree:        10366080 kB
+MemAvailable:   15068396 kB
+Buffers:            6080 kB
+Cached:          5068900 kB
+SwapCached:        12024 kB
+Active:          2968040 kB
+Inactive:        2211064 kB
+Active(anon):     210720 kB
+Inactive(anon):    41444 kB
+Active(file):    2757320 kB
+Inactive(file):  2169620 kB
+Unevictable:           0 kB
+Mlocked:               0 kB
+SwapTotal:       4194300 kB
+SwapFree:        3641088 kB
+Dirty:               108 kB
+Writeback:             0 kB
+AnonPages:         94988 kB
+Mapped:           105800 kB
+Shmem:            148040 kB
+Slab:             323072 kB
+SReclaimable:     220040 kB
+SUnreclaim:       103032 kB
+KernelStack:        5972 kB
+PageTables:        22900 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:    12185392 kB
+Committed_AS:    2063744 kB
+VmallocTotal:   34359738367 kB
+VmallocUsed:           0 kB
+VmallocChunk:          0 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:     43008 kB
+ShmemHugePages:        0 kB
+ShmemPmdMapped:        0 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+DirectMap4k:     2503872 kB
+DirectMap2M:    14098432 kB
+DirectMap1G:           0 kB
+$ cat /proc/version
+Linux version 4.12.14-lp151.28.67-default (geeko@buildhost) (gcc version 7.5.0 (SUSE Linux) ) #1 SMP Fri Sep 4 15:23:21 UTC 2020 (2c5a14f)
+$ lsblk
+NAME             MAJ:MIN RM   SIZE RO TYPE MOUNTPOINT
+sda                8:0    0 119,2G  0 disk 
+└─sda1             8:1    0 119,2G  0 part 
+  ├─system-boot2 254:0    0     1G  0 lvm  /boot/.snapshots
+  ├─system-root2 254:1    0    50G  0 lvm  /var/opt
+  ├─system-swap2 254:2    0     4G  0 lvm  [SWAP]
+  └─system-home2 254:3    0     1G  0 lvm  /home/.snapshots
+sr0               11:0    1  1024M  0 rom  
+******* Experiment Repository *******
+commit d78485c778ee84ce40e0b5a1c6d3f327ade0ef22
+Author: Samuel Teuber <samuel@samweb.org>
+
+    Fixed bug in subprocess handling: Must use communicate first as pipe is otherwise filled and blocks process progress
+
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Auf Branch master
+Ihr Branch ist auf demselben Stand wie 'origin/master'.
+
+nichts zu committen, Arbeitsverzeichnis unverändert
+******* CounterSharp Repository *******
+commit d78485c778ee84ce40e0b5a1c6d3f327ade0ef22
+Author: Samuel Teuber <samuel@samweb.org>
+
+    Fixed bug in subprocess handling: Must use communicate first as pipe is otherwise filled and blocks process progress
+
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Auf Branch master
+Ihr Branch ist auf demselben Stand wie 'origin/master'.
+
+nichts zu committen, Arbeitsverzeichnis unverändert
