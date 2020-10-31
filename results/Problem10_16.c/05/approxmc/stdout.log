@@ -1,0 +1,503 @@
+** CON **
+c ApproxMC SHA revision df6d9fc8d112d758301d7527817e2eb1029fa5eb
+c ApproxMC version 4.0.1
+c ApproxMC compilation env CMAKE_CXX_COMPILER = /usr/bin/c++ | CMAKE_CXX_FLAGS =  -Wall -Wextra -Wunused -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -g -fvisibility=hidden -Wlogical-op -Wrestrict -Wnull-dereference -Wdouble-promotion -Wshadow -Wformat=2 -Wextra-semi -pedantic | COMPILE_DEFINES =  -DBOOST_TEST_DYN_LINK | STATICCOMPILE = OFF | Boost_FOUND = TRUE | ZLIB_FOUND = TRUE | VALGRIND_FOUND =  | GMP_FOUND = TRUE | ENABLE_ASSERTIONS = ON | MY_TARGETS =  | compilation date time = Oct 29 2020 17:34:59
+c ApproxMC compiled with gcc version 9.3.0
+c CryptoMiniSat version 5.8.0
+c CMS Copyright Mate Soos (soos.mate@gmail.com)
+c CMS SHA revision 6477e8bc43b0fda7038965bb148b64b8637c804b
+c CMS is GPL licensed due to M4RI being linked. Build without M4RI to get MIT version
+c Using VMTF code by Armin Biere from CaDiCaL
+c Using Yalsat by Armin Biere, see Balint et al. Improving implementation of SLS solvers [...], SAT'14
+c Using WalkSAT by Henry Kautz, see Kautz and Selman Pushing the envelope: planning, propositional logic, and stochastic search, AAAI'96,
+c Using code from 'When Boolean Satisfiability Meets Gauss-E. in a Simplex Way'
+c       by C.-S. Han and J.-H. Roland Jiang in CAV 2012. Fixes by M. Soos
+c Using CCAnr from 'CCAnr: A Conf. Checking Based Local Search Solver [...]'
+c       by Shaowei Cai, Chuan Luo, and Kaile Su, SAT 2015
+c CMS compilation env CMAKE_CXX_COMPILER = /usr/bin/c++ | CMAKE_CXX_FLAGS =  -fvisibility=hidden -Wall -Wextra -Wunused -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -g -Wno-class-memaccess -mpopcnt -msse4.2 -ggdb3 -Wlogical-op -Wrestrict -Wnull-dereference -Wdouble-promotion -Wshadow -Wformat=2 -Wextra-semi -pedantic | COMPILE_DEFINES =  -DEXTENDED_FEATURES -DUSE_GAUSS -DBOOST_TEST_DYN_LINK -DUSE_ZLIB -DYALSAT_FPU -DUSE_M4RI | STATICCOMPILE = OFF | ONLY_SIMPLE = OFF | Boost_FOUND = TRUE | STATS = OFF | SQLITE3_FOUND = FALSE | ZLIB_FOUND = TRUE | VALGRIND_FOUND =  | ENABLE_TESTING = OFF | M4RI_FOUND = TRUE | NOM4RI = OFF | SLOW_DEBUG = OFF | ENABLE_ASSERTIONS = ON | PYTHON_EXECUTABLE = PYTHON_EXECUTABLE-NOTFOUND | PYTHON_LIBRARY = PYTHON_LIBRARY-NOTFOUND | PYTHON_INCLUDE_DIRS =  | MY_TARGETS =  | LARGEMEM = OFF | LIMITMEM = OFF | BREAKID_LIBRARIES =  | BREAKID-VER = . | BOSPHORUS_LIBRARIES =  | BOSPH-VER = . | compilation date time = Oct 29 2020 17:34:11
+c CMS compiled with gcc version 9.3.0
+c executed with command line: approxmc --sparse 1 -s 05 /experiments/results/Problem10_16.c/05/counterSharp/con.dimacs
+** AMM **
+c ApproxMC SHA revision df6d9fc8d112d758301d7527817e2eb1029fa5eb
+c ApproxMC version 4.0.1
+c ApproxMC compilation env CMAKE_CXX_COMPILER = /usr/bin/c++ | CMAKE_CXX_FLAGS =  -Wall -Wextra -Wunused -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -g -fvisibility=hidden -Wlogical-op -Wrestrict -Wnull-dereference -Wdouble-promotion -Wshadow -Wformat=2 -Wextra-semi -pedantic | COMPILE_DEFINES =  -DBOOST_TEST_DYN_LINK | STATICCOMPILE = OFF | Boost_FOUND = TRUE | ZLIB_FOUND = TRUE | VALGRIND_FOUND =  | GMP_FOUND = TRUE | ENABLE_ASSERTIONS = ON | MY_TARGETS =  | compilation date time = Oct 29 2020 17:34:59
+c ApproxMC compiled with gcc version 9.3.0
+c CryptoMiniSat version 5.8.0
+c CMS Copyright Mate Soos (soos.mate@gmail.com)
+c CMS SHA revision 6477e8bc43b0fda7038965bb148b64b8637c804b
+c CMS is GPL licensed due to M4RI being linked. Build without M4RI to get MIT version
+c Using VMTF code by Armin Biere from CaDiCaL
+c Using Yalsat by Armin Biere, see Balint et al. Improving implementation of SLS solvers [...], SAT'14
+c Using WalkSAT by Henry Kautz, see Kautz and Selman Pushing the envelope: planning, propositional logic, and stochastic search, AAAI'96,
+c Using code from 'When Boolean Satisfiability Meets Gauss-E. in a Simplex Way'
+c       by C.-S. Han and J.-H. Roland Jiang in CAV 2012. Fixes by M. Soos
+c Using CCAnr from 'CCAnr: A Conf. Checking Based Local Search Solver [...]'
+c       by Shaowei Cai, Chuan Luo, and Kaile Su, SAT 2015
+c CMS compilation env CMAKE_CXX_COMPILER = /usr/bin/c++ | CMAKE_CXX_FLAGS =  -fvisibility=hidden -Wall -Wextra -Wunused -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -g -Wno-class-memaccess -mpopcnt -msse4.2 -ggdb3 -Wlogical-op -Wrestrict -Wnull-dereference -Wdouble-promotion -Wshadow -Wformat=2 -Wextra-semi -pedantic | COMPILE_DEFINES =  -DEXTENDED_FEATURES -DUSE_GAUSS -DBOOST_TEST_DYN_LINK -DUSE_ZLIB -DYALSAT_FPU -DUSE_M4RI | STATICCOMPILE = OFF | ONLY_SIMPLE = OFF | Boost_FOUND = TRUE | STATS = OFF | SQLITE3_FOUND = FALSE | ZLIB_FOUND = TRUE | VALGRIND_FOUND =  | ENABLE_TESTING = OFF | M4RI_FOUND = TRUE | NOM4RI = OFF | SLOW_DEBUG = OFF | ENABLE_ASSERTIONS = ON | PYTHON_EXECUTABLE = PYTHON_EXECUTABLE-NOTFOUND | PYTHON_LIBRARY = PYTHON_LIBRARY-NOTFOUND | PYTHON_INCLUDE_DIRS =  | MY_TARGETS =  | LARGEMEM = OFF | LIMITMEM = OFF | BREAKID_LIBRARIES =  | BREAKID-VER = . | BOSPHORUS_LIBRARIES =  | BOSPH-VER = . | compilation date time = Oct 29 2020 17:34:11
+c CMS compiled with gcc version 9.3.0
+c executed with command line: approxmc --sparse 1 -s 05 /experiments/results/Problem10_16.c/05/counterSharp/amm.dimacs
+c -- header says num vars:          78641
+c -- header says num clauses:      549297
+c WARNING: Empty line at line number 570600 -- this is not part of the DIMACS specifications (http://www.satcompetition.org/2009/format-benchmarks2009.html). Ignoring.
+c -- clauses added: 549297
+c -- xor clauses added: 0
+c -- vars added 78641
+c [appmc] Sampling set size: 128
+c [appmc] Sampling var set contains over 100 variables, not displaying
+c [sparse] Using match: 2 sampling set size: 128 prev end inclusive is: 100 this end inclusive is: 150 next end inclusive is: 200 sampl size: 128
+c [appmc] threshold set to 80 sparse: 1
+c [appmc] Starting up, initial measurement
+c [appmc] Starting at hash count: 1
+c [appmc] [    0.00 ] round:  0 hashes:      1
+c [appmc] [    0.00 ] bounded_sol_count looking for   81 solutions -- hashes active: 1
+c [gauss] XOR-encoding clauses detached: 0 deleted: 0 T: 0.00
+c [appmc] [    1.93 ] round:  0 hashes:      2
+c [appmc] [    1.93 ] bounded_sol_count looking for   81 solutions -- hashes active: 2
+c [gauss] XOR-encoding clauses detached: 497 deleted: 9 T: 0.01
+c [appmc] [    2.21 ] round:  0 hashes:      4
+c [appmc] [    2.21 ] bounded_sol_count looking for   81 solutions -- hashes active: 4
+c [gauss] XOR-encoding clauses detached: 488 deleted: 0 T: 0.00
+c [appmc] [    2.70 ] round:  0 hashes:      8
+c [appmc] [    2.70 ] bounded_sol_count looking for   81 solutions -- hashes active: 8
+c [gauss] XOR-encoding clauses detached: 1004 deleted: 0 T: 0.00
+c [appmc] [    3.29 ] round:  0 hashes:     16
+c [appmc] [    3.29 ] bounded_sol_count looking for   81 solutions -- hashes active: 16
+c [gauss] XOR-encoding clauses detached: 1952 deleted: 0 T: 0.00
+c [appmc] [    4.02 ] round:  0 hashes:     32
+c [appmc] [    4.02 ] bounded_sol_count looking for   81 solutions -- hashes active: 32
+c [gauss] XOR-encoding clauses detached: 3343 deleted: 0 T: 0.00
+c [appmc] [    4.73 ] round:  0 hashes:     64
+c [appmc] [    4.73 ] bounded_sol_count looking for   81 solutions -- hashes active: 64
+c [gauss] XOR-encoding clauses detached: 5324 deleted: 0 T: 0.00
+c [appmc] [    5.46 ] round:  0 hashes:     96
+c [appmc] [    5.46 ] bounded_sol_count looking for   81 solutions -- hashes active: 96
+c [gauss] XOR-encoding clauses detached: 3420 deleted: 0 T: 0.00
+c [appmc] [    6.21 ] round:  0 hashes:    112
+c [appmc] [    6.21 ] bounded_sol_count looking for   81 solutions -- hashes active: 112
+c [gauss] XOR-encoding clauses detached: 1352 deleted: 0 T: 0.00
+c [appmc] [    6.94 ] round:  0 hashes:    120
+c [appmc] [    6.94 ] bounded_sol_count looking for   81 solutions -- hashes active: 120
+c [gauss] XOR-encoding clauses detached: 640 deleted: 0 T: 0.00
+c [appmc] [    7.67 ] round:  0 hashes:    124
+c [appmc] [    7.67 ] bounded_sol_count looking for   81 solutions -- hashes active: 124
+c [gauss] XOR-encoding clauses detached: 276 deleted: 0 T: 0.00
+c [appmc] [    7.82 ] round:  0 hashes:    122
+c [appmc] [    7.82 ] bounded_sol_count looking for   81 solutions -- hashes active: 122
+c [appmc] [    8.16 ] round:  0 hashes:    121
+c [appmc] [    8.16 ] bounded_sol_count looking for   81 solutions -- hashes active: 121
+c [appmc] simplifying
+c [gauss] XOR-encoding clauses reattached: 18296 T: 0.00
+c [appmc] [   12.95 ] round:  1 hashes:    122
+c [appmc] [   12.95 ] bounded_sol_count looking for   81 solutions -- hashes active: 122
+c [gauss] XOR-encoding clauses detached: 18360 deleted: 0 T: 0.00
+c [appmc] [   13.53 ] round:  1 hashes:    121
+c [appmc] [   13.53 ] bounded_sol_count looking for   81 solutions -- hashes active: 121
+c [appmc] simplifying
+c [gauss] XOR-encoding clauses reattached: 18360 T: 0.00
+c [appmc] [   15.83 ] round:  2 hashes:    122
+c [appmc] [   15.83 ] bounded_sol_count looking for   81 solutions -- hashes active: 122
+c [gauss] XOR-encoding clauses detached: 18104 deleted: 0 T: 0.00
+c [appmc] [   16.43 ] round:  2 hashes:    121
+c [appmc] [   16.43 ] bounded_sol_count looking for   81 solutions -- hashes active: 121
+c [appmc] simplifying
+c [gauss] XOR-encoding clauses reattached: 18104 T: 0.00
+c [appmc] [   17.59 ] round:  3 hashes:    122
+c [appmc] [   17.59 ] bounded_sol_count looking for   81 solutions -- hashes active: 122
+c [gauss] XOR-encoding clauses detached: 18808 deleted: 0 T: 0.00
+c [appmc] [   18.21 ] round:  3 hashes:    121
+c [appmc] [   18.21 ] bounded_sol_count looking for   81 solutions -- hashes active: 121
+c [appmc] simplifying
+c [gauss] XOR-encoding clauses reattached: 18808 T: 0.00
+c [appmc] [   19.24 ] round:  4 hashes:    122
+c [appmc] [   19.24 ] bounded_sol_count looking for   81 solutions -- hashes active: 122
+c [gauss] XOR-encoding clauses detached: 18328 deleted: 0 T: 0.00
+c [appmc] [   19.87 ] round:  4 hashes:    121
+c [appmc] [   19.87 ] bounded_sol_count looking for   81 solutions -- hashes active: 121
+c [appmc] simplifying
+c [gauss] XOR-encoding clauses reattached: 18328 T: 0.00
+c [appmc] [   20.91 ] round:  5 hashes:    122
+c [appmc] [   20.91 ] bounded_sol_count looking for   81 solutions -- hashes active: 122
+c [gauss] XOR-encoding clauses detached: 18536 deleted: 0 T: 0.00
+c [appmc] [   21.56 ] round:  5 hashes:    121
+c [appmc] [   21.56 ] bounded_sol_count looking for   81 solutions -- hashes active: 121
+c [appmc] simplifying
+c [gauss] XOR-encoding clauses reattached: 18536 T: 0.00
+c [appmc] [   22.57 ] round:  6 hashes:    122
+c [appmc] [   22.57 ] bounded_sol_count looking for   81 solutions -- hashes active: 122
+c [gauss] XOR-encoding clauses detached: 18308 deleted: 0 T: 0.00
+c [appmc] [   23.23 ] round:  6 hashes:    121
+c [appmc] [   23.23 ] bounded_sol_count looking for   81 solutions -- hashes active: 121
+c [appmc] simplifying
+c [gauss] XOR-encoding clauses reattached: 18308 T: 0.00
+c [appmc] [   24.22 ] round:  7 hashes:    122
+c [appmc] [   24.22 ] bounded_sol_count looking for   81 solutions -- hashes active: 122
+c [gauss] XOR-encoding clauses detached: 18696 deleted: 0 T: 0.00
+c [appmc] [   24.90 ] round:  7 hashes:    121
+c [appmc] [   24.90 ] bounded_sol_count looking for   81 solutions -- hashes active: 121
+c [appmc] simplifying
+c [gauss] XOR-encoding clauses reattached: 18696 T: 0.00
+c [appmc] [   25.86 ] round:  8 hashes:    122
+c [appmc] [   25.86 ] bounded_sol_count looking for   81 solutions -- hashes active: 122
+c [gauss] XOR-encoding clauses detached: 18368 deleted: 0 T: 0.00
+c [appmc] [   26.56 ] round:  8 hashes:    121
+c [appmc] [   26.56 ] bounded_sol_count looking for   81 solutions -- hashes active: 121
+c [appmc] FINISHED ApproxMC T: 26.74 s
+c [appmc] Number of solutions is: 64*2**122
+s mc 340282366920938463463374607431768211456
+** AMH **
+c ApproxMC SHA revision df6d9fc8d112d758301d7527817e2eb1029fa5eb
+c ApproxMC version 4.0.1
+c ApproxMC compilation env CMAKE_CXX_COMPILER = /usr/bin/c++ | CMAKE_CXX_FLAGS =  -Wall -Wextra -Wunused -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -g -fvisibility=hidden -Wlogical-op -Wrestrict -Wnull-dereference -Wdouble-promotion -Wshadow -Wformat=2 -Wextra-semi -pedantic | COMPILE_DEFINES =  -DBOOST_TEST_DYN_LINK | STATICCOMPILE = OFF | Boost_FOUND = TRUE | ZLIB_FOUND = TRUE | VALGRIND_FOUND =  | GMP_FOUND = TRUE | ENABLE_ASSERTIONS = ON | MY_TARGETS =  | compilation date time = Oct 29 2020 17:34:59
+c ApproxMC compiled with gcc version 9.3.0
+c CryptoMiniSat version 5.8.0
+c CMS Copyright Mate Soos (soos.mate@gmail.com)
+c CMS SHA revision 6477e8bc43b0fda7038965bb148b64b8637c804b
+c CMS is GPL licensed due to M4RI being linked. Build without M4RI to get MIT version
+c Using VMTF code by Armin Biere from CaDiCaL
+c Using Yalsat by Armin Biere, see Balint et al. Improving implementation of SLS solvers [...], SAT'14
+c Using WalkSAT by Henry Kautz, see Kautz and Selman Pushing the envelope: planning, propositional logic, and stochastic search, AAAI'96,
+c Using code from 'When Boolean Satisfiability Meets Gauss-E. in a Simplex Way'
+c       by C.-S. Han and J.-H. Roland Jiang in CAV 2012. Fixes by M. Soos
+c Using CCAnr from 'CCAnr: A Conf. Checking Based Local Search Solver [...]'
+c       by Shaowei Cai, Chuan Luo, and Kaile Su, SAT 2015
+c CMS compilation env CMAKE_CXX_COMPILER = /usr/bin/c++ | CMAKE_CXX_FLAGS =  -fvisibility=hidden -Wall -Wextra -Wunused -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -g -Wno-class-memaccess -mpopcnt -msse4.2 -ggdb3 -Wlogical-op -Wrestrict -Wnull-dereference -Wdouble-promotion -Wshadow -Wformat=2 -Wextra-semi -pedantic | COMPILE_DEFINES =  -DEXTENDED_FEATURES -DUSE_GAUSS -DBOOST_TEST_DYN_LINK -DUSE_ZLIB -DYALSAT_FPU -DUSE_M4RI | STATICCOMPILE = OFF | ONLY_SIMPLE = OFF | Boost_FOUND = TRUE | STATS = OFF | SQLITE3_FOUND = FALSE | ZLIB_FOUND = TRUE | VALGRIND_FOUND =  | ENABLE_TESTING = OFF | M4RI_FOUND = TRUE | NOM4RI = OFF | SLOW_DEBUG = OFF | ENABLE_ASSERTIONS = ON | PYTHON_EXECUTABLE = PYTHON_EXECUTABLE-NOTFOUND | PYTHON_LIBRARY = PYTHON_LIBRARY-NOTFOUND | PYTHON_INCLUDE_DIRS =  | MY_TARGETS =  | LARGEMEM = OFF | LIMITMEM = OFF | BREAKID_LIBRARIES =  | BREAKID-VER = . | BOSPHORUS_LIBRARIES =  | BOSPH-VER = . | compilation date time = Oct 29 2020 17:34:11
+c CMS compiled with gcc version 9.3.0
+c executed with command line: approxmc --sparse 1 -s 05 /experiments/results/Problem10_16.c/05/counterSharp/amh.dimacs
+c -- header says num vars:          78641
+c -- header says num clauses:      549297
+c WARNING: Empty line at line number 570600 -- this is not part of the DIMACS specifications (http://www.satcompetition.org/2009/format-benchmarks2009.html). Ignoring.
+c -- clauses added: 549297
+c -- xor clauses added: 0
+c -- vars added 78641
+c [appmc] Sampling set size: 128
+c [appmc] Sampling var set contains over 100 variables, not displaying
+c [sparse] Using match: 2 sampling set size: 128 prev end inclusive is: 100 this end inclusive is: 150 next end inclusive is: 200 sampl size: 128
+c [appmc] threshold set to 80 sparse: 1
+c [appmc] Starting up, initial measurement
+c [appmc] Starting at hash count: 1
+c [appmc] [    0.00 ] round:  0 hashes:      1
+c [appmc] [    0.00 ] bounded_sol_count looking for   81 solutions -- hashes active: 1
+c [gauss] XOR-encoding clauses detached: 0 deleted: 0 T: 0.00
+c [appmc] [    1.91 ] round:  0 hashes:      2
+c [appmc] [    1.91 ] bounded_sol_count looking for   81 solutions -- hashes active: 2
+c [gauss] XOR-encoding clauses detached: 481 deleted: 21 T: 0.00
+c [appmc] [    2.29 ] round:  0 hashes:      4
+c [appmc] [    2.29 ] bounded_sol_count looking for   81 solutions -- hashes active: 4
+c [gauss] XOR-encoding clauses detached: 420 deleted: 0 T: 0.00
+c [appmc] [    2.79 ] round:  0 hashes:      8
+c [appmc] [    2.79 ] bounded_sol_count looking for   81 solutions -- hashes active: 8
+c [gauss] XOR-encoding clauses detached: 725 deleted: 0 T: 0.00
+c [appmc] [    3.57 ] round:  0 hashes:     16
+c [appmc] [    3.57 ] bounded_sol_count looking for   81 solutions -- hashes active: 16
+c [gauss] XOR-encoding clauses detached: 824 deleted: 0 T: 0.01
+c [appmc] [    4.41 ] round:  0 hashes:     32
+c [appmc] [    4.41 ] bounded_sol_count looking for   81 solutions -- hashes active: 32
+c [gauss] XOR-encoding clauses detached: 1291 deleted: 0 T: 0.01
+c [appmc] [    5.33 ] round:  0 hashes:     24
+c [appmc] [    5.33 ] bounded_sol_count looking for   81 solutions -- hashes active: 24
+c [appmc] [    6.02 ] round:  0 hashes:     28
+c [appmc] [    6.02 ] bounded_sol_count looking for   81 solutions -- hashes active: 28
+c [appmc] [    6.74 ] round:  0 hashes:     30
+c [appmc] [    6.74 ] bounded_sol_count looking for   81 solutions -- hashes active: 30
+c [appmc] [    7.37 ] round:  0 hashes:     31
+c [appmc] [    7.37 ] bounded_sol_count looking for   81 solutions -- hashes active: 31
+c [appmc] simplifying
+c [gauss] XOR-encoding clauses reattached: 3741 T: 0.00
+c [appmc] [   13.52 ] round:  1 hashes:     31
+c [appmc] [   13.52 ] bounded_sol_count looking for   81 solutions -- hashes active: 31
+c [gauss] XOR-encoding clauses detached: 2941 deleted: 0 T: 0.00
+c [appmc] [   15.68 ] round:  1 hashes:     30
+c [appmc] [   15.68 ] bounded_sol_count looking for   81 solutions -- hashes active: 30
+c [appmc] simplifying
+c [gauss] XOR-encoding clauses reattached: 2941 T: 0.00
+c [appmc] [   18.10 ] round:  2 hashes:     31
+c [appmc] [   18.10 ] bounded_sol_count looking for   81 solutions -- hashes active: 31
+c [gauss] XOR-encoding clauses detached: 2924 deleted: 0 T: 0.00
+c [appmc] [   20.10 ] round:  2 hashes:     32
+c [appmc] [   20.10 ] bounded_sol_count looking for   81 solutions -- hashes active: 32
+c [gauss] XOR-encoding clauses detached: 84 deleted: 0 T: 0.00
+c [appmc] simplifying
+c [gauss] XOR-encoding clauses reattached: 3008 T: 0.00
+c [appmc] [   21.31 ] round:  3 hashes:     32
+c [appmc] [   21.31 ] bounded_sol_count looking for   81 solutions -- hashes active: 32
+c [gauss] XOR-encoding clauses detached: 3033 deleted: 0 T: 0.00
+c [appmc] [   22.25 ] round:  3 hashes:     31
+c [appmc] [   22.25 ] bounded_sol_count looking for   81 solutions -- hashes active: 31
+c [appmc] [   23.34 ] round:  3 hashes:     30
+c [appmc] [   23.34 ] bounded_sol_count looking for   81 solutions -- hashes active: 30
+c [appmc] simplifying
+c [gauss] XOR-encoding clauses reattached: 3033 T: 0.00
+c [appmc] [   24.33 ] round:  4 hashes:     31
+c [appmc] [   24.33 ] bounded_sol_count looking for   81 solutions -- hashes active: 31
+c [gauss] XOR-encoding clauses detached: 2941 deleted: 0 T: 0.00
+c [appmc] [   26.16 ] round:  4 hashes:     32
+c [appmc] [   26.16 ] bounded_sol_count looking for   81 solutions -- hashes active: 32
+c [gauss] XOR-encoding clauses detached: 68 deleted: 0 T: 0.00
+c [appmc] simplifying
+c [gauss] XOR-encoding clauses reattached: 3009 T: 0.00
+c [appmc] [   27.28 ] round:  5 hashes:     32
+c [appmc] [   27.28 ] bounded_sol_count looking for   81 solutions -- hashes active: 32
+c [gauss] XOR-encoding clauses detached: 2945 deleted: 0 T: 0.00
+c [appmc] [   28.09 ] round:  5 hashes:     31
+c [appmc] [   28.09 ] bounded_sol_count looking for   81 solutions -- hashes active: 31
+c [appmc] [   29.25 ] round:  5 hashes:     30
+c [appmc] [   29.25 ] bounded_sol_count looking for   81 solutions -- hashes active: 30
+c [appmc] simplifying
+c [gauss] XOR-encoding clauses reattached: 2945 T: 0.00
+c [appmc] [   30.42 ] round:  6 hashes:     31
+c [appmc] [   30.42 ] bounded_sol_count looking for   81 solutions -- hashes active: 31
+c [gauss] XOR-encoding clauses detached: 2973 deleted: 0 T: 0.00
+c [appmc] [   32.43 ] round:  6 hashes:     30
+c [appmc] [   32.43 ] bounded_sol_count looking for   81 solutions -- hashes active: 30
+c [appmc] simplifying
+c [gauss] XOR-encoding clauses reattached: 2973 T: 0.00
+c [appmc] [   33.20 ] round:  7 hashes:     31
+c [appmc] [   33.20 ] bounded_sol_count looking for   81 solutions -- hashes active: 31
+c [gauss] XOR-encoding clauses detached: 2805 deleted: 0 T: 0.00
+c [appmc] [   34.77 ] round:  7 hashes:     30
+c [appmc] [   34.77 ] bounded_sol_count looking for   81 solutions -- hashes active: 30
+c [appmc] simplifying
+c [gauss] XOR-encoding clauses reattached: 2805 T: 0.00
+c [appmc] [   35.85 ] round:  8 hashes:     31
+c [appmc] [   35.85 ] bounded_sol_count looking for   81 solutions -- hashes active: 31
+c [gauss] XOR-encoding clauses detached: 2953 deleted: 0 T: 0.00
+c [appmc] [   37.53 ] round:  8 hashes:     30
+c [appmc] [   37.53 ] bounded_sol_count looking for   81 solutions -- hashes active: 30
+c [appmc] FINISHED ApproxMC T: 37.85 s
+c [appmc] Number of solutions is: 76*2**31
+s mc 163208757248
+** ASM **
+c ApproxMC SHA revision df6d9fc8d112d758301d7527817e2eb1029fa5eb
+c ApproxMC version 4.0.1
+c ApproxMC compilation env CMAKE_CXX_COMPILER = /usr/bin/c++ | CMAKE_CXX_FLAGS =  -Wall -Wextra -Wunused -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -g -fvisibility=hidden -Wlogical-op -Wrestrict -Wnull-dereference -Wdouble-promotion -Wshadow -Wformat=2 -Wextra-semi -pedantic | COMPILE_DEFINES =  -DBOOST_TEST_DYN_LINK | STATICCOMPILE = OFF | Boost_FOUND = TRUE | ZLIB_FOUND = TRUE | VALGRIND_FOUND =  | GMP_FOUND = TRUE | ENABLE_ASSERTIONS = ON | MY_TARGETS =  | compilation date time = Oct 29 2020 17:34:59
+c ApproxMC compiled with gcc version 9.3.0
+c CryptoMiniSat version 5.8.0
+c CMS Copyright Mate Soos (soos.mate@gmail.com)
+c CMS SHA revision 6477e8bc43b0fda7038965bb148b64b8637c804b
+c CMS is GPL licensed due to M4RI being linked. Build without M4RI to get MIT version
+c Using VMTF code by Armin Biere from CaDiCaL
+c Using Yalsat by Armin Biere, see Balint et al. Improving implementation of SLS solvers [...], SAT'14
+c Using WalkSAT by Henry Kautz, see Kautz and Selman Pushing the envelope: planning, propositional logic, and stochastic search, AAAI'96,
+c Using code from 'When Boolean Satisfiability Meets Gauss-E. in a Simplex Way'
+c       by C.-S. Han and J.-H. Roland Jiang in CAV 2012. Fixes by M. Soos
+c Using CCAnr from 'CCAnr: A Conf. Checking Based Local Search Solver [...]'
+c       by Shaowei Cai, Chuan Luo, and Kaile Su, SAT 2015
+c CMS compilation env CMAKE_CXX_COMPILER = /usr/bin/c++ | CMAKE_CXX_FLAGS =  -fvisibility=hidden -Wall -Wextra -Wunused -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -g -Wno-class-memaccess -mpopcnt -msse4.2 -ggdb3 -Wlogical-op -Wrestrict -Wnull-dereference -Wdouble-promotion -Wshadow -Wformat=2 -Wextra-semi -pedantic | COMPILE_DEFINES =  -DEXTENDED_FEATURES -DUSE_GAUSS -DBOOST_TEST_DYN_LINK -DUSE_ZLIB -DYALSAT_FPU -DUSE_M4RI | STATICCOMPILE = OFF | ONLY_SIMPLE = OFF | Boost_FOUND = TRUE | STATS = OFF | SQLITE3_FOUND = FALSE | ZLIB_FOUND = TRUE | VALGRIND_FOUND =  | ENABLE_TESTING = OFF | M4RI_FOUND = TRUE | NOM4RI = OFF | SLOW_DEBUG = OFF | ENABLE_ASSERTIONS = ON | PYTHON_EXECUTABLE = PYTHON_EXECUTABLE-NOTFOUND | PYTHON_LIBRARY = PYTHON_LIBRARY-NOTFOUND | PYTHON_INCLUDE_DIRS =  | MY_TARGETS =  | LARGEMEM = OFF | LIMITMEM = OFF | BREAKID_LIBRARIES =  | BREAKID-VER = . | BOSPHORUS_LIBRARIES =  | BOSPH-VER = . | compilation date time = Oct 29 2020 17:34:11
+c CMS compiled with gcc version 9.3.0
+c executed with command line: approxmc --sparse 1 -s 05 /experiments/results/Problem10_16.c/05/counterSharp/asm.dimacs
+c -- header says num vars:          78673
+c -- header says num clauses:      549408
+c WARNING: Empty line at line number 570742 -- this is not part of the DIMACS specifications (http://www.satcompetition.org/2009/format-benchmarks2009.html). Ignoring.
+c -- clauses added: 549408
+c -- xor clauses added: 0
+c -- vars added 78673
+c [appmc] Sampling set size: 128
+c [appmc] Sampling var set contains over 100 variables, not displaying
+c [sparse] Using match: 2 sampling set size: 128 prev end inclusive is: 100 this end inclusive is: 150 next end inclusive is: 200 sampl size: 128
+c [appmc] threshold set to 80 sparse: 1
+c [appmc] Starting up, initial measurement
+c [appmc] Starting at hash count: 1
+c [appmc] [    0.00 ] round:  0 hashes:      1
+c [appmc] [    0.00 ] bounded_sol_count looking for   81 solutions -- hashes active: 1
+c [gauss] XOR-encoding clauses detached: 0 deleted: 0 T: 0.00
+c [appmc] [    1.79 ] round:  0 hashes:      2
+c [appmc] [    1.79 ] bounded_sol_count looking for   81 solutions -- hashes active: 2
+c [gauss] XOR-encoding clauses detached: 477 deleted: 39 T: 0.00
+c [appmc] [    2.23 ] round:  0 hashes:      4
+c [appmc] [    2.23 ] bounded_sol_count looking for   81 solutions -- hashes active: 4
+c [gauss] XOR-encoding clauses detached: 416 deleted: 0 T: 0.00
+c [appmc] [    3.00 ] round:  0 hashes:      8
+c [appmc] [    3.00 ] bounded_sol_count looking for   81 solutions -- hashes active: 8
+c [gauss] XOR-encoding clauses detached: 694 deleted: 0 T: 0.00
+c [appmc] [    3.83 ] round:  0 hashes:     16
+c [appmc] [    3.83 ] bounded_sol_count looking for   81 solutions -- hashes active: 16
+c [gauss] XOR-encoding clauses detached: 776 deleted: 0 T: 0.01
+c [appmc] [    4.80 ] round:  0 hashes:     32
+c [appmc] [    4.80 ] bounded_sol_count looking for   81 solutions -- hashes active: 32
+c [gauss] XOR-encoding clauses detached: 1278 deleted: 0 T: 0.01
+c [appmc] [    5.66 ] round:  0 hashes:     24
+c [appmc] [    5.66 ] bounded_sol_count looking for   81 solutions -- hashes active: 24
+c [appmc] [    6.48 ] round:  0 hashes:     28
+c [appmc] [    6.48 ] bounded_sol_count looking for   81 solutions -- hashes active: 28
+c [appmc] [    7.61 ] round:  0 hashes:     30
+c [appmc] [    7.61 ] bounded_sol_count looking for   81 solutions -- hashes active: 30
+c [appmc] [    8.59 ] round:  0 hashes:     31
+c [appmc] [    8.59 ] bounded_sol_count looking for   81 solutions -- hashes active: 31
+c [appmc] simplifying
+c [gauss] XOR-encoding clauses reattached: 3641 T: 0.00
+c [appmc] [   14.81 ] round:  1 hashes:     31
+c [appmc] [   14.81 ] bounded_sol_count looking for   81 solutions -- hashes active: 31
+c [gauss] XOR-encoding clauses detached: 2960 deleted: 0 T: 0.00
+c [appmc] [   16.64 ] round:  1 hashes:     30
+c [appmc] [   16.64 ] bounded_sol_count looking for   81 solutions -- hashes active: 30
+c [appmc] simplifying
+c [gauss] XOR-encoding clauses reattached: 2960 T: 0.00
+c [appmc] [   19.73 ] round:  2 hashes:     31
+c [appmc] [   19.73 ] bounded_sol_count looking for   81 solutions -- hashes active: 31
+c [gauss] XOR-encoding clauses detached: 2921 deleted: 0 T: 0.00
+c [appmc] [   21.74 ] round:  2 hashes:     30
+c [appmc] [   21.74 ] bounded_sol_count looking for   81 solutions -- hashes active: 30
+c [appmc] simplifying
+c [gauss] XOR-encoding clauses reattached: 2921 T: 0.00
+c [appmc] [   23.13 ] round:  3 hashes:     31
+c [appmc] [   23.13 ] bounded_sol_count looking for   81 solutions -- hashes active: 31
+c [gauss] XOR-encoding clauses detached: 2975 deleted: 0 T: 0.00
+c [appmc] [   25.11 ] round:  3 hashes:     30
+c [appmc] [   25.11 ] bounded_sol_count looking for   81 solutions -- hashes active: 30
+c [appmc] simplifying
+c [gauss] XOR-encoding clauses reattached: 2975 T: 0.00
+c [appmc] [   26.47 ] round:  4 hashes:     31
+c [appmc] [   26.47 ] bounded_sol_count looking for   81 solutions -- hashes active: 31
+c [gauss] XOR-encoding clauses detached: 2965 deleted: 0 T: 0.00
+c [appmc] [   28.22 ] round:  4 hashes:     30
+c [appmc] [   28.22 ] bounded_sol_count looking for   81 solutions -- hashes active: 30
+c [appmc] simplifying
+c [gauss] XOR-encoding clauses reattached: 2965 T: 0.00
+c [appmc] [   29.26 ] round:  5 hashes:     31
+c [appmc] [   29.26 ] bounded_sol_count looking for   81 solutions -- hashes active: 31
+c [gauss] XOR-encoding clauses detached: 2929 deleted: 0 T: 0.00
+c [appmc] [   31.14 ] round:  5 hashes:     30
+c [appmc] [   31.14 ] bounded_sol_count looking for   81 solutions -- hashes active: 30
+c [appmc] simplifying
+c [gauss] XOR-encoding clauses reattached: 2929 T: 0.00
+c [appmc] [   32.33 ] round:  6 hashes:     31
+c [appmc] [   32.33 ] bounded_sol_count looking for   81 solutions -- hashes active: 31
+c [gauss] XOR-encoding clauses detached: 2978 deleted: 0 T: 0.00
+c [appmc] [   34.16 ] round:  6 hashes:     30
+c [appmc] [   34.16 ] bounded_sol_count looking for   81 solutions -- hashes active: 30
+c [appmc] simplifying
+c [gauss] XOR-encoding clauses reattached: 2978 T: 0.00
+c [appmc] [   35.19 ] round:  7 hashes:     31
+c [appmc] [   35.19 ] bounded_sol_count looking for   81 solutions -- hashes active: 31
+c [gauss] XOR-encoding clauses detached: 2802 deleted: 0 T: 0.00
+c [appmc] [   36.80 ] round:  7 hashes:     30
+c [appmc] [   36.80 ] bounded_sol_count looking for   81 solutions -- hashes active: 30
+c [appmc] simplifying
+c [gauss] XOR-encoding clauses reattached: 2802 T: 0.00
+c [appmc] [   37.73 ] round:  8 hashes:     31
+c [appmc] [   37.73 ] bounded_sol_count looking for   81 solutions -- hashes active: 31
+c [gauss] XOR-encoding clauses detached: 2918 deleted: 0 T: 0.00
+c [appmc] [   39.46 ] round:  8 hashes:     30
+c [appmc] [   39.46 ] bounded_sol_count looking for   81 solutions -- hashes active: 30
+c [appmc] FINISHED ApproxMC T: 39.62 s
+c [appmc] Number of solutions is: 72*2**31
+s mc 154618822656
+** ASH **
+c ApproxMC SHA revision df6d9fc8d112d758301d7527817e2eb1029fa5eb
+c ApproxMC version 4.0.1
+c ApproxMC compilation env CMAKE_CXX_COMPILER = /usr/bin/c++ | CMAKE_CXX_FLAGS =  -Wall -Wextra -Wunused -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -g -fvisibility=hidden -Wlogical-op -Wrestrict -Wnull-dereference -Wdouble-promotion -Wshadow -Wformat=2 -Wextra-semi -pedantic | COMPILE_DEFINES =  -DBOOST_TEST_DYN_LINK | STATICCOMPILE = OFF | Boost_FOUND = TRUE | ZLIB_FOUND = TRUE | VALGRIND_FOUND =  | GMP_FOUND = TRUE | ENABLE_ASSERTIONS = ON | MY_TARGETS =  | compilation date time = Oct 29 2020 17:34:59
+c ApproxMC compiled with gcc version 9.3.0
+c CryptoMiniSat version 5.8.0
+c CMS Copyright Mate Soos (soos.mate@gmail.com)
+c CMS SHA revision 6477e8bc43b0fda7038965bb148b64b8637c804b
+c CMS is GPL licensed due to M4RI being linked. Build without M4RI to get MIT version
+c Using VMTF code by Armin Biere from CaDiCaL
+c Using Yalsat by Armin Biere, see Balint et al. Improving implementation of SLS solvers [...], SAT'14
+c Using WalkSAT by Henry Kautz, see Kautz and Selman Pushing the envelope: planning, propositional logic, and stochastic search, AAAI'96,
+c Using code from 'When Boolean Satisfiability Meets Gauss-E. in a Simplex Way'
+c       by C.-S. Han and J.-H. Roland Jiang in CAV 2012. Fixes by M. Soos
+c Using CCAnr from 'CCAnr: A Conf. Checking Based Local Search Solver [...]'
+c       by Shaowei Cai, Chuan Luo, and Kaile Su, SAT 2015
+c CMS compilation env CMAKE_CXX_COMPILER = /usr/bin/c++ | CMAKE_CXX_FLAGS =  -fvisibility=hidden -Wall -Wextra -Wunused -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -g -Wno-class-memaccess -mpopcnt -msse4.2 -ggdb3 -Wlogical-op -Wrestrict -Wnull-dereference -Wdouble-promotion -Wshadow -Wformat=2 -Wextra-semi -pedantic | COMPILE_DEFINES =  -DEXTENDED_FEATURES -DUSE_GAUSS -DBOOST_TEST_DYN_LINK -DUSE_ZLIB -DYALSAT_FPU -DUSE_M4RI | STATICCOMPILE = OFF | ONLY_SIMPLE = OFF | Boost_FOUND = TRUE | STATS = OFF | SQLITE3_FOUND = FALSE | ZLIB_FOUND = TRUE | VALGRIND_FOUND =  | ENABLE_TESTING = OFF | M4RI_FOUND = TRUE | NOM4RI = OFF | SLOW_DEBUG = OFF | ENABLE_ASSERTIONS = ON | PYTHON_EXECUTABLE = PYTHON_EXECUTABLE-NOTFOUND | PYTHON_LIBRARY = PYTHON_LIBRARY-NOTFOUND | PYTHON_INCLUDE_DIRS =  | MY_TARGETS =  | LARGEMEM = OFF | LIMITMEM = OFF | BREAKID_LIBRARIES =  | BREAKID-VER = . | BOSPHORUS_LIBRARIES =  | BOSPH-VER = . | compilation date time = Oct 29 2020 17:34:11
+c CMS compiled with gcc version 9.3.0
+c executed with command line: approxmc --sparse 1 -s 05 /experiments/results/Problem10_16.c/05/counterSharp/ash.dimacs
+c -- header says num vars:          78673
+c -- header says num clauses:      549408
+c WARNING: Empty line at line number 570742 -- this is not part of the DIMACS specifications (http://www.satcompetition.org/2009/format-benchmarks2009.html). Ignoring.
+c -- clauses added: 549408
+c -- xor clauses added: 0
+c -- vars added 78673
+c [appmc] Sampling set size: 128
+c [appmc] Sampling var set contains over 100 variables, not displaying
+c [sparse] Using match: 2 sampling set size: 128 prev end inclusive is: 100 this end inclusive is: 150 next end inclusive is: 200 sampl size: 128
+c [appmc] threshold set to 80 sparse: 1
+c [appmc] Starting up, initial measurement
+c [appmc] Starting at hash count: 1
+c [appmc] [    0.00 ] round:  0 hashes:      1
+c [appmc] [    0.00 ] bounded_sol_count looking for   81 solutions -- hashes active: 1
+c [gauss] XOR-encoding clauses detached: 0 deleted: 0 T: 0.00
+c [appmc] [    2.62 ] round:  0 hashes:      2
+c [appmc] [    2.62 ] bounded_sol_count looking for   81 solutions -- hashes active: 2
+c [gauss] XOR-encoding clauses detached: 517 deleted: 83 T: 0.00
+c [appmc] [    3.46 ] round:  0 hashes:      4
+c [appmc] [    3.46 ] bounded_sol_count looking for   81 solutions -- hashes active: 4
+c [gauss] XOR-encoding clauses detached: 360 deleted: 0 T: 0.00
+c [appmc] [    4.45 ] round:  0 hashes:      8
+c [appmc] [    4.45 ] bounded_sol_count looking for   81 solutions -- hashes active: 8
+c [gauss] XOR-encoding clauses detached: 596 deleted: 0 T: 0.00
+c [appmc] [    6.16 ] round:  0 hashes:     16
+c [appmc] [    6.16 ] bounded_sol_count looking for   81 solutions -- hashes active: 16
+c [gauss] XOR-encoding clauses detached: 818 deleted: 0 T: 0.00
+c [appmc] [    9.02 ] round:  0 hashes:     32
+c [appmc] [    9.02 ] bounded_sol_count looking for   81 solutions -- hashes active: 32
+c [gauss] XOR-encoding clauses detached: 1165 deleted: 0 T: 0.00
+c [appmc] [   10.03 ] round:  0 hashes:     24
+c [appmc] [   10.03 ] bounded_sol_count looking for   81 solutions -- hashes active: 24
+c [appmc] [   15.80 ] round:  0 hashes:     28
+c [appmc] [   15.80 ] bounded_sol_count looking for   81 solutions -- hashes active: 28
+c [appmc] [   24.20 ] round:  0 hashes:     26
+c [appmc] [   24.20 ] bounded_sol_count looking for   81 solutions -- hashes active: 26
+c [appmc] [   26.06 ] round:  0 hashes:     27
+c [appmc] [   26.06 ] bounded_sol_count looking for   81 solutions -- hashes active: 27
+c [appmc] simplifying
+c [gauss] XOR-encoding clauses reattached: 3456 T: 0.00
+c [appmc] [   36.58 ] round:  1 hashes:     28
+c [appmc] [   36.58 ] bounded_sol_count looking for   81 solutions -- hashes active: 28
+c [gauss] XOR-encoding clauses detached: 2669 deleted: 0 T: 0.00
+c [appmc] [   39.71 ] round:  1 hashes:     27
+c [appmc] [   39.71 ] bounded_sol_count looking for   81 solutions -- hashes active: 27
+c [appmc] [   43.65 ] round:  1 hashes:     26
+c [appmc] [   43.65 ] bounded_sol_count looking for   81 solutions -- hashes active: 26
+c [appmc] simplifying
+c [gauss] XOR-encoding clauses reattached: 2669 T: 0.00
+c [appmc] [   46.56 ] round:  2 hashes:     27
+c [appmc] [   46.56 ] bounded_sol_count looking for   81 solutions -- hashes active: 27
+c [gauss] XOR-encoding clauses detached: 2514 deleted: 0 T: 0.00
+c [appmc] [   52.88 ] round:  2 hashes:     28
+c [appmc] [   52.88 ] bounded_sol_count looking for   81 solutions -- hashes active: 28
+c [gauss] XOR-encoding clauses detached: 72 deleted: 0 T: 0.00
+c [appmc] simplifying
+c [gauss] XOR-encoding clauses reattached: 2586 T: 0.00
+c [appmc] [   55.91 ] round:  3 hashes:     28
+c [appmc] [   55.91 ] bounded_sol_count looking for   81 solutions -- hashes active: 28
+c [gauss] XOR-encoding clauses detached: 2617 deleted: 0 T: 0.00
+c [appmc] [   59.18 ] round:  3 hashes:     27
+c [appmc] [   59.18 ] bounded_sol_count looking for   81 solutions -- hashes active: 27
+c [appmc] simplifying
+c [gauss] XOR-encoding clauses reattached: 2617 T: 0.00
+c [appmc] [   63.48 ] round:  4 hashes:     28
+c [appmc] [   63.48 ] bounded_sol_count looking for   81 solutions -- hashes active: 28
+c [gauss] XOR-encoding clauses detached: 2645 deleted: 0 T: 0.00
+c [appmc] [   66.10 ] round:  4 hashes:     27
+c [appmc] [   66.10 ] bounded_sol_count looking for   81 solutions -- hashes active: 27
+c [appmc] simplifying
+c [gauss] XOR-encoding clauses reattached: 2645 T: 0.00
+c [appmc] [   69.76 ] round:  5 hashes:     28
+c [appmc] [   69.76 ] bounded_sol_count looking for   81 solutions -- hashes active: 28
+c [gauss] XOR-encoding clauses detached: 2457 deleted: 0 T: 0.00
+c [appmc] [   72.23 ] round:  5 hashes:     27
+c [appmc] [   72.23 ] bounded_sol_count looking for   81 solutions -- hashes active: 27
+c [appmc] simplifying
+c [gauss] XOR-encoding clauses reattached: 2457 T: 0.00
+c [appmc] [   76.04 ] round:  6 hashes:     28
+c [appmc] [   76.04 ] bounded_sol_count looking for   81 solutions -- hashes active: 28
+c [gauss] XOR-encoding clauses detached: 2601 deleted: 0 T: 0.00
+c [appmc] [   78.42 ] round:  6 hashes:     27
+c [appmc] [   78.42 ] bounded_sol_count looking for   81 solutions -- hashes active: 27
+c [appmc] simplifying
+c [gauss] XOR-encoding clauses reattached: 2601 T: 0.00
+c [appmc] [   81.57 ] round:  7 hashes:     28
+c [appmc] [   81.57 ] bounded_sol_count looking for   81 solutions -- hashes active: 28
+c [gauss] XOR-encoding clauses detached: 2664 deleted: 0 T: 0.00
+c [appmc] [   84.47 ] round:  7 hashes:     27
+c [appmc] [   84.47 ] bounded_sol_count looking for   81 solutions -- hashes active: 27
+c [appmc] simplifying
+c [gauss] XOR-encoding clauses reattached: 2664 T: 0.00
+c [appmc] [   87.13 ] round:  8 hashes:     28
+c [appmc] [   87.13 ] bounded_sol_count looking for   81 solutions -- hashes active: 28
+c [gauss] XOR-encoding clauses detached: 2496 deleted: 0 T: 0.00
+c [appmc] [   89.78 ] round:  8 hashes:     27
+c [appmc] [   89.78 ] bounded_sol_count looking for   81 solutions -- hashes active: 27
+c [appmc] FINISHED ApproxMC T: 92.74 s
+c [appmc] Number of solutions is: 98*2**27
+s mc 13153337344

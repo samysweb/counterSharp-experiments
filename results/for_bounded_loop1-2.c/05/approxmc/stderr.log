@@ -1,0 +1,115 @@
+** CON **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		approxmc
+[runlim] argv[1]:		--sparse
+[runlim] argv[2]:		1
+[runlim] argv[3]:		-s
+[runlim] argv[4]:		05
+[runlim] argv[5]:		/experiments/results/for_bounded_loop1-2.c/05/counterSharp/con.dimacs
+[runlim] start:			Fri Oct 30 16:40:52 2020
+[runlim] main pid:		4108
+approxmc: /approxmc/src/counter.cpp:447: ApproxMC::SolCount Counter::count(): Assertion `numHashList.size() > 0 && "UNSAT should not be possible"' failed.
+[runlim] end:			Fri Oct 30 16:40:53 2020
+[runlim] status:		signal(6)
+[runlim] result:		11
+[runlim] children:		0
+[runlim] real:			1.47 seconds
+[runlim] time:			0.55 seconds
+[runlim] space:			169.0 MB
+[runlim] samples:		6
+** AMM **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		approxmc
+[runlim] argv[1]:		--sparse
+[runlim] argv[2]:		1
+[runlim] argv[3]:		-s
+[runlim] argv[4]:		05
+[runlim] argv[5]:		/experiments/results/for_bounded_loop1-2.c/05/counterSharp/amm.dimacs
+[runlim] start:			Fri Oct 30 16:40:53 2020
+[runlim] main pid:		4110
+[runlim] sample:		10.0 time, 10.5 real, 336.0 MB
+[runlim] sample:		20.0 time, 20.5 real, 304.9 MB
+[runlim] end:			Fri Oct 30 16:41:23 2020
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			30.11 seconds
+[runlim] time:			29.58 seconds
+[runlim] space:			426.8 MB
+[runlim] samples:		296
+** AMH **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		approxmc
+[runlim] argv[1]:		--sparse
+[runlim] argv[2]:		1
+[runlim] argv[3]:		-s
+[runlim] argv[4]:		05
+[runlim] argv[5]:		/experiments/results/for_bounded_loop1-2.c/05/counterSharp/amh.dimacs
+[runlim] start:			Fri Oct 30 16:41:23 2020
+[runlim] main pid:		4112
+[runlim] sample:		10.0 time, 10.1 real, 310.3 MB
+[runlim] sample:		20.0 time, 20.1 real, 313.3 MB
+[runlim] end:			Fri Oct 30 16:41:48 2020
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			25.13 seconds
+[runlim] time:			24.98 seconds
+[runlim] space:			335.0 MB
+[runlim] samples:		250
+** ASM **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		approxmc
+[runlim] argv[1]:		--sparse
+[runlim] argv[2]:		1
+[runlim] argv[3]:		-s
+[runlim] argv[4]:		05
+[runlim] argv[5]:		/experiments/results/for_bounded_loop1-2.c/05/counterSharp/asm.dimacs
+[runlim] start:			Fri Oct 30 16:41:48 2020
+[runlim] main pid:		4114
+[runlim] sample:		10.0 time, 10.1 real, 310.8 MB
+[runlim] sample:		20.0 time, 20.1 real, 284.3 MB
+[runlim] end:			Fri Oct 30 16:42:12 2020
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			24.71 seconds
+[runlim] time:			24.48 seconds
+[runlim] space:			331.0 MB
+[runlim] samples:		245
+** ASH **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		approxmc
+[runlim] argv[1]:		--sparse
+[runlim] argv[2]:		1
+[runlim] argv[3]:		-s
+[runlim] argv[4]:		05
+[runlim] argv[5]:		/experiments/results/for_bounded_loop1-2.c/05/counterSharp/ash.dimacs
+[runlim] start:			Fri Oct 30 16:42:12 2020
+[runlim] main pid:		4116
+[runlim] sample:		10.0 time, 10.7 real, 309.8 MB
+[runlim] sample:		20.0 time, 20.7 real, 295.7 MB
+[runlim] sample:		30.0 time, 30.7 real, 295.8 MB
+[runlim] end:			Fri Oct 30 16:42:45 2020
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			33.01 seconds
+[runlim] time:			32.19 seconds
+[runlim] space:			349.0 MB
+[runlim] samples:		322

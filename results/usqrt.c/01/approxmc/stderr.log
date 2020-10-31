@@ -1,0 +1,135 @@
+** CON **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		approxmc
+[runlim] argv[1]:		--sparse
+[runlim] argv[2]:		1
+[runlim] argv[3]:		-s
+[runlim] argv[4]:		01
+[runlim] argv[5]:		/experiments/results/usqrt.c/01/counterSharp/con.dimacs
+[runlim] start:			Fri Oct 30 11:13:35 2020
+[runlim] main pid:		66
+ERROR! Could not open file '/experiments/results/usqrt.c/01/counterSharp/con.dimacs' for reading: No such file or directory
+[runlim] end:			Fri Oct 30 11:13:35 2020
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			0.96 seconds
+[runlim] time:			0.00 seconds
+[runlim] space:			0.0 MB
+[runlim] samples:		0
+** AMM **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		approxmc
+[runlim] argv[1]:		--sparse
+[runlim] argv[2]:		1
+[runlim] argv[3]:		-s
+[runlim] argv[4]:		01
+[runlim] argv[5]:		/experiments/results/usqrt.c/01/counterSharp/amm.dimacs
+[runlim] start:			Fri Oct 30 11:13:35 2020
+[runlim] main pid:		68
+[runlim] end:			Fri Oct 30 11:13:36 2020
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			1.73 seconds
+[runlim] time:			0.69 seconds
+[runlim] space:			14.2 MB
+[runlim] samples:		7
+** AMH **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		approxmc
+[runlim] argv[1]:		--sparse
+[runlim] argv[2]:		1
+[runlim] argv[3]:		-s
+[runlim] argv[4]:		01
+[runlim] argv[5]:		/experiments/results/usqrt.c/01/counterSharp/amh.dimacs
+[runlim] start:			Fri Oct 30 11:13:36 2020
+[runlim] main pid:		70
+[runlim] end:			Fri Oct 30 11:13:37 2020
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			1.53 seconds
+[runlim] time:			0.69 seconds
+[runlim] space:			13.5 MB
+[runlim] samples:		7
+** ASM **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		approxmc
+[runlim] argv[1]:		--sparse
+[runlim] argv[2]:		1
+[runlim] argv[3]:		-s
+[runlim] argv[4]:		01
+[runlim] argv[5]:		/experiments/results/usqrt.c/01/counterSharp/asm.dimacs
+[runlim] start:			Fri Oct 30 11:13:37 2020
+[runlim] main pid:		72
+[runlim] sample:		10.0 time, 10.5 real, 22.7 MB
+[runlim] sample:		20.0 time, 20.5 real, 35.3 MB
+[runlim] sample:		30.0 time, 30.5 real, 37.5 MB
+[runlim] sample:		40.0 time, 40.5 real, 39.5 MB
+[runlim] sample:		50.0 time, 50.5 real, 47.4 MB
+[runlim] sample:		60.0 time, 60.5 real, 47.6 MB
+[runlim] sample:		70.0 time, 70.5 real, 37.5 MB
+[runlim] sample:		80.0 time, 80.5 real, 49.4 MB
+[runlim] sample:		90.0 time, 90.5 real, 49.4 MB
+[runlim] sample:		100.0 time, 100.5 real, 51.4 MB
+[runlim] sample:		110.0 time, 110.5 real, 51.4 MB
+[runlim] sample:		120.0 time, 120.5 real, 53.5 MB
+[runlim] sample:		130.0 time, 130.5 real, 53.5 MB
+[runlim] sample:		140.0 time, 140.5 real, 57.9 MB
+[runlim] sample:		150.0 time, 150.5 real, 57.9 MB
+[runlim] sample:		160.0 time, 160.5 real, 57.9 MB
+[runlim] sample:		170.0 time, 170.5 real, 57.9 MB
+[runlim] sample:		180.0 time, 180.5 real, 57.9 MB
+[runlim] sample:		190.0 time, 190.5 real, 57.9 MB
+[runlim] sample:		200.0 time, 200.5 real, 57.9 MB
+[runlim] sample:		209.9 time, 210.5 real, 57.9 MB
+[runlim] sample:		219.9 time, 220.5 real, 57.9 MB
+[runlim] sample:		229.9 time, 230.5 real, 57.9 MB
+[runlim] sample:		239.9 time, 240.5 real, 57.9 MB
+[runlim] sample:		249.9 time, 250.5 real, 57.9 MB
+[runlim] sample:		259.9 time, 260.5 real, 57.9 MB
+[runlim] sample:		269.9 time, 270.5 real, 57.9 MB
+[runlim] sample:		279.9 time, 280.5 real, 57.9 MB
+[runlim] sample:		289.9 time, 290.5 real, 57.9 MB
+[runlim] end:			Fri Oct 30 11:18:37 2020
+[runlim] status:		out of time
+[runlim] result:		2
+[runlim] children:		0
+[runlim] real:			300.05 seconds
+[runlim] time:			299.44 seconds
+[runlim] space:			57.9 MB
+[runlim] samples:		2995
+** ASH **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		approxmc
+[runlim] argv[1]:		--sparse
+[runlim] argv[2]:		1
+[runlim] argv[3]:		-s
+[runlim] argv[4]:		01
+[runlim] argv[5]:		/experiments/results/usqrt.c/01/counterSharp/ash.dimacs
+[runlim] start:			Fri Oct 30 11:18:37 2020
+[runlim] main pid:		74
+[runlim] end:			Fri Oct 30 11:18:39 2020
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			2.60 seconds
+[runlim] time:			2.49 seconds
+[runlim] space:			15.4 MB
+[runlim] samples:		25

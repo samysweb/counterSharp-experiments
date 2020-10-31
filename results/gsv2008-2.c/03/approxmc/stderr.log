@@ -1,0 +1,107 @@
+** CON **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		approxmc
+[runlim] argv[1]:		--sparse
+[runlim] argv[2]:		1
+[runlim] argv[3]:		-s
+[runlim] argv[4]:		03
+[runlim] argv[5]:		/experiments/results/gsv2008-2.c/03/counterSharp/con.dimacs
+[runlim] start:			Fri Oct 30 16:48:02 2020
+[runlim] main pid:		4352
+approxmc: /approxmc/src/counter.cpp:447: ApproxMC::SolCount Counter::count(): Assertion `numHashList.size() > 0 && "UNSAT should not be possible"' failed.
+[runlim] end:			Fri Oct 30 16:48:08 2020
+[runlim] status:		signal(6)
+[runlim] result:		11
+[runlim] children:		0
+[runlim] real:			6.86 seconds
+[runlim] time:			6.34 seconds
+[runlim] space:			18.4 MB
+[runlim] samples:		64
+** AMM **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		approxmc
+[runlim] argv[1]:		--sparse
+[runlim] argv[2]:		1
+[runlim] argv[3]:		-s
+[runlim] argv[4]:		03
+[runlim] argv[5]:		/experiments/results/gsv2008-2.c/03/counterSharp/amm.dimacs
+[runlim] start:			Fri Oct 30 16:48:08 2020
+[runlim] main pid:		4354
+[runlim] end:			Fri Oct 30 16:48:09 2020
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			1.79 seconds
+[runlim] time:			0.89 seconds
+[runlim] space:			19.1 MB
+[runlim] samples:		9
+** AMH **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		approxmc
+[runlim] argv[1]:		--sparse
+[runlim] argv[2]:		1
+[runlim] argv[3]:		-s
+[runlim] argv[4]:		03
+[runlim] argv[5]:		/experiments/results/gsv2008-2.c/03/counterSharp/amh.dimacs
+[runlim] start:			Fri Oct 30 16:48:09 2020
+[runlim] main pid:		4356
+[runlim] end:			Fri Oct 30 16:48:17 2020
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			9.00 seconds
+[runlim] time:			8.19 seconds
+[runlim] space:			20.9 MB
+[runlim] samples:		82
+** ASM **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		approxmc
+[runlim] argv[1]:		--sparse
+[runlim] argv[2]:		1
+[runlim] argv[3]:		-s
+[runlim] argv[4]:		03
+[runlim] argv[5]:		/experiments/results/gsv2008-2.c/03/counterSharp/asm.dimacs
+[runlim] start:			Fri Oct 30 16:48:17 2020
+[runlim] main pid:		4358
+approxmc: /approxmc/src/counter.cpp:447: ApproxMC::SolCount Counter::count(): Assertion `numHashList.size() > 0 && "UNSAT should not be possible"' failed.
+[runlim] end:			Fri Oct 30 16:48:21 2020
+[runlim] status:		signal(6)
+[runlim] result:		11
+[runlim] children:		0
+[runlim] real:			4.17 seconds
+[runlim] time:			3.09 seconds
+[runlim] space:			16.7 MB
+[runlim] samples:		31
+** ASH **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		approxmc
+[runlim] argv[1]:		--sparse
+[runlim] argv[2]:		1
+[runlim] argv[3]:		-s
+[runlim] argv[4]:		03
+[runlim] argv[5]:		/experiments/results/gsv2008-2.c/03/counterSharp/ash.dimacs
+[runlim] start:			Fri Oct 30 16:48:21 2020
+[runlim] main pid:		4360
+[runlim] end:			Fri Oct 30 16:48:29 2020
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			8.66 seconds
+[runlim] time:			8.38 seconds
+[runlim] space:			20.5 MB
+[runlim] samples:		84

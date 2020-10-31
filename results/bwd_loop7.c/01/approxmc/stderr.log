@@ -1,0 +1,109 @@
+** CON **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		approxmc
+[runlim] argv[1]:		--sparse
+[runlim] argv[2]:		1
+[runlim] argv[3]:		-s
+[runlim] argv[4]:		01
+[runlim] argv[5]:		/experiments/results/bwd_loop7.c/01/counterSharp/con.dimacs
+[runlim] start:			Fri Oct 30 12:57:43 2020
+[runlim] main pid:		2029
+ERROR! Could not open file '/experiments/results/bwd_loop7.c/01/counterSharp/con.dimacs' for reading: No such file or directory
+[runlim] end:			Fri Oct 30 12:57:43 2020
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			0.62 seconds
+[runlim] time:			0.00 seconds
+[runlim] space:			0.0 MB
+[runlim] samples:		0
+** AMM **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		approxmc
+[runlim] argv[1]:		--sparse
+[runlim] argv[2]:		1
+[runlim] argv[3]:		-s
+[runlim] argv[4]:		01
+[runlim] argv[5]:		/experiments/results/bwd_loop7.c/01/counterSharp/amm.dimacs
+[runlim] start:			Fri Oct 30 12:57:43 2020
+[runlim] main pid:		2031
+[runlim] end:			Fri Oct 30 12:57:45 2020
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			2.49 seconds
+[runlim] time:			1.79 seconds
+[runlim] space:			49.5 MB
+[runlim] samples:		18
+** AMH **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		approxmc
+[runlim] argv[1]:		--sparse
+[runlim] argv[2]:		1
+[runlim] argv[3]:		-s
+[runlim] argv[4]:		01
+[runlim] argv[5]:		/experiments/results/bwd_loop7.c/01/counterSharp/amh.dimacs
+[runlim] start:			Fri Oct 30 12:57:45 2020
+[runlim] main pid:		2033
+approxmc: /approxmc/src/counter.cpp:447: ApproxMC::SolCount Counter::count(): Assertion `numHashList.size() > 0 && "UNSAT should not be possible"' failed.
+[runlim] end:			Fri Oct 30 12:57:45 2020
+[runlim] status:		signal(6)
+[runlim] result:		11
+[runlim] children:		0
+[runlim] real:			0.87 seconds
+[runlim] time:			0.29 seconds
+[runlim] space:			32.3 MB
+[runlim] samples:		3
+** ASM **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		approxmc
+[runlim] argv[1]:		--sparse
+[runlim] argv[2]:		1
+[runlim] argv[3]:		-s
+[runlim] argv[4]:		01
+[runlim] argv[5]:		/experiments/results/bwd_loop7.c/01/counterSharp/asm.dimacs
+[runlim] start:			Fri Oct 30 12:57:45 2020
+[runlim] main pid:		2035
+approxmc: /approxmc/src/counter.cpp:447: ApproxMC::SolCount Counter::count(): Assertion `numHashList.size() > 0 && "UNSAT should not be possible"' failed.
+[runlim] end:			Fri Oct 30 12:57:46 2020
+[runlim] status:		signal(6)
+[runlim] result:		11
+[runlim] children:		0
+[runlim] real:			1.71 seconds
+[runlim] time:			0.77 seconds
+[runlim] space:			27.4 MB
+[runlim] samples:		8
+** ASH **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		approxmc
+[runlim] argv[1]:		--sparse
+[runlim] argv[2]:		1
+[runlim] argv[3]:		-s
+[runlim] argv[4]:		01
+[runlim] argv[5]:		/experiments/results/bwd_loop7.c/01/counterSharp/ash.dimacs
+[runlim] start:			Fri Oct 30 12:57:46 2020
+[runlim] main pid:		2037
+approxmc: /approxmc/src/counter.cpp:447: ApproxMC::SolCount Counter::count(): Assertion `numHashList.size() > 0 && "UNSAT should not be possible"' failed.
+[runlim] end:			Fri Oct 30 12:57:47 2020
+[runlim] status:		signal(6)
+[runlim] result:		11
+[runlim] children:		0
+[runlim] real:			1.44 seconds
+[runlim] time:			0.65 seconds
+[runlim] space:			26.8 MB
+[runlim] samples:		7

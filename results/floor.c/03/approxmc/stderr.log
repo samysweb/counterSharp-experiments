@@ -1,0 +1,107 @@
+** CON **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		approxmc
+[runlim] argv[1]:		--sparse
+[runlim] argv[2]:		1
+[runlim] argv[3]:		-s
+[runlim] argv[4]:		03
+[runlim] argv[5]:		/experiments/results/floor.c/03/counterSharp/con.dimacs
+[runlim] start:			Fri Oct 30 12:50:50 2020
+[runlim] main pid:		1181
+ERROR! Could not open file '/experiments/results/floor.c/03/counterSharp/con.dimacs' for reading: No such file or directory
+[runlim] end:			Fri Oct 30 12:50:50 2020
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			0.23 seconds
+[runlim] time:			0.00 seconds
+[runlim] space:			0.0 MB
+[runlim] samples:		0
+** AMM **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		approxmc
+[runlim] argv[1]:		--sparse
+[runlim] argv[2]:		1
+[runlim] argv[3]:		-s
+[runlim] argv[4]:		03
+[runlim] argv[5]:		/experiments/results/floor.c/03/counterSharp/amm.dimacs
+[runlim] start:			Fri Oct 30 12:50:50 2020
+[runlim] main pid:		1183
+[runlim] end:			Fri Oct 30 12:50:54 2020
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			4.98 seconds
+[runlim] time:			4.69 seconds
+[runlim] space:			31.6 MB
+[runlim] samples:		47
+** AMH **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		approxmc
+[runlim] argv[1]:		--sparse
+[runlim] argv[2]:		1
+[runlim] argv[3]:		-s
+[runlim] argv[4]:		03
+[runlim] argv[5]:		/experiments/results/floor.c/03/counterSharp/amh.dimacs
+[runlim] start:			Fri Oct 30 12:50:54 2020
+[runlim] main pid:		1185
+[runlim] end:			Fri Oct 30 12:51:00 2020
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			6.36 seconds
+[runlim] time:			5.28 seconds
+[runlim] space:			32.0 MB
+[runlim] samples:		53
+** ASM **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		approxmc
+[runlim] argv[1]:		--sparse
+[runlim] argv[2]:		1
+[runlim] argv[3]:		-s
+[runlim] argv[4]:		03
+[runlim] argv[5]:		/experiments/results/floor.c/03/counterSharp/asm.dimacs
+[runlim] start:			Fri Oct 30 12:51:00 2020
+[runlim] main pid:		1187
+approxmc: /approxmc/src/counter.cpp:447: ApproxMC::SolCount Counter::count(): Assertion `numHashList.size() > 0 && "UNSAT should not be possible"' failed.
+[runlim] end:			Fri Oct 30 12:51:00 2020
+[runlim] status:		signal(6)
+[runlim] result:		11
+[runlim] children:		0
+[runlim] real:			0.62 seconds
+[runlim] time:			0.19 seconds
+[runlim] space:			15.2 MB
+[runlim] samples:		2
+** ASH **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		approxmc
+[runlim] argv[1]:		--sparse
+[runlim] argv[2]:		1
+[runlim] argv[3]:		-s
+[runlim] argv[4]:		03
+[runlim] argv[5]:		/experiments/results/floor.c/03/counterSharp/ash.dimacs
+[runlim] start:			Fri Oct 30 12:51:00 2020
+[runlim] main pid:		1189
+[runlim] end:			Fri Oct 30 12:51:07 2020
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			7.02 seconds
+[runlim] time:			6.29 seconds
+[runlim] space:			32.6 MB
+[runlim] samples:		63

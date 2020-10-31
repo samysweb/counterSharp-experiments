@@ -1,0 +1,110 @@
+** CON **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		approxmc
+[runlim] argv[1]:		--sparse
+[runlim] argv[2]:		1
+[runlim] argv[3]:		-s
+[runlim] argv[4]:		05
+[runlim] argv[5]:		/experiments/results/bwd_loop10-2.c/05/counterSharp/con.dimacs
+[runlim] start:			Fri Oct 30 12:59:44 2020
+[runlim] main pid:		2598
+ERROR! Could not open file '/experiments/results/bwd_loop10-2.c/05/counterSharp/con.dimacs' for reading: No such file or directory
+[runlim] end:			Fri Oct 30 12:59:44 2020
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			0.52 seconds
+[runlim] time:			0.00 seconds
+[runlim] space:			0.0 MB
+[runlim] samples:		0
+** AMM **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		approxmc
+[runlim] argv[1]:		--sparse
+[runlim] argv[2]:		1
+[runlim] argv[3]:		-s
+[runlim] argv[4]:		05
+[runlim] argv[5]:		/experiments/results/bwd_loop10-2.c/05/counterSharp/amm.dimacs
+[runlim] start:			Fri Oct 30 12:59:44 2020
+[runlim] main pid:		2600
+ERROR! Could not open file '/experiments/results/bwd_loop10-2.c/05/counterSharp/amm.dimacs' for reading: No such file or directory
+[runlim] end:			Fri Oct 30 12:59:44 2020
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			0.53 seconds
+[runlim] time:			0.00 seconds
+[runlim] space:			0.0 MB
+[runlim] samples:		0
+** AMH **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		approxmc
+[runlim] argv[1]:		--sparse
+[runlim] argv[2]:		1
+[runlim] argv[3]:		-s
+[runlim] argv[4]:		05
+[runlim] argv[5]:		/experiments/results/bwd_loop10-2.c/05/counterSharp/amh.dimacs
+[runlim] start:			Fri Oct 30 12:59:44 2020
+[runlim] main pid:		2602
+ERROR! Could not open file '/experiments/results/bwd_loop10-2.c/05/counterSharp/amh.dimacs' for reading: No such file or directory
+[runlim] end:			Fri Oct 30 12:59:44 2020
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			0.53 seconds
+[runlim] time:			0.00 seconds
+[runlim] space:			0.0 MB
+[runlim] samples:		0
+** ASM **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		approxmc
+[runlim] argv[1]:		--sparse
+[runlim] argv[2]:		1
+[runlim] argv[3]:		-s
+[runlim] argv[4]:		05
+[runlim] argv[5]:		/experiments/results/bwd_loop10-2.c/05/counterSharp/asm.dimacs
+[runlim] start:			Fri Oct 30 12:59:44 2020
+[runlim] main pid:		2604
+ERROR! Could not open file '/experiments/results/bwd_loop10-2.c/05/counterSharp/asm.dimacs' for reading: No such file or directory
+[runlim] end:			Fri Oct 30 12:59:44 2020
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			0.54 seconds
+[runlim] time:			0.00 seconds
+[runlim] space:			0.0 MB
+[runlim] samples:		0
+** ASH **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		approxmc
+[runlim] argv[1]:		--sparse
+[runlim] argv[2]:		1
+[runlim] argv[3]:		-s
+[runlim] argv[4]:		05
+[runlim] argv[5]:		/experiments/results/bwd_loop10-2.c/05/counterSharp/ash.dimacs
+[runlim] start:			Fri Oct 30 12:59:44 2020
+[runlim] main pid:		2606
+ERROR! Could not open file '/experiments/results/bwd_loop10-2.c/05/counterSharp/ash.dimacs' for reading: No such file or directory
+[runlim] end:			Fri Oct 30 12:59:44 2020
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			0.54 seconds
+[runlim] time:			0.00 seconds
+[runlim] space:			0.0 MB
+[runlim] samples:		0

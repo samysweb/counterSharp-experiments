@@ -1,0 +1,160 @@
+** CON **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		approxmc
+[runlim] argv[1]:		--sparse
+[runlim] argv[2]:		1
+[runlim] argv[3]:		-s
+[runlim] argv[4]:		04
+[runlim] argv[5]:		/experiments/results/Waldkirch-2.c/04/counterSharp/con.dimacs
+[runlim] start:			Fri Oct 30 18:38:53 2020
+[runlim] main pid:		5589
+[runlim] sample:		10.0 time, 10.5 real, 65.1 MB
+approxmc: /approxmc/src/counter.cpp:447: ApproxMC::SolCount Counter::count(): Assertion `numHashList.size() > 0 && "UNSAT should not be possible"' failed.
+[runlim] end:			Fri Oct 30 18:39:05 2020
+[runlim] status:		signal(6)
+[runlim] result:		11
+[runlim] children:		0
+[runlim] real:			12.37 seconds
+[runlim] time:			11.75 seconds
+[runlim] space:			91.9 MB
+[runlim] samples:		118
+** AMM **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		approxmc
+[runlim] argv[1]:		--sparse
+[runlim] argv[2]:		1
+[runlim] argv[3]:		-s
+[runlim] argv[4]:		04
+[runlim] argv[5]:		/experiments/results/Waldkirch-2.c/04/counterSharp/amm.dimacs
+[runlim] start:			Fri Oct 30 18:39:05 2020
+[runlim] main pid:		5591
+[runlim] sample:		10.0 time, 10.4 real, 118.7 MB
+[runlim] sample:		20.0 time, 20.4 real, 146.3 MB
+[runlim] sample:		30.0 time, 30.4 real, 155.8 MB
+[runlim] sample:		40.0 time, 40.4 real, 114.4 MB
+[runlim] sample:		50.0 time, 50.4 real, 155.6 MB
+[runlim] sample:		60.0 time, 60.4 real, 109.2 MB
+[runlim] sample:		70.0 time, 70.4 real, 161.6 MB
+[runlim] sample:		80.0 time, 80.4 real, 119.4 MB
+[runlim] sample:		90.0 time, 90.4 real, 121.6 MB
+[runlim] sample:		100.0 time, 100.4 real, 167.8 MB
+[runlim] sample:		110.0 time, 110.4 real, 123.2 MB
+[runlim] sample:		120.0 time, 120.4 real, 171.0 MB
+[runlim] sample:		130.0 time, 130.4 real, 170.9 MB
+[runlim] sample:		140.0 time, 140.4 real, 126.1 MB
+[runlim] sample:		150.0 time, 150.4 real, 172.3 MB
+[runlim] sample:		160.0 time, 160.4 real, 127.1 MB
+[runlim] sample:		170.0 time, 170.4 real, 174.1 MB
+[runlim] end:			Fri Oct 30 18:41:56 2020
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			171.67 seconds
+[runlim] time:			171.26 seconds
+[runlim] space:			174.1 MB
+[runlim] samples:		1713
+** AMH **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		approxmc
+[runlim] argv[1]:		--sparse
+[runlim] argv[2]:		1
+[runlim] argv[3]:		-s
+[runlim] argv[4]:		04
+[runlim] argv[5]:		/experiments/results/Waldkirch-2.c/04/counterSharp/amh.dimacs
+[runlim] start:			Fri Oct 30 18:41:56 2020
+[runlim] main pid:		5593
+[runlim] sample:		10.0 time, 10.7 real, 117.9 MB
+[runlim] sample:		20.0 time, 20.7 real, 86.3 MB
+[runlim] sample:		30.0 time, 30.7 real, 157.9 MB
+[runlim] sample:		40.0 time, 40.7 real, 160.5 MB
+[runlim] sample:		50.0 time, 50.7 real, 134.9 MB
+[runlim] sample:		60.0 time, 60.7 real, 135.0 MB
+[runlim] sample:		70.0 time, 70.7 real, 178.7 MB
+[runlim] sample:		80.0 time, 80.7 real, 135.2 MB
+[runlim] sample:		90.0 time, 90.7 real, 179.4 MB
+[runlim] sample:		100.0 time, 100.7 real, 136.8 MB
+[runlim] sample:		110.0 time, 110.7 real, 136.8 MB
+[runlim] sample:		120.0 time, 120.7 real, 202.3 MB
+[runlim] sample:		130.0 time, 130.7 real, 158.1 MB
+[runlim] sample:		140.0 time, 140.7 real, 181.6 MB
+[runlim] sample:		150.0 time, 150.7 real, 181.6 MB
+[runlim] end:			Fri Oct 30 18:44:31 2020
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			155.52 seconds
+[runlim] time:			154.77 seconds
+[runlim] space:			202.3 MB
+[runlim] samples:		1548
+** ASM **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		approxmc
+[runlim] argv[1]:		--sparse
+[runlim] argv[2]:		1
+[runlim] argv[3]:		-s
+[runlim] argv[4]:		04
+[runlim] argv[5]:		/experiments/results/Waldkirch-2.c/04/counterSharp/asm.dimacs
+[runlim] start:			Fri Oct 30 18:44:31 2020
+[runlim] main pid:		5595
+[runlim] sample:		10.0 time, 10.5 real, 118.2 MB
+[runlim] sample:		20.0 time, 20.5 real, 145.0 MB
+[runlim] sample:		30.0 time, 30.5 real, 97.7 MB
+[runlim] sample:		40.0 time, 40.5 real, 99.6 MB
+[runlim] sample:		50.0 time, 50.5 real, 101.8 MB
+[runlim] sample:		60.0 time, 60.5 real, 101.6 MB
+[runlim] sample:		70.0 time, 70.5 real, 101.5 MB
+[runlim] end:			Fri Oct 30 18:45:45 2020
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			74.24 seconds
+[runlim] time:			73.66 seconds
+[runlim] space:			145.0 MB
+[runlim] samples:		737
+** ASH **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		approxmc
+[runlim] argv[1]:		--sparse
+[runlim] argv[2]:		1
+[runlim] argv[3]:		-s
+[runlim] argv[4]:		04
+[runlim] argv[5]:		/experiments/results/Waldkirch-2.c/04/counterSharp/ash.dimacs
+[runlim] start:			Fri Oct 30 18:45:45 2020
+[runlim] main pid:		5597
+[runlim] sample:		10.0 time, 10.2 real, 119.9 MB
+[runlim] sample:		20.0 time, 20.2 real, 84.9 MB
+[runlim] sample:		30.0 time, 30.2 real, 155.9 MB
+[runlim] sample:		40.0 time, 40.2 real, 110.1 MB
+[runlim] sample:		50.0 time, 50.2 real, 177.5 MB
+[runlim] sample:		60.0 time, 60.2 real, 131.5 MB
+[runlim] sample:		70.0 time, 70.2 real, 180.8 MB
+[runlim] sample:		80.0 time, 80.2 real, 183.1 MB
+[runlim] sample:		90.0 time, 90.2 real, 140.9 MB
+[runlim] sample:		100.0 time, 100.2 real, 185.6 MB
+[runlim] sample:		110.0 time, 110.2 real, 140.9 MB
+[runlim] sample:		120.0 time, 120.2 real, 140.9 MB
+[runlim] sample:		130.0 time, 130.2 real, 186.2 MB
+[runlim] sample:		140.0 time, 140.2 real, 143.4 MB
+[runlim] end:			Fri Oct 30 18:48:14 2020
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			149.64 seconds
+[runlim] time:			149.26 seconds
+[runlim] space:			186.2 MB
+[runlim] samples:		1493
