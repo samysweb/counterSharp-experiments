@@ -1,0 +1,223 @@
+** CON **
+c Setting the timout to: 100000
+c Outputting solution to console
+c GANAK version 1.0.0
+c time bound set to 300s
+c ganak GIT revision: 33f36bcdd4a32f4f20f64e667de10d13d1377953
+c ganak build env: CMAKE_CXX_COMPILER = /usr/bin/c++ | CMAKE_CXX_FLAGS =  -mtune=native -Wall -Wextra -Wunused -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -ggdb3 | COMPILE_DEFINES =  | STATICCOMPILE = OFF | ONLY_SIMPLE =  | Boost_FOUND =  | ZLIB_FOUND =  | ENABLE_TESTING =  | ENABLE_ASSERTIONS = ON | MY_TARGETS =  | compilation date time = Oct 29 2020 17:35:28
+c Setting the timout to: 300
+c Solving /experiments/results/example1a-2.c/03/counterSharp/con.dimacs
+c variables (all/used/free): 	13605/13605/0
+c clauses (all/long/binary/unit): 55328/36241/18880/207
+c Sampling set is present, performing projected model counting 
+c Sampling set size: 32
+c Sampling set:  412 413 414 415 416 417 418 419 420 421 422 423 424 425 426 427 428 429 430 431 432 433 434 435 436 437 438 439 440 441 442 443
+c 
+c Preprocessing ..
+c DONE
+
+c FOUND UNSAT DURING PREPROCESSING 
+c 
+c 
+c variables (total / active / free)	13605/13605/0
+c clauses (removed) 			55328 (0)
+c decisions 				0
+c Max. decision level 			0
+c conflicts 				0
+c conflict clauses (all/bin/unit) 	0/0/207
+c 
+c failed literals found by implicit BCP 	 0
+c implicit BCP miss rate 	 0%
+c bytes cache size     	104	
+c bytes cache (overall) 	104
+c bytes cache components (overall) 	0
+c bytes cache (infra / comps) 104/0	
+c bytes pure comp data (curr)    0
+c bytes pure comp data (overall) 0
+c bytes cache with sysoverh (curr)    0
+c bytes cache with sysoverh (overall) 0
+c cache (lookup / stores / hits) 			0/0/0
+c cache miss rate 0%
+c avg. variable count (stores / hits) 	-nan/0
+c 
+c 
+c # solutions 
+s pmc 0
+c # END
+c 
+c time: 0.052748s
+** AMM **
+c Setting the timout to: 100000
+c Outputting solution to console
+c GANAK version 1.0.0
+c time bound set to 300s
+c ganak GIT revision: 33f36bcdd4a32f4f20f64e667de10d13d1377953
+c ganak build env: CMAKE_CXX_COMPILER = /usr/bin/c++ | CMAKE_CXX_FLAGS =  -mtune=native -Wall -Wextra -Wunused -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -ggdb3 | COMPILE_DEFINES =  | STATICCOMPILE = OFF | ONLY_SIMPLE =  | Boost_FOUND =  | ZLIB_FOUND =  | ENABLE_TESTING =  | ENABLE_ASSERTIONS = ON | MY_TARGETS =  | compilation date time = Oct 29 2020 17:35:28
+c Setting the timout to: 300
+c Solving /experiments/results/example1a-2.c/03/counterSharp/amm.dimacs
+c variables (all/used/free): 	13496/13496/0
+c clauses (all/long/binary/unit): 54961/36320/18535/106
+c Sampling set is present, performing projected model counting 
+c Sampling set size: 32
+c Sampling set:  208 209 210 211 212 213 214 215 216 217 218 219 220 221 222 223 224 225 226 227 228 229 230 231 232 233 234 235 236 237 238 239
+c 
+c Preprocessing ..
+c DONE
+c variables (all/used/free): 	13181/13149/32
+c clauses (all/long/binary/unit): 50102/35685/14417/0
+c Maximum cache size:	1024 MB
+c 
+c Max decision level :25
+c Doing Restart
+** AMH **
+c Setting the timout to: 100000
+c Outputting solution to console
+c GANAK version 1.0.0
+c time bound set to 300s
+c ganak GIT revision: 33f36bcdd4a32f4f20f64e667de10d13d1377953
+c ganak build env: CMAKE_CXX_COMPILER = /usr/bin/c++ | CMAKE_CXX_FLAGS =  -mtune=native -Wall -Wextra -Wunused -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -ggdb3 | COMPILE_DEFINES =  | STATICCOMPILE = OFF | ONLY_SIMPLE =  | Boost_FOUND =  | ZLIB_FOUND =  | ENABLE_TESTING =  | ENABLE_ASSERTIONS = ON | MY_TARGETS =  | compilation date time = Oct 29 2020 17:35:28
+c Setting the timout to: 300
+c Solving /experiments/results/example1a-2.c/03/counterSharp/amh.dimacs
+c variables (all/used/free): 	13496/13496/0
+c clauses (all/long/binary/unit): 54961/36320/18535/106
+c Sampling set is present, performing projected model counting 
+c Sampling set size: 32
+c Sampling set:  208 209 210 211 212 213 214 215 216 217 218 219 220 221 222 223 224 225 226 227 228 229 230 231 232 233 234 235 236 237 238 239
+c 
+c Preprocessing ..
+c DONE
+c variables (all/used/free): 	6694/6662/32
+c clauses (all/long/binary/unit): 27993/11407/16586/0
+c Maximum cache size:	1024 MB
+c 
+c We have solved halfed
+c We have solved halfed
+c 
+c 
+c variables (total / active / free)	6694/6662/32
+c clauses (removed) 			54961 (26968)
+c decisions 				990
+c Max. decision level 			10
+c conflicts 				0
+c conflict clauses (all/bin/unit) 	5674/855/0
+c 
+c failed literals found by implicit BCP 	 1616
+c implicit BCP miss rate 	 99.6966%
+c bytes cache size     	20329544	
+c bytes cache (overall) 	20329544
+c bytes cache components (overall) 	95136
+c bytes cache (infra / comps) 20234408/95136	
+c bytes pure comp data (curr)    4248760
+c bytes pure comp data (overall) 4248760
+c bytes cache with sysoverh (curr)    158560
+c bytes cache with sysoverh (overall) 158560
+c cache (lookup / stores / hits) 			993/991/3
+c cache miss rate 99.6979%
+c avg. variable count (stores / hits) 	4045.45/1472
+c 
+c 
+c # solutions 
+s pmc 1000
+c # END
+c 
+c time: 3.26167s
+** ASM **
+c Setting the timout to: 100000
+c Outputting solution to console
+c GANAK version 1.0.0
+c time bound set to 300s
+c ganak GIT revision: 33f36bcdd4a32f4f20f64e667de10d13d1377953
+c ganak build env: CMAKE_CXX_COMPILER = /usr/bin/c++ | CMAKE_CXX_FLAGS =  -mtune=native -Wall -Wextra -Wunused -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -ggdb3 | COMPILE_DEFINES =  | STATICCOMPILE = OFF | ONLY_SIMPLE =  | Boost_FOUND =  | ZLIB_FOUND =  | ENABLE_TESTING =  | ENABLE_ASSERTIONS = ON | MY_TARGETS =  | compilation date time = Oct 29 2020 17:35:28
+c Setting the timout to: 300
+c Solving /experiments/results/example1a-2.c/03/counterSharp/asm.dimacs
+c variables (all/used/free): 	13498/13498/0
+c clauses (all/long/binary/unit): 54967/36321/18539/107
+c Sampling set is present, performing projected model counting 
+c Sampling set size: 32
+c Sampling set:  208 209 210 211 212 213 214 215 216 217 218 219 220 221 222 223 224 225 226 227 228 229 230 231 232 233 234 235 236 237 238 239
+c 
+c Preprocessing ..
+c DONE
+
+c FOUND UNSAT DURING PREPROCESSING 
+c 
+c 
+c variables (total / active / free)	13498/13498/0
+c clauses (removed) 			54967 (0)
+c decisions 				0
+c Max. decision level 			0
+c conflicts 				0
+c conflict clauses (all/bin/unit) 	0/0/107
+c 
+c failed literals found by implicit BCP 	 0
+c implicit BCP miss rate 	 0%
+c bytes cache size     	104	
+c bytes cache (overall) 	104
+c bytes cache components (overall) 	0
+c bytes cache (infra / comps) 104/0	
+c bytes pure comp data (curr)    0
+c bytes pure comp data (overall) 0
+c bytes cache with sysoverh (curr)    0
+c bytes cache with sysoverh (overall) 0
+c cache (lookup / stores / hits) 			0/0/0
+c cache miss rate 0%
+c avg. variable count (stores / hits) 	-nan/0
+c 
+c 
+c # solutions 
+s pmc 0
+c # END
+c 
+c time: 0.133328s
+** ASH **
+c Setting the timout to: 100000
+c Outputting solution to console
+c GANAK version 1.0.0
+c time bound set to 300s
+c ganak GIT revision: 33f36bcdd4a32f4f20f64e667de10d13d1377953
+c ganak build env: CMAKE_CXX_COMPILER = /usr/bin/c++ | CMAKE_CXX_FLAGS =  -mtune=native -Wall -Wextra -Wunused -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -ggdb3 | COMPILE_DEFINES =  | STATICCOMPILE = OFF | ONLY_SIMPLE =  | Boost_FOUND =  | ZLIB_FOUND =  | ENABLE_TESTING =  | ENABLE_ASSERTIONS = ON | MY_TARGETS =  | compilation date time = Oct 29 2020 17:35:28
+c Setting the timout to: 300
+c Solving /experiments/results/example1a-2.c/03/counterSharp/ash.dimacs
+c variables (all/used/free): 	13498/13498/0
+c clauses (all/long/binary/unit): 54967/36321/18539/107
+c Sampling set is present, performing projected model counting 
+c Sampling set size: 32
+c Sampling set:  208 209 210 211 212 213 214 215 216 217 218 219 220 221 222 223 224 225 226 227 228 229 230 231 232 233 234 235 236 237 238 239
+c 
+c Preprocessing ..
+c DONE
+c variables (all/used/free): 	6691/6659/32
+c clauses (all/long/binary/unit): 27987/11406/16581/0
+c Maximum cache size:	1024 MB
+c 
+c We have solved halfed
+c We have solved halfed
+c 
+c 
+c variables (total / active / free)	6691/6659/32
+c clauses (removed) 			54967 (26980)
+c decisions 				990
+c Max. decision level 			10
+c conflicts 				0
+c conflict clauses (all/bin/unit) 	5673/854/0
+c 
+c failed literals found by implicit BCP 	 1615
+c implicit BCP miss rate 	 99.6968%
+c bytes cache size     	20329544	
+c bytes cache (overall) 	20329544
+c bytes cache components (overall) 	95136
+c bytes cache (infra / comps) 20234408/95136	
+c bytes pure comp data (curr)    4247708
+c bytes pure comp data (overall) 4247708
+c bytes cache with sysoverh (curr)    158560
+c bytes cache with sysoverh (overall) 158560
+c cache (lookup / stores / hits) 			993/991/3
+c cache miss rate 99.6979%
+c avg. variable count (stores / hits) 	4043.59/1472
+c 
+c 
+c # solutions 
+s pmc 1000
+c # END
+c 
+c time: 3.0982s

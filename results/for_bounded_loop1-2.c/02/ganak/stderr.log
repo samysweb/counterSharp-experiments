@@ -1,0 +1,178 @@
+** CON **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		ganak
+[runlim] argv[1]:		-t
+[runlim] argv[2]:		300
+[runlim] argv[3]:		-cs
+[runlim] argv[4]:		1024
+[runlim] argv[5]:		-seed
+[runlim] argv[6]:		02
+[runlim] argv[7]:		/experiments/results/for_bounded_loop1-2.c/02/counterSharp/con.dimacs
+[runlim] start:			Sun Nov  1 10:08:58 2020
+[runlim] main pid:		4412
+[runlim] end:			Sun Nov  1 10:08:59 2020
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			1.78 seconds
+[runlim] time:			0.99 seconds
+[runlim] space:			173.6 MB
+[runlim] samples:		10
+** AMM **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		ganak
+[runlim] argv[1]:		-t
+[runlim] argv[2]:		300
+[runlim] argv[3]:		-cs
+[runlim] argv[4]:		1024
+[runlim] argv[5]:		-seed
+[runlim] argv[6]:		02
+[runlim] argv[7]:		/experiments/results/for_bounded_loop1-2.c/02/counterSharp/amm.dimacs
+[runlim] start:			Sun Nov  1 10:08:59 2020
+[runlim] main pid:		4414
+[runlim] sample:		10.0 time, 10.8 real, 175.7 MB
+[runlim] sample:		20.0 time, 20.8 real, 179.3 MB
+[runlim] sample:		30.0 time, 30.8 real, 183.4 MB
+[runlim] sample:		40.0 time, 40.8 real, 183.4 MB
+[runlim] sample:		50.0 time, 50.8 real, 371.8 MB
+[runlim] sample:		60.0 time, 60.8 real, 534.0 MB
+[runlim] sample:		70.0 time, 70.8 real, 1803.9 MB
+[runlim] end:			Sun Nov  1 10:10:11 2020
+[runlim] status:		out of memory
+[runlim] result:		3
+[runlim] children:		0
+[runlim] real:			72.82 seconds
+[runlim] time:			71.98 seconds
+[runlim] space:			2055.2 MB
+[runlim] samples:		720
+** AMH **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		ganak
+[runlim] argv[1]:		-t
+[runlim] argv[2]:		300
+[runlim] argv[3]:		-cs
+[runlim] argv[4]:		1024
+[runlim] argv[5]:		-seed
+[runlim] argv[6]:		02
+[runlim] argv[7]:		/experiments/results/for_bounded_loop1-2.c/02/counterSharp/amh.dimacs
+[runlim] start:			Sun Nov  1 10:10:11 2020
+[runlim] main pid:		4416
+[runlim] sample:		10.0 time, 10.8 real, 177.7 MB
+[runlim] sample:		20.0 time, 20.8 real, 178.7 MB
+[runlim] sample:		30.0 time, 30.8 real, 179.5 MB
+[runlim] sample:		40.0 time, 40.8 real, 181.3 MB
+[runlim] sample:		50.0 time, 50.8 real, 183.4 MB
+[runlim] sample:		60.0 time, 60.8 real, 184.9 MB
+[runlim] sample:		70.0 time, 70.8 real, 185.7 MB
+[runlim] sample:		80.0 time, 80.8 real, 186.5 MB
+[runlim] sample:		90.0 time, 90.8 real, 187.0 MB
+[runlim] sample:		100.0 time, 100.8 real, 187.0 MB
+[runlim] sample:		110.0 time, 110.8 real, 187.0 MB
+[runlim] sample:		119.9 time, 120.8 real, 187.0 MB
+[runlim] sample:		129.9 time, 130.8 real, 187.0 MB
+[runlim] sample:		139.9 time, 140.8 real, 187.0 MB
+[runlim] sample:		149.9 time, 150.8 real, 187.0 MB
+[runlim] sample:		159.9 time, 160.8 real, 187.0 MB
+[runlim] sample:		169.9 time, 170.8 real, 187.0 MB
+[runlim] end:			Sun Nov  1 10:13:06 2020
+[runlim] status:		out of memory
+[runlim] result:		3
+[runlim] children:		0
+[runlim] real:			175.39 seconds
+[runlim] time:			174.40 seconds
+[runlim] space:			2192.7 MB
+[runlim] samples:		1745
+** ASM **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		ganak
+[runlim] argv[1]:		-t
+[runlim] argv[2]:		300
+[runlim] argv[3]:		-cs
+[runlim] argv[4]:		1024
+[runlim] argv[5]:		-seed
+[runlim] argv[6]:		02
+[runlim] argv[7]:		/experiments/results/for_bounded_loop1-2.c/02/counterSharp/asm.dimacs
+[runlim] start:			Sun Nov  1 10:13:06 2020
+[runlim] main pid:		4418
+[runlim] sample:		10.0 time, 10.4 real, 176.5 MB
+[runlim] sample:		20.0 time, 20.4 real, 177.2 MB
+[runlim] sample:		30.0 time, 30.4 real, 178.3 MB
+[runlim] sample:		40.0 time, 40.4 real, 180.1 MB
+[runlim] sample:		50.0 time, 50.4 real, 181.9 MB
+[runlim] sample:		60.0 time, 60.4 real, 183.4 MB
+[runlim] sample:		70.0 time, 70.4 real, 184.4 MB
+[runlim] sample:		80.0 time, 80.4 real, 185.2 MB
+[runlim] sample:		90.0 time, 90.4 real, 185.5 MB
+[runlim] sample:		100.0 time, 100.4 real, 185.5 MB
+[runlim] sample:		110.0 time, 110.4 real, 185.5 MB
+[runlim] sample:		119.9 time, 120.4 real, 185.5 MB
+[runlim] sample:		129.9 time, 130.4 real, 185.5 MB
+[runlim] sample:		139.9 time, 140.4 real, 185.5 MB
+[runlim] sample:		149.9 time, 150.4 real, 185.5 MB
+[runlim] sample:		159.9 time, 160.4 real, 185.5 MB
+[runlim] sample:		169.9 time, 170.4 real, 212.3 MB
+[runlim] end:			Sun Nov  1 10:15:59 2020
+[runlim] status:		out of memory
+[runlim] result:		3
+[runlim] children:		0
+[runlim] real:			173.56 seconds
+[runlim] time:			173.02 seconds
+[runlim] space:			2284.0 MB
+[runlim] samples:		1731
+** ASH **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		ganak
+[runlim] argv[1]:		-t
+[runlim] argv[2]:		300
+[runlim] argv[3]:		-cs
+[runlim] argv[4]:		1024
+[runlim] argv[5]:		-seed
+[runlim] argv[6]:		02
+[runlim] argv[7]:		/experiments/results/for_bounded_loop1-2.c/02/counterSharp/ash.dimacs
+[runlim] start:			Sun Nov  1 10:15:59 2020
+[runlim] main pid:		4420
+[runlim] sample:		10.0 time, 10.6 real, 177.5 MB
+[runlim] sample:		20.0 time, 20.6 real, 178.0 MB
+[runlim] sample:		30.0 time, 30.6 real, 178.8 MB
+[runlim] sample:		40.0 time, 40.6 real, 180.0 MB
+[runlim] sample:		50.0 time, 50.6 real, 181.1 MB
+[runlim] sample:		60.0 time, 60.6 real, 182.1 MB
+[runlim] sample:		70.0 time, 70.6 real, 182.9 MB
+[runlim] sample:		80.0 time, 80.6 real, 183.1 MB
+[runlim] sample:		90.0 time, 90.6 real, 183.7 MB
+[runlim] sample:		100.0 time, 100.6 real, 184.2 MB
+[runlim] sample:		110.0 time, 110.6 real, 184.4 MB
+[runlim] sample:		120.0 time, 120.6 real, 184.7 MB
+[runlim] sample:		130.0 time, 130.6 real, 184.7 MB
+[runlim] sample:		140.0 time, 140.6 real, 184.7 MB
+[runlim] sample:		150.0 time, 150.6 real, 184.7 MB
+[runlim] sample:		160.0 time, 160.6 real, 184.7 MB
+[runlim] sample:		170.0 time, 170.6 real, 184.7 MB
+[runlim] sample:		180.0 time, 180.6 real, 184.7 MB
+[runlim] sample:		190.0 time, 190.6 real, 184.7 MB
+[runlim] sample:		200.0 time, 200.6 real, 185.2 MB
+[runlim] sample:		210.0 time, 210.6 real, 185.2 MB
+[runlim] sample:		220.0 time, 220.6 real, 1873.7 MB
+[runlim] end:			Sun Nov  1 10:19:40 2020
+[runlim] status:		out of memory
+[runlim] result:		3
+[runlim] children:		0
+[runlim] real:			221.02 seconds
+[runlim] time:			220.36 seconds
+[runlim] space:			2256.7 MB
+[runlim] samples:		2204

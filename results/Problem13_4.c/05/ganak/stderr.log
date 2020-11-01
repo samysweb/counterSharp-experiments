@@ -1,0 +1,120 @@
+** CON **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		ganak
+[runlim] argv[1]:		-t
+[runlim] argv[2]:		300
+[runlim] argv[3]:		-cs
+[runlim] argv[4]:		1024
+[runlim] argv[5]:		-seed
+[runlim] argv[6]:		05
+[runlim] argv[7]:		/experiments/results/Problem13_4.c/05/counterSharp/con.dimacs
+[runlim] start:			Sat Oct 31 19:04:12 2020
+[runlim] main pid:		963
+Cannot open file: /experiments/results/Problem13_4.c/05/counterSharp/con.dimacs
+[runlim] end:			Sat Oct 31 19:04:12 2020
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			0.30 seconds
+[runlim] time:			0.00 seconds
+[runlim] space:			0.0 MB
+[runlim] samples:		0
+** AMM **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		ganak
+[runlim] argv[1]:		-t
+[runlim] argv[2]:		300
+[runlim] argv[3]:		-cs
+[runlim] argv[4]:		1024
+[runlim] argv[5]:		-seed
+[runlim] argv[6]:		05
+[runlim] argv[7]:		/experiments/results/Problem13_4.c/05/counterSharp/amm.dimacs
+[runlim] start:			Sat Oct 31 19:04:12 2020
+[runlim] main pid:		965
+Cannot open file: /experiments/results/Problem13_4.c/05/counterSharp/amm.dimacs
+[runlim] end:			Sat Oct 31 19:04:12 2020
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			0.30 seconds
+[runlim] time:			0.00 seconds
+[runlim] space:			0.0 MB
+[runlim] samples:		0
+** AMH **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		ganak
+[runlim] argv[1]:		-t
+[runlim] argv[2]:		300
+[runlim] argv[3]:		-cs
+[runlim] argv[4]:		1024
+[runlim] argv[5]:		-seed
+[runlim] argv[6]:		05
+[runlim] argv[7]:		/experiments/results/Problem13_4.c/05/counterSharp/amh.dimacs
+[runlim] start:			Sat Oct 31 19:04:12 2020
+[runlim] main pid:		967
+Cannot open file: /experiments/results/Problem13_4.c/05/counterSharp/amh.dimacs
+[runlim] end:			Sat Oct 31 19:04:12 2020
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			0.31 seconds
+[runlim] time:			0.00 seconds
+[runlim] space:			0.0 MB
+[runlim] samples:		0
+** ASM **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		ganak
+[runlim] argv[1]:		-t
+[runlim] argv[2]:		300
+[runlim] argv[3]:		-cs
+[runlim] argv[4]:		1024
+[runlim] argv[5]:		-seed
+[runlim] argv[6]:		05
+[runlim] argv[7]:		/experiments/results/Problem13_4.c/05/counterSharp/asm.dimacs
+[runlim] start:			Sat Oct 31 19:04:12 2020
+[runlim] main pid:		969
+Cannot open file: /experiments/results/Problem13_4.c/05/counterSharp/asm.dimacs
+[runlim] end:			Sat Oct 31 19:04:12 2020
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			0.31 seconds
+[runlim] time:			0.00 seconds
+[runlim] space:			0.0 MB
+[runlim] samples:		0
+** ASH **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		ganak
+[runlim] argv[1]:		-t
+[runlim] argv[2]:		300
+[runlim] argv[3]:		-cs
+[runlim] argv[4]:		1024
+[runlim] argv[5]:		-seed
+[runlim] argv[6]:		05
+[runlim] argv[7]:		/experiments/results/Problem13_4.c/05/counterSharp/ash.dimacs
+[runlim] start:			Sat Oct 31 19:04:12 2020
+[runlim] main pid:		971
+Cannot open file: /experiments/results/Problem13_4.c/05/counterSharp/ash.dimacs
+[runlim] end:			Sat Oct 31 19:04:12 2020
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			0.31 seconds
+[runlim] time:			0.00 seconds
+[runlim] space:			0.0 MB
+[runlim] samples:		0

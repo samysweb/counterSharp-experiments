@@ -1,0 +1,115 @@
+** CON **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		ganak
+[runlim] argv[1]:		-t
+[runlim] argv[2]:		300
+[runlim] argv[3]:		-cs
+[runlim] argv[4]:		1024
+[runlim] argv[5]:		-seed
+[runlim] argv[6]:		01
+[runlim] argv[7]:		/experiments/results/count_up_down_true-unreach-call_true-termination.c/01/counterSharp/con.dimacs
+[runlim] start:			Sun Nov  1 03:05:01 2020
+[runlim] main pid:		2932
+[runlim] end:			Sun Nov  1 03:05:01 2020
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			0.91 seconds
+[runlim] time:			0.00 seconds
+[runlim] space:			0.0 MB
+[runlim] samples:		0
+** AMM **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		ganak
+[runlim] argv[1]:		-t
+[runlim] argv[2]:		300
+[runlim] argv[3]:		-cs
+[runlim] argv[4]:		1024
+[runlim] argv[5]:		-seed
+[runlim] argv[6]:		01
+[runlim] argv[7]:		/experiments/results/count_up_down_true-unreach-call_true-termination.c/01/counterSharp/amm.dimacs
+[runlim] start:			Sun Nov  1 03:05:01 2020
+[runlim] main pid:		2934
+[runlim] end:			Sun Nov  1 03:05:02 2020
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			1.21 seconds
+[runlim] time:			0.19 seconds
+[runlim] space:			9.3 MB
+[runlim] samples:		2
+** AMH **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		ganak
+[runlim] argv[1]:		-t
+[runlim] argv[2]:		300
+[runlim] argv[3]:		-cs
+[runlim] argv[4]:		1024
+[runlim] argv[5]:		-seed
+[runlim] argv[6]:		01
+[runlim] argv[7]:		/experiments/results/count_up_down_true-unreach-call_true-termination.c/01/counterSharp/amh.dimacs
+[runlim] start:			Sun Nov  1 03:05:02 2020
+[runlim] main pid:		2936
+[runlim] end:			Sun Nov  1 03:05:02 2020
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			0.22 seconds
+[runlim] time:			0.00 seconds
+[runlim] space:			0.0 MB
+[runlim] samples:		0
+** ASM **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		ganak
+[runlim] argv[1]:		-t
+[runlim] argv[2]:		300
+[runlim] argv[3]:		-cs
+[runlim] argv[4]:		1024
+[runlim] argv[5]:		-seed
+[runlim] argv[6]:		01
+[runlim] argv[7]:		/experiments/results/count_up_down_true-unreach-call_true-termination.c/01/counterSharp/asm.dimacs
+[runlim] start:			Sun Nov  1 03:05:02 2020
+[runlim] main pid:		2938
+[runlim] end:			Sun Nov  1 03:05:02 2020
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			0.23 seconds
+[runlim] time:			0.00 seconds
+[runlim] space:			0.0 MB
+[runlim] samples:		0
+** ASH **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		ganak
+[runlim] argv[1]:		-t
+[runlim] argv[2]:		300
+[runlim] argv[3]:		-cs
+[runlim] argv[4]:		1024
+[runlim] argv[5]:		-seed
+[runlim] argv[6]:		01
+[runlim] argv[7]:		/experiments/results/count_up_down_true-unreach-call_true-termination.c/01/counterSharp/ash.dimacs
+[runlim] start:			Sun Nov  1 03:05:02 2020
+[runlim] main pid:		2940
+[runlim] end:			Sun Nov  1 03:05:02 2020
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			0.25 seconds
+[runlim] time:			0.00 seconds
+[runlim] space:			0.0 MB
+[runlim] samples:		0

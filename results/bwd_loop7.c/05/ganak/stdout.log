@@ -1,0 +1,276 @@
+** CON **
+c Setting the timout to: 100000
+c Outputting solution to console
+c GANAK version 1.0.0
+c time bound set to 300s
+c ganak GIT revision: 33f36bcdd4a32f4f20f64e667de10d13d1377953
+c ganak build env: CMAKE_CXX_COMPILER = /usr/bin/c++ | CMAKE_CXX_FLAGS =  -mtune=native -Wall -Wextra -Wunused -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -ggdb3 | COMPILE_DEFINES =  | STATICCOMPILE = OFF | ONLY_SIMPLE =  | Boost_FOUND =  | ZLIB_FOUND =  | ENABLE_TESTING =  | ENABLE_ASSERTIONS = ON | MY_TARGETS =  | compilation date time = Oct 29 2020 17:35:28
+c Setting the timout to: 300
+** AMM **
+c Setting the timout to: 100000
+c Outputting solution to console
+c GANAK version 1.0.0
+c time bound set to 300s
+c ganak GIT revision: 33f36bcdd4a32f4f20f64e667de10d13d1377953
+c ganak build env: CMAKE_CXX_COMPILER = /usr/bin/c++ | CMAKE_CXX_FLAGS =  -mtune=native -Wall -Wextra -Wunused -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -ggdb3 | COMPILE_DEFINES =  | STATICCOMPILE = OFF | ONLY_SIMPLE =  | Boost_FOUND =  | ZLIB_FOUND =  | ENABLE_TESTING =  | ENABLE_ASSERTIONS = ON | MY_TARGETS =  | compilation date time = Oct 29 2020 17:35:28
+c Setting the timout to: 300
+c Solving /experiments/results/bwd_loop7.c/05/counterSharp/amm.dimacs
+c variables (all/used/free): 	41937/41937/0
+c clauses (all/long/binary/unit): 170246/143214/26529/503
+c Sampling set is present, performing projected model counting 
+c Sampling set size: 32
+c Sampling set:  4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35
+c 
+c Preprocessing ..
+c DONE
+c variables (all/used/free): 	26829/26797/32
+c clauses (all/long/binary/unit): 85161/35997/49164/0
+c Maximum cache size:	1024 MB
+c 
+c Max decision level :25
+c Max decision level :50
+c Max decision level :75
+c Max decision level :100
+c Max decision level :125
+c Max decision level :150
+c Max decision level :175
+c Max decision level :200
+c Max decision level :225
+c Max decision level :250
+c Doing Restart
+c Max decision level :275
+c Max decision level :300
+c Max decision level :325
+c Max decision level :350
+c Max decision level :375
+c Max decision level :400
+c Max decision level :425
+c Max decision level :450
+c Max decision level :475
+c Cache full!!
+c Cache full!!
+c Cache full!!
+c Cache full!!
+c Max decision level :500
+c Cache full!!
+c Cache full!!
+c Cache full!!
+** AMH **
+c Setting the timout to: 100000
+c Outputting solution to console
+c GANAK version 1.0.0
+c time bound set to 300s
+c ganak GIT revision: 33f36bcdd4a32f4f20f64e667de10d13d1377953
+c ganak build env: CMAKE_CXX_COMPILER = /usr/bin/c++ | CMAKE_CXX_FLAGS =  -mtune=native -Wall -Wextra -Wunused -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -ggdb3 | COMPILE_DEFINES =  | STATICCOMPILE = OFF | ONLY_SIMPLE =  | Boost_FOUND =  | ZLIB_FOUND =  | ENABLE_TESTING =  | ENABLE_ASSERTIONS = ON | MY_TARGETS =  | compilation date time = Oct 29 2020 17:35:28
+c Setting the timout to: 300
+c Solving /experiments/results/bwd_loop7.c/05/counterSharp/amh.dimacs
+c variables (all/used/free): 	41937/41937/0
+c clauses (all/long/binary/unit): 170246/143214/26529/503
+c Sampling set is present, performing projected model counting 
+c Sampling set size: 32
+c Sampling set:  4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35
+c 
+c Preprocessing ..
+c DONE
+c variables (all/used/free): 	22269/22237/32
+c clauses (all/long/binary/unit): 62545/20020/42525/0
+c Maximum cache size:	1024 MB
+c 
+c Max decision level :25
+c Max decision level :50
+c Max decision level :75
+c Max decision level :100
+c Max decision level :125
+c Max decision level :150
+c Max decision level :175
+c Max decision level :200
+c Max decision level :225
+c Max decision level :250
+c Max decision level :275
+c Max decision level :300
+c Max decision level :325
+c Max decision level :350
+c Max decision level :375
+c Max decision level :400
+c Max decision level :425
+c Max decision level :450
+c Max decision level :475
+c Max decision level :500
+c Max decision level :525
+c Doing Restart
+c 
+c 
+c variables (total / active / free)	22269/22237/32
+c clauses (removed) 			170246 (107695)
+c decisions 				7954
+c Max. decision level 			547
+c conflicts 				380
+c conflict clauses (all/bin/unit) 	7848/1620/6
+c 
+c failed literals found by implicit BCP 	 4767
+c implicit BCP miss rate 	 98.1201%
+c bytes cache size     	53491812	
+c bytes cache (overall) 	54883232
+c bytes cache components (overall) 	34648824
+c bytes cache (infra / comps) 20234408/33257404	
+c bytes pure comp data (curr)    21353088
+c bytes pure comp data (overall) 37453596
+c bytes cache with sysoverh (curr)    33837664
+c bytes cache with sysoverh (overall) 35353536
+c cache (lookup / stores / hits) 			12968/12969/0
+c cache miss rate 100%
+c avg. variable count (stores / hits) 	2508.31/0
+c 
+c 
+c # solutions 
+s pmc 10
+c # END
+c 
+c time: 2.75615s
+** ASM **
+c Setting the timout to: 100000
+c Outputting solution to console
+c GANAK version 1.0.0
+c time bound set to 300s
+c ganak GIT revision: 33f36bcdd4a32f4f20f64e667de10d13d1377953
+c ganak build env: CMAKE_CXX_COMPILER = /usr/bin/c++ | CMAKE_CXX_FLAGS =  -mtune=native -Wall -Wextra -Wunused -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -ggdb3 | COMPILE_DEFINES =  | STATICCOMPILE = OFF | ONLY_SIMPLE =  | Boost_FOUND =  | ZLIB_FOUND =  | ENABLE_TESTING =  | ENABLE_ASSERTIONS = ON | MY_TARGETS =  | compilation date time = Oct 29 2020 17:35:28
+c Setting the timout to: 300
+c Solving /experiments/results/bwd_loop7.c/05/counterSharp/asm.dimacs
+c variables (all/used/free): 	41939/41939/0
+c clauses (all/long/binary/unit): 170252/143215/26533/504
+c Sampling set is present, performing projected model counting 
+c Sampling set size: 32
+c Sampling set:  4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35
+c 
+c Preprocessing ..
+c DONE
+c variables (all/used/free): 	22266/22234/32
+c clauses (all/long/binary/unit): 62539/20019/42520/0
+c Maximum cache size:	1024 MB
+c 
+c Max decision level :25
+c Max decision level :50
+c Max decision level :75
+c Max decision level :100
+c Max decision level :125
+c Max decision level :150
+c Max decision level :175
+c Max decision level :200
+c Max decision level :225
+c Max decision level :250
+c Max decision level :275
+c Max decision level :300
+c Max decision level :325
+c Max decision level :350
+c Max decision level :375
+c Max decision level :400
+c Max decision level :425
+c Max decision level :450
+c Max decision level :475
+c Max decision level :500
+c Max decision level :525
+c Doing Restart
+c We have solved halfed
+c We have solved halfed
+c 
+c 
+c variables (total / active / free)	22266/22234/32
+c clauses (removed) 			170252 (107687)
+c decisions 				5090
+c Max. decision level 			547
+c conflicts 				1858
+c conflict clauses (all/bin/unit) 	21694/1806/26
+c 
+c failed literals found by implicit BCP 	 12686
+c implicit BCP miss rate 	 97.1777%
+c bytes cache size     	21030836	
+c bytes cache (overall) 	28987636
+c bytes cache components (overall) 	8753228
+c bytes cache (infra / comps) 20234408/796428	
+c bytes pure comp data (curr)    18446744073632346900
+c bytes pure comp data (overall) 33763828
+c bytes cache with sysoverh (curr)    950672
+c bytes cache with sysoverh (overall) 9307616
+c cache (lookup / stores / hits) 			10121/10122/0
+c cache miss rate 100%
+c avg. variable count (stores / hits) 	386.573/0
+c 
+c 
+c # solutions 
+s pmc 4
+c # END
+c 
+c time: 3.62433s
+** ASH **
+c Setting the timout to: 100000
+c Outputting solution to console
+c GANAK version 1.0.0
+c time bound set to 300s
+c ganak GIT revision: 33f36bcdd4a32f4f20f64e667de10d13d1377953
+c ganak build env: CMAKE_CXX_COMPILER = /usr/bin/c++ | CMAKE_CXX_FLAGS =  -mtune=native -Wall -Wextra -Wunused -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -ggdb3 | COMPILE_DEFINES =  | STATICCOMPILE = OFF | ONLY_SIMPLE =  | Boost_FOUND =  | ZLIB_FOUND =  | ENABLE_TESTING =  | ENABLE_ASSERTIONS = ON | MY_TARGETS =  | compilation date time = Oct 29 2020 17:35:28
+c Setting the timout to: 300
+c Solving /experiments/results/bwd_loop7.c/05/counterSharp/ash.dimacs
+c variables (all/used/free): 	41939/41939/0
+c clauses (all/long/binary/unit): 170252/143215/26533/504
+c Sampling set is present, performing projected model counting 
+c Sampling set size: 32
+c Sampling set:  4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35
+c 
+c Preprocessing ..
+c DONE
+c variables (all/used/free): 	21534/21502/32
+c clauses (all/long/binary/unit): 58943/17545/41398/0
+c Maximum cache size:	1024 MB
+c 
+c Max decision level :25
+c Max decision level :50
+c Max decision level :75
+c Max decision level :100
+c Max decision level :125
+c Max decision level :150
+c Max decision level :175
+c Max decision level :200
+c Max decision level :225
+c Max decision level :250
+c Max decision level :275
+c Max decision level :300
+c Max decision level :325
+c Max decision level :350
+c Max decision level :375
+c Max decision level :400
+c Max decision level :425
+c Max decision level :450
+c Max decision level :475
+c Max decision level :500
+c Max decision level :525
+c Max decision level :550
+c Doing Restart
+c 
+c 
+c variables (total / active / free)	21534/21502/32
+c clauses (removed) 			170252 (111309)
+c decisions 				4779
+c Max. decision level 			573
+c conflicts 				57
+c conflict clauses (all/bin/unit) 	2946/1023/0
+c 
+c failed literals found by implicit BCP 	 2129
+c implicit BCP miss rate 	 98.6686%
+c bytes cache size     	49336452	
+c bytes cache (overall) 	54210644
+c bytes cache components (overall) 	33976236
+c bytes cache (infra / comps) 20234408/29102044	
+c bytes pure comp data (curr)    27594084
+c bytes pure comp data (overall) 33612004
+c bytes cache with sysoverh (curr)    29529712
+c bytes cache with sysoverh (overall) 34508336
+c cache (lookup / stores / hits) 			9791/9791/1
+c cache miss rate 99.9898%
+c avg. variable count (stores / hits) 	3595.36/21463
+c 
+c 
+c # solutions 
+s pmc 10
+c # END
+c 
+c time: 2.68938s

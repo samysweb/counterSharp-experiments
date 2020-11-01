@@ -1,0 +1,115 @@
+** CON **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		ganak
+[runlim] argv[1]:		-t
+[runlim] argv[2]:		300
+[runlim] argv[3]:		-cs
+[runlim] argv[4]:		1024
+[runlim] argv[5]:		-seed
+[runlim] argv[6]:		05
+[runlim] argv[7]:		/experiments/results/for_bounded_loop1.c/05/counterSharp/con.dimacs
+[runlim] start:			Sun Nov  1 09:57:55 2020
+[runlim] main pid:		4344
+[runlim] end:			Sun Nov  1 09:57:55 2020
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			0.33 seconds
+[runlim] time:			0.00 seconds
+[runlim] space:			0.0 MB
+[runlim] samples:		0
+** AMM **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		ganak
+[runlim] argv[1]:		-t
+[runlim] argv[2]:		300
+[runlim] argv[3]:		-cs
+[runlim] argv[4]:		1024
+[runlim] argv[5]:		-seed
+[runlim] argv[6]:		05
+[runlim] argv[7]:		/experiments/results/for_bounded_loop1.c/05/counterSharp/amm.dimacs
+[runlim] start:			Sun Nov  1 09:57:55 2020
+[runlim] main pid:		4346
+[runlim] end:			Sun Nov  1 09:57:57 2020
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			2.40 seconds
+[runlim] time:			1.98 seconds
+[runlim] space:			22.5 MB
+[runlim] samples:		20
+** AMH **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		ganak
+[runlim] argv[1]:		-t
+[runlim] argv[2]:		300
+[runlim] argv[3]:		-cs
+[runlim] argv[4]:		1024
+[runlim] argv[5]:		-seed
+[runlim] argv[6]:		05
+[runlim] argv[7]:		/experiments/results/for_bounded_loop1.c/05/counterSharp/amh.dimacs
+[runlim] start:			Sun Nov  1 09:57:57 2020
+[runlim] main pid:		4348
+[runlim] end:			Sun Nov  1 09:57:58 2020
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			1.56 seconds
+[runlim] time:			1.09 seconds
+[runlim] space:			17.5 MB
+[runlim] samples:		11
+** ASM **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		ganak
+[runlim] argv[1]:		-t
+[runlim] argv[2]:		300
+[runlim] argv[3]:		-cs
+[runlim] argv[4]:		1024
+[runlim] argv[5]:		-seed
+[runlim] argv[6]:		05
+[runlim] argv[7]:		/experiments/results/for_bounded_loop1.c/05/counterSharp/asm.dimacs
+[runlim] start:			Sun Nov  1 09:57:58 2020
+[runlim] main pid:		4350
+[runlim] end:			Sun Nov  1 09:57:59 2020
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			1.64 seconds
+[runlim] time:			0.99 seconds
+[runlim] space:			18.1 MB
+[runlim] samples:		10
+** ASH **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		ganak
+[runlim] argv[1]:		-t
+[runlim] argv[2]:		300
+[runlim] argv[3]:		-cs
+[runlim] argv[4]:		1024
+[runlim] argv[5]:		-seed
+[runlim] argv[6]:		05
+[runlim] argv[7]:		/experiments/results/for_bounded_loop1.c/05/counterSharp/ash.dimacs
+[runlim] start:			Sun Nov  1 09:57:59 2020
+[runlim] main pid:		4352
+[runlim] end:			Sun Nov  1 09:58:00 2020
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			1.75 seconds
+[runlim] time:			1.09 seconds
+[runlim] space:			19.1 MB
+[runlim] samples:		11

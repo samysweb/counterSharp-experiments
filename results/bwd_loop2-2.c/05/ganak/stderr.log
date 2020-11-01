@@ -1,0 +1,132 @@
+** CON **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		ganak
+[runlim] argv[1]:		-t
+[runlim] argv[2]:		300
+[runlim] argv[3]:		-cs
+[runlim] argv[4]:		1024
+[runlim] argv[5]:		-seed
+[runlim] argv[6]:		05
+[runlim] argv[7]:		/experiments/results/bwd_loop2-2.c/05/counterSharp/con.dimacs
+[runlim] start:			Sun Nov  1 01:31:16 2020
+[runlim] main pid:		2251
+Cannot open file: /experiments/results/bwd_loop2-2.c/05/counterSharp/con.dimacs
+[runlim] end:			Sun Nov  1 01:31:16 2020
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			0.41 seconds
+[runlim] time:			0.00 seconds
+[runlim] space:			0.0 MB
+[runlim] samples:		0
+** AMM **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		ganak
+[runlim] argv[1]:		-t
+[runlim] argv[2]:		300
+[runlim] argv[3]:		-cs
+[runlim] argv[4]:		1024
+[runlim] argv[5]:		-seed
+[runlim] argv[6]:		05
+[runlim] argv[7]:		/experiments/results/bwd_loop2-2.c/05/counterSharp/amm.dimacs
+[runlim] start:			Sun Nov  1 01:31:16 2020
+[runlim] main pid:		2253
+[runlim] sample:		10.0 time, 10.4 real, 15.7 MB
+[runlim] sample:		20.0 time, 20.4 real, 18.8 MB
+[runlim] sample:		30.0 time, 30.4 real, 24.0 MB
+[runlim] sample:		40.0 time, 40.4 real, 26.1 MB
+[runlim] sample:		50.0 time, 50.4 real, 28.1 MB
+[runlim] sample:		60.0 time, 60.4 real, 30.7 MB
+[runlim] sample:		70.0 time, 70.4 real, 31.8 MB
+[runlim] sample:		80.0 time, 80.4 real, 32.8 MB
+[runlim] sample:		90.0 time, 90.4 real, 33.8 MB
+[runlim] sample:		100.0 time, 100.4 real, 34.8 MB
+[runlim] sample:		110.0 time, 110.4 real, 35.4 MB
+[runlim] sample:		120.0 time, 120.4 real, 36.7 MB
+[runlim] sample:		130.0 time, 130.4 real, 42.7 MB
+[runlim] sample:		140.0 time, 140.4 real, 47.3 MB
+[runlim] sample:		150.0 time, 150.4 real, 49.6 MB
+[runlim] sample:		160.0 time, 160.4 real, 52.5 MB
+[runlim] end:			Sun Nov  1 01:34:00 2020
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			164.56 seconds
+[runlim] time:			164.06 seconds
+[runlim] space:			55.3 MB
+[runlim] samples:		1641
+** AMH **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		ganak
+[runlim] argv[1]:		-t
+[runlim] argv[2]:		300
+[runlim] argv[3]:		-cs
+[runlim] argv[4]:		1024
+[runlim] argv[5]:		-seed
+[runlim] argv[6]:		05
+[runlim] argv[7]:		/experiments/results/bwd_loop2-2.c/05/counterSharp/amh.dimacs
+[runlim] start:			Sun Nov  1 01:34:00 2020
+[runlim] main pid:		2255
+[runlim] end:			Sun Nov  1 01:34:00 2020
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			1.00 seconds
+[runlim] time:			0.38 seconds
+[runlim] space:			11.3 MB
+[runlim] samples:		4
+** ASM **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		ganak
+[runlim] argv[1]:		-t
+[runlim] argv[2]:		300
+[runlim] argv[3]:		-cs
+[runlim] argv[4]:		1024
+[runlim] argv[5]:		-seed
+[runlim] argv[6]:		05
+[runlim] argv[7]:		/experiments/results/bwd_loop2-2.c/05/counterSharp/asm.dimacs
+[runlim] start:			Sun Nov  1 01:34:00 2020
+[runlim] main pid:		2257
+[runlim] end:			Sun Nov  1 01:34:01 2020
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			0.41 seconds
+[runlim] time:			0.39 seconds
+[runlim] space:			11.5 MB
+[runlim] samples:		4
+** ASH **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		ganak
+[runlim] argv[1]:		-t
+[runlim] argv[2]:		300
+[runlim] argv[3]:		-cs
+[runlim] argv[4]:		1024
+[runlim] argv[5]:		-seed
+[runlim] argv[6]:		05
+[runlim] argv[7]:		/experiments/results/bwd_loop2-2.c/05/counterSharp/ash.dimacs
+[runlim] start:			Sun Nov  1 01:34:01 2020
+[runlim] main pid:		2259
+[runlim] end:			Sun Nov  1 01:34:01 2020
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			0.60 seconds
+[runlim] time:			0.09 seconds
+[runlim] space:			6.5 MB
+[runlim] samples:		1
