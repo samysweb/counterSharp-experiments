@@ -10,6 +10,7 @@ This repository contains the experiments of the [counterSharp Tool](https://gith
 		- Only after counterSharp has been run
 	- Run GANAK on benchmarks: `docker-compose run benchmarking run-ganak.sh instances.csv`
 		- Only after counterSharp has been run
+	- Run Dimovski's tool on benchmarks: `docker-compose run benchmarking run-dimovski.sh instances-dimovski.csv`
 
 ## Experiments to run
 Model Counting competition: https://mccompetition.org/assets/files/2020/MC2020_awards.pdf
