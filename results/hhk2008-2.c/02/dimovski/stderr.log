@@ -1,0 +1,103 @@
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		Probab.native
+[runlim] argv[1]:		-single
+[runlim] argv[2]:		-domain
+[runlim] argv[3]:		polyhedra
+[runlim] argv[4]:		/experiments/benchmarks-dimovski/hhk2008-2.c
+[runlim] start:			Thu Nov  5 09:34:17 2020
+[runlim] main pid:		3281
+This is LattE integrale 1.6
+Available from http://www.math.ucdavis.edu/~latte/
+
+Invocation: count latte 
+Checking whether the input polytope is empty or not...size = 4 x 3
+Number Type = rational
+done.
+Removing redundant inequalities and finding hidden equalities using cddlib...done. 
+Ax <= b, given as (b|-A):
+=========================
+[500 1 0]
+[0 0 1]
+[499 0 -1]
+[499 -1 0]
+
+Ax = b, given as (b|-A):
+========================
+[]
+
+Time for reading and preprocessing: 0 sec
+The polytope has 4 vertices.
+Time for computing vertices and supporting cones: 0 sec
+Time for dualizing general cones: 0 sec
+Dualizing all cones...All cones are now dualized.
+Time for dualizing general cones: 0 sec
+decomposeCones_Single: Decomposing all cones. (Memory Save on)
+4 cones total to be done!decomposeCones_Single: degree = 1
+Number of cones: 4
+Triangulating cone... done.
+0 vertex cones done. 
+Triangulating cone... done.
+1 vertex cones done. 
+Triangulating cone... done.
+2 vertex cones done. 
+Triangulating cone... done.
+3 vertex cones done. 
+
+Total Unimodular Cones: 4
+Maximum number of simplicial cones in memory at once: 0
+
+****  The number of lattice points is:   ****
+Total time: 0 sec
+This is LattE integrale 1.6
+Available from http://www.math.ucdavis.edu/~latte/
+
+Invocation: count latte 
+Checking whether the input polytope is empty or not...size = 4 x 3
+Number Type = rational
+done.
+Removing redundant inequalities and finding hidden equalities using cddlib...done. 
+Ax <= b, given as (b|-A):
+=========================
+[500 1 0]
+[500 0 1]
+[-1 0 -1]
+[499 -1 0]
+
+Ax = b, given as (b|-A):
+========================
+[]
+
+Time for reading and preprocessing: 0 sec
+The polytope has 4 vertices.
+Time for computing vertices and supporting cones: 0 sec
+Time for dualizing general cones: 0 sec
+Dualizing all cones...All cones are now dualized.
+Time for dualizing general cones: 0 sec
+decomposeCones_Single: Decomposing all cones. (Memory Save on)
+4 cones total to be done!decomposeCones_Single: degree = 1
+Number of cones: 4
+Triangulating cone... done.
+0 vertex cones done. 
+Triangulating cone... done.
+1 vertex cones done. 
+Triangulating cone... done.
+2 vertex cones done. 
+Triangulating cone... done.
+3 vertex cones done. 
+
+Total Unimodular Cones: 4
+Maximum number of simplicial cones in memory at once: 0
+
+****  The number of lattice points is:   ****
+Total time: 0 sec
+[runlim] end:			Thu Nov  5 09:34:17 2020
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			0.37 seconds
+[runlim] time:			0.00 seconds
+[runlim] space:			0.0 MB
+[runlim] samples:		0

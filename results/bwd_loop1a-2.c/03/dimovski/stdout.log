@@ -1,0 +1,59 @@
+
+Abstract Syntax:
+[ 1:]
+void main( ):
+[ 2:] $1{i} := [0,999]
+[ 3:] input:
+[ 4:] while [ 5:] ( $1{i} < 100 ) do
+[ 6:]   $1{i} := $1{i} + 1
+[ 7:]
+      od
+[ 8:] assert( $1{i} <= 101 )
+[ 9:]
+polyhedra
+
+Forward Analysis:
+[ 1:]: top
+[ 2:]: top
+[ 3:]: $1{i} >= 0 && -$1{i} >= -999
+[ 4:]: $1{i} >= 0 && -$1{i} >= -999
+[ 5:] unwind 0: $1{i} >= 0 && -$1{i} >= -999
+[ 5:] unwind 1: $1{i} >= 0 && -$1{i} >= -999
+[ 5:] unwind >1: $1{i} >= 1 && -$1{i} >= -100
+[ 6:]: $1{i} >= 0 && -$1{i} >= -99
+[ 7:]: $1{i} >= 1 && -$1{i} >= -100
+[ 8:]: $1{i} >= 100 && -$1{i} >= -999
+[ 9:]: $1{i} >= 100 && -$1{i} >= -101
+i 
+Backward OverApproximating Analysis Sat :
+[ 9:]: top
+[ 8:]: $1{i} >= 100 && -$1{i} >= -101
+[ 7:]: $1{i} >= 0 && -$1{i} >= -101
+[ 6:]: $1{i} >= 0 && -$1{i} >= -99
+[ 5:] unwind >1: $1{i} >= 0 && -$1{i} >= -101
+[ 5:] unwind 1: $1{i} >= 0 && -$1{i} >= -101
+[ 5:] unwind 0: $1{i} >= 0 && -$1{i} >= -101
+[ 4:]: $1{i} >= 0 && -$1{i} >= -101
+[ 3:]: $1{i} >= 0 && -$1{i} >= -101
+[ 2:]: top
+[ 1:]: top
+i 
+Backward OverApproximating Analysis Viol :
+[ 9:]: top
+[ 8:]: $1{i} >= 102 && -$1{i} >= -999
+[ 7:]: $1{i} >= 102 && -$1{i} >= -999
+[ 6:]: bottom
+[ 5:] unwind >1: $1{i} >= 102 && -$1{i} >= -999
+[ 5:] unwind 1: $1{i} >= 102 && -$1{i} >= -999
+[ 5:] unwind 0: $1{i} >= 102 && -$1{i} >= -999
+[ 4:]: $1{i} >= 102 && -$1{i} >= -999
+[ 3:]: $1{i} >= 102 && -$1{i} >= -999
+[ 2:]: top
+[ 1:]: top
+Analysis Result: 
+PROBABLITY OF SATISFACTION: 0.1021 percent 
+PROBABLITY OF VIOLATION: 0.8981 percent 
+Total Time: 0.004908 s
+Analysis Time: 0.004468 s
+Probability Time: 0.000440 s
+Done.

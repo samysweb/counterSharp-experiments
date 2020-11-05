@@ -1,0 +1,48 @@
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		Probab.native
+[runlim] argv[1]:		-single
+[runlim] argv[2]:		-domain
+[runlim] argv[3]:		polyhedra
+[runlim] argv[4]:		/experiments/benchmarks-dimovski/Problem10_16.c
+[runlim] start:			Thu Nov  5 10:02:12 2020
+[runlim] main pid:		4295
+[runlim] sample:		10.0 time, 10.7 real, 243.1 MB
+[runlim] sample:		20.0 time, 20.7 real, 642.1 MB
+[runlim] sample:		30.0 time, 30.7 real, 642.1 MB
+[runlim] sample:		40.0 time, 40.7 real, 642.1 MB
+[runlim] sample:		50.0 time, 50.7 real, 642.1 MB
+[runlim] sample:		60.0 time, 60.7 real, 642.1 MB
+[runlim] sample:		69.9 time, 70.7 real, 1790.8 MB
+[runlim] sample:		79.9 time, 80.7 real, 1790.8 MB
+[runlim] sample:		90.0 time, 90.7 real, 1790.5 MB
+[runlim] sample:		100.0 time, 100.7 real, 1790.5 MB
+[runlim] sample:		109.9 time, 110.7 real, 1790.5 MB
+[runlim] sample:		119.9 time, 120.7 real, 1790.5 MB
+[runlim] sample:		129.9 time, 130.7 real, 1790.5 MB
+[runlim] sample:		139.9 time, 140.7 real, 1790.5 MB
+[runlim] sample:		149.9 time, 150.7 real, 1790.5 MB
+[runlim] sample:		159.9 time, 160.7 real, 1790.5 MB
+[runlim] sample:		169.9 time, 170.7 real, 1790.5 MB
+[runlim] sample:		179.9 time, 180.7 real, 1790.5 MB
+[runlim] sample:		189.9 time, 190.7 real, 1790.5 MB
+[runlim] sample:		199.9 time, 200.7 real, 1790.5 MB
+[runlim] sample:		209.9 time, 210.7 real, 1790.5 MB
+[runlim] sample:		219.9 time, 220.7 real, 1790.5 MB
+[runlim] sample:		229.9 time, 230.7 real, 1790.5 MB
+[runlim] sample:		239.9 time, 240.7 real, 1790.5 MB
+[runlim] sample:		249.9 time, 250.7 real, 1790.5 MB
+[runlim] sample:		259.9 time, 260.7 real, 1790.5 MB
+[runlim] sample:		269.9 time, 270.7 real, 1790.5 MB
+[runlim] sample:		279.9 time, 280.7 real, 1790.5 MB
+[runlim] sample:		289.9 time, 290.7 real, 1790.5 MB
+[runlim] end:			Thu Nov  5 10:07:12 2020
+[runlim] status:		out of time
+[runlim] result:		2
+[runlim] children:		0
+[runlim] real:			300.12 seconds
+[runlim] time:			299.31 seconds
+[runlim] space:			1791.3 MB
+[runlim] samples:		2994

@@ -1,0 +1,70 @@
+
+Abstract Syntax:
+[ 1:]
+int main( ):
+[ 2:] $2{i} := [0,10]
+[ 3:] input:
+[ 4:] while [ 5:] ( $2{i} < 100 ) do
+[ 6:]   $2{i} := $2{i} + 1
+[ 7:]
+      od
+[ 8:] assert( $2{i} <= 101 )
+[ 9:] $1{$1} := 0
+[10:] return
+[11:]
+polyhedra
+
+Forward Analysis:
+[ 1:]: top
+[ 2:]: top
+[ 3:]: $2{i} >= 0 && -$2{i} >= -10
+[ 4:]: $2{i} >= 0 && -$2{i} >= -10
+[ 5:] unwind 0: $2{i} >= 0 && -$2{i} >= -10
+[ 5:] unwind 1: $2{i} >= 0 && -$2{i} >= -11
+[ 5:] unwind 2: $2{i} >= 0 && -$2{i} >= -12
+[ 5:] unwind >2: $2{i} >= 1 && -$2{i} >= -100
+[ 6:]: $2{i} >= 0 && -$2{i} >= -99
+[ 7:]: $2{i} >= 1 && -$2{i} >= -100
+[ 8:]: $2{i} == 100
+[ 9:]: $2{i} == 100
+[10:]: $1{$1} == 0 && $2{i} == 100
+[11:]: bottom
+i 
+Backward OverApproximating Analysis Sat :
+[11:]: top
+[10:]: bottom
+[ 9:]: bottom
+[ 8:]: $2{i} == 100
+[ 7:]: $2{i} >= 0 && -$2{i} >= -11
+[ 6:]: $2{i} >= 0 && -$2{i} >= -10
+[ 5:] unwind >2: $2{i} >= 0 && -$2{i} >= -12
+[ 5:] unwind 2: $2{i} >= 0 && -$2{i} >= -11
+[ 5:] unwind 1: $2{i} >= 0 && -$2{i} >= -10
+[ 5:] unwind 0: $2{i} >= 0 && -$2{i} >= -10
+[ 4:]: $2{i} >= 0 && -$2{i} >= -10
+[ 3:]: $2{i} >= 0 && -$2{i} >= -10
+[ 2:]: top
+[ 1:]: top
+
+Backward OverApproximating Analysis Viol :
+[11:]: top
+[10:]: bottom
+[ 9:]: bottom
+[ 8:]: bottom
+[ 7:]: bottom
+[ 6:]: bottom
+[ 5:] unwind >2: bottom
+[ 5:] unwind 2: bottom
+[ 5:] unwind 1: bottom
+[ 5:] unwind 0: bottom
+[ 4:]: bottom
+[ 3:]: bottom
+[ 2:]: bottom
+[ 1:]: bottom
+Analysis Result: 
+PROBABLITY OF SATISFACTION: 1.0000 percent 
+PROBABLITY OF VIOLATION: 0.0000 percent 
+Total Time: 0.008256 s
+Analysis Time: 0.007630 s
+Probability Time: 0.000626 s
+Done.
