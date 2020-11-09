@@ -3,20 +3,20 @@ bwd_loop1a.c, -single -domain polyhedra
 bwd_loop1a-2.c, -single -domain polyhedra
 bwd_loop2.c, -single -domain polyhedra
 bwd_loop2-2.c, -single -domain polyhedra
-bwd_loop7.c, -single -domain polyhedra
-bwd_loop7-2.c, -single -domain polyhedra
-bwd_loop10.c, -single -domain polyhedra
-bwd_loop10-2.c, -single -domain polyhedra
+bwd_loop7.c, -single -domain polyhedra -nondet
+bwd_loop7-2.c, -single -domain polyhedra -nondet
+bwd_loop10.c, -single -domain polyhedra -nondet
+bwd_loop10-2.c, -single -domain polyhedra -nondet
 count_up_down_true-unreach-call_true-termination.c, -single -domain polyhedra
 count_up_down_true-unreach-call_true-termination-2.c, -single -domain polyhedra
 example1a.c, -single -domain polyhedra
 example1a-2.c, -single -domain polyhedra
 example7a.c, -single -domain polyhedra
 example7a-2.c, -single -domain polyhedra
-example7b.c, -single -domain polyhedra
-example7b-2.c, -single -domain polyhedra
-for_bounded_loop1.c, -single -domain polyhedra
-for_bounded_loop1-2.c, -single -domain polyhedra
+example7b.c, -single -domain polyhedra -nondet
+example7b-2.c, -single -domain polyhedra -nondet
+for_bounded_loop1.c, -single -domain polyhedra -nondet
+for_bounded_loop1-2.c, -single -domain polyhedra -nondet
 gsv2008.c, -single -domain polyhedra
 gsv2008-2.c, -single -domain polyhedra
 hhk2008.c, -single -domain polyhedra
