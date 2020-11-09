@@ -11,7 +11,7 @@ ENV TZ=Europe/Berlin
 RUN apt-get install -y git build-essential cmake zlib1g-dev libboost-program-options-dev libm4ri-dev
 RUN git clone https://github.com/msoos/cryptominisat && cd cryptominisat && git checkout 5.8.0 && mkdir build && cd build && cmake .. && make && make install && cd ../..
 RUN apt-get install -y libgmp-dev
-RUN git clone https://github.com/meelgroup/approxmc/ && cd approxmc && git checkout 4.0.1 && mkdir build && cd build && cmake .. && make && make install && cd ../../
+RUN git clone https://github.com/meelgroup/approxmc/ && cd approxmc && git checkout 618b35b && mkdir build && cd build && cmake .. && make && make install && cd ../../
 
 
 # GANAK
