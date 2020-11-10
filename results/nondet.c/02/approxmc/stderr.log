@@ -1,0 +1,107 @@
+** CON **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		approxmc
+[runlim] argv[1]:		--sparse
+[runlim] argv[2]:		1
+[runlim] argv[3]:		-s
+[runlim] argv[4]:		02
+[runlim] argv[5]:		/experiments/results/nondet.c/02/counterSharp/con.dimacs
+[runlim] start:			Mon Nov  9 12:01:42 2020
+[runlim] main pid:		1094
+ERROR! Could not open file '/experiments/results/nondet.c/02/counterSharp/con.dimacs' for reading: No such file or directory
+[runlim] end:			Mon Nov  9 12:01:42 2020
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			0.31 seconds
+[runlim] time:			0.00 seconds
+[runlim] space:			0.0 MB
+[runlim] samples:		0
+** AMM **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		approxmc
+[runlim] argv[1]:		--sparse
+[runlim] argv[2]:		1
+[runlim] argv[3]:		-s
+[runlim] argv[4]:		02
+[runlim] argv[5]:		/experiments/results/nondet.c/02/counterSharp/amm.dimacs
+[runlim] start:			Mon Nov  9 12:01:42 2020
+[runlim] main pid:		1096
+ERROR! Could not open file '/experiments/results/nondet.c/02/counterSharp/amm.dimacs' for reading: No such file or directory
+[runlim] end:			Mon Nov  9 12:01:42 2020
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			0.31 seconds
+[runlim] time:			0.00 seconds
+[runlim] space:			0.0 MB
+[runlim] samples:		0
+** AMH **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		approxmc
+[runlim] argv[1]:		--sparse
+[runlim] argv[2]:		1
+[runlim] argv[3]:		-s
+[runlim] argv[4]:		02
+[runlim] argv[5]:		/experiments/results/nondet.c/02/counterSharp/amh.dimacs
+[runlim] start:			Mon Nov  9 12:01:42 2020
+[runlim] main pid:		1098
+[runlim] end:			Mon Nov  9 12:01:42 2020
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			0.73 seconds
+[runlim] time:			0.38 seconds
+[runlim] space:			10.8 MB
+[runlim] samples:		4
+** ASM **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		approxmc
+[runlim] argv[1]:		--sparse
+[runlim] argv[2]:		1
+[runlim] argv[3]:		-s
+[runlim] argv[4]:		02
+[runlim] argv[5]:		/experiments/results/nondet.c/02/counterSharp/asm.dimacs
+[runlim] start:			Mon Nov  9 12:01:42 2020
+[runlim] main pid:		1100
+[runlim] end:			Mon Nov  9 12:01:43 2020
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			1.19 seconds
+[runlim] time:			0.39 seconds
+[runlim] space:			10.2 MB
+[runlim] samples:		4
+** ASH **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		approxmc
+[runlim] argv[1]:		--sparse
+[runlim] argv[2]:		1
+[runlim] argv[3]:		-s
+[runlim] argv[4]:		02
+[runlim] argv[5]:		/experiments/results/nondet.c/02/counterSharp/ash.dimacs
+[runlim] start:			Mon Nov  9 12:01:43 2020
+[runlim] main pid:		1102
+[runlim] end:			Mon Nov  9 12:01:44 2020
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			1.31 seconds
+[runlim] time:			1.08 seconds
+[runlim] space:			11.0 MB
+[runlim] samples:		11

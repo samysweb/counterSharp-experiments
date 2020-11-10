@@ -1,0 +1,389 @@
+** CON **
+c ApproxMC SHA revision 618b35b37e4d6019e0a84e37cc482187f35ee334
+c ApproxMC version 4.0.1
+c ApproxMC compilation env CMAKE_CXX_COMPILER = /usr/bin/c++ | CMAKE_CXX_FLAGS =  -Wall -Wextra -Wunused -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -g -fvisibility=hidden -Wlogical-op -Wrestrict -Wnull-dereference -Wdouble-promotion -Wshadow -Wformat=2 -Wextra-semi -pedantic | COMPILE_DEFINES =  -DBOOST_TEST_DYN_LINK | STATICCOMPILE = OFF | Boost_FOUND = TRUE | ZLIB_FOUND = TRUE | VALGRIND_FOUND =  | GMP_FOUND = TRUE | ENABLE_ASSERTIONS = ON | MY_TARGETS =  | compilation date time = Nov  9 2020 10:31:14
+c ApproxMC compiled with gcc version 9.3.0
+c CryptoMiniSat version 5.8.0
+c CMS Copyright Mate Soos (soos.mate@gmail.com)
+c CMS SHA revision 6477e8bc43b0fda7038965bb148b64b8637c804b
+c CMS is GPL licensed due to M4RI being linked. Build without M4RI to get MIT version
+c Using VMTF code by Armin Biere from CaDiCaL
+c Using Yalsat by Armin Biere, see Balint et al. Improving implementation of SLS solvers [...], SAT'14
+c Using WalkSAT by Henry Kautz, see Kautz and Selman Pushing the envelope: planning, propositional logic, and stochastic search, AAAI'96,
+c Using code from 'When Boolean Satisfiability Meets Gauss-E. in a Simplex Way'
+c       by C.-S. Han and J.-H. Roland Jiang in CAV 2012. Fixes by M. Soos
+c Using CCAnr from 'CCAnr: A Conf. Checking Based Local Search Solver [...]'
+c       by Shaowei Cai, Chuan Luo, and Kaile Su, SAT 2015
+c CMS compilation env CMAKE_CXX_COMPILER = /usr/bin/c++ | CMAKE_CXX_FLAGS =  -fvisibility=hidden -Wall -Wextra -Wunused -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -g -Wno-class-memaccess -mpopcnt -msse4.2 -ggdb3 -Wlogical-op -Wrestrict -Wnull-dereference -Wdouble-promotion -Wshadow -Wformat=2 -Wextra-semi -pedantic | COMPILE_DEFINES =  -DEXTENDED_FEATURES -DUSE_GAUSS -DBOOST_TEST_DYN_LINK -DUSE_ZLIB -DYALSAT_FPU -DUSE_M4RI | STATICCOMPILE = OFF | ONLY_SIMPLE = OFF | Boost_FOUND = TRUE | STATS = OFF | SQLITE3_FOUND = FALSE | ZLIB_FOUND = TRUE | VALGRIND_FOUND =  | ENABLE_TESTING = OFF | M4RI_FOUND = TRUE | NOM4RI = OFF | SLOW_DEBUG = OFF | ENABLE_ASSERTIONS = ON | PYTHON_EXECUTABLE = PYTHON_EXECUTABLE-NOTFOUND | PYTHON_LIBRARY = PYTHON_LIBRARY-NOTFOUND | PYTHON_INCLUDE_DIRS =  | MY_TARGETS =  | LARGEMEM = OFF | LIMITMEM = OFF | BREAKID_LIBRARIES =  | BREAKID-VER = . | BOSPHORUS_LIBRARIES =  | BOSPH-VER = . | compilation date time = Oct 29 2020 17:34:11
+c CMS compiled with gcc version 9.3.0
+c executed with command line: approxmc --sparse 1 -s 01 /experiments/results/count_up_down_true-unreach-call_true-termination-2.c/01/counterSharp/con.dimacs
+c -- header says num vars:          54194
+c -- header says num clauses:      318146
+c WARNING: Empty line at line number 319657 -- this is not part of the DIMACS specifications (http://www.satcompetition.org/2009/format-benchmarks2009.html). Ignoring.
+c -- clauses added: 318146
+c -- xor clauses added: 0
+c -- vars added 54194
+c [appmc] Sampling set size: 32
+c [appmc] Sampling set: 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026, 2027, 2028, 2029, 2030, 2031, 2032, 2033, 2034, 2035, 
+c [sparse] Using match: 0 sampling set size: 32 prev end inclusive is: -1 this end inclusive is: 50 next end inclusive is: 100 sampl size: 32
+c [appmc] threshold set to 80 sparse: 1
+c [appmc] Starting up, initial measurement
+c [appmc] Checking if there are at least threshold+1 solutions...
+c [appmc] simplifying
+c [appmc] [    8.03 ] bounded_sol_count looking for   81 solutions -- hashes active: 0
+c [appmc] Did not find at least threshold+1 (80) we found only 0, i.e. we got exact count
+c [appmc] Formula was UNSAT 
+c [appmc] FINISHED ApproxMC T: 9.71 s
+c [appmc] Formula was UNSAT 
+c [appmc] Number of solutions is: 0*2**0
+s mc 0
+** AMM **
+c ApproxMC SHA revision 618b35b37e4d6019e0a84e37cc482187f35ee334
+c ApproxMC version 4.0.1
+c ApproxMC compilation env CMAKE_CXX_COMPILER = /usr/bin/c++ | CMAKE_CXX_FLAGS =  -Wall -Wextra -Wunused -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -g -fvisibility=hidden -Wlogical-op -Wrestrict -Wnull-dereference -Wdouble-promotion -Wshadow -Wformat=2 -Wextra-semi -pedantic | COMPILE_DEFINES =  -DBOOST_TEST_DYN_LINK | STATICCOMPILE = OFF | Boost_FOUND = TRUE | ZLIB_FOUND = TRUE | VALGRIND_FOUND =  | GMP_FOUND = TRUE | ENABLE_ASSERTIONS = ON | MY_TARGETS =  | compilation date time = Nov  9 2020 10:31:14
+c ApproxMC compiled with gcc version 9.3.0
+c CryptoMiniSat version 5.8.0
+c CMS Copyright Mate Soos (soos.mate@gmail.com)
+c CMS SHA revision 6477e8bc43b0fda7038965bb148b64b8637c804b
+c CMS is GPL licensed due to M4RI being linked. Build without M4RI to get MIT version
+c Using VMTF code by Armin Biere from CaDiCaL
+c Using Yalsat by Armin Biere, see Balint et al. Improving implementation of SLS solvers [...], SAT'14
+c Using WalkSAT by Henry Kautz, see Kautz and Selman Pushing the envelope: planning, propositional logic, and stochastic search, AAAI'96,
+c Using code from 'When Boolean Satisfiability Meets Gauss-E. in a Simplex Way'
+c       by C.-S. Han and J.-H. Roland Jiang in CAV 2012. Fixes by M. Soos
+c Using CCAnr from 'CCAnr: A Conf. Checking Based Local Search Solver [...]'
+c       by Shaowei Cai, Chuan Luo, and Kaile Su, SAT 2015
+c CMS compilation env CMAKE_CXX_COMPILER = /usr/bin/c++ | CMAKE_CXX_FLAGS =  -fvisibility=hidden -Wall -Wextra -Wunused -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -g -Wno-class-memaccess -mpopcnt -msse4.2 -ggdb3 -Wlogical-op -Wrestrict -Wnull-dereference -Wdouble-promotion -Wshadow -Wformat=2 -Wextra-semi -pedantic | COMPILE_DEFINES =  -DEXTENDED_FEATURES -DUSE_GAUSS -DBOOST_TEST_DYN_LINK -DUSE_ZLIB -DYALSAT_FPU -DUSE_M4RI | STATICCOMPILE = OFF | ONLY_SIMPLE = OFF | Boost_FOUND = TRUE | STATS = OFF | SQLITE3_FOUND = FALSE | ZLIB_FOUND = TRUE | VALGRIND_FOUND =  | ENABLE_TESTING = OFF | M4RI_FOUND = TRUE | NOM4RI = OFF | SLOW_DEBUG = OFF | ENABLE_ASSERTIONS = ON | PYTHON_EXECUTABLE = PYTHON_EXECUTABLE-NOTFOUND | PYTHON_LIBRARY = PYTHON_LIBRARY-NOTFOUND | PYTHON_INCLUDE_DIRS =  | MY_TARGETS =  | LARGEMEM = OFF | LIMITMEM = OFF | BREAKID_LIBRARIES =  | BREAKID-VER = . | BOSPHORUS_LIBRARIES =  | BOSPH-VER = . | compilation date time = Oct 29 2020 17:34:11
+c CMS compiled with gcc version 9.3.0
+c executed with command line: approxmc --sparse 1 -s 01 /experiments/results/count_up_down_true-unreach-call_true-termination-2.c/01/counterSharp/amm.dimacs
+c -- header says num vars:          53202
+c -- header says num clauses:      314669
+c WARNING: Empty line at line number 316182 -- this is not part of the DIMACS specifications (http://www.satcompetition.org/2009/format-benchmarks2009.html). Ignoring.
+c -- clauses added: 314669
+c -- xor clauses added: 0
+c -- vars added 53202
+c [appmc] Sampling set size: 32
+c [appmc] Sampling set: 1004, 1005, 1006, 1007, 1008, 1009, 1010, 1011, 1012, 1013, 1014, 1015, 1016, 1017, 1018, 1019, 1020, 1021, 1022, 1023, 1024, 1025, 1026, 1027, 1028, 1029, 1030, 1031, 1032, 1033, 1034, 1035, 
+c [sparse] Using match: 0 sampling set size: 32 prev end inclusive is: -1 this end inclusive is: 50 next end inclusive is: 100 sampl size: 32
+c [appmc] threshold set to 80 sparse: 1
+c [appmc] Starting up, initial measurement
+c [appmc] Checking if there are at least threshold+1 solutions...
+c [appmc] simplifying
+c [appmc] [    8.67 ] bounded_sol_count looking for   81 solutions -- hashes active: 0
+c [appmc] Starting at hash count: 1
+c [appmc] [    9.55 ] round:  0 hashes:      1
+c [appmc] [    9.55 ] bounded_sol_count looking for   81 solutions -- hashes active: 1
+c [appmc] [   10.28 ] round:  0 hashes:      2
+c [appmc] [   10.28 ] bounded_sol_count looking for   81 solutions -- hashes active: 2
+c [appmc] [   13.11 ] round:  0 hashes:      4
+c [appmc] [   13.11 ] bounded_sol_count looking for   81 solutions -- hashes active: 4
+c [appmc] [   17.97 ] round:  0 hashes:      8
+c [appmc] [   17.97 ] bounded_sol_count looking for   81 solutions -- hashes active: 8
+c [appmc] [   24.04 ] round:  0 hashes:     16
+c [appmc] [   24.04 ] bounded_sol_count looking for   81 solutions -- hashes active: 16
+c [appmc] [   30.53 ] round:  0 hashes:     24
+c [appmc] [   30.53 ] bounded_sol_count looking for   81 solutions -- hashes active: 24
+c [appmc] [   37.83 ] round:  0 hashes:     28
+c [appmc] [   37.83 ] bounded_sol_count looking for   81 solutions -- hashes active: 28
+c [appmc] [   40.72 ] round:  0 hashes:     26
+c [appmc] [   40.72 ] bounded_sol_count looking for   81 solutions -- hashes active: 26
+c [appmc] [   43.38 ] round:  0 hashes:     25
+c [appmc] [   43.38 ] bounded_sol_count looking for   81 solutions -- hashes active: 25
+c [appmc] simplifying
+c [appmc] [   51.26 ] round:  1 hashes:     26
+c [appmc] [   51.26 ] bounded_sol_count looking for   81 solutions -- hashes active: 26
+c [appmc] [   56.87 ] round:  1 hashes:     25
+c [appmc] [   56.87 ] bounded_sol_count looking for   81 solutions -- hashes active: 25
+c [appmc] simplifying
+c [appmc] [   66.24 ] round:  2 hashes:     26
+c [appmc] [   66.24 ] bounded_sol_count looking for   81 solutions -- hashes active: 26
+c [appmc] [   72.15 ] round:  2 hashes:     25
+c [appmc] [   72.15 ] bounded_sol_count looking for   81 solutions -- hashes active: 25
+c [appmc] simplifying
+c [appmc] [   81.96 ] round:  3 hashes:     26
+c [appmc] [   81.96 ] bounded_sol_count looking for   81 solutions -- hashes active: 26
+c [appmc] [   88.71 ] round:  3 hashes:     25
+c [appmc] [   88.71 ] bounded_sol_count looking for   81 solutions -- hashes active: 25
+c [appmc] simplifying
+c [appmc] [   98.78 ] round:  4 hashes:     26
+c [appmc] [   98.78 ] bounded_sol_count looking for   81 solutions -- hashes active: 26
+c [appmc] [  104.11 ] round:  4 hashes:     25
+c [appmc] [  104.11 ] bounded_sol_count looking for   81 solutions -- hashes active: 25
+c [appmc] simplifying
+c [appmc] [  114.55 ] round:  5 hashes:     26
+c [appmc] [  114.55 ] bounded_sol_count looking for   81 solutions -- hashes active: 26
+c [appmc] [  120.18 ] round:  5 hashes:     25
+c [appmc] [  120.18 ] bounded_sol_count looking for   81 solutions -- hashes active: 25
+c [appmc] simplifying
+c [appmc] [  130.11 ] round:  6 hashes:     26
+c [appmc] [  130.11 ] bounded_sol_count looking for   81 solutions -- hashes active: 26
+c [appmc] [  136.02 ] round:  6 hashes:     25
+c [appmc] [  136.02 ] bounded_sol_count looking for   81 solutions -- hashes active: 25
+c [appmc] simplifying
+c [appmc] [  146.65 ] round:  7 hashes:     26
+c [appmc] [  146.65 ] bounded_sol_count looking for   81 solutions -- hashes active: 26
+c [appmc] [  152.56 ] round:  7 hashes:     25
+c [appmc] [  152.56 ] bounded_sol_count looking for   81 solutions -- hashes active: 25
+c [appmc] simplifying
+c [appmc] [  163.44 ] round:  8 hashes:     26
+c [appmc] [  163.44 ] bounded_sol_count looking for   81 solutions -- hashes active: 26
+c [appmc] [  169.57 ] round:  8 hashes:     25
+c [appmc] [  169.57 ] bounded_sol_count looking for   81 solutions -- hashes active: 25
+c [appmc] FINISHED ApproxMC T: 170.82 s
+c [appmc] Number of solutions is: 64*2**26
+s mc 4294967296
+** AMH **
+c ApproxMC SHA revision 618b35b37e4d6019e0a84e37cc482187f35ee334
+c ApproxMC version 4.0.1
+c ApproxMC compilation env CMAKE_CXX_COMPILER = /usr/bin/c++ | CMAKE_CXX_FLAGS =  -Wall -Wextra -Wunused -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -g -fvisibility=hidden -Wlogical-op -Wrestrict -Wnull-dereference -Wdouble-promotion -Wshadow -Wformat=2 -Wextra-semi -pedantic | COMPILE_DEFINES =  -DBOOST_TEST_DYN_LINK | STATICCOMPILE = OFF | Boost_FOUND = TRUE | ZLIB_FOUND = TRUE | VALGRIND_FOUND =  | GMP_FOUND = TRUE | ENABLE_ASSERTIONS = ON | MY_TARGETS =  | compilation date time = Nov  9 2020 10:31:14
+c ApproxMC compiled with gcc version 9.3.0
+c CryptoMiniSat version 5.8.0
+c CMS Copyright Mate Soos (soos.mate@gmail.com)
+c CMS SHA revision 6477e8bc43b0fda7038965bb148b64b8637c804b
+c CMS is GPL licensed due to M4RI being linked. Build without M4RI to get MIT version
+c Using VMTF code by Armin Biere from CaDiCaL
+c Using Yalsat by Armin Biere, see Balint et al. Improving implementation of SLS solvers [...], SAT'14
+c Using WalkSAT by Henry Kautz, see Kautz and Selman Pushing the envelope: planning, propositional logic, and stochastic search, AAAI'96,
+c Using code from 'When Boolean Satisfiability Meets Gauss-E. in a Simplex Way'
+c       by C.-S. Han and J.-H. Roland Jiang in CAV 2012. Fixes by M. Soos
+c Using CCAnr from 'CCAnr: A Conf. Checking Based Local Search Solver [...]'
+c       by Shaowei Cai, Chuan Luo, and Kaile Su, SAT 2015
+c CMS compilation env CMAKE_CXX_COMPILER = /usr/bin/c++ | CMAKE_CXX_FLAGS =  -fvisibility=hidden -Wall -Wextra -Wunused -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -g -Wno-class-memaccess -mpopcnt -msse4.2 -ggdb3 -Wlogical-op -Wrestrict -Wnull-dereference -Wdouble-promotion -Wshadow -Wformat=2 -Wextra-semi -pedantic | COMPILE_DEFINES =  -DEXTENDED_FEATURES -DUSE_GAUSS -DBOOST_TEST_DYN_LINK -DUSE_ZLIB -DYALSAT_FPU -DUSE_M4RI | STATICCOMPILE = OFF | ONLY_SIMPLE = OFF | Boost_FOUND = TRUE | STATS = OFF | SQLITE3_FOUND = FALSE | ZLIB_FOUND = TRUE | VALGRIND_FOUND =  | ENABLE_TESTING = OFF | M4RI_FOUND = TRUE | NOM4RI = OFF | SLOW_DEBUG = OFF | ENABLE_ASSERTIONS = ON | PYTHON_EXECUTABLE = PYTHON_EXECUTABLE-NOTFOUND | PYTHON_LIBRARY = PYTHON_LIBRARY-NOTFOUND | PYTHON_INCLUDE_DIRS =  | MY_TARGETS =  | LARGEMEM = OFF | LIMITMEM = OFF | BREAKID_LIBRARIES =  | BREAKID-VER = . | BOSPHORUS_LIBRARIES =  | BOSPH-VER = . | compilation date time = Oct 29 2020 17:34:11
+c CMS compiled with gcc version 9.3.0
+c executed with command line: approxmc --sparse 1 -s 01 /experiments/results/count_up_down_true-unreach-call_true-termination-2.c/01/counterSharp/amh.dimacs
+c -- header says num vars:          53202
+c -- header says num clauses:      314669
+c WARNING: Empty line at line number 316182 -- this is not part of the DIMACS specifications (http://www.satcompetition.org/2009/format-benchmarks2009.html). Ignoring.
+c -- clauses added: 314669
+c -- xor clauses added: 0
+c -- vars added 53202
+c [appmc] Sampling set size: 32
+c [appmc] Sampling set: 1004, 1005, 1006, 1007, 1008, 1009, 1010, 1011, 1012, 1013, 1014, 1015, 1016, 1017, 1018, 1019, 1020, 1021, 1022, 1023, 1024, 1025, 1026, 1027, 1028, 1029, 1030, 1031, 1032, 1033, 1034, 1035, 
+c [sparse] Using match: 0 sampling set size: 32 prev end inclusive is: -1 this end inclusive is: 50 next end inclusive is: 100 sampl size: 32
+c [appmc] threshold set to 80 sparse: 1
+c [appmc] Starting up, initial measurement
+c [appmc] Checking if there are at least threshold+1 solutions...
+c [appmc] simplifying
+c [appmc] [    9.62 ] bounded_sol_count looking for   81 solutions -- hashes active: 0
+c [appmc] Starting at hash count: 1
+c [appmc] [   15.16 ] round:  0 hashes:      1
+c [appmc] [   15.16 ] bounded_sol_count looking for   81 solutions -- hashes active: 1
+c [appmc] [   22.12 ] round:  0 hashes:      2
+c [appmc] [   22.12 ] bounded_sol_count looking for   81 solutions -- hashes active: 2
+c [appmc] [   27.66 ] round:  0 hashes:      4
+c [appmc] [   27.66 ] bounded_sol_count looking for   81 solutions -- hashes active: 4
+c [appmc] [   33.47 ] round:  0 hashes:      3
+c [appmc] [   33.47 ] bounded_sol_count looking for   81 solutions -- hashes active: 3
+c [appmc] simplifying
+c [appmc] [   45.32 ] round:  1 hashes:      4
+c [appmc] [   45.32 ] bounded_sol_count looking for   81 solutions -- hashes active: 4
+c [appmc] [   50.89 ] round:  1 hashes:      3
+c [appmc] [   50.89 ] bounded_sol_count looking for   81 solutions -- hashes active: 3
+c [appmc] simplifying
+c [appmc] [   61.95 ] round:  2 hashes:      4
+c [appmc] [   61.95 ] bounded_sol_count looking for   81 solutions -- hashes active: 4
+c [appmc] [   67.22 ] round:  2 hashes:      3
+c [appmc] [   67.22 ] bounded_sol_count looking for   81 solutions -- hashes active: 3
+c [appmc] simplifying
+c [appmc] [   79.10 ] round:  3 hashes:      4
+c [appmc] [   79.10 ] bounded_sol_count looking for   81 solutions -- hashes active: 4
+c [appmc] [   83.64 ] round:  3 hashes:      3
+c [appmc] [   83.64 ] bounded_sol_count looking for   81 solutions -- hashes active: 3
+c [appmc] simplifying
+c [appmc] [   94.20 ] round:  4 hashes:      4
+c [appmc] [   94.20 ] bounded_sol_count looking for   81 solutions -- hashes active: 4
+c [appmc] [   98.83 ] round:  4 hashes:      3
+c [appmc] [   98.83 ] bounded_sol_count looking for   81 solutions -- hashes active: 3
+c [appmc] simplifying
+c [appmc] [  111.24 ] round:  5 hashes:      4
+c [appmc] [  111.24 ] bounded_sol_count looking for   81 solutions -- hashes active: 4
+c [appmc] [  116.86 ] round:  5 hashes:      3
+c [appmc] [  116.86 ] bounded_sol_count looking for   81 solutions -- hashes active: 3
+c [appmc] simplifying
+c [appmc] [  128.76 ] round:  6 hashes:      4
+c [appmc] [  128.76 ] bounded_sol_count looking for   81 solutions -- hashes active: 4
+c [appmc] [  133.76 ] round:  6 hashes:      3
+c [appmc] [  133.76 ] bounded_sol_count looking for   81 solutions -- hashes active: 3
+c [appmc] simplifying
+c [appmc] [  145.09 ] round:  7 hashes:      4
+c [appmc] [  145.09 ] bounded_sol_count looking for   81 solutions -- hashes active: 4
+c [appmc] [  148.05 ] round:  7 hashes:      3
+c [appmc] [  148.05 ] bounded_sol_count looking for   81 solutions -- hashes active: 3
+c [appmc] simplifying
+c [appmc] [  159.54 ] round:  8 hashes:      4
+c [appmc] [  159.54 ] bounded_sol_count looking for   81 solutions -- hashes active: 4
+c [appmc] [  165.35 ] round:  8 hashes:      3
+c [appmc] [  165.35 ] bounded_sol_count looking for   81 solutions -- hashes active: 3
+c [appmc] FINISHED ApproxMC T: 166.53 s
+c [appmc] Number of solutions is: 62*2**4
+s mc 992
+** ASM **
+c ApproxMC SHA revision 618b35b37e4d6019e0a84e37cc482187f35ee334
+c ApproxMC version 4.0.1
+c ApproxMC compilation env CMAKE_CXX_COMPILER = /usr/bin/c++ | CMAKE_CXX_FLAGS =  -Wall -Wextra -Wunused -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -g -fvisibility=hidden -Wlogical-op -Wrestrict -Wnull-dereference -Wdouble-promotion -Wshadow -Wformat=2 -Wextra-semi -pedantic | COMPILE_DEFINES =  -DBOOST_TEST_DYN_LINK | STATICCOMPILE = OFF | Boost_FOUND = TRUE | ZLIB_FOUND = TRUE | VALGRIND_FOUND =  | GMP_FOUND = TRUE | ENABLE_ASSERTIONS = ON | MY_TARGETS =  | compilation date time = Nov  9 2020 10:31:14
+c ApproxMC compiled with gcc version 9.3.0
+c CryptoMiniSat version 5.8.0
+c CMS Copyright Mate Soos (soos.mate@gmail.com)
+c CMS SHA revision 6477e8bc43b0fda7038965bb148b64b8637c804b
+c CMS is GPL licensed due to M4RI being linked. Build without M4RI to get MIT version
+c Using VMTF code by Armin Biere from CaDiCaL
+c Using Yalsat by Armin Biere, see Balint et al. Improving implementation of SLS solvers [...], SAT'14
+c Using WalkSAT by Henry Kautz, see Kautz and Selman Pushing the envelope: planning, propositional logic, and stochastic search, AAAI'96,
+c Using code from 'When Boolean Satisfiability Meets Gauss-E. in a Simplex Way'
+c       by C.-S. Han and J.-H. Roland Jiang in CAV 2012. Fixes by M. Soos
+c Using CCAnr from 'CCAnr: A Conf. Checking Based Local Search Solver [...]'
+c       by Shaowei Cai, Chuan Luo, and Kaile Su, SAT 2015
+c CMS compilation env CMAKE_CXX_COMPILER = /usr/bin/c++ | CMAKE_CXX_FLAGS =  -fvisibility=hidden -Wall -Wextra -Wunused -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -g -Wno-class-memaccess -mpopcnt -msse4.2 -ggdb3 -Wlogical-op -Wrestrict -Wnull-dereference -Wdouble-promotion -Wshadow -Wformat=2 -Wextra-semi -pedantic | COMPILE_DEFINES =  -DEXTENDED_FEATURES -DUSE_GAUSS -DBOOST_TEST_DYN_LINK -DUSE_ZLIB -DYALSAT_FPU -DUSE_M4RI | STATICCOMPILE = OFF | ONLY_SIMPLE = OFF | Boost_FOUND = TRUE | STATS = OFF | SQLITE3_FOUND = FALSE | ZLIB_FOUND = TRUE | VALGRIND_FOUND =  | ENABLE_TESTING = OFF | M4RI_FOUND = TRUE | NOM4RI = OFF | SLOW_DEBUG = OFF | ENABLE_ASSERTIONS = ON | PYTHON_EXECUTABLE = PYTHON_EXECUTABLE-NOTFOUND | PYTHON_LIBRARY = PYTHON_LIBRARY-NOTFOUND | PYTHON_INCLUDE_DIRS =  | MY_TARGETS =  | LARGEMEM = OFF | LIMITMEM = OFF | BREAKID_LIBRARIES =  | BREAKID-VER = . | BOSPHORUS_LIBRARIES =  | BOSPH-VER = . | compilation date time = Oct 29 2020 17:34:11
+c CMS compiled with gcc version 9.3.0
+c executed with command line: approxmc --sparse 1 -s 01 /experiments/results/count_up_down_true-unreach-call_true-termination-2.c/01/counterSharp/asm.dimacs
+c -- header says num vars:          53204
+c -- header says num clauses:      314675
+c WARNING: Empty line at line number 316190 -- this is not part of the DIMACS specifications (http://www.satcompetition.org/2009/format-benchmarks2009.html). Ignoring.
+c -- clauses added: 314675
+c -- xor clauses added: 0
+c -- vars added 53204
+c [appmc] Sampling set size: 32
+c [appmc] Sampling set: 1004, 1005, 1006, 1007, 1008, 1009, 1010, 1011, 1012, 1013, 1014, 1015, 1016, 1017, 1018, 1019, 1020, 1021, 1022, 1023, 1024, 1025, 1026, 1027, 1028, 1029, 1030, 1031, 1032, 1033, 1034, 1035, 
+c [sparse] Using match: 0 sampling set size: 32 prev end inclusive is: -1 this end inclusive is: 50 next end inclusive is: 100 sampl size: 32
+c [appmc] threshold set to 80 sparse: 1
+c [appmc] Starting up, initial measurement
+c [appmc] Checking if there are at least threshold+1 solutions...
+c [appmc] simplifying
+c [appmc] [    8.41 ] bounded_sol_count looking for   81 solutions -- hashes active: 0
+c [appmc] Starting at hash count: 1
+c [appmc] [   10.14 ] round:  0 hashes:      1
+c [appmc] [   10.14 ] bounded_sol_count looking for   81 solutions -- hashes active: 1
+c [appmc] [   11.57 ] round:  0 hashes:      2
+c [appmc] [   11.57 ] bounded_sol_count looking for   81 solutions -- hashes active: 2
+c [appmc] [   12.46 ] round:  0 hashes:      4
+c [appmc] [   12.46 ] bounded_sol_count looking for   81 solutions -- hashes active: 4
+c [appmc] [   12.96 ] round:  0 hashes:      3
+c [appmc] [   12.96 ] bounded_sol_count looking for   81 solutions -- hashes active: 3
+c [appmc] simplifying
+c [appmc] [   21.21 ] round:  1 hashes:      3
+c [appmc] [   21.21 ] bounded_sol_count looking for   81 solutions -- hashes active: 3
+c [appmc] [   22.09 ] round:  1 hashes:      2
+c [appmc] [   22.09 ] bounded_sol_count looking for   81 solutions -- hashes active: 2
+c [appmc] simplifying
+c [appmc] [   29.56 ] round:  2 hashes:      3
+c [appmc] [   29.56 ] bounded_sol_count looking for   81 solutions -- hashes active: 3
+c [appmc] [   30.05 ] round:  2 hashes:      2
+c [appmc] [   30.05 ] bounded_sol_count looking for   81 solutions -- hashes active: 2
+c [appmc] simplifying
+c [appmc] [   36.69 ] round:  3 hashes:      3
+c [appmc] [   36.69 ] bounded_sol_count looking for   81 solutions -- hashes active: 3
+c [appmc] [   37.07 ] round:  3 hashes:      2
+c [appmc] [   37.07 ] bounded_sol_count looking for   81 solutions -- hashes active: 2
+c [appmc] simplifying
+c [appmc] [   43.46 ] round:  4 hashes:      3
+c [appmc] [   43.46 ] bounded_sol_count looking for   81 solutions -- hashes active: 3
+c [appmc] [   43.75 ] round:  4 hashes:      2
+c [appmc] [   43.75 ] bounded_sol_count looking for   81 solutions -- hashes active: 2
+c [appmc] simplifying
+c [appmc] [   45.69 ] round:  5 hashes:      3
+c [appmc] [   45.69 ] bounded_sol_count looking for   81 solutions -- hashes active: 3
+c [appmc] [   45.94 ] round:  5 hashes:      2
+c [appmc] [   45.94 ] bounded_sol_count looking for   81 solutions -- hashes active: 2
+c [appmc] simplifying
+c [appmc] [   47.19 ] round:  6 hashes:      3
+c [appmc] [   47.19 ] bounded_sol_count looking for   81 solutions -- hashes active: 3
+c [appmc] [   47.43 ] round:  6 hashes:      2
+c [appmc] [   47.43 ] bounded_sol_count looking for   81 solutions -- hashes active: 2
+c [appmc] simplifying
+c [appmc] [   48.49 ] round:  7 hashes:      3
+c [appmc] [   48.49 ] bounded_sol_count looking for   81 solutions -- hashes active: 3
+c [appmc] [   48.72 ] round:  7 hashes:      2
+c [appmc] [   48.72 ] bounded_sol_count looking for   81 solutions -- hashes active: 2
+c [appmc] simplifying
+c [appmc] [   49.76 ] round:  8 hashes:      3
+c [appmc] [   49.76 ] bounded_sol_count looking for   81 solutions -- hashes active: 3
+c [appmc] [   49.99 ] round:  8 hashes:      2
+c [appmc] [   49.99 ] bounded_sol_count looking for   81 solutions -- hashes active: 2
+c [appmc] FINISHED ApproxMC T: 50.07 s
+c [appmc] Number of solutions is: 63*2**3
+s mc 504
+** ASH **
+c ApproxMC SHA revision 618b35b37e4d6019e0a84e37cc482187f35ee334
+c ApproxMC version 4.0.1
+c ApproxMC compilation env CMAKE_CXX_COMPILER = /usr/bin/c++ | CMAKE_CXX_FLAGS =  -Wall -Wextra -Wunused -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -g -fvisibility=hidden -Wlogical-op -Wrestrict -Wnull-dereference -Wdouble-promotion -Wshadow -Wformat=2 -Wextra-semi -pedantic | COMPILE_DEFINES =  -DBOOST_TEST_DYN_LINK | STATICCOMPILE = OFF | Boost_FOUND = TRUE | ZLIB_FOUND = TRUE | VALGRIND_FOUND =  | GMP_FOUND = TRUE | ENABLE_ASSERTIONS = ON | MY_TARGETS =  | compilation date time = Nov  9 2020 10:31:14
+c ApproxMC compiled with gcc version 9.3.0
+c CryptoMiniSat version 5.8.0
+c CMS Copyright Mate Soos (soos.mate@gmail.com)
+c CMS SHA revision 6477e8bc43b0fda7038965bb148b64b8637c804b
+c CMS is GPL licensed due to M4RI being linked. Build without M4RI to get MIT version
+c Using VMTF code by Armin Biere from CaDiCaL
+c Using Yalsat by Armin Biere, see Balint et al. Improving implementation of SLS solvers [...], SAT'14
+c Using WalkSAT by Henry Kautz, see Kautz and Selman Pushing the envelope: planning, propositional logic, and stochastic search, AAAI'96,
+c Using code from 'When Boolean Satisfiability Meets Gauss-E. in a Simplex Way'
+c       by C.-S. Han and J.-H. Roland Jiang in CAV 2012. Fixes by M. Soos
+c Using CCAnr from 'CCAnr: A Conf. Checking Based Local Search Solver [...]'
+c       by Shaowei Cai, Chuan Luo, and Kaile Su, SAT 2015
+c CMS compilation env CMAKE_CXX_COMPILER = /usr/bin/c++ | CMAKE_CXX_FLAGS =  -fvisibility=hidden -Wall -Wextra -Wunused -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -g -Wno-class-memaccess -mpopcnt -msse4.2 -ggdb3 -Wlogical-op -Wrestrict -Wnull-dereference -Wdouble-promotion -Wshadow -Wformat=2 -Wextra-semi -pedantic | COMPILE_DEFINES =  -DEXTENDED_FEATURES -DUSE_GAUSS -DBOOST_TEST_DYN_LINK -DUSE_ZLIB -DYALSAT_FPU -DUSE_M4RI | STATICCOMPILE = OFF | ONLY_SIMPLE = OFF | Boost_FOUND = TRUE | STATS = OFF | SQLITE3_FOUND = FALSE | ZLIB_FOUND = TRUE | VALGRIND_FOUND =  | ENABLE_TESTING = OFF | M4RI_FOUND = TRUE | NOM4RI = OFF | SLOW_DEBUG = OFF | ENABLE_ASSERTIONS = ON | PYTHON_EXECUTABLE = PYTHON_EXECUTABLE-NOTFOUND | PYTHON_LIBRARY = PYTHON_LIBRARY-NOTFOUND | PYTHON_INCLUDE_DIRS =  | MY_TARGETS =  | LARGEMEM = OFF | LIMITMEM = OFF | BREAKID_LIBRARIES =  | BREAKID-VER = . | BOSPHORUS_LIBRARIES =  | BOSPH-VER = . | compilation date time = Oct 29 2020 17:34:11
+c CMS compiled with gcc version 9.3.0
+c executed with command line: approxmc --sparse 1 -s 01 /experiments/results/count_up_down_true-unreach-call_true-termination-2.c/01/counterSharp/ash.dimacs
+c -- header says num vars:          53204
+c -- header says num clauses:      314675
+c WARNING: Empty line at line number 316190 -- this is not part of the DIMACS specifications (http://www.satcompetition.org/2009/format-benchmarks2009.html). Ignoring.
+c -- clauses added: 314675
+c -- xor clauses added: 0
+c -- vars added 53204
+c [appmc] Sampling set size: 32
+c [appmc] Sampling set: 1004, 1005, 1006, 1007, 1008, 1009, 1010, 1011, 1012, 1013, 1014, 1015, 1016, 1017, 1018, 1019, 1020, 1021, 1022, 1023, 1024, 1025, 1026, 1027, 1028, 1029, 1030, 1031, 1032, 1033, 1034, 1035, 
+c [sparse] Using match: 0 sampling set size: 32 prev end inclusive is: -1 this end inclusive is: 50 next end inclusive is: 100 sampl size: 32
+c [appmc] threshold set to 80 sparse: 1
+c [appmc] Starting up, initial measurement
+c [appmc] Checking if there are at least threshold+1 solutions...
+c [appmc] simplifying
+c [appmc] [    9.54 ] bounded_sol_count looking for   81 solutions -- hashes active: 0
+c [appmc] Starting at hash count: 1
+c [appmc] [   13.52 ] round:  0 hashes:      1
+c [appmc] [   13.52 ] bounded_sol_count looking for   81 solutions -- hashes active: 1
+c [appmc] [   17.55 ] round:  0 hashes:      2
+c [appmc] [   17.55 ] bounded_sol_count looking for   81 solutions -- hashes active: 2
+c [appmc] [   19.99 ] round:  0 hashes:      4
+c [appmc] [   19.99 ] bounded_sol_count looking for   81 solutions -- hashes active: 4
+c [appmc] [   20.74 ] round:  0 hashes:      3
+c [appmc] [   20.74 ] bounded_sol_count looking for   81 solutions -- hashes active: 3
+c [appmc] simplifying
+c [appmc] [   30.30 ] round:  1 hashes:      3
+c [appmc] [   30.30 ] bounded_sol_count looking for   81 solutions -- hashes active: 3
+c [appmc] [   33.14 ] round:  1 hashes:      2
+c [appmc] [   33.14 ] bounded_sol_count looking for   81 solutions -- hashes active: 2
+c [appmc] simplifying
+c [appmc] [   42.76 ] round:  2 hashes:      3
+c [appmc] [   42.76 ] bounded_sol_count looking for   81 solutions -- hashes active: 3
+c [appmc] [   46.57 ] round:  2 hashes:      2
+c [appmc] [   46.57 ] bounded_sol_count looking for   81 solutions -- hashes active: 2
+c [appmc] simplifying
+c [appmc] [   57.25 ] round:  3 hashes:      3
+c [appmc] [   57.25 ] bounded_sol_count looking for   81 solutions -- hashes active: 3
+c [appmc] [   61.23 ] round:  3 hashes:      2
+c [appmc] [   61.23 ] bounded_sol_count looking for   81 solutions -- hashes active: 2
+c [appmc] simplifying
+c [appmc] [   71.17 ] round:  4 hashes:      3
+c [appmc] [   71.17 ] bounded_sol_count looking for   81 solutions -- hashes active: 3
+c [appmc] [   79.91 ] round:  4 hashes:      2
+c [appmc] [   79.91 ] bounded_sol_count looking for   81 solutions -- hashes active: 2
+c [appmc] simplifying
+c [appmc] [   90.31 ] round:  5 hashes:      3
+c [appmc] [   90.31 ] bounded_sol_count looking for   81 solutions -- hashes active: 3
+c [appmc] [   94.60 ] round:  5 hashes:      2
+c [appmc] [   94.60 ] bounded_sol_count looking for   81 solutions -- hashes active: 2
+c [appmc] simplifying
+c [appmc] [  103.95 ] round:  6 hashes:      3
+c [appmc] [  103.95 ] bounded_sol_count looking for   81 solutions -- hashes active: 3
+c [appmc] [  107.28 ] round:  6 hashes:      2
+c [appmc] [  107.28 ] bounded_sol_count looking for   81 solutions -- hashes active: 2
+c [appmc] simplifying
+c [appmc] [  117.38 ] round:  7 hashes:      3
+c [appmc] [  117.38 ] bounded_sol_count looking for   81 solutions -- hashes active: 3
+c [appmc] [  120.66 ] round:  7 hashes:      2
+c [appmc] [  120.66 ] bounded_sol_count looking for   81 solutions -- hashes active: 2
+c [appmc] simplifying
+c [appmc] [  130.61 ] round:  8 hashes:      3
+c [appmc] [  130.61 ] bounded_sol_count looking for   81 solutions -- hashes active: 3
+c [appmc] [  134.23 ] round:  8 hashes:      2
+c [appmc] [  134.23 ] bounded_sol_count looking for   81 solutions -- hashes active: 2
+c [appmc] FINISHED ApproxMC T: 135.01 s
+c [appmc] Number of solutions is: 63*2**3
+s mc 504

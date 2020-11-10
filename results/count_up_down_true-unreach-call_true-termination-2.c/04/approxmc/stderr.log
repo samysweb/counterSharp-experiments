@@ -1,0 +1,154 @@
+** CON **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		approxmc
+[runlim] argv[1]:		--sparse
+[runlim] argv[2]:		1
+[runlim] argv[3]:		-s
+[runlim] argv[4]:		04
+[runlim] argv[5]:		/experiments/results/count_up_down_true-unreach-call_true-termination-2.c/04/counterSharp/con.dimacs
+[runlim] start:			Mon Nov  9 13:00:14 2020
+[runlim] main pid:		3383
+[runlim] sample:		10.0 time, 11.0 real, 112.8 MB
+[runlim] end:			Mon Nov  9 13:00:25 2020
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			11.17 seconds
+[runlim] time:			10.09 seconds
+[runlim] space:			112.8 MB
+[runlim] samples:		101
+** AMM **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		approxmc
+[runlim] argv[1]:		--sparse
+[runlim] argv[2]:		1
+[runlim] argv[3]:		-s
+[runlim] argv[4]:		04
+[runlim] argv[5]:		/experiments/results/count_up_down_true-unreach-call_true-termination-2.c/04/counterSharp/amm.dimacs
+[runlim] start:			Mon Nov  9 13:00:25 2020
+[runlim] main pid:		3385
+[runlim] sample:		10.0 time, 10.2 real, 74.0 MB
+[runlim] sample:		20.0 time, 20.2 real, 129.8 MB
+[runlim] sample:		30.0 time, 30.2 real, 141.7 MB
+[runlim] sample:		40.0 time, 40.2 real, 150.2 MB
+[runlim] sample:		50.0 time, 50.2 real, 150.2 MB
+[runlim] sample:		60.0 time, 60.2 real, 104.6 MB
+[runlim] sample:		70.0 time, 70.2 real, 150.4 MB
+[runlim] sample:		80.0 time, 80.2 real, 104.4 MB
+[runlim] sample:		90.0 time, 90.2 real, 104.6 MB
+[runlim] sample:		100.0 time, 100.2 real, 150.4 MB
+[runlim] sample:		110.0 time, 110.2 real, 104.8 MB
+[runlim] sample:		120.0 time, 120.2 real, 150.6 MB
+[runlim] sample:		130.0 time, 130.2 real, 105.0 MB
+[runlim] sample:		140.0 time, 140.2 real, 105.2 MB
+[runlim] sample:		150.0 time, 150.2 real, 145.5 MB
+[runlim] sample:		160.0 time, 160.2 real, 100.0 MB
+[runlim] sample:		170.0 time, 170.2 real, 145.5 MB
+[runlim] end:			Mon Nov  9 13:03:15 2020
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			170.19 seconds
+[runlim] time:			169.96 seconds
+[runlim] space:			150.8 MB
+[runlim] samples:		1700
+** AMH **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		approxmc
+[runlim] argv[1]:		--sparse
+[runlim] argv[2]:		1
+[runlim] argv[3]:		-s
+[runlim] argv[4]:		04
+[runlim] argv[5]:		/experiments/results/count_up_down_true-unreach-call_true-termination-2.c/04/counterSharp/amh.dimacs
+[runlim] start:			Mon Nov  9 13:03:15 2020
+[runlim] main pid:		3387
+[runlim] sample:		10.0 time, 10.2 real, 113.9 MB
+[runlim] sample:		20.0 time, 20.2 real, 120.0 MB
+[runlim] sample:		30.0 time, 30.2 real, 100.8 MB
+[runlim] sample:		40.0 time, 40.2 real, 129.5 MB
+[runlim] sample:		50.0 time, 50.2 real, 129.6 MB
+[runlim] sample:		60.0 time, 60.2 real, 179.5 MB
+[runlim] sample:		69.9 time, 70.2 real, 132.6 MB
+[runlim] sample:		79.9 time, 80.2 real, 176.5 MB
+[runlim] sample:		89.9 time, 90.2 real, 133.4 MB
+[runlim] sample:		99.9 time, 100.2 real, 177.3 MB
+[runlim] sample:		109.9 time, 110.2 real, 135.3 MB
+[runlim] sample:		119.9 time, 120.2 real, 130.5 MB
+[runlim] sample:		129.9 time, 130.2 real, 136.9 MB
+[runlim] sample:		139.9 time, 140.2 real, 137.1 MB
+[runlim] sample:		149.9 time, 150.2 real, 137.9 MB
+[runlim] end:			Mon Nov  9 13:05:54 2020
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			159.71 seconds
+[runlim] time:			159.43 seconds
+[runlim] space:			181.6 MB
+[runlim] samples:		1595
+** ASM **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		approxmc
+[runlim] argv[1]:		--sparse
+[runlim] argv[2]:		1
+[runlim] argv[3]:		-s
+[runlim] argv[4]:		04
+[runlim] argv[5]:		/experiments/results/count_up_down_true-unreach-call_true-termination-2.c/04/counterSharp/asm.dimacs
+[runlim] start:			Mon Nov  9 13:05:54 2020
+[runlim] main pid:		3389
+[runlim] sample:		10.0 time, 10.7 real, 74.8 MB
+[runlim] sample:		20.0 time, 20.7 real, 81.6 MB
+[runlim] sample:		30.0 time, 30.7 real, 85.9 MB
+[runlim] sample:		40.0 time, 40.7 real, 86.6 MB
+[runlim] end:			Mon Nov  9 13:06:42 2020
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			48.73 seconds
+[runlim] time:			47.98 seconds
+[runlim] space:			86.7 MB
+[runlim] samples:		480
+** ASH **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		approxmc
+[runlim] argv[1]:		--sparse
+[runlim] argv[2]:		1
+[runlim] argv[3]:		-s
+[runlim] argv[4]:		04
+[runlim] argv[5]:		/experiments/results/count_up_down_true-unreach-call_true-termination-2.c/04/counterSharp/ash.dimacs
+[runlim] start:			Mon Nov  9 13:06:42 2020
+[runlim] main pid:		3391
+[runlim] sample:		10.0 time, 10.7 real, 81.8 MB
+[runlim] sample:		20.0 time, 20.7 real, 89.4 MB
+[runlim] sample:		30.0 time, 30.7 real, 93.5 MB
+[runlim] sample:		40.0 time, 40.7 real, 98.8 MB
+[runlim] sample:		50.0 time, 50.7 real, 102.8 MB
+[runlim] sample:		60.0 time, 60.7 real, 102.8 MB
+[runlim] sample:		70.0 time, 70.7 real, 102.8 MB
+[runlim] sample:		80.0 time, 80.7 real, 102.8 MB
+[runlim] sample:		90.0 time, 90.7 real, 102.8 MB
+[runlim] sample:		100.0 time, 100.7 real, 102.8 MB
+[runlim] sample:		110.0 time, 110.7 real, 127.4 MB
+[runlim] sample:		120.0 time, 120.7 real, 113.0 MB
+[runlim] end:			Mon Nov  9 13:08:52 2020
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			130.40 seconds
+[runlim] time:			129.56 seconds
+[runlim] space:			127.4 MB
+[runlim] samples:		1296

@@ -1,0 +1,110 @@
+** CON **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		approxmc
+[runlim] argv[1]:		--sparse
+[runlim] argv[2]:		1
+[runlim] argv[3]:		-s
+[runlim] argv[4]:		04
+[runlim] argv[5]:		/experiments/results/example1a-2.c/04/counterSharp/con.dimacs
+[runlim] start:			Mon Nov  9 13:27:45 2020
+[runlim] main pid:		3725
+[runlim] end:			Mon Nov  9 13:27:46 2020
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			1.69 seconds
+[runlim] time:			1.39 seconds
+[runlim] space:			19.1 MB
+[runlim] samples:		14
+** AMM **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		approxmc
+[runlim] argv[1]:		--sparse
+[runlim] argv[2]:		1
+[runlim] argv[3]:		-s
+[runlim] argv[4]:		04
+[runlim] argv[5]:		/experiments/results/example1a-2.c/04/counterSharp/amm.dimacs
+[runlim] start:			Mon Nov  9 13:27:46 2020
+[runlim] main pid:		3727
+[runlim] sample:		10.0 time, 10.7 real, 34.9 MB
+[runlim] sample:		20.0 time, 20.7 real, 35.2 MB
+[runlim] sample:		30.0 time, 30.7 real, 35.2 MB
+[runlim] sample:		40.0 time, 40.7 real, 35.2 MB
+[runlim] sample:		50.0 time, 50.7 real, 35.7 MB
+[runlim] end:			Mon Nov  9 13:28:40 2020
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			54.83 seconds
+[runlim] time:			54.07 seconds
+[runlim] space:			35.7 MB
+[runlim] samples:		541
+** AMH **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		approxmc
+[runlim] argv[1]:		--sparse
+[runlim] argv[2]:		1
+[runlim] argv[3]:		-s
+[runlim] argv[4]:		04
+[runlim] argv[5]:		/experiments/results/example1a-2.c/04/counterSharp/amh.dimacs
+[runlim] start:			Mon Nov  9 13:28:40 2020
+[runlim] main pid:		3729
+[runlim] end:			Mon Nov  9 13:28:48 2020
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			8.28 seconds
+[runlim] time:			7.38 seconds
+[runlim] space:			33.6 MB
+[runlim] samples:		74
+** ASM **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		approxmc
+[runlim] argv[1]:		--sparse
+[runlim] argv[2]:		1
+[runlim] argv[3]:		-s
+[runlim] argv[4]:		04
+[runlim] argv[5]:		/experiments/results/example1a-2.c/04/counterSharp/asm.dimacs
+[runlim] start:			Mon Nov  9 13:28:48 2020
+[runlim] main pid:		3731
+[runlim] end:			Mon Nov  9 13:28:51 2020
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			3.62 seconds
+[runlim] time:			3.29 seconds
+[runlim] space:			19.9 MB
+[runlim] samples:		33
+** ASH **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		approxmc
+[runlim] argv[1]:		--sparse
+[runlim] argv[2]:		1
+[runlim] argv[3]:		-s
+[runlim] argv[4]:		04
+[runlim] argv[5]:		/experiments/results/example1a-2.c/04/counterSharp/ash.dimacs
+[runlim] start:			Mon Nov  9 13:28:51 2020
+[runlim] main pid:		3733
+[runlim] end:			Mon Nov  9 13:28:59 2020
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			8.71 seconds
+[runlim] time:			7.99 seconds
+[runlim] space:			33.8 MB
+[runlim] samples:		80
