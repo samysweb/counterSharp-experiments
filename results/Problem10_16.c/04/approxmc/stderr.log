@@ -1,0 +1,126 @@
+** CON **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		approxmc
+[runlim] argv[1]:		--sparse
+[runlim] argv[2]:		1
+[runlim] argv[3]:		-s
+[runlim] argv[4]:		04
+[runlim] argv[5]:		/experiments/results/Problem10_16.c/04/counterSharp/con.dimacs
+[runlim] start:			Mon Nov  9 11:27:35 2020
+[runlim] main pid:		647
+ERROR! Could not open file '/experiments/results/Problem10_16.c/04/counterSharp/con.dimacs' for reading: No such file or directory
+[runlim] end:			Mon Nov  9 11:27:35 2020
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			0.45 seconds
+[runlim] time:			0.00 seconds
+[runlim] space:			0.0 MB
+[runlim] samples:		0
+** AMM **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		approxmc
+[runlim] argv[1]:		--sparse
+[runlim] argv[2]:		1
+[runlim] argv[3]:		-s
+[runlim] argv[4]:		04
+[runlim] argv[5]:		/experiments/results/Problem10_16.c/04/counterSharp/amm.dimacs
+[runlim] start:			Mon Nov  9 11:27:35 2020
+[runlim] main pid:		649
+[runlim] sample:		10.0 time, 10.4 real, 101.6 MB
+[runlim] sample:		20.0 time, 20.4 real, 102.9 MB
+[runlim] sample:		30.0 time, 30.4 real, 104.2 MB
+[runlim] end:			Mon Nov  9 11:28:10 2020
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			35.42 seconds
+[runlim] time:			34.88 seconds
+[runlim] space:			133.5 MB
+[runlim] samples:		349
+** AMH **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		approxmc
+[runlim] argv[1]:		--sparse
+[runlim] argv[2]:		1
+[runlim] argv[3]:		-s
+[runlim] argv[4]:		04
+[runlim] argv[5]:		/experiments/results/Problem10_16.c/04/counterSharp/amh.dimacs
+[runlim] start:			Mon Nov  9 11:28:10 2020
+[runlim] main pid:		651
+[runlim] sample:		10.0 time, 10.4 real, 102.2 MB
+[runlim] sample:		20.0 time, 20.4 real, 84.7 MB
+[runlim] sample:		30.0 time, 30.4 real, 90.9 MB
+[runlim] sample:		40.0 time, 40.4 real, 91.6 MB
+[runlim] sample:		50.0 time, 50.4 real, 93.8 MB
+[runlim] end:			Mon Nov  9 11:29:05 2020
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			55.36 seconds
+[runlim] time:			54.87 seconds
+[runlim] space:			115.8 MB
+[runlim] samples:		549
+** ASM **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		approxmc
+[runlim] argv[1]:		--sparse
+[runlim] argv[2]:		1
+[runlim] argv[3]:		-s
+[runlim] argv[4]:		04
+[runlim] argv[5]:		/experiments/results/Problem10_16.c/04/counterSharp/asm.dimacs
+[runlim] start:			Mon Nov  9 11:29:05 2020
+[runlim] main pid:		653
+[runlim] sample:		10.0 time, 10.4 real, 94.7 MB
+[runlim] sample:		20.0 time, 20.4 real, 116.2 MB
+[runlim] sample:		30.0 time, 30.4 real, 88.0 MB
+[runlim] sample:		40.0 time, 40.4 real, 91.2 MB
+[runlim] sample:		50.0 time, 50.4 real, 91.2 MB
+[runlim] end:			Mon Nov  9 11:30:04 2020
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			59.69 seconds
+[runlim] time:			59.28 seconds
+[runlim] space:			117.3 MB
+[runlim] samples:		593
+** ASH **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		approxmc
+[runlim] argv[1]:		--sparse
+[runlim] argv[2]:		1
+[runlim] argv[3]:		-s
+[runlim] argv[4]:		04
+[runlim] argv[5]:		/experiments/results/Problem10_16.c/04/counterSharp/ash.dimacs
+[runlim] start:			Mon Nov  9 11:30:04 2020
+[runlim] main pid:		655
+[runlim] sample:		10.0 time, 10.7 real, 76.2 MB
+[runlim] sample:		20.0 time, 20.7 real, 90.2 MB
+[runlim] sample:		30.0 time, 30.7 real, 95.7 MB
+[runlim] sample:		40.0 time, 40.7 real, 95.8 MB
+[runlim] sample:		50.0 time, 50.7 real, 95.7 MB
+[runlim] sample:		60.0 time, 60.7 real, 95.8 MB
+[runlim] sample:		70.0 time, 70.7 real, 95.8 MB
+[runlim] end:			Mon Nov  9 11:31:23 2020
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			79.12 seconds
+[runlim] time:			78.38 seconds
+[runlim] space:			95.8 MB
+[runlim] samples:		784

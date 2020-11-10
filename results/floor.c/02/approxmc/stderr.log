@@ -1,0 +1,106 @@
+** CON **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		approxmc
+[runlim] argv[1]:		--sparse
+[runlim] argv[2]:		1
+[runlim] argv[3]:		-s
+[runlim] argv[4]:		02
+[runlim] argv[5]:		/experiments/results/floor.c/02/counterSharp/con.dimacs
+[runlim] start:			Mon Nov  9 12:03:01 2020
+[runlim] main pid:		1436
+ERROR! Could not open file '/experiments/results/floor.c/02/counterSharp/con.dimacs' for reading: No such file or directory
+[runlim] end:			Mon Nov  9 12:03:01 2020
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			0.85 seconds
+[runlim] time:			0.00 seconds
+[runlim] space:			0.0 MB
+[runlim] samples:		0
+** AMM **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		approxmc
+[runlim] argv[1]:		--sparse
+[runlim] argv[2]:		1
+[runlim] argv[3]:		-s
+[runlim] argv[4]:		02
+[runlim] argv[5]:		/experiments/results/floor.c/02/counterSharp/amm.dimacs
+[runlim] start:			Mon Nov  9 12:03:01 2020
+[runlim] main pid:		1438
+[runlim] end:			Mon Nov  9 12:03:08 2020
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			7.71 seconds
+[runlim] time:			6.78 seconds
+[runlim] space:			28.4 MB
+[runlim] samples:		68
+** AMH **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		approxmc
+[runlim] argv[1]:		--sparse
+[runlim] argv[2]:		1
+[runlim] argv[3]:		-s
+[runlim] argv[4]:		02
+[runlim] argv[5]:		/experiments/results/floor.c/02/counterSharp/amh.dimacs
+[runlim] start:			Mon Nov  9 12:03:08 2020
+[runlim] main pid:		1440
+[runlim] end:			Mon Nov  9 12:03:15 2020
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			7.56 seconds
+[runlim] time:			6.79 seconds
+[runlim] space:			27.4 MB
+[runlim] samples:		68
+** ASM **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		approxmc
+[runlim] argv[1]:		--sparse
+[runlim] argv[2]:		1
+[runlim] argv[3]:		-s
+[runlim] argv[4]:		02
+[runlim] argv[5]:		/experiments/results/floor.c/02/counterSharp/asm.dimacs
+[runlim] start:			Mon Nov  9 12:03:15 2020
+[runlim] main pid:		1442
+[runlim] end:			Mon Nov  9 12:03:18 2020
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			3.21 seconds
+[runlim] time:			2.58 seconds
+[runlim] space:			16.9 MB
+[runlim] samples:		26
+** ASH **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		approxmc
+[runlim] argv[1]:		--sparse
+[runlim] argv[2]:		1
+[runlim] argv[3]:		-s
+[runlim] argv[4]:		02
+[runlim] argv[5]:		/experiments/results/floor.c/02/counterSharp/ash.dimacs
+[runlim] start:			Mon Nov  9 12:03:18 2020
+[runlim] main pid:		1444
+[runlim] end:			Mon Nov  9 12:03:25 2020
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			7.02 seconds
+[runlim] time:			6.78 seconds
+[runlim] space:			29.8 MB
+[runlim] samples:		68
