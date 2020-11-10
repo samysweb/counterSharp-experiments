@@ -1,152 +1,217 @@
-# YES, this is extremely hacky and no well written code...
 from os import listdir
-from os.path import join,isdir
+from os.path import join, isdir, exists
 import sys
 
 from statistics import median
 
-basepath = sys.argv[1]
+class BenchmarkToolRun:
+	def __init__(self,benchmarkParam,toolParam):
+		self.benchmark=benchmarkParam
+		self.tool=toolParam
+	def printMedian(self, timeList,status):
+		isOK = False
+		isMO = False
+		isTO = False
+		timesConsidered=[]
+		for t,s in zip(timeList,status):
+			if s=="ok":
+				isOK = True
+				timesConsidered.append(t)
+			elif s=="time":
+				isTO = True
+			elif s=="memory":
+				isMO = True
+			else:
+				print("?")
+				print("% [parser] unknown status "+str(s))
+				return
+		if isOK:
+			print(median(timesConsidered),end="")
+			if isMO or isTO:
+				print("*",end="")
+		else:
+			if isTO and isMO:
+				print("TO/MO",end="")
+			elif isTO:
+				print("TO",end="")
+			elif isMO:
+				print("MO",end="")
 
-instanceDirs = [join(basepath,f) for f in listdir(basepath) if isdir(join(basepath, f))]
-#print(instanceDirs)
-print("instance counterMem counterTime ammMem ammTime amhMem amhTime asmMem asmTime ashMem ashTime | amm | amh | asm | ash")
-for instance in instanceDirs:
-	amm = []
-	amh = []
-	asm = []
-	ash = []
-	ammT = []
-	amhT = []
-	asmT = []
-	ashT = []
-	ammM = []
-	amhM = []
-	asmM = []
-	ashM = []
-	counterT = []
-	counterM = []
-	for run in range(1,6):
-		with open(join(instance,"0"+str(run),"stdout.log"),"r") as stdout:
-			for line in stdout:
-				if line.startswith("** AMM"):
-					done=False
+		
+		
+
+
+class SingleBenchmarkToolRun(BenchmarkToolRun):
+	COLNUM=1
+	def __init__(self,benchmarkParam,toolParam):
+		super(SingleBenchmarkToolRun,self).__init__(benchmarkParam,toolParam)
+		self.empty=True
+		self.time = []
+		self.mem = []
+		self.status = []
+		self.res = []
+		for run in range(1,6):
+			stderrPath = join(self.benchmark,"0"+str(run),self.tool,"stderr.log")
+			if not exists(stderrPath):
+				print("[parser] Cannot find file %s"%(str(stderrPath)),file=sys.stderr)
+				continue
+			print("[parser] Parsing %s"%(str(stderrPath)),file=sys.stderr)
+			self.empty=False
+			with open(stderrPath,"r") as stderr:
+				for line in stderr:
+					if line.startswith("[runlim] status:"):
+						self.status.append(line.split()[-1].strip())
+					elif line.startswith("[runlim] real:"):
+						self.time.append(float(line.split()[-2].strip()))
+					elif line.startswith("[runlim] space:"):
+						self.mem.append(float(line.split()[-2].strip()))
+			if self.tool == "dimovski" and self.status[-1]=="ok":
+				with open(join(self.benchmark,"0"+str(run),self.tool,"stdout.log"),"r") as stdout:
 					for line in stdout:
-						if line.startswith("c [appmc] Number of solutions is:"):
-							amm.append(line.split(" ")[-1].strip())
-							done=True
-							break
-						elif line.startswith("** "):
-							amm.append("-")
-							done=True
-							break
-					if not done:
-						amm.append("-")
-				if line.startswith("** AMH"):
-					done=False
+						if line.startswith("PROBABLITY OF SATISFACTION:"):
+							exSucc = True
+							succ = float(line.split()[-2].strip())
+						elif line.startswith("PROBABLITY OF VIOLATION:"):
+							exViol = True
+							viol = float(line.split()[-2].strip())
+						elif line.startswith("APPROX. PROBABLITY OF SATISFACTION BETWEEN:"):
+							exSucc = False
+							succ = (float(line.split()[-5].strip()),float(line.split()[-2].strip()))
+						elif line.startswith("APPROX. PROBABLITY OF VIOLATION BETWEEN:"):
+							exViol = False
+							viol = (float(line.split()[-5].strip()),float(line.split()[-2].strip()))
+				self.res.append((exSucc,exViol,succ,viol))
+	def printHeader1(self):
+		print("\multirow{2}{*}{%s}"%(self.tool),end="")
+	def printHeader2(self):
+		print("",end="")
+	def printTimeData(self):
+		self.printMedian(self.time,self.status)
+			
+
+
+			
+		
+
+class MultiBenchmarkToolRun(BenchmarkToolRun):
+	COLNUM=5
+	def __init__(self,benchmarkParam,toolParam):
+		super(MultiBenchmarkToolRun,self).__init__(benchmarkParam,toolParam)
+		self.empty=True
+		self.time = {
+			"CON":[],
+			"AMM":[],
+			"AMH":[],
+			"ASM":[],
+			"ASH":[]
+		}
+		self.mem = {
+			"CON":[],
+			"AMM":[],
+			"AMH":[],
+			"ASM":[],
+			"ASH":[]
+		}
+		self.status = {
+			"CON":[],
+			"AMM":[],
+			"AMH":[],
+			"ASM":[],
+			"ASH":[]
+		}
+		self.res = {
+			"CON":[],
+			"AMM":[],
+			"AMH":[],
+			"ASM":[],
+			"ASH":[]
+		}
+		for run in range(1,6):
+			stderrPath = join(self.benchmark,"0"+str(run),self.tool,"stderr.log")
+			if not exists(stderrPath):
+				print("[parser] Cannot find file %s"%(str(stderrPath)),file=sys.stderr)
+				continue
+			print("[parser] Parsing %s"%(str(stderrPath)),file=sys.stderr)
+			self.empty=False
+			curKey=""
+			with open(stderrPath,"r") as stderr:
+				for line in stderr:
+					if line.startswith("** "):
+						curKey = line.split()[1].strip()
+					elif line.startswith("[runlim] status:"):
+						self.status[curKey].append(line.split()[-1].strip())
+					elif line.startswith("[runlim] real:"):
+						self.time[curKey].append(float(line.split()[-2].strip()))
+					elif line.startswith("[runlim] space:"):
+						self.mem[curKey].append(float(line.split()[-2].strip()))
+				with open(join(self.benchmark,"0"+str(run),self.tool,"stdout.log"),"r") as stdout:
 					for line in stdout:
-						if line.startswith("c [appmc] Number of solutions is:"):
-							amh.append(line.split(" ")[-1].strip())
-							done=True
-							break
-						elif line.startswith("** "):
-							amh.append("-")
-							done=True
-							break
-					if not done:
-						amh.append("-")
-				if line.startswith("** ASH"):
-					done=False
-					for line in stdout:
-						if line.startswith("c [appmc] Number of solutions is:"):
-							ash.append(line.split(" ")[-1].strip())
-							done=True
-							break
-						elif line.startswith("** "):
-							ash.append("-")
-							done=True
-							break
-					if not done:
-						ash.append("-")
-				if line.startswith("** ASM"):
-					done=False
-					for line in stdout:
-						if line.startswith("c [appmc] Number of solutions is:"):
-							asm.append(line.split(" ")[-1].strip())
-							done=True
-							break
-						elif line.startswith("** "):
-							asm.append("-")
-							done=True
-							break
-					if not done:
-						asm.append("-")
-		with open(join(instance,"0"+str(run),"stderr.log"),"r") as stderr:
-			for line in stderr:
-				if line.startswith("** counterSharp"):
-					done=False
-					for line in stderr:
-						if line.startswith("[runlim] space:"):
-							counterM.append(line.split("\t")[-1].split(" ")[0].strip())
-						elif line.startswith("[runlim] real:"):
-							counterT.append(line.split("\t")[-1].split(" ")[0].strip())
-						elif line.startswith("** "):
-							break
-				if line.startswith("** AMM"):
-					done=False
-					for line in stderr:
-						if line.startswith("[runlim] space:"):
-							ammM.append(line.split("\t")[-1].split(" ")[0].strip())
-						elif line.startswith("[runlim] real:"):
-							ammT.append(line.split("\t")[-1].split(" ")[0].strip())
-						elif line.startswith("** "):
-							break
-				if line.startswith("** AMH"):
-						done=False
-						for line in stderr:
-							if line.startswith("[runlim] space:"):
-								amhM.append(line.split("\t")[-1].split(" ")[0].strip())
-							elif line.startswith("[runlim] real:"):
-								amhT.append(line.split("\t")[-1].split(" ")[0].strip())
-							elif line.startswith("** "):
-								break
-				if line.startswith("** ASM"):
-						done=False
-						for line in stderr:
-							if line.startswith("[runlim] space:"):
-								asmM.append(line.split("\t")[-1].split(" ")[0].strip())
-							elif line.startswith("[runlim] real:"):
-								asmT.append(line.split("\t")[-1].split(" ")[0].strip())
-							elif line.startswith("** "):
-								break
-				if line.startswith("** ASH"):
-						done=False
-						for line in stderr:
-							if line.startswith("[runlim] space:"):
-								ashM.append(line.split("\t")[-1].split(" ")[0].strip())
-							elif line.startswith("[runlim] real:"):
-								ashT.append(line.split("\t")[-1].split(" ")[0].strip())
-							elif line.startswith("** "):
-								break
+						if line.startswith("** "):
+							curKey = line.split()[1].strip()
+						if self.status[curKey][-1]=="ok":
+							if line.startswith("s mc ") or line.startswith("s pmc "):
+								self.res[curKey].append(line.split()[-1].strip())
+	def printHeader1(self):
+			print("\multicolumn{5}{c|}{%s}"%(self.tool),end="")
+	def printHeader2(self):
+		print("CON&\\amm&\\amh&\\asm&\\ash",end="")
+	def printTimeData(self):
+		self.printMedian(self.time["CON"],self.status["CON"])
+		print("&",end="")
+		self.printMedian(self.time["AMM"],self.status["AMM"])
+		print("&",end="")
+		self.printMedian(self.time["AMH"],self.status["AMH"])
+		print("&",end="")
+		self.printMedian(self.time["ASM"],self.status["ASM"])
+		print("&",end="")
+		self.printMedian(self.time["ASH"],self.status["ASH"])
 	
-	print(instance,end='')
-	print(' ',end='')
-	print(str(median(counterM))+" ",end='')
-	print(str(median(counterT))+" ",end='')
-	print(str(median(ammM))+" ",end='')
-	print(str(median(ammT))+" ",end='')
-	print(str(median(amhM))+" ",end='')
-	print(str(median(amhT))+" ",end='')
-	print(str(median(asmM))+" ",end='')
-	print(str(median(asmT))+" ",end='')
-	print(str(median(ashM))+" ",end='')
-	print(str(median(ashT))+" ",end='')
-	print(' | ',end='')
-	print(' '.join(amm),end='')
-	print(' | ',end='')
-	print(' '.join(amh),end='')
-	print(' | ',end='')
-	print(' '.join(asm),end='')
-	print(' | ',end='')
-	print(' '.join(ash),end='')
-	print()
+
+TOOLS = {
+	"counterSharp":SingleBenchmarkToolRun,
+	"dimovski":SingleBenchmarkToolRun,
+	"approxmc": MultiBenchmarkToolRun,
+	"ganak": MultiBenchmarkToolRun
+}
+
+
+def aggergateData(basepath):
+	benchmarks = [(f,join(basepath,f)) for f in listdir(basepath) if isdir(join(basepath,f))]
+	data = {}
+	for benchmark,benchmarkDir in benchmarks:
+		data[benchmark] = {}
+		for tool in TOOLS.keys():
+			data[benchmark][tool]=TOOLS[tool](benchmarkDir,tool)
+	return data
+
 	
+
+def timeTable(data):
+	print("% Generating time table")
+	numCols = 1
+	for tool in TOOLS:
+		numCols+=TOOLS[tool].COLNUM
+	print("% Columns needed: "+str(numCols))
+	key1 = list(data.keys())[0]
+	print("\multirow{2}{*}{}",end="")
+	for tool in TOOLS.keys():
+		print("&",end="")
+		data[key1][tool].printHeader1()
+	print("\\\\")
+	for tool in TOOLS.keys():
+		print("&",end="")
+		data[key1][tool].printHeader2()
+	print("\\\\")
+	for bench in data.keys():
+		print(bench.split("/")[-1],end="")
+		for tool in TOOLS.keys():
+			print("&",end="")
+			data[bench][tool].printTimeData()
+		print("\\\\")
+
+
+
+if __name__ == '__main__':
+	data=aggergateData(sys.argv[1])
+	if sys.argv[2] == "time":
+		timeTable(data)
