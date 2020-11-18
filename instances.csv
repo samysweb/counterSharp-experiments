@@ -1,5 +1,6 @@
 usqrt-broken.c,--function usqrt --unwind 33
 usqrt.c,--function usqrt --unwind 33
+rangesum03.c,--function testfun --unwind 4
 rangesum05.c,--function testfun --unwind 6
 Problem10_16.c,--function testfun --unwind 1
 rangesum07.c,--function testfun --unwind 8
