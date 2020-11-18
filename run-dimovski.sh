@@ -57,7 +57,8 @@ exec_bench(){
 
 		{
 		cd /tmp
-		eval chrt -b 0 runlim -r 300 -s 2048 Probab.native $2 $inputFile
+		# 900s + 5*300s = 2400s
+		eval chrt -b 0 runlim -r 2400 -s 2048 Probab.native $2 $inputFile
 		} > $resultDir/stdout.log 2> $resultDir/stderr.log
 
 		cp $resultDir/* $outputDir
