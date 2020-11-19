@@ -1,0 +1,51 @@
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	2400 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		Probab.native
+[runlim] argv[1]:		-single
+[runlim] argv[2]:		-domain
+[runlim] argv[3]:		polyhedra
+[runlim] argv[4]:		/experiments/benchmarks-dimovski/Problem10_16.c
+[runlim] start:			Wed Nov 18 17:32:21 2020
+[runlim] main pid:		279
+[runlim] sample:		10.0 time, 10.8 real, 259.4 MB
+[runlim] sample:		20.0 time, 20.8 real, 642.0 MB
+[runlim] sample:		30.0 time, 30.8 real, 642.0 MB
+[runlim] sample:		40.0 time, 40.8 real, 642.0 MB
+[runlim] sample:		50.0 time, 50.8 real, 642.0 MB
+[runlim] sample:		60.0 time, 60.8 real, 642.0 MB
+[runlim] sample:		70.0 time, 70.8 real, 1790.7 MB
+[runlim] sample:		80.0 time, 80.8 real, 1790.7 MB
+[runlim] sample:		90.0 time, 90.8 real, 1790.4 MB
+[runlim] sample:		100.0 time, 100.8 real, 1790.4 MB
+[runlim] sample:		110.0 time, 110.8 real, 1790.4 MB
+[runlim] sample:		119.9 time, 120.8 real, 1790.4 MB
+[runlim] sample:		129.9 time, 130.8 real, 1790.4 MB
+[runlim] sample:		139.9 time, 140.8 real, 1790.4 MB
+[runlim] sample:		149.9 time, 150.8 real, 1790.4 MB
+[runlim] sample:		159.9 time, 160.8 real, 1790.4 MB
+[runlim] sample:		169.9 time, 170.8 real, 1790.4 MB
+[runlim] sample:		179.9 time, 180.8 real, 1790.4 MB
+[runlim] sample:		189.9 time, 190.8 real, 1790.4 MB
+[runlim] sample:		199.9 time, 200.8 real, 1790.4 MB
+[runlim] sample:		209.9 time, 210.8 real, 1790.4 MB
+[runlim] sample:		219.9 time, 220.8 real, 1790.4 MB
+[runlim] sample:		229.9 time, 230.8 real, 1790.4 MB
+[runlim] sample:		239.9 time, 240.8 real, 1790.4 MB
+[runlim] sample:		249.9 time, 250.8 real, 1790.4 MB
+[runlim] sample:		259.9 time, 260.8 real, 1790.4 MB
+[runlim] sample:		269.9 time, 270.8 real, 1790.4 MB
+[runlim] sample:		279.9 time, 280.8 real, 1790.4 MB
+[runlim] sample:		289.9 time, 290.8 real, 1790.4 MB
+[runlim] sample:		299.9 time, 300.8 real, 1790.4 MB
+[runlim] sample:		309.9 time, 310.8 real, 1790.4 MB
+[runlim] sample:		319.9 time, 320.8 real, 1790.4 MB
+[runlim] end:			Wed Nov 18 17:37:47 2020
+[runlim] status:		out of memory
+[runlim] result:		3
+[runlim] children:		0
+[runlim] real:			326.20 seconds
+[runlim] time:			325.21 seconds
+[runlim] space:			2063.9 MB
+[runlim] samples:		3253
