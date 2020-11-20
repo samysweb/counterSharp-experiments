@@ -6,7 +6,7 @@ exec_bench(){
 		TMPDIR=/tmp/experiment
 	else
 		HOMEPATH=/home/i12/steuber
-		TMPDIR=/tmp/steuber/experiment
+		TMPDIR=/tmp/docker-steuber/experiment
 	fi
 
 	mkdir -p $TMPDIR
