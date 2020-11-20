@@ -37,3 +37,4 @@ Mono3_1.c, --function testfun --unwind 1000000
 Mono3_1-2.c, --function testfun --unwind 1000000
 Waldkirch.c, --function testfun --unwind 6
 Waldkirch-2.c, --function testfun --unwind 501
+overflow.c, --function testfun --unwind 1
