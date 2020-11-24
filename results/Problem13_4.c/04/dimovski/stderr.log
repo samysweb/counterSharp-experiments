@@ -1,0 +1,69 @@
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	2400 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		Probab.native
+[runlim] argv[1]:		-single
+[runlim] argv[2]:		-domain
+[runlim] argv[3]:		polyhedra
+[runlim] argv[4]:		/experiments/benchmarks-dimovski/Problem13_4.c
+[runlim] start:			Fri Nov 20 18:02:29 2020
+[runlim] main pid:		248
+[runlim] sample:		10.0 time, 10.6 real, 308.3 MB
+[runlim] sample:		20.0 time, 20.6 real, 388.3 MB
+[runlim] sample:		30.0 time, 30.6 real, 490.9 MB
+[runlim] sample:		40.0 time, 40.6 real, 542.5 MB
+[runlim] sample:		50.0 time, 50.6 real, 542.5 MB
+[runlim] sample:		60.0 time, 60.6 real, 617.2 MB
+[runlim] sample:		70.0 time, 70.6 real, 617.2 MB
+[runlim] sample:		80.0 time, 80.6 real, 595.4 MB
+[runlim] sample:		90.0 time, 90.6 real, 595.4 MB
+[runlim] sample:		100.0 time, 100.6 real, 664.5 MB
+[runlim] sample:		110.0 time, 110.6 real, 664.5 MB
+[runlim] sample:		120.0 time, 120.6 real, 677.4 MB
+[runlim] sample:		130.0 time, 130.6 real, 702.2 MB
+[runlim] sample:		140.0 time, 140.6 real, 702.2 MB
+[runlim] sample:		150.0 time, 150.6 real, 677.7 MB
+[runlim] sample:		160.0 time, 160.6 real, 726.7 MB
+[runlim] sample:		170.0 time, 170.6 real, 788.8 MB
+[runlim] sample:		180.0 time, 180.6 real, 788.8 MB
+[runlim] sample:		190.0 time, 190.6 real, 848.4 MB
+[runlim] sample:		200.0 time, 200.6 real, 848.4 MB
+[runlim] sample:		209.9 time, 210.6 real, 850.2 MB
+[runlim] sample:		219.9 time, 220.6 real, 915.9 MB
+[runlim] sample:		229.9 time, 230.6 real, 915.9 MB
+[runlim] sample:		239.9 time, 240.6 real, 962.1 MB
+[runlim] sample:		249.9 time, 250.6 real, 991.5 MB
+[runlim] sample:		259.9 time, 260.6 real, 991.5 MB
+[runlim] sample:		269.9 time, 270.6 real, 996.9 MB
+[runlim] sample:		279.9 time, 280.6 real, 1035.0 MB
+[runlim] sample:		289.9 time, 290.6 real, 1145.4 MB
+[runlim] sample:		299.9 time, 300.6 real, 1145.4 MB
+[runlim] sample:		309.9 time, 310.6 real, 1170.4 MB
+[runlim] sample:		319.9 time, 320.6 real, 1243.1 MB
+[runlim] sample:		329.9 time, 330.6 real, 1243.1 MB
+[runlim] sample:		339.9 time, 340.6 real, 1315.3 MB
+[runlim] sample:		349.9 time, 350.6 real, 1348.5 MB
+[runlim] sample:		359.9 time, 360.6 real, 1348.5 MB
+[runlim] sample:		369.9 time, 370.6 real, 1377.2 MB
+[runlim] sample:		379.9 time, 380.6 real, 1391.9 MB
+[runlim] sample:		389.9 time, 390.6 real, 1469.5 MB
+[runlim] sample:		399.9 time, 400.6 real, 1469.5 MB
+[runlim] sample:		409.9 time, 410.6 real, 1591.9 MB
+[runlim] sample:		419.9 time, 420.6 real, 1654.3 MB
+[runlim] sample:		429.9 time, 430.6 real, 1676.7 MB
+[runlim] sample:		439.9 time, 440.6 real, 1810.3 MB
+[runlim] sample:		449.9 time, 450.6 real, 1846.9 MB
+[runlim] sample:		459.9 time, 460.6 real, 1846.9 MB
+[runlim] sample:		469.9 time, 470.6 real, 1897.4 MB
+[runlim] sample:		479.9 time, 480.6 real, 1902.6 MB
+[runlim] sample:		489.9 time, 490.6 real, 2011.6 MB
+[runlim] sample:		499.9 time, 500.6 real, 2011.6 MB
+[runlim] end:			Fri Nov 20 18:10:54 2020
+[runlim] status:		out of memory
+[runlim] result:		3
+[runlim] children:		0
+[runlim] real:			505.68 seconds
+[runlim] time:			504.92 seconds
+[runlim] space:			2048.8 MB
+[runlim] samples:		5050

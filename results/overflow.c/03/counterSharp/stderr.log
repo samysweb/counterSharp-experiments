@@ -1,0 +1,41 @@
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	900 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		python
+[runlim] argv[1]:		-m
+[runlim] argv[2]:		counterSharp
+[runlim] argv[3]:		--amm
+[runlim] argv[4]:		/tmp/docker-steuber/experiment/amm.dimacs
+[runlim] argv[5]:		--amh
+[runlim] argv[6]:		/tmp/docker-steuber/experiment/amh.dimacs
+[runlim] argv[7]:		--asm
+[runlim] argv[8]:		/tmp/docker-steuber/experiment/asm.dimacs
+[runlim] argv[9]:		--ash
+[runlim] argv[10]:		/tmp/docker-steuber/experiment/ash.dimacs
+[runlim] argv[11]:		--con
+[runlim] argv[12]:		/tmp/docker-steuber/experiment/con.dimacs
+[runlim] argv[13]:		-d
+[runlim] argv[14]:		--function
+[runlim] argv[15]:		testfun
+[runlim] argv[16]:		--unwind
+[runlim] argv[17]:		1
+[runlim] argv[18]:		/tmp/docker-steuber/counterSharp-experiments/benchmarks/overflow.c
+[runlim] start:			Fri Nov 20 17:42:29 2020
+[runlim] main pid:		3923
+[counterSharp.util.Config] DEBUG: Input files: ['/tmp/docker-steuber/counterSharp-experiments/benchmarks/overflow.c']
+[counterSharp.source.SourceManager] DEBUG: /tmp/docker-steuber/experiment/tmpbba61dto.c
+[counterSharp.cbmc.CBMCManager] DEBUG: cbmc --verbosity 4 --function testfun --dimacs --slice-formula --unwind 1 --no-assertions --no-assumptions --unwinding-assertions /tmp/docker-steuber/experiment/tmpbba61dto.c
+[counterSharp.cbmc.CBMCManager] INFO: Did not write file /tmp/docker-steuber/experiment/con.dimacs: State not reachable
+[counterSharp.cbmc.CBMCManager] DEBUG: cbmc --verbosity 4 --function testfun --dimacs --slice-formula --unwind 1 --property testfun.assertion.1 /tmp/docker-steuber/experiment/tmpbba61dto.c
+[counterSharp.cbmc.CBMCManager] DEBUG: cbmc --verbosity 4 --function testfun --dimacs --slice-formula --unwind 1 --property testfun.assertion.2 /tmp/docker-steuber/experiment/tmpbba61dto.c
+[counterSharp.cbmc.CBMCManager] DEBUG: cbmc --verbosity 4 --function testfun --dimacs --slice-formula --unwind 1 --property testfun.assertion.3 /tmp/docker-steuber/experiment/tmpbba61dto.c
+[counterSharp.cbmc.CBMCManager] DEBUG: cbmc --verbosity 4 --function testfun --dimacs --slice-formula --unwind 1 --property testfun.assertion.4 /tmp/docker-steuber/experiment/tmpbba61dto.c
+[runlim] end:			Fri Nov 20 17:42:29 2020
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		2
+[runlim] real:			0.39 seconds
+[runlim] time:			0.06 seconds
+[runlim] space:			23.4 MB
+[runlim] samples:		2
