@@ -58,7 +58,7 @@ exec_bench(){
 		{
 		cd /tmp
 		# 900s + 5*300s = 2400s
-		eval chrt -b 0 runlim -r 2400 -s 2048 Probab.native $2 $inputFile
+		eval chrt -b 0 runlim -r 2400 -s 8192 Probab.native $2 $inputFile
 		} > $resultDir/stdout.log 2> $resultDir/stderr.log
 
 		cp $resultDir/* $outputDir
@@ -69,6 +69,7 @@ exec_bench(){
 
 
 IFS=","
+echo "CHANGED"
 echo $1
 while read bench args; do
 	echo $bench
