@@ -27,8 +27,8 @@ example7b.c,  --function testfun --unwind 11
 example7b-2.c,  --function testfun --unwind 1001
 for_bounded_loop1.c, --function testfun --unwind 11
 for_bounded_loop1-2.c, --function testfun --unwind 1001
-gsv2008.c, --function testfun --unwind 51
-gsv2008-2.c, --function testfun --unwind 51
+gsv2008.c, --function testfun --unwind 18
+gsv2008-2.c, --function testfun --unwind 101
 hhk2008.c, --function testfun --unwind 6
 hhk2008-2.c, --function testfun --unwind 501
 Log.c, --function testfun --unwind 5
