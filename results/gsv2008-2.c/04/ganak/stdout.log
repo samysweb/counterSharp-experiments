@@ -1,0 +1,241 @@
+** CON **
+c Setting the timout to: 100000
+c Outputting solution to console
+c GANAK version 1.0.0
+c time bound set to 300s
+c ganak GIT revision: 33f36bcdd4a32f4f20f64e667de10d13d1377953
+c ganak build env: CMAKE_CXX_COMPILER = /usr/bin/c++ | CMAKE_CXX_FLAGS =  -mtune=native -Wall -Wextra -Wunused -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -ggdb3 | COMPILE_DEFINES =  | STATICCOMPILE = OFF | ONLY_SIMPLE =  | Boost_FOUND =  | ZLIB_FOUND =  | ENABLE_TESTING =  | ENABLE_ASSERTIONS = ON | MY_TARGETS =  | compilation date time = Apr  5 2021 16:43:08
+c Setting the timout to: 300
+c Solving /experiments/results/gsv2008-2.c/04/counterSharp/con.dimacs
+c variables (all/used/free): 	18845/18845/0
+c clauses (all/long/binary/unit): 94279/77022/17054/203
+c Sampling set is present, performing projected model counting 
+c Sampling set size: 32
+c Sampling set:  404 405 406 407 408 409 410 411 412 413 414 415 416 417 418 419 420 421 422 423 424 425 426 427 428 429 430 431 432 433 434 435
+c 
+c Preprocessing ..
+c DONE
+c variables (all/used/free): 	15178/15146/32
+c clauses (all/long/binary/unit): 66834/48780/18054/0
+c WARNING: Maximum cache size larger than free RAM available
+c Free RAM 433MB
+c Maximum cache size:	1024 MB
+c 
+c We have solved halfed
+c We have solved halfed
+c 
+c 
+c variables (total / active / free)	15178/15146/32
+c clauses (removed) 			94279 (27445)
+c decisions 				10
+c Max. decision level 			6
+c conflicts 				11
+c conflict clauses (all/bin/unit) 	1600/1074/0
+c 
+c failed literals found by implicit BCP 	 415
+c implicit BCP miss rate 	 99.1292%
+c bytes cache size     	20234496	
+c bytes cache (overall) 	20235376
+c bytes cache components (overall) 	968
+c bytes cache (infra / comps) 20234408/88	
+c bytes pure comp data (curr)    18446744073709368524
+c bytes pure comp data (overall) 59980
+c bytes cache with sysoverh (curr)    144
+c bytes cache with sysoverh (overall) 1584
+c cache (lookup / stores / hits) 			10/11/0
+c cache miss rate 100%
+c avg. variable count (stores / hits) 	15146/0
+c 
+c 
+c # solutions 
+s pmc 0
+c # END
+c 
+c time: 93.9472s
+** AMM **
+c Setting the timout to: 100000
+c Outputting solution to console
+c GANAK version 1.0.0
+c time bound set to 300s
+c ganak GIT revision: 33f36bcdd4a32f4f20f64e667de10d13d1377953
+c ganak build env: CMAKE_CXX_COMPILER = /usr/bin/c++ | CMAKE_CXX_FLAGS =  -mtune=native -Wall -Wextra -Wunused -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -ggdb3 | COMPILE_DEFINES =  | STATICCOMPILE = OFF | ONLY_SIMPLE =  | Boost_FOUND =  | ZLIB_FOUND =  | ENABLE_TESTING =  | ENABLE_ASSERTIONS = ON | MY_TARGETS =  | compilation date time = Apr  5 2021 16:43:08
+c Setting the timout to: 300
+c Solving /experiments/results/gsv2008-2.c/04/counterSharp/amm.dimacs
+c variables (all/used/free): 	18740/18740/0
+c clauses (all/long/binary/unit): 93926/77105/16717/104
+c Sampling set is present, performing projected model counting 
+c Sampling set size: 32
+c Sampling set:  204 205 206 207 208 209 210 211 212 213 214 215 216 217 218 219 220 221 222 223 224 225 226 227 228 229 230 231 232 233 234 235
+c 
+c Preprocessing ..
+c DONE
+c variables (all/used/free): 	18455/18423/32
+c clauses (all/long/binary/unit): 90670/76356/14314/0
+c WARNING: Maximum cache size larger than free RAM available
+c Free RAM 427MB
+c Maximum cache size:	1024 MB
+c 
+c Max decision level :25
+c Doing Restart
+** AMH **
+c Setting the timout to: 100000
+c Outputting solution to console
+c GANAK version 1.0.0
+c time bound set to 300s
+c ganak GIT revision: 33f36bcdd4a32f4f20f64e667de10d13d1377953
+c ganak build env: CMAKE_CXX_COMPILER = /usr/bin/c++ | CMAKE_CXX_FLAGS =  -mtune=native -Wall -Wextra -Wunused -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -ggdb3 | COMPILE_DEFINES =  | STATICCOMPILE = OFF | ONLY_SIMPLE =  | Boost_FOUND =  | ZLIB_FOUND =  | ENABLE_TESTING =  | ENABLE_ASSERTIONS = ON | MY_TARGETS =  | compilation date time = Apr  5 2021 16:43:08
+c Setting the timout to: 300
+c Solving /experiments/results/gsv2008-2.c/04/counterSharp/amh.dimacs
+c variables (all/used/free): 	18740/18740/0
+c clauses (all/long/binary/unit): 93926/77105/16717/104
+c Sampling set is present, performing projected model counting 
+c Sampling set size: 32
+c Sampling set:  204 205 206 207 208 209 210 211 212 213 214 215 216 217 218 219 220 221 222 223 224 225 226 227 228 229 230 231 232 233 234 235
+c 
+c Preprocessing ..
+c DONE
+c variables (all/used/free): 	18501/18469/32
+c clauses (all/long/binary/unit): 93076/76201/16875/0
+c WARNING: Maximum cache size larger than free RAM available
+c Free RAM 423MB
+c Maximum cache size:	1024 MB
+c 
+c We have solved halfed
+c We have solved halfed
+c 
+c 
+c variables (total / active / free)	18501/18469/32
+c clauses (removed) 			93926 (850)
+c decisions 				503
+c Max. decision level 			10
+c conflicts 				4
+c conflict clauses (all/bin/unit) 	7581/1652/0
+c 
+c failed literals found by implicit BCP 	 2222
+c implicit BCP miss rate 	 99.8241%
+c bytes cache size     	20282792	
+c bytes cache (overall) 	20282792
+c bytes cache components (overall) 	48384
+c bytes cache (infra / comps) 20234408/48384	
+c bytes pure comp data (curr)    7962720
+c bytes pure comp data (overall) 7962720
+c bytes cache with sysoverh (curr)    80640
+c bytes cache with sysoverh (overall) 80640
+c cache (lookup / stores / hits) 			503/504/0
+c cache miss rate 100%
+c avg. variable count (stores / hits) 	8867.5/0
+c 
+c 
+c # solutions 
+s pmc 500
+c # END
+c 
+c time: 19.9366s
+** ASM **
+c Setting the timout to: 100000
+c Outputting solution to console
+c GANAK version 1.0.0
+c time bound set to 300s
+c ganak GIT revision: 33f36bcdd4a32f4f20f64e667de10d13d1377953
+c ganak build env: CMAKE_CXX_COMPILER = /usr/bin/c++ | CMAKE_CXX_FLAGS =  -mtune=native -Wall -Wextra -Wunused -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -ggdb3 | COMPILE_DEFINES =  | STATICCOMPILE = OFF | ONLY_SIMPLE =  | Boost_FOUND =  | ZLIB_FOUND =  | ENABLE_TESTING =  | ENABLE_ASSERTIONS = ON | MY_TARGETS =  | compilation date time = Apr  5 2021 16:43:08
+c Setting the timout to: 300
+c Solving /experiments/results/gsv2008-2.c/04/counterSharp/asm.dimacs
+c variables (all/used/free): 	18742/18742/0
+c clauses (all/long/binary/unit): 93932/77106/16721/105
+c Sampling set is present, performing projected model counting 
+c Sampling set size: 32
+c Sampling set:  204 205 206 207 208 209 210 211 212 213 214 215 216 217 218 219 220 221 222 223 224 225 226 227 228 229 230 231 232 233 234 235
+c 
+c Preprocessing ..
+c DONE
+c variables (all/used/free): 	18393/18361/32
+c clauses (all/long/binary/unit): 92736/75889/16847/0
+c WARNING: Maximum cache size larger than free RAM available
+c Free RAM 423MB
+c Maximum cache size:	1024 MB
+c 
+c We have solved halfed
+c We have solved halfed
+c 
+c 
+c variables (total / active / free)	18393/18361/32
+c clauses (removed) 			93932 (1196)
+c decisions 				20
+c Max. decision level 			7
+c conflicts 				21
+c conflict clauses (all/bin/unit) 	2463/108/0
+c 
+c failed literals found by implicit BCP 	 345
+c implicit BCP miss rate 	 99.668%
+c bytes cache size     	20234496	
+c bytes cache (overall) 	20236256
+c bytes cache components (overall) 	1848
+c bytes cache (infra / comps) 20234408/88	
+c bytes pure comp data (curr)    18446744073708615024
+c bytes pure comp data (overall) 310080
+c bytes cache with sysoverh (curr)    144
+c bytes cache with sysoverh (overall) 3024
+c cache (lookup / stores / hits) 			20/21/0
+c cache miss rate 100%
+c avg. variable count (stores / hits) 	18361/0
+c 
+c 
+c # solutions 
+s pmc 0
+c # END
+c 
+c time: 6.68431s
+** ASH **
+c Setting the timout to: 100000
+c Outputting solution to console
+c GANAK version 1.0.0
+c time bound set to 300s
+c ganak GIT revision: 33f36bcdd4a32f4f20f64e667de10d13d1377953
+c ganak build env: CMAKE_CXX_COMPILER = /usr/bin/c++ | CMAKE_CXX_FLAGS =  -mtune=native -Wall -Wextra -Wunused -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -ggdb3 | COMPILE_DEFINES =  | STATICCOMPILE = OFF | ONLY_SIMPLE =  | Boost_FOUND =  | ZLIB_FOUND =  | ENABLE_TESTING =  | ENABLE_ASSERTIONS = ON | MY_TARGETS =  | compilation date time = Apr  5 2021 16:43:08
+c Setting the timout to: 300
+c Solving /experiments/results/gsv2008-2.c/04/counterSharp/ash.dimacs
+c variables (all/used/free): 	18742/18742/0
+c clauses (all/long/binary/unit): 93932/77106/16721/105
+c Sampling set is present, performing projected model counting 
+c Sampling set size: 32
+c Sampling set:  204 205 206 207 208 209 210 211 212 213 214 215 216 217 218 219 220 221 222 223 224 225 226 227 228 229 230 231 232 233 234 235
+c 
+c Preprocessing ..
+c DONE
+c variables (all/used/free): 	18497/18465/32
+c clauses (all/long/binary/unit): 93065/76190/16875/0
+c WARNING: Maximum cache size larger than free RAM available
+c Free RAM 425MB
+c Maximum cache size:	1024 MB
+c 
+c We have solved halfed
+c We have solved halfed
+c 
+c 
+c variables (total / active / free)	18497/18465/32
+c clauses (removed) 			93932 (867)
+c decisions 				502
+c Max. decision level 			10
+c conflicts 				3
+c conflict clauses (all/bin/unit) 	7081/1343/0
+c 
+c failed literals found by implicit BCP 	 1951
+c implicit BCP miss rate 	 99.8477%
+c bytes cache size     	20282696	
+c bytes cache (overall) 	20282696
+c bytes cache components (overall) 	48288
+c bytes cache (infra / comps) 20234408/48288	
+c bytes pure comp data (curr)    8691176
+c bytes pure comp data (overall) 8691176
+c bytes cache with sysoverh (curr)    80480
+c bytes cache with sysoverh (overall) 80480
+c cache (lookup / stores / hits) 			502/503/0
+c cache miss rate 100%
+c avg. variable count (stores / hits) 	10741/0
+c 
+c 
+c # solutions 
+s pmc 500
+c # END
+c 
+c time: 15.0092s
