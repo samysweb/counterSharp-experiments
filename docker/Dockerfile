@@ -1,34 +1,28 @@
 FROM ubuntu:20.04
 
-RUN apt-get update
-
+# Basic Setup and Requirements
+RUN apt-get update --fix-missing
 RUN apt-get install -y locales && localedef -i en_US -c -f UTF-8 -A /usr/share/locale/locale.alias en_US.UTF-8
 ENV LANG en_US.utf8
 ENV DEBIAN_FRONTEND=noninteractive
 ENV TZ=Europe/Berlin
+RUN apt-get install -y git build-essential cmake zlib1g-dev libboost-program-options-dev libm4ri-dev libgmp-dev libmpfr-dev libmpc-dev tar unzip curl ocaml-interp ocaml-findlib menhir opam libapron-ocaml python3 python3-pip
+RUN rm -rf /var/lib/apt/lists/*
 
-# ApproxMC
-RUN apt-get install -y git build-essential cmake zlib1g-dev libboost-program-options-dev libm4ri-dev
+# CryptoMiniSat (Version 5.8.0) & ApproxMC (Commit Tag 618b35b)
 RUN git clone https://github.com/msoos/cryptominisat && cd cryptominisat && git checkout 5.8.0 && mkdir build && cd build && cmake .. && make && make install && cd ../..
-RUN apt-get install -y libgmp-dev
 RUN git clone https://github.com/meelgroup/approxmc/ && cd approxmc && git checkout 618b35b && mkdir build && cd build && cmake .. && make && make install && cd ../../
 
 
-# GANAK
-RUN apt-get install -y libmpfr-dev libmpc-dev
+# GANAK (Commit Tag 33f36bc)
 RUN git clone https://github.com/meelgroup/ganak.git && cd ganak && git checkout 33f36bc && mkdir build && cd build && cmake .. && make && cp ganak ../bin/ && cd ../bin && export PATH=$PATH:`pwd` && cd ../../
 
-# # ADDMC
-RUN apt-get install -y autoconf tar unzip
-RUN git clone https://github.com/vardigroup/ADDMC.git && cd ADDMC && git checkout mc-2020 && ./INSTALL.sh && export PATH=$PATH:`pwd` && cd ../
-
-# # Probab Analyzer
-RUN apt-get install -y curl ocaml-interp ocaml-findlib menhir opam libapron-ocaml
+# Probab Analyzer (Commit Tag 0997eb4 with minor fix)
 RUN opam init --disable-sandboxing && eval $(opam env) && opam install -y ounit && opam install -y apron && opam install -y bddapron && opam install -y zarith
 RUN curl -k https://www.math.ucdavis.edu/\~latte/software/packages/binary/latte-integrale-1.6-x86_64-unknown-linux-gnu.zip > latte.zip
 RUN mkdir latte && unzip latte.zip -d latte
 RUN git clone https://github.com/aleksdimovski/probab_analyzer.git && cd probab_analyzer && git checkout 0997eb4
-# Repair tool
+# Repair Probab Analyzer through minor fixes
 RUN rm -f /probab_analyzer/banal/banal_rat.ml && rm -f /probab_analyzer/Main.native
 COPY dimovski-fix/banal_rat.ml /probab_analyzer/banal/banal_rat.ml
 COPY dimovski-fix/compile.sh /probab_analyzer/compile.sh
@@ -37,12 +31,15 @@ COPY dimovski-fix/compile.sh compile.sh
 RUN pwd
 RUN chmod u+x compile.sh
 
-#RUN rm -rf /var/lib/apt/lists/*
+# counterSharp (Commit Tag ae04135)
+RUN curl https://www.cprover.org/cbmc/download/cbmc-5-11-linux-64.tgz > cbmc.tar.gz && mkdir /cbmc && tar -xzvf cbmc.tar.gz -C /cbmc
+RUN git clone https://github.com/samysweb/counterSharp.git && cd counterSharp && pip3 install --no-cache-dir -r requirements.txt
 
 RUN curl http://fmv.jku.at/runlim/runlim-1.10.tar.gz > runlim.tar.gz && mkdir runlim && tar -xzvf runlim.tar.gz -C runlim && cd runlim/runlim-1.10 && ./configure.sh && make && cd ../../
 
 
-ENV PATH="${PATH}:/ADDMC:/ganak/bin:/runlim/runlim-1.10:/latte/bin:/probab_analyzer:/experiments"
+ENV PATH="${PATH}:/ADDMC:/ganak/bin:/runlim/runlim-1.10:/latte/bin:/probab_analyzer:/experiments:/cbmc"
+ENV PYTHONPATH="${PYTHONPATH}:/counterSharp"
 
 RUN mkdir /experiments
 WORKDIR /experiments

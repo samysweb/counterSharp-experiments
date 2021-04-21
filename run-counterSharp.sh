@@ -63,10 +63,7 @@ exec_bench(){
 		} > $resultDir/init.log 2>&1
 
 		{
-		#source $HOMEPATH/anaconda3/etc/profile.d/conda.sh
-		eval "$($HOMEPATH/anaconda3/bin/conda shell.bash hook)"
-		conda activate FP
-		eval chrt -b 0 runlim -r 900 -s 2048 python -m counterSharp --amm $resultDir/amm.dimacs --amh $resultDir/amh.dimacs --asm $resultDir/asm.dimacs --ash $resultDir/ash.dimacs --con $resultDir/con.dimacs -d $2 $inputFile
+		eval chrt -b 0 runlim -r 900 -s 2048 python3 -m counterSharp --amm $resultDir/amm.dimacs --amh $resultDir/amh.dimacs --asm $resultDir/asm.dimacs --ash $resultDir/ash.dimacs --con $resultDir/con.dimacs -d $2 $inputFile
 		} > $resultDir/stdout.log 2> $resultDir/stderr.log
 
 		cp $resultDir/* $outputDir
