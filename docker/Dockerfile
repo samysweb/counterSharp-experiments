@@ -37,8 +37,10 @@ RUN git clone https://github.com/samysweb/counterSharp.git && cd counterSharp &&
 
 RUN curl http://fmv.jku.at/runlim/runlim-1.10.tar.gz > runlim.tar.gz && mkdir runlim && tar -xzvf runlim.tar.gz -C runlim && cd runlim/runlim-1.10 && ./configure.sh && make && cd ../../
 
+# Add scripts
+ADD ./scripts /scripts
 
-ENV PATH="${PATH}:/ADDMC:/ganak/bin:/runlim/runlim-1.10:/latte/bin:/probab_analyzer:/experiments:/cbmc"
+ENV PATH="${PATH}:/ADDMC:/ganak/bin:/runlim/runlim-1.10:/latte/bin:/probab_analyzer:/experiments:/cbmc:/scripts"
 ENV PYTHONPATH="${PYTHONPATH}:/counterSharp"
 
 RUN mkdir /experiments
