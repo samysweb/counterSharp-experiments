@@ -15,17 +15,16 @@ docker-compose build
 | :exclamation:  Any of the following commands will overwrite the benchmark results contained in [`results`](results)  |
 |----------------------------------------------------------------------------------------------------------------------|
 
-A minimal example can be executed by running:
+A minimal example can be executed by running (this should take approximately 70s):
 ```
 ./showcase.sh
 ```
-This will create remove and recreate benchmark log files for the benchmarks `bwd_loop1a.c`, `bwd_loop1a-2.c`, `bwd_loop2.c`, `bwd_loop2-2.c`, `bwd_loop7.c` and `floor.c` in the folder [`results`](results).
+This will create remove and recreate benchmark log files for the benchmarks `for_bounded_loop1.c` and `overflow.c` in the folder [`results`](results).
 
-A full run can be executed by running:
+A full run can be executed by running (this should take approximately **TODO**):
 ```
 ./run-all.sh
 ```
-
 
 ## Benchmarks
 The benchmarks are contained in the folder [`benchmarks`](benchmarks) which also includes an overview on the sources and modifications to the benchmarks  
@@ -35,6 +34,8 @@ Note that benchmark versions for the tool by Dimovski et al. are contained in fo
 The results are contained in the folder [`results`](results) in which all logs from benchmark runs reside. The logs are split-up by benchmark instance (first level folder), run number (second level folder) and tool (third level folder)  
 For example, the file `results/bwd_loop1a.c/01/approxmc/stdout.log` contains the stdout out running approxmc on the instance `bwd_loop1a.c` in run `01`  
 Note that `01/counterSharp/init.log` contains information on the machine used for benchmark execution as well as on the commits used in the experiments.
+
+### Machine Details
 
 ## Running benchmarks
 For all cases we assume a CSV file containing relevant information on the instances to run: The first column is the benchmark's name, the second column are parameters passed to counterSharp (see `instances.csv`) or the tool by Dimovski (see `instances-dimovski.csv`).
