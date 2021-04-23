@@ -1,7 +1,6 @@
 version: '3.0'
 services: 
     benchmarking:
-        build: ./docker
         image: samweb/countersharp-experiments
         volumes:
             - ./:/experiments:ro
