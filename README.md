@@ -6,7 +6,7 @@ Furthermore the repository contains the benchmarks on which we ran our experimen
 ## Requirements & Installation
 All tools are packaged into a Dockerfile which makes any installation unnecessary.
 There is, however, the need for a running Docker installation including the `docker-compose` command.
-The Dockerfile depends on the accessability of the following GitHub Repositories:
+The Dockerfile build depends on the accessability of the following GitHub Repositories:
 - [CryptoMiniSat](https://github.com/msoos/cryptominisat)
 - [ApproxMC](https://github.com/meelgroup/approxmc)
 - [Ganak](https://github.com/meelgroup/ganak)
@@ -16,9 +16,9 @@ The Dockerfile depends on the accessability of the following GitHub Repositories
 The repository needs to be mountable by Docker and the `results` folder needs to be writbaly mountable by Docker
 
 ## Getting Started
-First we need to build the Docker container which can be done through the following command:
+First we need to pull the Docker container which can be done through the following command:
 ```
-docker-compose build
+docker-compose pull
 ```
 
 | :exclamation:  Any of the following commands will overwrite the benchmark results contained in [`results`](results)  |
