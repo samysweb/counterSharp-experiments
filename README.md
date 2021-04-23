@@ -1,10 +1,19 @@
 # counterSharp Experiments
-This repository contains experiments run on the [counterSharp Tool](https://github.com/samysweb/counterSharp).
+This repository contains the reproducible experimental evaluation of the [counterSharp tool](https://github.com/samysweb/counterSharp).
+The repository contains a Docker file which configures the counterSharp tool, two model counters (ApproxMC and Ganak) as well as the [tool by Dimovski et al.](https://github.com/aleksdimovski/probab_analyzer) for our experiments.
+Furthermore the repository contains the benchmarks on which we ran our experiments as well as the logs of our experiments and scripts for transforming the log files into LaTex tables.
 
 ## Requirements & Installation
 All tools are packaged into a Dockerfile which makes any installation unnecessary.
 There is, however, the need for a running Docker installation including the `docker-compose` command.
-The repository needs to be mountable by Docker and the results folder needs to be writbaly mountable by Docker
+The Dockerfile depends on the accessability of the following GitHub Repositories:
+- [CryptoMiniSat](https://github.com/msoos/cryptominisat)
+- [ApproxMC](https://github.com/meelgroup/approxmc)
+- [Ganak](https://github.com/meelgroup/ganak)
+- [Probab_Analyzer](https://github.com/aleksdimovski/probab_analyzer)
+- [counterSharp](https://github.com/samysweb/counterSharp)
+
+The repository needs to be mountable by Docker and the `results` folder needs to be writbaly mountable by Docker
 
 ## Getting Started
 First we need to build the Docker container which can be done through the following command:
