@@ -89,6 +89,8 @@ class SingleBenchmarkToolRun(BenchmarkToolRun):
 							exViol = False
 							viol = (float(line.split()[-5].strip()),float(line.split()[-2].strip()))
 				self.res.append((exSucc,exViol,succ,viol))
+	def sum(self):
+		return sum(self.time)
 	def printHeader1(self):
 		print("\multirow{2}{*}{%s}"%(self.tool),end="")
 	def printHeader2(self):
@@ -161,6 +163,11 @@ class MultiBenchmarkToolRun(BenchmarkToolRun):
 						if self.status[curKey][-1]=="ok":
 							if line.startswith("s mc ") or line.startswith("s pmc "):
 								self.res[curKey].append(line.split()[-1].strip())
+	def sum(self):
+		result = 0.0
+		for k in self.time.keys():
+			result+=sum(self.time[k])
+		return result
 	def printHeader1(self):
 			print("\multicolumn{5}{c|}{%s}"%(self.tool),end="")
 	def printHeader2(self):
@@ -465,7 +472,12 @@ def getSensibleAggregateNondet(data):
 			print("---", end="")
 		print("\\\\")
 	
-
+def getSum(data):
+	result=0.0
+	for bench in data.keys():
+		for tool in data[bench].keys():
+			result+=data[bench][tool].sum()
+	print(f"Total time: {result}s")
 
 
 
@@ -479,3 +491,5 @@ if __name__ == '__main__':
 		getSensibleAggregate(data)
 	elif sys.argv[2] == "nondet":
 		getSensibleAggregateNondet(data)
+	elif sys.argv[2] == "sum":
+		getSum(data)

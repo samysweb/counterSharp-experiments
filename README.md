@@ -24,13 +24,13 @@ docker-compose pull
 | :exclamation:  Any of the following commands will overwrite the benchmark results contained in [`results`](results)  |
 |----------------------------------------------------------------------------------------------------------------------|
 
-A minimal example can be executed by running (this should take approximately 70s):
+A minimal example can be executed by running (this takes approximately **70 seconds**):
 ```
 ./showcase.sh
 ```
 This will create remove and recreate benchmark log files for the benchmarks `for_bounded_loop1.c` and `overflow.c` in the folder [`results`](results).
 
-A full run can be executed by running (this should take approximately **TODO**):
+A full run can be executed by running (this takes approximately a little under **2 days**):
 ```
 ./run-all.sh
 ```
@@ -63,8 +63,9 @@ All scripts produce benchmarking results for "missing" instances, i.e. instances
 
 ## Log summarization
 Summarization is possible through the python script in `logParsing/parse.py`.
+The script requires a standard Python 3 installation.
 The script takes as input a list of benchmarks to process and returns (parts of) a LaTex table:
 - **To obtain (sorted) results for deterministic benchmarks:**  
-`cat deterministic-sorted.csv| python parse.py ../results aggregate2`
+`cat logParsing/deterministic-sorted.csv| python logParsing/parse.py results aggregate2`
 - **To obtain (sorted) results for nondeterministic benchmarks:**  
-`cat nondeterministic-sorted.csv| python parse.py ../results nondet`
+`cat logParsing/nondeterministic-sorted.csv| python logParsing/parse.py results nondet`
