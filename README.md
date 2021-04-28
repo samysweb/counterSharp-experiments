@@ -6,12 +6,13 @@ Furthermore the repository contains the benchmarks on which we ran our experimen
 ## Requirements & Installation
 All tools are packaged into a Dockerfile which makes any installation unnecessary.
 There is, however, the need for a running Docker installation including the `docker-compose` command.
-The Dockerfile build depends on the accessability of the following GitHub Repositories:
+The Dockerfile build depends on the accessibility of the following GitHub Repositories:
 - [CryptoMiniSat](https://github.com/msoos/cryptominisat)
 - [ApproxMC](https://github.com/meelgroup/approxmc)
 - [Ganak](https://github.com/meelgroup/ganak)
 - [Probab_Analyzer](https://github.com/aleksdimovski/probab_analyzer)
 - [counterSharp](https://github.com/samysweb/counterSharp)
+The Docker image is hosted at [Dockerhub](https://hub.docker.com/repository/docker/samweb/countersharp-experiments)
 
 The repository needs to be mountable by Docker and the `results` folder needs to be writbaly mountable by Docker
 
@@ -41,14 +42,15 @@ Note that benchmark versions for the tool by Dimovski et al. are contained in fo
 
 ## Benchmark Results
 The results are contained in the folder [`results`](results) in which all logs from benchmark runs reside. The logs are split-up by benchmark instance (first level folder), run number (second level folder) and tool (third level folder)  
-For example, the file `results/bwd_loop1a.c/01/approxmc/stdout.log` contains the stdout out running approxmc on the instance `bwd_loop1a.c` in run `01`  
-Note that `01/counterSharp/init.log` contains information on the machine used for benchmark execution as well as on the commits used in the experiments.
+For example, the file `results/bwd_loop1a.c/01/approxmc/stdout.log` contains the stdout and stderr of running approxmc on the instance `bwd_loop1a.c` in run `01`  
 
 ### Machine Details
+All runs were executed on a Linux machine housing an Intel(R) Core(TM) i5-6500 CPU (3.20GHz) and 16GB of memory.
+Note that for every benchmark log `01/counterSharp/init.log` contains information on the machine used for benchmark execution as well as on the commits used in the experiments.
 
 ## Running benchmarks
 For all cases we assume a CSV file containing relevant information on the instances to run: The first column is the benchmark's name, the second column are parameters passed to counterSharp (see `instances.csv`) or the tool by Dimovski (see `instances-dimovski.csv`).
-All scripts produce benchmarking results for "missing" instances, i.e. instances for which no benchmarking results can be found in the `results` folder.
+All scripts produce benchmarking results for "missing" instances, i.e. instances for which no folder can be found in the `results` folder.
 
 - Run counterSharp on the benchmarks:  
 `docker-compose run benchmarking run-counterSharp instances.csv`
