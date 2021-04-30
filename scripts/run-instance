@@ -1,0 +1,40 @@
+#! /bin/bash
+
+if [[ $1 != "approx" && $1 != "ganak" ]]; then
+    echo "ERROR: Must run $0 with either approx or ganak as first parameter for counter choice"
+	exit
+fi
+
+if [ ! -f "$2" ]; then
+    echo "ERROR: File '$2' does not exist."
+	exit
+fi
+echo "+++ Running counterSharp"
+runlim -r 2400 -s 2048 python3 -m counterSharp --amm /tmp/amm.dimacs --amh /tmp/amh.dimacs --asm /tmp/asm.dimacs --ash /tmp/ash.dimacs --con /tmp/con.dimacs -d $3 $2
+
+if [[ $1 == "approx" ]]; then
+    echo "+++ Running ApproxMC"
+	echo "++++++ Counting Confidence..."
+	runlim -r 300 -s 2048 approxmc --sparse 1 /tmp/con.dimacs
+	echo "++++++ Counting Assumption Misses...."
+	runlim -r 300 -s 2048 approxmc --sparse 1 /tmp/amm.dimacs
+	echo "++++++ Counting Assumption Hits...."
+	runlim -r 300 -s 2048 approxmc --sparse 1 /tmp/amh.dimacs
+	echo "++++++ Counting Assertion Misses..."
+	runlim -r 300 -s 2048 approxmc --sparse 1 /tmp/asm.dimacs
+	echo "++++++ Counting Assertion Hits..."
+	runlim -r 300 -s 2048 approxmc --sparse 1 /tmp/ash.dimacs
+fi
+if [[ $1 == "ganak" ]]; then
+    echo "+++ Running Ganak"
+	echo "++++++ Counting Confidence..."
+	runlim -r 300 -s 2048 ganak -t 300 -cs 1024 /tmp/con.dimacs
+	echo "++++++ Counting Assumption Misses...."
+	runlim -r 300 -s 2048 ganak -t 300 -cs 1024 /tmp/amm.dimacs
+	echo "++++++ Counting Assumption Hits...."
+	runlim -r 300 -s 2048 ganak -t 300 -cs 1024 /tmp/amh.dimacs
+	echo "++++++ Counting Assertion Misses..."
+	runlim -r 300 -s 2048 ganak -t 300 -cs 1024 /tmp/asm.dimacs
+	echo "++++++ Counting Assertion Hits..."
+	runlim -r 300 -s 2048 ganak -t 300 -cs 1024 /tmp/ash.dimacs
+fi

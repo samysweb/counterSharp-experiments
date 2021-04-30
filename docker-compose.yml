@@ -1,7 +1,0 @@
-version: '3.0'
-services: 
-    benchmarking:
-        image: samweb/countersharp-experiments
-        volumes:
-            - ./:/experiments:ro
-            - ./results:/experiments/results:rw

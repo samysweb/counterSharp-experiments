@@ -43,5 +43,14 @@ ADD ./scripts /scripts
 ENV PATH="${PATH}:/ADDMC:/ganak/bin:/runlim/runlim-1.10:/latte/bin:/probab_analyzer:/experiments:/cbmc:/scripts"
 ENV PYTHONPATH="${PYTHONPATH}:/counterSharp"
 
-RUN mkdir /experiments
+RUN mkdir /experiments && mkdir /experiments/benchmarks && mkdir /experiments/benchmarks-dimovski && mkdir /experiments/logParsing
+ADD ./cwd /experiments
+ADD ./benchmarks /experiments/benchmarks
+ADD ./benchmarks-dimovski /experiments/benchmarks-dimovski
+ADD ./logParsing /experiments/logParsing
+ADD README.md /experiments/README.txt
+ADD LICENSE.txt /experiments
+
 WORKDIR /experiments
+
+ENTRYPOINT [ "/bin/bash" ]
