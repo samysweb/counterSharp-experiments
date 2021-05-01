@@ -17,7 +17,7 @@ The Docker image is hosted at [Dockerhub](https://hub.docker.com/repository/dock
 The repository needs to be mountable by Docker and the `results` folder needs to be writbaly mountable by Docker
 
 ## Getting Started
-In order to pull and run the docker container execute this will open a bash allowing the execution of further commands:
+In order to pull and run the docker container execute the following line. It opens a shell allowing the execution of further commands:
 ```bash
 docker run -it -v `pwd`/results:/experiments/results samweb/countersharp-experiments
 ```
