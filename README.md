@@ -1,4 +1,5 @@
-# counterSharp Experiments
+# `counterSharp` Experiment and Play Environment
+
 This repository contains the reproducible experimental evaluation of the [counterSharp tool](https://github.com/samysweb/counterSharp).
 The repository contains a Docker file which configures the counterSharp tool, two model counters (ApproxMC and Ganak) as well as the [tool by Dimovski et al.](https://github.com/aleksdimovski/probab_analyzer) for our experiments.
 Furthermore the repository contains the benchmarks on which we ran our experiments as well as the logs of our experiments and scripts for transforming the log files into LaTeX tables.
@@ -12,18 +13,20 @@ The Dockerfile build depends on the accessibility of the following GitHub Reposi
 - [Ganak](https://github.com/meelgroup/ganak)
 - [Probab_Analyzer](https://github.com/aleksdimovski/probab_analyzer)
 - [counterSharp](https://github.com/samysweb/counterSharp)
-The Docker image is hosted at [Dockerhub](https://hub.docker.com/repository/docker/samweb/countersharp-experiments)
-
-The repository needs to be mountable by Docker and the `results` folder needs to be writbaly mountable by Docker
+ 
+The Docker image is hosted at [Dockerhub](https://hub.docker.com/repository/docker/samweb/countersharp-experiments).
+This repository needs to be mountable by Docker and the `results` folder needs to be writbaly mountable by Docker.
 
 ## Getting Started
+
 In order to pull and run the docker container execute the following line. It opens a shell allowing the execution of further commands:
+
 ```bash
 docker run -it -v `pwd`/results:/experiments/results samweb/countersharp-experiments
 ```
 
-| :exclamation:  This will create a writable folder `results` in your current folder which will hold any logs from experiments  |
-|-------------------------------------------------------------------------------------------------------------------------------|
+| :exclamation:  This will create a writable folder `results` in your current folder which will hold any logs from experiments.  |
+|--------------------------------------------------------------------------------------------------------------------------------|
 
 A minimal example can be executed by running (this takes approximately **70 seconds**):
 ```bash
