@@ -15,7 +15,6 @@ The Dockerfile build depends on the accessibility of the following GitHub Reposi
 - [counterSharp](https://github.com/samysweb/counterSharp)
  
 The Docker image is hosted at [Dockerhub](https://hub.docker.com/repository/docker/samweb/countersharp-experiments).
-This repository needs to be mountable by Docker and the `results` folder needs to be writbaly mountable by Docker.
 
 ## Getting Started
 
