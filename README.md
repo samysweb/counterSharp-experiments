@@ -4,18 +4,6 @@ This repository contains the reproducible experimental evaluation of the [counte
 The repository contains a Docker file which configures the counterSharp tool, two model counters (ApproxMC and Ganak) as well as the [tool by Dimovski et al.](https://github.com/aleksdimovski/probab_analyzer) for our experiments.
 Furthermore the repository contains the benchmarks on which we ran our experiments as well as the logs of our experiments and scripts for transforming the log files into LaTeX tables.
 
-## Requirements & Installation
-All tools are packaged into a Dockerfile which makes any installation unnecessary.
-There is, however, the need for a running Docker installation.
-The Dockerfile build depends on the accessibility of the following GitHub Repositories:
-- [CryptoMiniSat](https://github.com/msoos/cryptominisat)
-- [ApproxMC](https://github.com/meelgroup/approxmc)
-- [Ganak](https://github.com/meelgroup/ganak)
-- [Probab_Analyzer](https://github.com/aleksdimovski/probab_analyzer)
-- [counterSharp](https://github.com/samysweb/counterSharp)
- 
-The Docker image is hosted at [Dockerhub](https://hub.docker.com/repository/docker/samweb/countersharp-experiments).
-
 ## Getting Started
 
 In order to pull and run the docker container execute the following line. It opens a shell allowing the execution of further commands:
@@ -23,6 +11,10 @@ In order to pull and run the docker container execute the following line. It ope
 ```bash
 docker run -it -v `pwd`/results:/experiments/results samweb/countersharp-experiments
 ```
+
+By using a volume, the results are written to the host system rather than the docker container. 
+You can remove the volume mounting option (`-v ...`), and create `/experiments/results` inside the container if you can spare the results.
+If you are using the volume and run into permission problems, then you need to give rights via SELinux: `chcon -Rt svirt_sandbox_file_t `pwd`/results`.
 
 | :exclamation:  This will create a writable folder `results` in your current folder which will hold any logs from experiments.  |
 |--------------------------------------------------------------------------------------------------------------------------------|
@@ -32,6 +24,9 @@ A minimal example can be executed by running (this takes approximately **70 seco
 ./showcase.sh
 ```
 This will create benchmark log files for the benchmarks `for_bounded_loop1.c` and `overflow.c` in the folder [`results`](results).
+For example, `/experiments/results/for_bounded_loop1.c/0X/` contains five folder for the five repeated runs of the experiments on this file. 
+Each folder `/experiments/results/for_bounded_loop1.c/0X/` contains the folders for the different tools, which includes the log and output files.
+
 
 A full run can be executed by running (this takes approximately a little under **2 days**):
 ```bash
@@ -46,7 +41,14 @@ Probab.native -single -domain polyhedra program.c # Runs the tool by Dimovski et
 Probab.native -single -domain polyhedra -nondet program.c # Runs the tool by Dimovski et al. for nondeterministic programs
 ```
 For example we can execute `run-instance approx /experiments/benchmarks/confidence.c "--function testfun --unwind 1"` to obtain the outcome of counterSharp and ApproxMC for the benchmark `confidence.c`.
-Note that the time information produced by runlim is always only for one part of the entire execution (i.e. for counterSharp or  one ApproxMC run or one Ganak run)
+Note that the time information produced by runlim is always only for one part of the entire execution (i.e. for counterSharp or  one ApproxMC run or one Ganak run). The script `run-instance` is straightforwarded, we have the call to our tool [counterSharp](https://github.com/samysweb/counterSharp):
+
+```bash
+python3 -m counterSharp --amm /tmp/amm.dimacs --amh /tmp/amh.dimacs --asm /tmp/asm.dimacs --ash /tmp/ash.dimacs --con /tmp/con.dimacs -d $3 $2
+```
+which is followed by the call of `ApproxMC` oder `ganak`.
+
+
 
 ## Benchmarks
 The benchmarks are contained in the folder [`benchmarks`](benchmarks) which also includes an overview on the sources and modifications to the benchmarks  
@@ -85,3 +87,16 @@ Note, that there must exist logs for all benchmarks provided in the CSV file for
 `cat logParsing/deterministic-sorted.csv| python3 logParsing/parse.py results aggregate2`
 - **To obtain (sorted) results for nondeterministic benchmarks:**  
 `cat logParsing/nondeterministic-sorted.csv| python3 logParsing/parse.py results nondet`
+
+## Building the docker container
+All tools are packaged into a Dockerfile which makes any installation unnecessary.
+There is, however, the need for a running Docker installation.
+The `Dockerfile` build depends on the accessibility of the following GitHub Repositories:
+- [CryptoMiniSat](https://github.com/msoos/cryptominisat)
+- [ApproxMC](https://github.com/meelgroup/approxmc)
+- [Ganak](https://github.com/meelgroup/ganak)
+- [Probab_Analyzer](https://github.com/aleksdimovski/probab_analyzer)
+- [counterSharp](https://github.com/samysweb/counterSharp)
+ 
+The Docker image is hosted at [Dockerhub](https://hub.docker.com/repository/docker/samweb/countersharp-experiments).
+
