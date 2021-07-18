@@ -4,6 +4,8 @@ This repository contains the reproducible experimental evaluation of the [counte
 The repository contains a Docker file which configures the counterSharp tool, two model counters (ApproxMC and Ganak) as well as the [tool by Dimovski et al.](https://github.com/aleksdimovski/probab_analyzer) for our experiments.
 Furthermore the repository contains the benchmarks on which we ran our experiments as well as the logs of our experiments and scripts for transforming the log files into LaTeX tables.
 
+This repository belongs to our publication at QEST 2021 ([BibTeX](https://teuber.dev/publication/countersharp2021/cite.bib)) and our evaluated artifact available [here](https://publikationen.bibliothek.kit.edu/1000134169).
+
 ## Getting Started
 
 In order to pull and run the docker container execute the following line. It opens a shell allowing the execution of further commands:
