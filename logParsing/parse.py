@@ -479,6 +479,37 @@ def getSum(data):
 			result+=data[bench][tool].sum()
 	print(f"Total time: {result}s")
 
+def getBenchmarks(data):
+	print("file,ganakStatus,ganakCount,ganakTime,approxmcStatus,approxmcCount,approxmcTime")
+	for bench in data.keys():
+		for counttype in ["AMM","AMH","ASH","ASM"]:
+			printLine=True
+			filename=bench+"/01/counterSharp/"+counttype.lower()+".dimacs"
+			if not exists(sys.argv[1]+"/"+filename):
+				continue
+			lineRes = (filename+",")
+			approxmc = data[bench]["approxmc"]
+			ganak = data[bench]["ganak"]
+			approxmcOK,approxmcMO,approxmcTO, approxmcT = approxmc.getMedian(approxmc.time[counttype], approxmc.status[counttype])
+			ganakOK,ganakMO,ganakTO, ganakT = ganak.getMedian(ganak.time[counttype], ganak.status[counttype])
+			if ganakOK and len(ganak.res[counttype])>0:
+				ganakRes = ganak.res[counttype][0]
+				if int(ganakRes) == 0:
+					printLine=False
+				lineRes+=("ok,"+str(ganakRes)+","+str(ganakT)+",")
+			else:
+				lineRes+=("fail,,,")
+			if approxmcOK and len(approxmc.res[counttype])>0:
+				approxmcRes = approxmc.res[counttype][0]
+				if int(approxmcRes) == 0:
+					printLine=False
+				lineRes+=("ok,"+str(approxmcRes)+","+str(approxmcT))
+			else:
+				lineRes+=("fail,,,")
+			if printLine:
+				print(lineRes)
+		
+
 
 
 if __name__ == '__main__':
@@ -493,3 +524,5 @@ if __name__ == '__main__':
 		getSensibleAggregateNondet(data)
 	elif sys.argv[2] == "sum":
 		getSum(data)
+	elif sys.argv[2] == "benchmarks":
+		getBenchmarks(data)
