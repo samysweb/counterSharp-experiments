@@ -138,6 +138,27 @@ class MultiBenchmarkToolRun(BenchmarkToolRun):
 			"ASM":[],
 			"ASH":[]
 		}
+		self.var_num = {
+			"CON":[],
+			"AMM":[],
+			"AMH":[],
+			"ASM":[],
+			"ASH":[]
+		}
+		self.clause_num = {
+			"CON":[],
+			"AMM":[],
+			"AMH":[],
+			"ASM":[],
+			"ASH":[]
+		}
+		self.sampling_size = {
+			"CON":[],
+			"AMM":[],
+			"AMH":[],
+			"ASM":[],
+			"ASH":[]
+		}
 		for run in range(1,6):
 			stderrPath = join(self.benchmark,"0"+str(run),self.tool,"stderr.log")
 			if not exists(stderrPath):
@@ -163,6 +184,16 @@ class MultiBenchmarkToolRun(BenchmarkToolRun):
 						if self.status[curKey][-1]=="ok":
 							if line.startswith("s mc ") or line.startswith("s pmc "):
 								self.res[curKey].append(line.split()[-1].strip())
+						if line.startswith("c -- header says num vars:"):
+							self.var_num[curKey].append(int(line.split()[-1].strip()))
+						elif line.startswith("c variables (all/used/free):"):
+							self.var_num[curKey].append(int(line.split()[-1].split("/")[0].strip()))
+						elif line.startswith("c -- header says num clauses:"):
+							self.clause_num[curKey].append(int(line.split()[-1].strip()))
+						elif line.startswith("c clauses (all/long/binary/unit):"):
+							self.clause_num[curKey].append(int(line.split()[-1].split("/")[0].strip()))
+						elif line.startswith("c [appmc] Sampling set size:") or line.startswith("c Sampling set size:"):
+							self.sampling_size[curKey].append(int(line.split()[-1].strip()))
 	def sum(self):
 		result = 0.0
 		for k in self.time.keys():
