@@ -6,7 +6,7 @@ RUN apt-get install -y locales && localedef -i en_US -c -f UTF-8 -A /usr/share/l
 ENV LANG en_US.utf8
 ENV DEBIAN_FRONTEND=noninteractive
 ENV TZ=Europe/Berlin
-RUN apt-get install -y git build-essential cmake zlib1g-dev libboost-program-options-dev libm4ri-dev libgmp-dev libmpfr-dev libmpc-dev tar unzip curl ocaml-interp ocaml-findlib menhir opam libapron-ocaml python3 python3-pip
+RUN apt-get install -y git build-essential cmake zlib1g-dev libboost-program-options-dev libm4ri-dev libgmp-dev libmpfr-dev libmpc-dev tar unzip curl python3 python3-pip
 RUN apt-get install -y libgmp3-dev
 RUN rm -rf /var/lib/apt/lists/*
 
