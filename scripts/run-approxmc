@@ -27,7 +27,7 @@ exec_bench(){
 	# Sample for second argument: --function=testfun --unwind 1
 	for num in 01 02 03 04 05; do
 		dataDir=$resultDirOverall/$num/counterSharp
-		resultDir=$resultDirOverall/$num/approxmc
+		resultDir=$resultDirOverall/$num/approxmc-new
 
 		if [ -d $resultDir ]; then
 			echo "Result directory already exists, skipping"
@@ -64,19 +64,19 @@ exec_bench(){
 		{
 		echo "** CON **"
 		echo "** CON **" >&2
-		chrt -b 0 runlim -r 300 -s 2048 approxmc --sparse 1 -s $num $dataDir/con.dimacs
+		chrt -b 0 runlim -r 300 -s 2048 approxmc -s $num $dataDir/con.dimacs
 		echo "** AMM **"
 		echo "** AMM **" >&2
-		chrt -b 0 runlim -r 300 -s 2048 approxmc --sparse 1 -s $num $dataDir/amm.dimacs
+		chrt -b 0 runlim -r 300 -s 2048 approxmc -s $num $dataDir/amm.dimacs
 		echo "** AMH **"
 		echo "** AMH **" >&2
-		chrt -b 0 runlim -r 300 -s 2048 approxmc --sparse 1 -s $num $dataDir/amh.dimacs
+		chrt -b 0 runlim -r 300 -s 2048 approxmc -s $num $dataDir/amh.dimacs
 		echo "** ASM **"
 		echo "** ASM **" >&2
-		chrt -b 0 runlim -r 300 -s 2048 approxmc --sparse 1 -s $num $dataDir/asm.dimacs
+		chrt -b 0 runlim -r 300 -s 2048 approxmc -s $num $dataDir/asm.dimacs
 		echo "** ASH **"
 		echo "** ASH **" >&2
-		chrt -b 0 runlim -r 300 -s 2048 approxmc --sparse 1 -s $num $dataDir/ash.dimacs
+		chrt -b 0 runlim -r 300 -s 2048 approxmc -s $num $dataDir/ash.dimacs
 		} > $resultDir/stdout.log 2> $resultDir/stderr.log
 
 		cp $resultDir/* $outputDir
