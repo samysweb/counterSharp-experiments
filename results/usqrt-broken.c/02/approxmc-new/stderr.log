@@ -1,0 +1,98 @@
+** CON **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		approxmc
+[runlim] argv[1]:		-s
+[runlim] argv[2]:		02
+[runlim] argv[3]:		/experiments/results/usqrt-broken.c/02/counterSharp/con.dimacs
+[runlim] start:			Mon Aug  8 16:28:02 2022
+[runlim] main pid:		49
+ERROR! Could not open file '/experiments/results/usqrt-broken.c/02/counterSharp/con.dimacs' for reading: No such file or directory
+[runlim] end:			Mon Aug  8 16:28:02 2022
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			0.66 seconds
+[runlim] time:			0.00 seconds
+[runlim] space:			0.0 MB
+[runlim] samples:		0
+** AMM **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		approxmc
+[runlim] argv[1]:		-s
+[runlim] argv[2]:		02
+[runlim] argv[3]:		/experiments/results/usqrt-broken.c/02/counterSharp/amm.dimacs
+[runlim] start:			Mon Aug  8 16:28:02 2022
+[runlim] main pid:		51
+[runlim] end:			Mon Aug  8 16:28:06 2022
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			4.73 seconds
+[runlim] time:			3.99 seconds
+[runlim] space:			24.5 MB
+[runlim] samples:		40
+** AMH **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		approxmc
+[runlim] argv[1]:		-s
+[runlim] argv[2]:		02
+[runlim] argv[3]:		/experiments/results/usqrt-broken.c/02/counterSharp/amh.dimacs
+[runlim] start:			Mon Aug  8 16:28:06 2022
+[runlim] main pid:		53
+[runlim] end:			Mon Aug  8 16:28:10 2022
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			4.70 seconds
+[runlim] time:			3.89 seconds
+[runlim] space:			25.3 MB
+[runlim] samples:		39
+** ASM **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		approxmc
+[runlim] argv[1]:		-s
+[runlim] argv[2]:		02
+[runlim] argv[3]:		/experiments/results/usqrt-broken.c/02/counterSharp/asm.dimacs
+[runlim] start:			Mon Aug  8 16:28:10 2022
+[runlim] main pid:		55
+[runlim] sample:		10.0 time, 10.7 real, 21.6 MB
+[runlim] end:			Mon Aug  8 16:28:23 2022
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			13.35 seconds
+[runlim] time:			12.58 seconds
+[runlim] space:			25.0 MB
+[runlim] samples:		126
+** ASH **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		approxmc
+[runlim] argv[1]:		-s
+[runlim] argv[2]:		02
+[runlim] argv[3]:		/experiments/results/usqrt-broken.c/02/counterSharp/ash.dimacs
+[runlim] start:			Mon Aug  8 16:28:23 2022
+[runlim] main pid:		57
+[runlim] sample:		10.0 time, 10.4 real, 22.1 MB
+[runlim] end:			Mon Aug  8 16:28:36 2022
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			13.61 seconds
+[runlim] time:			13.18 seconds
+[runlim] space:			28.2 MB
+[runlim] samples:		132

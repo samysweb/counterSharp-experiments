@@ -1,0 +1,97 @@
+** CON **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		approxmc
+[runlim] argv[1]:		-s
+[runlim] argv[2]:		03
+[runlim] argv[3]:		/experiments/results/rangesum05.c/03/counterSharp/con.dimacs
+[runlim] start:			Mon Aug  8 16:48:34 2022
+[runlim] main pid:		435
+ERROR! Could not open file '/experiments/results/rangesum05.c/03/counterSharp/con.dimacs' for reading: No such file or directory
+[runlim] end:			Mon Aug  8 16:48:34 2022
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			0.42 seconds
+[runlim] time:			0.00 seconds
+[runlim] space:			0.0 MB
+[runlim] samples:		0
+** AMM **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		approxmc
+[runlim] argv[1]:		-s
+[runlim] argv[2]:		03
+[runlim] argv[3]:		/experiments/results/rangesum05.c/03/counterSharp/amm.dimacs
+[runlim] start:			Mon Aug  8 16:48:34 2022
+[runlim] main pid:		437
+ERROR! Could not open file '/experiments/results/rangesum05.c/03/counterSharp/amm.dimacs' for reading: No such file or directory
+[runlim] end:			Mon Aug  8 16:48:34 2022
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			0.43 seconds
+[runlim] time:			0.00 seconds
+[runlim] space:			0.0 MB
+[runlim] samples:		0
+** AMH **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		approxmc
+[runlim] argv[1]:		-s
+[runlim] argv[2]:		03
+[runlim] argv[3]:		/experiments/results/rangesum05.c/03/counterSharp/amh.dimacs
+[runlim] start:			Mon Aug  8 16:48:34 2022
+[runlim] main pid:		439
+[runlim] end:			Mon Aug  8 16:48:37 2022
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			3.84 seconds
+[runlim] time:			3.29 seconds
+[runlim] space:			28.1 MB
+[runlim] samples:		33
+** ASM **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		approxmc
+[runlim] argv[1]:		-s
+[runlim] argv[2]:		03
+[runlim] argv[3]:		/experiments/results/rangesum05.c/03/counterSharp/asm.dimacs
+[runlim] start:			Mon Aug  8 16:48:37 2022
+[runlim] main pid:		441
+[runlim] end:			Mon Aug  8 16:48:42 2022
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			5.07 seconds
+[runlim] time:			4.19 seconds
+[runlim] space:			31.7 MB
+[runlim] samples:		42
+** ASH **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		approxmc
+[runlim] argv[1]:		-s
+[runlim] argv[2]:		03
+[runlim] argv[3]:		/experiments/results/rangesum05.c/03/counterSharp/ash.dimacs
+[runlim] start:			Mon Aug  8 16:48:42 2022
+[runlim] main pid:		443
+[runlim] end:			Mon Aug  8 16:48:46 2022
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			4.32 seconds
+[runlim] time:			4.18 seconds
+[runlim] space:			24.7 MB
+[runlim] samples:		42

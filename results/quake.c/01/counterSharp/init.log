@@ -1,0 +1,322 @@
+******* Machine details *******
+$ hostname
+ff18736ecf9b
+$ lscpu
+Architecture:                    x86_64
+CPU op-mode(s):                  32-bit, 64-bit
+Byte Order:                      Little Endian
+Address sizes:                   40 bits physical, 48 bits virtual
+CPU(s):                          2
+On-line CPU(s) list:             0,1
+Thread(s) per core:              1
+Core(s) per socket:              2
+Socket(s):                       1
+NUMA node(s):                    1
+Vendor ID:                       GenuineIntel
+CPU family:                      6
+Model:                           85
+Model name:                      Intel(R) Xeon(R) Gold 6140 CPU @ 2.30GHz
+Stepping:                        4
+CPU MHz:                         2294.608
+BogoMIPS:                        4589.21
+Hypervisor vendor:               KVM
+Virtualization type:             full
+L1d cache:                       64 KiB
+L1i cache:                       64 KiB
+L2 cache:                        8 MiB
+L3 cache:                        16 MiB
+NUMA node0 CPU(s):               0,1
+Vulnerability Itlb multihit:     KVM: Vulnerable
+Vulnerability L1tf:              Mitigation; PTE Inversion
+Vulnerability Mds:               Mitigation; Clear CPU buffers; SMT Host state unknown
+Vulnerability Meltdown:          Mitigation; PTI
+Vulnerability Spec store bypass: Mitigation; Speculative Store Bypass disabled via prctl and seccomp
+Vulnerability Spectre v1:        Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+Vulnerability Spectre v2:        Mitigation; Full generic retpoline, IBPB conditional, IBRS_FW, STIBP disabled, RSB filling
+Vulnerability Tsx async abort:   Mitigation; Clear CPU buffers; SMT Host state unknown
+Flags:                           fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch cpuid_fault invpcid_single pti ssbd ibrs ibpb fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm mpx avx512f avx512dq rdseed adx smap clflushopt clwb avx512cd avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves arat umip pku ospke md_clear
+$ cat /proc/meminfo
+MemTotal:        8168260 kB
+MemFree:         1311468 kB
+MemAvailable:    7327944 kB
+Buffers:          698460 kB
+Cached:          4992404 kB
+SwapCached:       127944 kB
+Active:          2457296 kB
+Inactive:        3790328 kB
+Active(anon):     260352 kB
+Inactive(anon):   268076 kB
+Active(file):    2196944 kB
+Inactive(file):  3522252 kB
+Unevictable:           0 kB
+Mlocked:               0 kB
+SwapTotal:       8388604 kB
+SwapFree:        7417820 kB
+Dirty:               628 kB
+Writeback:             0 kB
+AnonPages:        533132 kB
+Mapped:           239000 kB
+Shmem:             37060 kB
+Slab:             525612 kB
+SReclaimable:     398476 kB
+SUnreclaim:       127136 kB
+KernelStack:        8016 kB
+PageTables:        17280 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:    12472732 kB
+Committed_AS:    5447112 kB
+VmallocTotal:   34359738367 kB
+VmallocUsed:           0 kB
+VmallocChunk:          0 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:         0 kB
+ShmemHugePages:        0 kB
+ShmemPmdMapped:        0 kB
+CmaTotal:              0 kB
+CmaFree:               0 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+DirectMap4k:     3714928 kB
+DirectMap2M:     4673536 kB
+DirectMap1G:     2097152 kB
+$ cat /proc/version
+Linux version 4.15.0-72-generic (buildd@lcy01-amd64-026) (gcc version 7.4.0 (Ubuntu 7.4.0-1ubuntu1~18.04.1)) #81-Ubuntu SMP Tue Nov 26 12:20:02 UTC 2019
+$ lsblk
+NAME   MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+sda      8:0    0  320G  0 disk 
+├─sda1   8:1    0    2M  0 part 
+├─sda2   8:2    0    1G  0 part 
+└─sda3   8:3    0  319G  0 part /etc/hosts
+sr0     11:0    1 1024M  0 rom  
+******* Experiment Repository *******
+commit 53b86ecc1fcc12db52303f4b6caf5493f16e2d42
+Author: Samuel Teuber <samuel@samweb.org>
+
+    removed ocaml for now
+
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+On branch new-approxmc
+Your branch is up to date with 'origin/new-approxmc'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	benchmarks/quake.c
+	quake.csv
+	results/Log-2.c/01/approxmc-new/
+	results/Log-2.c/02/approxmc-new/
+	results/Log-2.c/03/approxmc-new/
+	results/Log-2.c/04/approxmc-new/
+	results/Log-2.c/05/approxmc-new/
+	results/Log.c/01/approxmc-new/
+	results/Log.c/02/approxmc-new/
+	results/Log.c/03/approxmc-new/
+	results/Log.c/04/approxmc-new/
+	results/Log.c/05/approxmc-new/
+	results/Mono3_1-2.c/01/approxmc-new/
+	results/Mono3_1-2.c/02/approxmc-new/
+	results/Mono3_1-2.c/03/approxmc-new/
+	results/Mono3_1-2.c/04/approxmc-new/
+	results/Mono3_1-2.c/05/approxmc-new/
+	results/Mono3_1.c/01/approxmc-new/
+	results/Mono3_1.c/02/approxmc-new/
+	results/Mono3_1.c/03/approxmc-new/
+	results/Mono3_1.c/04/approxmc-new/
+	results/Mono3_1.c/05/approxmc-new/
+	results/Problem10_16.c/01/approxmc-new/
+	results/Problem10_16.c/02/approxmc-new/
+	results/Problem10_16.c/03/approxmc-new/
+	results/Problem10_16.c/04/approxmc-new/
+	results/Problem10_16.c/05/approxmc-new/
+	results/Problem13_4.c/01/approxmc-new/
+	results/Problem13_4.c/02/approxmc-new/
+	results/Problem13_4.c/03/approxmc-new/
+	results/Problem13_4.c/04/approxmc-new/
+	results/Problem13_4.c/05/approxmc-new/
+	results/Waldkirch-2.c/01/approxmc-new/
+	results/Waldkirch-2.c/02/approxmc-new/
+	results/Waldkirch-2.c/03/approxmc-new/
+	results/Waldkirch-2.c/04/approxmc-new/
+	results/Waldkirch-2.c/05/approxmc-new/
+	results/Waldkirch.c/01/approxmc-new/
+	results/Waldkirch.c/02/approxmc-new/
+	results/Waldkirch.c/03/approxmc-new/
+	results/Waldkirch.c/04/approxmc-new/
+	results/Waldkirch.c/05/approxmc-new/
+	results/bwd_loop10-2.c/01/approxmc-new/
+	results/bwd_loop10-2.c/02/approxmc-new/
+	results/bwd_loop10-2.c/03/approxmc-new/
+	results/bwd_loop10-2.c/04/approxmc-new/
+	results/bwd_loop10-2.c/05/approxmc-new/
+	results/bwd_loop10.c/01/approxmc-new/
+	results/bwd_loop10.c/02/approxmc-new/
+	results/bwd_loop10.c/03/approxmc-new/
+	results/bwd_loop10.c/04/approxmc-new/
+	results/bwd_loop10.c/05/approxmc-new/
+	results/bwd_loop1a-2.c/01/approxmc-new/
+	results/bwd_loop1a-2.c/02/approxmc-new/
+	results/bwd_loop1a-2.c/03/approxmc-new/
+	results/bwd_loop1a-2.c/04/approxmc-new/
+	results/bwd_loop1a-2.c/05/approxmc-new/
+	results/bwd_loop1a.c/01/approxmc-new/
+	results/bwd_loop1a.c/02/approxmc-new/
+	results/bwd_loop1a.c/03/approxmc-new/
+	results/bwd_loop1a.c/04/approxmc-new/
+	results/bwd_loop1a.c/05/approxmc-new/
+	results/bwd_loop2-2.c/01/approxmc-new/
+	results/bwd_loop2-2.c/02/approxmc-new/
+	results/bwd_loop2-2.c/03/approxmc-new/
+	results/bwd_loop2-2.c/04/approxmc-new/
+	results/bwd_loop2-2.c/05/approxmc-new/
+	results/bwd_loop2.c/01/approxmc-new/
+	results/bwd_loop2.c/02/approxmc-new/
+	results/bwd_loop2.c/03/approxmc-new/
+	results/bwd_loop2.c/04/approxmc-new/
+	results/bwd_loop2.c/05/approxmc-new/
+	results/bwd_loop7-2.c/01/approxmc-new/
+	results/bwd_loop7-2.c/02/approxmc-new/
+	results/bwd_loop7-2.c/03/approxmc-new/
+	results/bwd_loop7-2.c/04/approxmc-new/
+	results/bwd_loop7-2.c/05/approxmc-new/
+	results/bwd_loop7.c/01/approxmc-new/
+	results/bwd_loop7.c/02/approxmc-new/
+	results/bwd_loop7.c/03/approxmc-new/
+	results/bwd_loop7.c/04/approxmc-new/
+	results/bwd_loop7.c/05/approxmc-new/
+	results/confidence.c/01/approxmc-new/
+	results/confidence.c/02/approxmc-new/
+	results/confidence.c/03/approxmc-new/
+	results/confidence.c/04/approxmc-new/
+	results/confidence.c/05/approxmc-new/
+	results/count_up_down_true-unreach-call_true-termination-2.c/01/approxmc-new/
+	results/count_up_down_true-unreach-call_true-termination-2.c/02/approxmc-new/
+	results/count_up_down_true-unreach-call_true-termination-2.c/03/approxmc-new/
+	results/count_up_down_true-unreach-call_true-termination-2.c/04/approxmc-new/
+	results/count_up_down_true-unreach-call_true-termination-2.c/05/approxmc-new/
+	results/count_up_down_true-unreach-call_true-termination.c/01/approxmc-new/
+	results/count_up_down_true-unreach-call_true-termination.c/02/approxmc-new/
+	results/count_up_down_true-unreach-call_true-termination.c/03/approxmc-new/
+	results/count_up_down_true-unreach-call_true-termination.c/04/approxmc-new/
+	results/count_up_down_true-unreach-call_true-termination.c/05/approxmc-new/
+	results/example1a-2.c/01/approxmc-new/
+	results/example1a-2.c/02/approxmc-new/
+	results/example1a-2.c/03/approxmc-new/
+	results/example1a-2.c/04/approxmc-new/
+	results/example1a-2.c/05/approxmc-new/
+	results/example1a.c/01/approxmc-new/
+	results/example1a.c/02/approxmc-new/
+	results/example1a.c/03/approxmc-new/
+	results/example1a.c/04/approxmc-new/
+	results/example1a.c/05/approxmc-new/
+	results/example7a-2.c/01/approxmc-new/
+	results/example7a-2.c/02/approxmc-new/
+	results/example7a-2.c/03/approxmc-new/
+	results/example7a-2.c/04/approxmc-new/
+	results/example7a-2.c/05/approxmc-new/
+	results/example7a.c/01/approxmc-new/
+	results/example7a.c/02/approxmc-new/
+	results/example7a.c/03/approxmc-new/
+	results/example7a.c/04/approxmc-new/
+	results/example7a.c/05/approxmc-new/
+	results/example7b-2.c/01/approxmc-new/
+	results/example7b-2.c/02/approxmc-new/
+	results/example7b-2.c/03/approxmc-new/
+	results/example7b-2.c/04/approxmc-new/
+	results/example7b-2.c/05/approxmc-new/
+	results/example7b.c/01/approxmc-new/
+	results/example7b.c/02/approxmc-new/
+	results/example7b.c/03/approxmc-new/
+	results/example7b.c/04/approxmc-new/
+	results/example7b.c/05/approxmc-new/
+	results/floor-broken.c/01/approxmc-new/
+	results/floor-broken.c/02/approxmc-new/
+	results/floor-broken.c/03/approxmc-new/
+	results/floor-broken.c/04/approxmc-new/
+	results/floor-broken.c/05/approxmc-new/
+	results/floor.c/01/approxmc-new/
+	results/floor.c/02/approxmc-new/
+	results/floor.c/03/approxmc-new/
+	results/floor.c/04/approxmc-new/
+	results/floor.c/05/approxmc-new/
+	results/for_bounded_loop1-2.c/01/approxmc-new/
+	results/for_bounded_loop1-2.c/02/approxmc-new/
+	results/for_bounded_loop1-2.c/03/approxmc-new/
+	results/for_bounded_loop1-2.c/04/approxmc-new/
+	results/for_bounded_loop1-2.c/05/approxmc-new/
+	results/for_bounded_loop1.c/01/approxmc-new/
+	results/for_bounded_loop1.c/02/approxmc-new/
+	results/for_bounded_loop1.c/03/approxmc-new/
+	results/for_bounded_loop1.c/04/approxmc-new/
+	results/for_bounded_loop1.c/05/approxmc-new/
+	results/gsv2008-2.c/01/approxmc-new/
+	results/gsv2008-2.c/02/approxmc-new/
+	results/gsv2008-2.c/03/approxmc-new/
+	results/gsv2008-2.c/04/approxmc-new/
+	results/gsv2008-2.c/05/approxmc-new/
+	results/gsv2008.c/01/approxmc-new/
+	results/gsv2008.c/02/approxmc-new/
+	results/gsv2008.c/03/approxmc-new/
+	results/gsv2008.c/04/approxmc-new/
+	results/gsv2008.c/05/approxmc-new/
+	results/hhk2008-2.c/01/approxmc-new/
+	results/hhk2008-2.c/02/approxmc-new/
+	results/hhk2008-2.c/03/approxmc-new/
+	results/hhk2008-2.c/04/approxmc-new/
+	results/hhk2008-2.c/05/approxmc-new/
+	results/hhk2008.c/01/approxmc-new/
+	results/hhk2008.c/02/approxmc-new/
+	results/hhk2008.c/03/approxmc-new/
+	results/hhk2008.c/04/approxmc-new/
+	results/hhk2008.c/05/approxmc-new/
+	results/nondet.c/01/approxmc-new/
+	results/nondet.c/02/approxmc-new/
+	results/nondet.c/03/approxmc-new/
+	results/nondet.c/04/approxmc-new/
+	results/nondet.c/05/approxmc-new/
+	results/overflow.c/01/approxmc-new/
+	results/overflow.c/02/approxmc-new/
+	results/overflow.c/03/approxmc-new/
+	results/overflow.c/04/approxmc-new/
+	results/overflow.c/05/approxmc-new/
+	results/rangesum03.c/01/approxmc-new/
+	results/rangesum03.c/02/approxmc-new/
+	results/rangesum03.c/03/approxmc-new/
+	results/rangesum03.c/04/approxmc-new/
+	results/rangesum03.c/05/approxmc-new/
+	results/rangesum05.c/01/approxmc-new/
+	results/rangesum05.c/02/approxmc-new/
+	results/rangesum05.c/03/approxmc-new/
+	results/rangesum05.c/04/approxmc-new/
+	results/rangesum05.c/05/approxmc-new/
+	results/rangesum07.c/01/approxmc-new/
+	results/rangesum07.c/02/approxmc-new/
+	results/rangesum07.c/03/approxmc-new/
+	results/rangesum07.c/04/approxmc-new/
+	results/rangesum07.c/05/approxmc-new/
+	results/usqrt-broken.c/01/approxmc-new/
+	results/usqrt-broken.c/02/approxmc-new/
+	results/usqrt-broken.c/03/approxmc-new/
+	results/usqrt-broken.c/04/approxmc-new/
+	results/usqrt-broken.c/05/approxmc-new/
+	results/usqrt.c/01/approxmc-new/
+	results/usqrt.c/02/approxmc-new/
+	results/usqrt.c/03/approxmc-new/
+	results/usqrt.c/04/approxmc-new/
+	results/usqrt.c/05/approxmc-new/
+
+nothing added to commit but untracked files present (use "git add" to track)
+******* CounterSharp Repository *******
+commit c7ea00a626bc52d9f5c271daf0e1ac1ee26cd8d3
+Author: Samuel Teuber <bub@samweb.org>
+
+    Added information on publication
+
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean

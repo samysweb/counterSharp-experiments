@@ -1,0 +1,957 @@
+** CON **
+c ApproxMC SHA revision efa1667e4e09b2d5f2c61042efe377ce3107fdd3
+c ApproxMC version 4.0.1
+c ApproxMC compilation env CMAKE_CXX_COMPILER = /usr/bin/c++ | CMAKE_CXX_FLAGS =  -Wall -Wextra -Wunused -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -g -fvisibility=hidden -Wlogical-op -Wrestrict -Wnull-dereference -Wdouble-promotion -Wshadow -Wformat=2 -Wextra-semi -pedantic | COMPILE_DEFINES =  -DBOOST_TEST_DYN_LINK | STATICCOMPILE = OFF | Boost_FOUND = TRUE | ZLIB_FOUND = TRUE | VALGRIND_FOUND =  | GMP_FOUND = TRUE | ENABLE_ASSERTIONS = ON | MY_TARGETS =  | compilation date time = Aug  8 2022 16:18:18
+c ApproxMC compiled with gcc version 9.4.0
+c CryptoMiniSat version 5.11.0
+c CMS Copyright (C) 2009-2020 Authors of CryptoMiniSat, see AUTHORS file
+c CMS SHA revision 716b89be078f98fb615cf30a1f663b4903c08d9d
+c CMS is MIT licensed
+c Using VMTF code by Armin Biere from CaDiCaL
+c Using Yalsat by Armin Biere, see Balint et al. Improving implementation of SLS solvers [...], SAT'14
+c Using WalkSAT by Henry Kautz, see Kautz and Selman Pushing the envelope: planning, propositional logic, and stochastic search, AAAI'96,
+c Using code from 'When Boolean Satisfiability Meets Gauss-E. in a Simplex Way'
+c       by C.-S. Han and J.-H. Roland Jiang in CAV 2012. Fixes by M. Soos
+c Using CCAnr from 'CCAnr: A Conf. Checking Based Local Search Solver [...]'
+c       by Shaowei Cai, Chuan Luo, and Kaile Su, SAT 2015
+c CMS compilation env CMAKE_CXX_COMPILER = /usr/bin/c++ | CMAKE_CXX_FLAGS =  -fvisibility=hidden -Wall -Wextra -Wunused -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -g -Wno-class-memaccess -mpopcnt -msse4.2 -ggdb3 -Wlogical-op -Wrestrict -Wnull-dereference -Wdouble-promotion -Wshadow -Wformat=2 -Wextra-semi -pedantic | COMPILE_DEFINES =  -DRDB0_ONLY_FEATURES -DBOOST_TEST_DYN_LINK -DUSE_ZLIB -DYALSAT_FPU | STATICCOMPILE = OFF | ONLY_SIMPLE = OFF | Boost_FOUND = TRUE | STATS = OFF | SQLITE3_FOUND = FALSE | ZLIB_FOUND = TRUE | VALGRIND_FOUND =  | ENABLE_TESTING = OFF | M4RI_FOUND =  | NOM4RI = ON | SLOW_DEBUG = OFF | ENABLE_ASSERTIONS = ON | PYTHON_EXECUTABLE =  | PYTHON_LIBRARY =  | PYTHON_INCLUDE_DIRS =  | MY_TARGETS =  | LARGEMEM = OFF | LIMITMEM = OFF | BREAKID_LIBRARIES =  | BREAKID-VER = . | BOSPHORUS_LIBRARIES =  | BOSPH-VER = . | compilation date time = Aug  8 2022 16:16:45
+c CMS compiled with gcc version 9.4.0
+c executed with command line: approxmc -s 02 /experiments/results/count_up_down_true-unreach-call_true-termination-2.c/02/counterSharp/con.dimacs
+c Arjun SHA revision 416b100492d00bc51dbe98963e981906ddb47d83
+c -- header says num vars:          54194
+c -- header says num clauses:      318146
+c WARNING: Empty line at line number 319657 -- this is not part of the DIMACS specifications (http://www.satcompetition.org/2009/format-benchmarks2009.html). Ignoring.
+c -- clauses added: 318146
+c -- xor clauses added: 0
+c -- vars added 54194
+c Original sampling vars: 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025 2026 2027 2028 2029 2030 2031 2032 2033 2034 
+c [appmc] Orig sampling vars size: 32
+c --> Executing OCC strategy token(s): 'occ-xor,'
+c [occ] mem usage for occur      8 MB
+c [occ] Linked in IRRED BIN by default: 62715
+c [occ] Linked in RED   BIN by default: 0
+c [occ] mem usage for occur      3 MB
+c Mem for watch alloc      : 8           MB (25.00     %)
+c Mem for watch array      : 3           MB (8.74      %)
+c --> Executing OCC strategy token: occ-xor
+c [occ-xor] sort occur list T: 0.00
+c [xor-clean-equiv] removed equivalent xors: 0 left with: 15970
+c [occ-xor] found  15970 avg sz 3.0 min sz  3 max sz  3 T: 0.03 T-out: N T-r: 99.71%
+c [occ] mem usage for occur      8 MB
+c [occ] Linked in IRRED BIN by default: 62715
+c [occ] Linked in RED   BIN by default: 0
+c [occ] mem usage for occur      3 MB
+c Mem for watch alloc      : 8           MB (21.97     %)
+c Mem for watch array      : 3           MB (7.68      %)
+c [occ-gates] found: 15469 avg-s: 2.0 T: 0.01 T-out: N T-r: 89.10%
+c [occ] mem usage for occur      8 MB
+c [occ] Linked in IRRED BIN by default: 62715
+c [occ] Linked in RED   BIN by default: 0
+c [occ] mem usage for occur      3 MB
+c Mem for watch alloc      : 8           MB (21.43     %)
+c Mem for watch array      : 3           MB (7.49      %)
+c [arjun-simp] GATE-based Potential was: 0 Non-zero OCCs were: 0 removed: 0 perc: 0.00 T: 0.17
+c [occ] mem usage for occur      8 MB
+c [occ] Linked in IRRED BIN by default: 62715
+c [occ] Linked in RED   BIN by default: 0
+c [occ] mem usage for occur      3 MB
+c Mem for watch alloc      : 8           MB (22.71     %)
+c Mem for watch array      : 3           MB (7.93      %)
+c [gate-definable] no-cls-match-filt: 0 pico ran: 31 unsat: 0 0-occ: 0 too-many-occ: 1 empty-res: 0
+c [arjun-simp] IRREG-GATE-based removed: 0 perc: 0.00 T: 0.04
+c [occ] mem usage for occur      8 MB
+c [occ] Linked in IRRED BIN by default: 62715
+c [occ] Linked in RED   BIN by default: 0
+c [occ] mem usage for occur      3 MB
+c Mem for watch alloc      : 8           MB (22.71     %)
+c Mem for watch array      : 3           MB (7.93      %)
+c [cms-equiv-sub] equiv_subformula: 0 empty_occ: 0 T: 0.00
+c [arjun-simp] equiv-subform removed: 0 perc: 0.00 total equiv_subform now: 0 T: 0.03
+c [arjun-simp] CMS::simplify() with no BVE, intree probe...
+c [arjun-simp] CMS::simplify() with no BVE finished. T: 0.60
+c [arjun-simp] Removed eq lits: 0 new size: 32
+c [arjun-simp] Removed set       : 30 new size: 2
+c [arjun] CNF is UNSAT, setting sampling set to empty
+c [arjun] get_indep_set finished T: 4.37
+c ind 0
+c [arjun] final set size:            0 percent of original: 0.0000 %
+c [arjun] of which empty occs:       0 percent of original: 0.0000 %
+c [appmc+arjun] Total time: 4.4987
+c [appmc] Number of solutions is: 0*2**0
+s UNSATISFIABLE
+s mc 0
+** AMM **
+c ApproxMC SHA revision efa1667e4e09b2d5f2c61042efe377ce3107fdd3
+c ApproxMC version 4.0.1
+c ApproxMC compilation env CMAKE_CXX_COMPILER = /usr/bin/c++ | CMAKE_CXX_FLAGS =  -Wall -Wextra -Wunused -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -g -fvisibility=hidden -Wlogical-op -Wrestrict -Wnull-dereference -Wdouble-promotion -Wshadow -Wformat=2 -Wextra-semi -pedantic | COMPILE_DEFINES =  -DBOOST_TEST_DYN_LINK | STATICCOMPILE = OFF | Boost_FOUND = TRUE | ZLIB_FOUND = TRUE | VALGRIND_FOUND =  | GMP_FOUND = TRUE | ENABLE_ASSERTIONS = ON | MY_TARGETS =  | compilation date time = Aug  8 2022 16:18:18
+c ApproxMC compiled with gcc version 9.4.0
+c CryptoMiniSat version 5.11.0
+c CMS Copyright (C) 2009-2020 Authors of CryptoMiniSat, see AUTHORS file
+c CMS SHA revision 716b89be078f98fb615cf30a1f663b4903c08d9d
+c CMS is MIT licensed
+c Using VMTF code by Armin Biere from CaDiCaL
+c Using Yalsat by Armin Biere, see Balint et al. Improving implementation of SLS solvers [...], SAT'14
+c Using WalkSAT by Henry Kautz, see Kautz and Selman Pushing the envelope: planning, propositional logic, and stochastic search, AAAI'96,
+c Using code from 'When Boolean Satisfiability Meets Gauss-E. in a Simplex Way'
+c       by C.-S. Han and J.-H. Roland Jiang in CAV 2012. Fixes by M. Soos
+c Using CCAnr from 'CCAnr: A Conf. Checking Based Local Search Solver [...]'
+c       by Shaowei Cai, Chuan Luo, and Kaile Su, SAT 2015
+c CMS compilation env CMAKE_CXX_COMPILER = /usr/bin/c++ | CMAKE_CXX_FLAGS =  -fvisibility=hidden -Wall -Wextra -Wunused -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -g -Wno-class-memaccess -mpopcnt -msse4.2 -ggdb3 -Wlogical-op -Wrestrict -Wnull-dereference -Wdouble-promotion -Wshadow -Wformat=2 -Wextra-semi -pedantic | COMPILE_DEFINES =  -DRDB0_ONLY_FEATURES -DBOOST_TEST_DYN_LINK -DUSE_ZLIB -DYALSAT_FPU | STATICCOMPILE = OFF | ONLY_SIMPLE = OFF | Boost_FOUND = TRUE | STATS = OFF | SQLITE3_FOUND = FALSE | ZLIB_FOUND = TRUE | VALGRIND_FOUND =  | ENABLE_TESTING = OFF | M4RI_FOUND =  | NOM4RI = ON | SLOW_DEBUG = OFF | ENABLE_ASSERTIONS = ON | PYTHON_EXECUTABLE =  | PYTHON_LIBRARY =  | PYTHON_INCLUDE_DIRS =  | MY_TARGETS =  | LARGEMEM = OFF | LIMITMEM = OFF | BREAKID_LIBRARIES =  | BREAKID-VER = . | BOSPHORUS_LIBRARIES =  | BOSPH-VER = . | compilation date time = Aug  8 2022 16:16:45
+c CMS compiled with gcc version 9.4.0
+c executed with command line: approxmc -s 02 /experiments/results/count_up_down_true-unreach-call_true-termination-2.c/02/counterSharp/amm.dimacs
+c Arjun SHA revision 416b100492d00bc51dbe98963e981906ddb47d83
+c -- header says num vars:          53202
+c -- header says num clauses:      314669
+c WARNING: Empty line at line number 316182 -- this is not part of the DIMACS specifications (http://www.satcompetition.org/2009/format-benchmarks2009.html). Ignoring.
+c -- clauses added: 314669
+c -- xor clauses added: 0
+c -- vars added 53202
+c Original sampling vars: 1003 1004 1005 1006 1007 1008 1009 1010 1011 1012 1013 1014 1015 1016 1017 1018 1019 1020 1021 1022 1023 1024 1025 1026 1027 1028 1029 1030 1031 1032 1033 1034 
+c [appmc] Orig sampling vars size: 32
+c --> Executing OCC strategy token(s): 'occ-xor,'
+c [occ] mem usage for occur      9 MB
+c [occ] Linked in IRRED BIN by default: 72333
+c [occ] Linked in RED   BIN by default: 0
+c [occ] mem usage for occur      3 MB
+c Mem for watch alloc      : 7           MB (22.35     %)
+c Mem for watch array      : 3           MB (9.22      %)
+c --> Executing OCC strategy token: occ-xor
+c [occ-xor] sort occur list T: 0.01
+c [xor-clean-equiv] removed equivalent xors: 0 left with: 15980
+c [occ-xor] found  15980 avg sz 3.0 min sz  3 max sz  3 T: 0.07 T-out: N T-r: 99.69%
+c [occ] mem usage for occur      9 MB
+c [occ] Linked in IRRED BIN by default: 72333
+c [occ] Linked in RED   BIN by default: 0
+c [occ] mem usage for occur      3 MB
+c Mem for watch alloc      : 7           MB (19.48     %)
+c Mem for watch array      : 3           MB (8.03      %)
+c [occ-gates] found:   20K avg-s: 2.0 T: 0.01 T-out: N T-r: 88.20%
+c [occ] mem usage for occur      9 MB
+c [occ] Linked in IRRED BIN by default: 72333
+c [occ] Linked in RED   BIN by default: 0
+c [occ] mem usage for occur      3 MB
+c Mem for watch alloc      : 7           MB (18.73     %)
+c Mem for watch array      : 3           MB (7.71      %)
+c [arjun-simp] GATE-based Potential was: 0 Non-zero OCCs were: 0 removed: 0 perc: 0.00 T: 0.26
+c [occ] mem usage for occur      9 MB
+c [occ] Linked in IRRED BIN by default: 72333
+c [occ] Linked in RED   BIN by default: 0
+c [occ] mem usage for occur      3 MB
+c Mem for watch alloc      : 7           MB (20.16     %)
+c Mem for watch array      : 3           MB (8.30      %)
+c [gate-definable] no-cls-match-filt: 31 pico ran: 0 unsat: 0 0-occ: 0 too-many-occ: 1 empty-res: 0
+c [arjun-simp] IRREG-GATE-based removed: 0 perc: 0.00 T: 0.04
+c [occ] mem usage for occur      9 MB
+c [occ] Linked in IRRED BIN by default: 72333
+c [occ] Linked in RED   BIN by default: 0
+c [occ] mem usage for occur      3 MB
+c Mem for watch alloc      : 7           MB (20.16     %)
+c Mem for watch array      : 3           MB (8.30      %)
+c [cms-equiv-sub] equiv_subformula: 0 empty_occ: 0 T: 0.00
+c [arjun-simp] equiv-subform removed: 0 perc: 0.00 total equiv_subform now: 0 T: 0.04
+c [arjun-simp] CMS::simplify() with no BVE, intree probe...
+c [arjun-simp] CMS::simplify() with no BVE finished. T: 0.70
+c [arjun-simp] Removed eq lits: 0 new size: 32
+c [arjun-simp] Removed set       : 0 new size: 32
+c [arjun-simp] Removed set       : 0 new size: 32
+c [arjun-simp] Removed eq lits: 0 new size: 32
+c [arjun-simp] probe removed: 0 perc: 0.00 T: 0.08
+c [occ] mem usage for occur      8 MB
+c [occ] Linked in IRRED BIN by default: 86229
+c [occ] Linked in RED   BIN by default: 138
+c [occ] mem usage for occur      3 MB
+c Mem for watch alloc      : 9           MB (19.70     %)
+c Mem for watch array      : 2           MB (5.23      %)
+c [cms-equiv-sub] equiv_subformula: 0 empty_occ: 0 T: 0.00
+c [arjun-simp] equiv-subform removed: 0 perc: 0.00 total equiv_subform now: 0 T: 0.14
+c [arjun-simp] IRREG-GATE-based removed: 0 perc: 0.00 T: 0.17
+c [arjun] simplification finished  removed: 0 perc: 0.00 T: 1.53
+c [arjun] Duplicating CNF...
+c [arjun] Duplicated CNF. T: 0.15
+c [arjun] CMS::simplify() with *only* BVE...
+c [arjun] CMS::simplify() with *only* BVE finished. T: 8.66
+c [arjun] Adding fixed clauses time: 0.01
+c [arjun] Start unknown size: 32
+c [arjun] backward round finished T: 0.80
+c [arjun] get_indep_set finished T: 11.15
+c ind 53169 53168 53167 53166 53165 53164 53163 53162 53161 53160 53159 53158 53157 53156 53155 53154 53153 53152 53151 53150 53149 53148 53147 53146 53145 53144 53143 53142 53141 53170 53140 53107 0
+c [arjun] final set size:           32 percent of original: 100.0000 %
+c [arjun] of which empty occs:       0 percent of original: 0.0000 %
+c [appmc] Sampling set size: 32
+c [appmc] Sampling set: 53107, 53140, 53141, 53142, 53143, 53144, 53145, 53146, 53147, 53148, 53149, 53150, 53151, 53152, 53153, 53154, 53155, 53156, 53157, 53158, 53159, 53160, 53161, 53162, 53163, 53164, 53165, 53166, 53167, 53168, 53169, 53170, 
+c [appmc] threshold set to 72 sparse: 0
+c [appmc] Starting up, initial measurement
+c [appmc] Checking if there are at least threshold+1 solutions...
+c [appmc] simplifying
+c [appmc] [    3.20 ] bounded_sol_count looking for   73 solutions -- hashes active: 0
+c [appmc] repeat solutions:      0 checked:      0 out of:      0
+c [appmc] Starting at hash count: 1
+c [appmc] [    3.24 ] round:  0 hashes:      1
+c [appmc] [    3.24 ] bounded_sol_count looking for   73 solutions -- hashes active: 1
+c [appmc] repeat solutions:     41 checked:     73 out of:     73
+c [appmc] [    3.26 ] round:  0 hashes:      2
+c [appmc] [    3.26 ] bounded_sol_count looking for   73 solutions -- hashes active: 2
+c [appmc] repeat solutions:     35 checked:    105 out of:    105
+c [appmc] [    3.29 ] round:  0 hashes:      4
+c [appmc] [    3.29 ] bounded_sol_count looking for   73 solutions -- hashes active: 4
+c [appmc] repeat solutions:     19 checked:    143 out of:    143
+c [appmc] [    3.32 ] round:  0 hashes:      8
+c [appmc] [    3.32 ] bounded_sol_count looking for   73 solutions -- hashes active: 8
+c [appmc] repeat solutions:      2 checked:    197 out of:    197
+c [appmc] [    3.37 ] round:  0 hashes:     16
+c [appmc] [    3.37 ] bounded_sol_count looking for   73 solutions -- hashes active: 16
+c [appmc] repeat solutions:      0 checked:    268 out of:    268
+c [appmc] [    3.43 ] round:  0 hashes:     24
+c [appmc] [    3.43 ] bounded_sol_count looking for   73 solutions -- hashes active: 24
+c [appmc] repeat solutions:      0 checked:    341 out of:    341
+c [appmc] [    3.49 ] round:  0 hashes:     28
+c [appmc] [    3.49 ] bounded_sol_count looking for   73 solutions -- hashes active: 28
+c [appmc] repeat solutions:      6 checked:    414 out of:    414
+c [appmc] [    3.50 ] round:  0 hashes:     26
+c [appmc] [    3.50 ] bounded_sol_count looking for   73 solutions -- hashes active: 26
+c [appmc] repeat solutions:     28 checked:    414 out of:    424
+c [appmc] [    3.53 ] round:  0 hashes:     25
+c [appmc] [    3.53 ] bounded_sol_count looking for   73 solutions -- hashes active: 25
+c [appmc] repeat solutions:     82 checked:    414 out of:    460
+c [appmc] simplifying
+c [appmc] [    3.63 ] round:  1 hashes:     26
+c [appmc] [    3.63 ] bounded_sol_count looking for   73 solutions -- hashes active: 26
+c [appmc] repeat solutions:      0 checked:     73 out of:     73
+c [appmc] [    3.68 ] round:  1 hashes:     25
+c [appmc] [    3.68 ] bounded_sol_count looking for   73 solutions -- hashes active: 25
+c [appmc] repeat solutions:     64 checked:     73 out of:    137
+c [appmc] simplifying
+c [appmc] [    3.78 ] round:  2 hashes:     26
+c [appmc] [    3.78 ] bounded_sol_count looking for   73 solutions -- hashes active: 26
+c [appmc] repeat solutions:      0 checked:     73 out of:     73
+c [appmc] [    3.83 ] round:  2 hashes:     25
+c [appmc] [    3.83 ] bounded_sol_count looking for   73 solutions -- hashes active: 25
+c [appmc] repeat solutions:     64 checked:     73 out of:    137
+c [appmc] simplifying
+c [appmc] [    3.94 ] round:  3 hashes:     26
+c [appmc] [    3.94 ] bounded_sol_count looking for   73 solutions -- hashes active: 26
+c [appmc] repeat solutions:      0 checked:     73 out of:     73
+c [appmc] [    3.99 ] round:  3 hashes:     25
+c [appmc] [    3.99 ] bounded_sol_count looking for   73 solutions -- hashes active: 25
+c [appmc] repeat solutions:     64 checked:     73 out of:    137
+c [appmc] simplifying
+c [appmc] [    4.10 ] round:  4 hashes:     26
+c [appmc] [    4.10 ] bounded_sol_count looking for   73 solutions -- hashes active: 26
+c [appmc] repeat solutions:      0 checked:     73 out of:     73
+c [appmc] [    4.15 ] round:  4 hashes:     25
+c [appmc] [    4.15 ] bounded_sol_count looking for   73 solutions -- hashes active: 25
+c [appmc] repeat solutions:     64 checked:     73 out of:    137
+c [appmc] simplifying
+c [appmc] [    4.26 ] round:  5 hashes:     26
+c [appmc] [    4.26 ] bounded_sol_count looking for   73 solutions -- hashes active: 26
+c [appmc] repeat solutions:      0 checked:     73 out of:     73
+c [appmc] [    4.31 ] round:  5 hashes:     25
+c [appmc] [    4.31 ] bounded_sol_count looking for   73 solutions -- hashes active: 25
+c [appmc] repeat solutions:     64 checked:     73 out of:    137
+c [appmc] simplifying
+c [appmc] [    4.43 ] round:  6 hashes:     26
+c [appmc] [    4.43 ] bounded_sol_count looking for   73 solutions -- hashes active: 26
+c [appmc] repeat solutions:      0 checked:     73 out of:     73
+c [appmc] [    4.47 ] round:  6 hashes:     25
+c [appmc] [    4.47 ] bounded_sol_count looking for   73 solutions -- hashes active: 25
+c [appmc] repeat solutions:     64 checked:     73 out of:    137
+c [appmc] simplifying
+c [appmc] [    4.59 ] round:  7 hashes:     26
+c [appmc] [    4.59 ] bounded_sol_count looking for   73 solutions -- hashes active: 26
+c [appmc] repeat solutions:      0 checked:     73 out of:     73
+c [appmc] [    4.63 ] round:  7 hashes:     25
+c [appmc] [    4.63 ] bounded_sol_count looking for   73 solutions -- hashes active: 25
+c [appmc] repeat solutions:     64 checked:     73 out of:    137
+c [appmc] simplifying
+c [appmc] [    4.75 ] round:  8 hashes:     26
+c [appmc] [    4.75 ] bounded_sol_count looking for   73 solutions -- hashes active: 26
+c [appmc] repeat solutions:      0 checked:     73 out of:     73
+c [appmc] [    4.79 ] round:  8 hashes:     25
+c [appmc] [    4.79 ] bounded_sol_count looking for   73 solutions -- hashes active: 25
+c [appmc] repeat solutions:     64 checked:     73 out of:    137
+c [appmc] ApproxMC T: 4.80 s
+c ------- FINAL TOTAL SEARCH STATS ---------
+c UIP search time          : 0.30        (1.83      % time)
+c restarts                 : 1054        (0.99      confls per restart)
+c blocked restarts         : 0           (0.00      per normal restart)
+c time                     : 0.30        
+c decisions                : 151563      (0.00      % random)
+c propagations             : 651K        (2185K     props/s)
+c decisions/conflicts      : 145.87      
+c conflicts                : 1039        
+c conf lits non-minim      : 41660       (40.10     lit/confl)
+c conf lits final          : 30.59       
+c red which0               : 0           (0.00      % of confl)
+c props/decision           : 0.00        
+c props/conflict           : 0.00        
+c 0-depth assigns          : 1034        (159.08    % vars)
+c 0-depth assigns by CNF   : 1034        (159.08    % vars)
+c reduceDB time            : 0.00        (0.00      % time)
+c OccSimplifier time       : 4.65        (28.54     % time)
+c [occur] 0.08 is overhead
+c [occur] link-in T: 0.08 cleanup T: 0.01
+c [occ-substr] long subBySub: 34215 subByStr: 44295 lits-rem-str: 46968 T: 4.41
+c SCC time                 : 0.02        (0.12      % time)
+c [scc] new: 998 BP 0M  T: 0.02
+c vrep replace time        : 0.03        (0.20      % time)
+c vrep tree roots          : 597         
+c vrep trees' crown        : 997         (1.67      leafs/tree)
+c distill long time        : 0.00        (0.00      % time)
+c distill bin time         : 0.00        (0.00      % time)
+c strength cache-irred time: 0.00        (0.00      % time)
+c strength cache-red time  : 0.00        (0.00      % time)
+c avg cls in red 0         : 0.00        
+c avg cls in red 1         : 1465.76     
+c avg cls in red 2         : 106.82      
+c Conflicts in UIP         : 1039        (63.82     confl/time_this_thread)
+c Max Memory (rss) used    : 119320 kB   
+c Total time (this thread) : 16.28       
+c [appmc+arjun] Total time: 16.28
+c [appmc] Number of solutions is: 64*2**26
+s SATISFIABLE
+s mc 4294967296
+** AMH **
+c ApproxMC SHA revision efa1667e4e09b2d5f2c61042efe377ce3107fdd3
+c ApproxMC version 4.0.1
+c ApproxMC compilation env CMAKE_CXX_COMPILER = /usr/bin/c++ | CMAKE_CXX_FLAGS =  -Wall -Wextra -Wunused -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -g -fvisibility=hidden -Wlogical-op -Wrestrict -Wnull-dereference -Wdouble-promotion -Wshadow -Wformat=2 -Wextra-semi -pedantic | COMPILE_DEFINES =  -DBOOST_TEST_DYN_LINK | STATICCOMPILE = OFF | Boost_FOUND = TRUE | ZLIB_FOUND = TRUE | VALGRIND_FOUND =  | GMP_FOUND = TRUE | ENABLE_ASSERTIONS = ON | MY_TARGETS =  | compilation date time = Aug  8 2022 16:18:18
+c ApproxMC compiled with gcc version 9.4.0
+c CryptoMiniSat version 5.11.0
+c CMS Copyright (C) 2009-2020 Authors of CryptoMiniSat, see AUTHORS file
+c CMS SHA revision 716b89be078f98fb615cf30a1f663b4903c08d9d
+c CMS is MIT licensed
+c Using VMTF code by Armin Biere from CaDiCaL
+c Using Yalsat by Armin Biere, see Balint et al. Improving implementation of SLS solvers [...], SAT'14
+c Using WalkSAT by Henry Kautz, see Kautz and Selman Pushing the envelope: planning, propositional logic, and stochastic search, AAAI'96,
+c Using code from 'When Boolean Satisfiability Meets Gauss-E. in a Simplex Way'
+c       by C.-S. Han and J.-H. Roland Jiang in CAV 2012. Fixes by M. Soos
+c Using CCAnr from 'CCAnr: A Conf. Checking Based Local Search Solver [...]'
+c       by Shaowei Cai, Chuan Luo, and Kaile Su, SAT 2015
+c CMS compilation env CMAKE_CXX_COMPILER = /usr/bin/c++ | CMAKE_CXX_FLAGS =  -fvisibility=hidden -Wall -Wextra -Wunused -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -g -Wno-class-memaccess -mpopcnt -msse4.2 -ggdb3 -Wlogical-op -Wrestrict -Wnull-dereference -Wdouble-promotion -Wshadow -Wformat=2 -Wextra-semi -pedantic | COMPILE_DEFINES =  -DRDB0_ONLY_FEATURES -DBOOST_TEST_DYN_LINK -DUSE_ZLIB -DYALSAT_FPU | STATICCOMPILE = OFF | ONLY_SIMPLE = OFF | Boost_FOUND = TRUE | STATS = OFF | SQLITE3_FOUND = FALSE | ZLIB_FOUND = TRUE | VALGRIND_FOUND =  | ENABLE_TESTING = OFF | M4RI_FOUND =  | NOM4RI = ON | SLOW_DEBUG = OFF | ENABLE_ASSERTIONS = ON | PYTHON_EXECUTABLE =  | PYTHON_LIBRARY =  | PYTHON_INCLUDE_DIRS =  | MY_TARGETS =  | LARGEMEM = OFF | LIMITMEM = OFF | BREAKID_LIBRARIES =  | BREAKID-VER = . | BOSPHORUS_LIBRARIES =  | BOSPH-VER = . | compilation date time = Aug  8 2022 16:16:45
+c CMS compiled with gcc version 9.4.0
+c executed with command line: approxmc -s 02 /experiments/results/count_up_down_true-unreach-call_true-termination-2.c/02/counterSharp/amh.dimacs
+c Arjun SHA revision 416b100492d00bc51dbe98963e981906ddb47d83
+c -- header says num vars:          53202
+c -- header says num clauses:      314669
+c WARNING: Empty line at line number 316182 -- this is not part of the DIMACS specifications (http://www.satcompetition.org/2009/format-benchmarks2009.html). Ignoring.
+c -- clauses added: 314669
+c -- xor clauses added: 0
+c -- vars added 53202
+c Original sampling vars: 1003 1004 1005 1006 1007 1008 1009 1010 1011 1012 1013 1014 1015 1016 1017 1018 1019 1020 1021 1022 1023 1024 1025 1026 1027 1028 1029 1030 1031 1032 1033 1034 
+c [appmc] Orig sampling vars size: 32
+c --> Executing OCC strategy token(s): 'occ-xor,'
+c [occ] mem usage for occur     11 MB
+c [occ] Linked in IRRED BIN by default: 197052
+c [occ] Linked in RED   BIN by default: 0
+c [occ] mem usage for occur      4 MB
+c Mem for watch alloc      : 8           MB (25.34     %)
+c Mem for watch array      : 3           MB (8.90      %)
+c --> Executing OCC strategy token: occ-xor
+c [occ-xor] sort occur list T: 0.01
+c [xor-clean-equiv] removed equivalent xors: 0 left with: 15979
+c [occ-xor] found  15979 avg sz 3.0 min sz  3 max sz  3 T: 0.04 T-out: N T-r: 99.69%
+c [occ] mem usage for occur     11 MB
+c [occ] Linked in IRRED BIN by default: 197052
+c [occ] Linked in RED   BIN by default: 0
+c [occ] mem usage for occur      4 MB
+c Mem for watch alloc      : 8           MB (22.19     %)
+c Mem for watch array      : 3           MB (7.79      %)
+c [occ-gates] found:   20K avg-s: 2.0 T: 0.02 T-out: N T-r: 78.20%
+c [occ] mem usage for occur     11 MB
+c [occ] Linked in IRRED BIN by default: 197052
+c [occ] Linked in RED   BIN by default: 0
+c [occ] mem usage for occur      4 MB
+c Mem for watch alloc      : 8           MB (21.36     %)
+c Mem for watch array      : 3           MB (7.49      %)
+c [arjun-simp] GATE-based Potential was: 0 Non-zero OCCs were: 0 removed: 0 perc: 0.00 T: 0.26
+c [occ] mem usage for occur     11 MB
+c [occ] Linked in IRRED BIN by default: 197052
+c [occ] Linked in RED   BIN by default: 0
+c [occ] mem usage for occur      4 MB
+c Mem for watch alloc      : 8           MB (22.93     %)
+c Mem for watch array      : 3           MB (8.04      %)
+c [gate-definable] no-cls-match-filt: 0 pico ran: 31 unsat: 0 0-occ: 0 too-many-occ: 1 empty-res: 0
+c [arjun-simp] IRREG-GATE-based removed: 0 perc: 0.00 T: 0.05
+c [occ] mem usage for occur     11 MB
+c [occ] Linked in IRRED BIN by default: 197052
+c [occ] Linked in RED   BIN by default: 0
+c [occ] mem usage for occur      4 MB
+c Mem for watch alloc      : 8           MB (22.93     %)
+c Mem for watch array      : 3           MB (8.04      %)
+c [cms-equiv-sub] equiv_subformula: 0 empty_occ: 0 T: 0.00
+c [arjun-simp] equiv-subform removed: 0 perc: 0.00 total equiv_subform now: 0 T: 0.04
+c [arjun-simp] CMS::simplify() with no BVE, intree probe...
+c [arjun-simp] CMS::simplify() with no BVE finished. T: 0.77
+c [arjun-simp] Removed eq lits: 0 new size: 32
+c [arjun-simp] Removed set       : 0 new size: 32
+c [arjun-simp] Removed set       : 0 new size: 32
+c [arjun-simp] Removed eq lits: 0 new size: 32
+c [arjun-simp] probe removed: 0 perc: 0.00 T: 0.10
+c [occ] mem usage for occur     10 MB
+c [occ] Linked in IRRED BIN by default: 204582
+c [occ] Linked in RED   BIN by default: 147
+c [occ] mem usage for occur      3 MB
+c Mem for watch alloc      : 13          MB (26.26     %)
+c Mem for watch array      : 2           MB (4.84      %)
+c [cms-equiv-sub] equiv_subformula: 0 empty_occ: 0 T: 0.00
+c [arjun-simp] equiv-subform removed: 1 perc: 3.12 total equiv_subform now: 0 T: 0.15
+c [arjun-simp] IRREG-GATE-based removed: 0 perc: 0.00 T: 0.18
+c [arjun] simplification finished  removed: 1 perc: 3.12 T: 1.65
+c [arjun] Duplicating CNF...
+c [arjun] Duplicated CNF. T: 0.18
+c [arjun] CMS::simplify() with *only* BVE...
+c [arjun] CMS::simplify() with *only* BVE finished. T: 13.92
+c [arjun] Adding fixed clauses time: 0.00
+c [arjun] Start unknown size: 31
+c [arjun] backward round finished T: 0.34
+c [arjun] get_indep_set finished T: 16.10
+c ind 53142 53141 53147 53146 53145 53144 53143 53169 53140 53107 0
+c [arjun] final set size:           10 percent of original: 31.2500 %
+c [arjun] of which empty occs:       0 percent of original: 0.0000 %
+c [appmc] Sampling set size: 10
+c [appmc] Sampling set: 53107, 53140, 53141, 53142, 53143, 53144, 53145, 53146, 53147, 53169, 
+c [appmc] threshold set to 72 sparse: 0
+c [appmc] Starting up, initial measurement
+c [appmc] Checking if there are at least threshold+1 solutions...
+c [appmc] simplifying
+c [appmc] [    7.09 ] bounded_sol_count looking for   73 solutions -- hashes active: 0
+c [appmc] repeat solutions:      0 checked:      0 out of:      0
+c [appmc] Starting at hash count: 1
+c [appmc] [    8.46 ] round:  0 hashes:      1
+c [appmc] [    8.46 ] bounded_sol_count looking for   73 solutions -- hashes active: 1
+c [appmc] repeat solutions:     36 checked:     73 out of:     73
+c [appmc] [    9.20 ] round:  0 hashes:      2
+c [appmc] [    9.20 ] bounded_sol_count looking for   73 solutions -- hashes active: 2
+c [appmc] repeat solutions:     38 checked:    110 out of:    110
+c [appmc] [    9.87 ] round:  0 hashes:      4
+c [appmc] [    9.87 ] bounded_sol_count looking for   73 solutions -- hashes active: 4
+c [appmc] repeat solutions:      0 checked:    145 out of:    145
+c [appmc] [   10.96 ] round:  0 hashes:      3
+c [appmc] [   10.96 ] bounded_sol_count looking for   73 solutions -- hashes active: 3
+c [appmc] repeat solutions:    100 checked:    145 out of:    208
+c [appmc] simplifying
+c [appmc] [   14.82 ] round:  1 hashes:      4
+c [appmc] [   14.82 ] bounded_sol_count looking for   73 solutions -- hashes active: 4
+c [appmc] repeat solutions:      5 checked:     73 out of:     73
+c [appmc] [   15.82 ] round:  1 hashes:      3
+c [appmc] [   15.82 ] bounded_sol_count looking for   73 solutions -- hashes active: 3
+c [appmc] repeat solutions:     67 checked:     73 out of:    130
+c [appmc] simplifying
+c [appmc] [   19.64 ] round:  2 hashes:      4
+c [appmc] [   19.64 ] bounded_sol_count looking for   73 solutions -- hashes active: 4
+c [appmc] repeat solutions:      5 checked:     73 out of:     73
+c [appmc] [   20.68 ] round:  2 hashes:      3
+c [appmc] [   20.68 ] bounded_sol_count looking for   73 solutions -- hashes active: 3
+c [appmc] repeat solutions:     67 checked:     73 out of:    129
+c [appmc] simplifying
+c [appmc] [   24.63 ] round:  3 hashes:      4
+c [appmc] [   24.63 ] bounded_sol_count looking for   73 solutions -- hashes active: 4
+c [appmc] repeat solutions:      6 checked:     73 out of:     73
+c [appmc] [   25.69 ] round:  3 hashes:      3
+c [appmc] [   25.69 ] bounded_sol_count looking for   73 solutions -- hashes active: 3
+c [appmc] repeat solutions:     70 checked:     73 out of:    131
+c [appmc] simplifying
+c [appmc] [   29.76 ] round:  4 hashes:      4
+c [appmc] [   29.76 ] bounded_sol_count looking for   73 solutions -- hashes active: 4
+c [appmc] repeat solutions:      8 checked:     73 out of:     73
+c [appmc] [   30.75 ] round:  4 hashes:      3
+c [appmc] [   30.75 ] bounded_sol_count looking for   73 solutions -- hashes active: 3
+c [appmc] repeat solutions:     64 checked:     73 out of:    126
+c [appmc] simplifying
+c [appmc] [   34.69 ] round:  5 hashes:      4
+c [appmc] [   34.69 ] bounded_sol_count looking for   73 solutions -- hashes active: 4
+c [appmc] repeat solutions:      4 checked:     73 out of:     73
+c [appmc] [   35.79 ] round:  5 hashes:      3
+c [appmc] [   35.79 ] bounded_sol_count looking for   73 solutions -- hashes active: 3
+c [appmc] repeat solutions:     66 checked:     73 out of:    132
+c [appmc] simplifying
+c [appmc] [   40.26 ] round:  6 hashes:      4
+c [appmc] [   40.26 ] bounded_sol_count looking for   73 solutions -- hashes active: 4
+c [appmc] repeat solutions:      5 checked:     73 out of:     73
+c [appmc] [   41.33 ] round:  6 hashes:      3
+c [appmc] [   41.33 ] bounded_sol_count looking for   73 solutions -- hashes active: 3
+c [appmc] repeat solutions:     66 checked:     73 out of:    130
+c [appmc] simplifying
+c [appmc] [   45.29 ] round:  7 hashes:      4
+c [appmc] [   45.29 ] bounded_sol_count looking for   73 solutions -- hashes active: 4
+c [appmc] repeat solutions:      6 checked:     73 out of:     73
+c [appmc] [   46.31 ] round:  7 hashes:      3
+c [appmc] [   46.31 ] bounded_sol_count looking for   73 solutions -- hashes active: 3
+c [appmc] repeat solutions:     65 checked:     73 out of:    129
+c [appmc] simplifying
+c [appmc] [   50.19 ] round:  8 hashes:      4
+c [appmc] [   50.19 ] bounded_sol_count looking for   73 solutions -- hashes active: 4
+c [appmc] repeat solutions:      2 checked:     73 out of:     73
+c [appmc] [   51.25 ] round:  8 hashes:      3
+c [appmc] [   51.25 ] bounded_sol_count looking for   73 solutions -- hashes active: 3
+c [appmc] repeat solutions:     68 checked:     73 out of:    131
+c [appmc] ApproxMC T: 51.34 s
+c ------- FINAL TOTAL SEARCH STATS ---------
+c UIP search time          : 11.69       (17.19     % time)
+c restarts                 : 722         (1.17      confls per restart)
+c blocked restarts         : 0           (0.00      per normal restart)
+c time                     : 11.69       
+c decisions                : 7114        (0.00      % random)
+c propagations             : 17406K      (1489K     props/s)
+c decisions/conflicts      : 8.40        
+c conflicts                : 847         
+c conf lits non-minim      : 28541       (33.70     lit/confl)
+c conf lits final          : 9.96        
+c red which0               : 6           (0.71      % of confl)
+c props/decision           : 0.00        
+c props/conflict           : 0.00        
+c 0-depth assigns          : 531         (2.22      % vars)
+c 0-depth assigns by CNF   : 531         (2.22      % vars)
+c reduceDB time            : 0.00        (0.00      % time)
+c OccSimplifier time       : 34.50       (50.76     % time)
+c [occur] 1.49 is overhead
+c [occur] link-in T: 0.86 cleanup T: 0.63
+c [occ-substr] long subBySub: 17415 subByStr: 19818 lits-rem-str: 159579 T: 30.95
+c SCC time                 : 0.22        (0.32      % time)
+c [scc] new: 1189 BP 3M  T: 0.22
+c vrep replace time        : 0.07        (0.10      % time)
+c vrep tree roots          : 512         
+c vrep trees' crown        : 1110        (2.17      leafs/tree)
+c distill long time        : 0.00        (0.00      % time)
+c distill bin time         : 0.00        (0.00      % time)
+c strength cache-irred time: 0.00        (0.00      % time)
+c strength cache-red time  : 0.00        (0.00      % time)
+c avg cls in red 0         : 1.74        
+c avg cls in red 1         : 32941.43    
+c avg cls in red 2         : 59.49       
+c Conflicts in UIP         : 847         (12.46     confl/time_this_thread)
+c Max Memory (rss) used    : 155780 kB   
+c Total time (this thread) : 67.96       
+c [appmc+arjun] Total time: 67.96
+c [appmc] Number of solutions is: 62*2**4
+s SATISFIABLE
+s mc 992
+** ASM **
+c ApproxMC SHA revision efa1667e4e09b2d5f2c61042efe377ce3107fdd3
+c ApproxMC version 4.0.1
+c ApproxMC compilation env CMAKE_CXX_COMPILER = /usr/bin/c++ | CMAKE_CXX_FLAGS =  -Wall -Wextra -Wunused -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -g -fvisibility=hidden -Wlogical-op -Wrestrict -Wnull-dereference -Wdouble-promotion -Wshadow -Wformat=2 -Wextra-semi -pedantic | COMPILE_DEFINES =  -DBOOST_TEST_DYN_LINK | STATICCOMPILE = OFF | Boost_FOUND = TRUE | ZLIB_FOUND = TRUE | VALGRIND_FOUND =  | GMP_FOUND = TRUE | ENABLE_ASSERTIONS = ON | MY_TARGETS =  | compilation date time = Aug  8 2022 16:18:18
+c ApproxMC compiled with gcc version 9.4.0
+c CryptoMiniSat version 5.11.0
+c CMS Copyright (C) 2009-2020 Authors of CryptoMiniSat, see AUTHORS file
+c CMS SHA revision 716b89be078f98fb615cf30a1f663b4903c08d9d
+c CMS is MIT licensed
+c Using VMTF code by Armin Biere from CaDiCaL
+c Using Yalsat by Armin Biere, see Balint et al. Improving implementation of SLS solvers [...], SAT'14
+c Using WalkSAT by Henry Kautz, see Kautz and Selman Pushing the envelope: planning, propositional logic, and stochastic search, AAAI'96,
+c Using code from 'When Boolean Satisfiability Meets Gauss-E. in a Simplex Way'
+c       by C.-S. Han and J.-H. Roland Jiang in CAV 2012. Fixes by M. Soos
+c Using CCAnr from 'CCAnr: A Conf. Checking Based Local Search Solver [...]'
+c       by Shaowei Cai, Chuan Luo, and Kaile Su, SAT 2015
+c CMS compilation env CMAKE_CXX_COMPILER = /usr/bin/c++ | CMAKE_CXX_FLAGS =  -fvisibility=hidden -Wall -Wextra -Wunused -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -g -Wno-class-memaccess -mpopcnt -msse4.2 -ggdb3 -Wlogical-op -Wrestrict -Wnull-dereference -Wdouble-promotion -Wshadow -Wformat=2 -Wextra-semi -pedantic | COMPILE_DEFINES =  -DRDB0_ONLY_FEATURES -DBOOST_TEST_DYN_LINK -DUSE_ZLIB -DYALSAT_FPU | STATICCOMPILE = OFF | ONLY_SIMPLE = OFF | Boost_FOUND = TRUE | STATS = OFF | SQLITE3_FOUND = FALSE | ZLIB_FOUND = TRUE | VALGRIND_FOUND =  | ENABLE_TESTING = OFF | M4RI_FOUND =  | NOM4RI = ON | SLOW_DEBUG = OFF | ENABLE_ASSERTIONS = ON | PYTHON_EXECUTABLE =  | PYTHON_LIBRARY =  | PYTHON_INCLUDE_DIRS =  | MY_TARGETS =  | LARGEMEM = OFF | LIMITMEM = OFF | BREAKID_LIBRARIES =  | BREAKID-VER = . | BOSPHORUS_LIBRARIES =  | BOSPH-VER = . | compilation date time = Aug  8 2022 16:16:45
+c CMS compiled with gcc version 9.4.0
+c executed with command line: approxmc -s 02 /experiments/results/count_up_down_true-unreach-call_true-termination-2.c/02/counterSharp/asm.dimacs
+c Arjun SHA revision 416b100492d00bc51dbe98963e981906ddb47d83
+c -- header says num vars:          53204
+c -- header says num clauses:      314675
+c WARNING: Empty line at line number 316190 -- this is not part of the DIMACS specifications (http://www.satcompetition.org/2009/format-benchmarks2009.html). Ignoring.
+c -- clauses added: 314675
+c -- xor clauses added: 0
+c -- vars added 53204
+c Original sampling vars: 1003 1004 1005 1006 1007 1008 1009 1010 1011 1012 1013 1014 1015 1016 1017 1018 1019 1020 1021 1022 1023 1024 1025 1026 1027 1028 1029 1030 1031 1032 1033 1034 
+c [appmc] Orig sampling vars size: 32
+c --> Executing OCC strategy token(s): 'occ-xor,'
+c [occ] mem usage for occur     11 MB
+c [occ] Linked in IRRED BIN by default: 197016
+c [occ] Linked in RED   BIN by default: 0
+c [occ] mem usage for occur      4 MB
+c Mem for watch alloc      : 8           MB (25.34     %)
+c Mem for watch array      : 3           MB (8.90      %)
+c --> Executing OCC strategy token: occ-xor
+c [occ-xor] sort occur list T: 0.01
+c [xor-clean-equiv] removed equivalent xors: 0 left with: 15979
+c [occ-xor] found  15979 avg sz 3.0 min sz  3 max sz  3 T: 0.05 T-out: N T-r: 99.69%
+c [occ] mem usage for occur     11 MB
+c [occ] Linked in IRRED BIN by default: 197016
+c [occ] Linked in RED   BIN by default: 0
+c [occ] mem usage for occur      4 MB
+c Mem for watch alloc      : 8           MB (22.20     %)
+c Mem for watch array      : 3           MB (7.79      %)
+c [occ-gates] found:   20K avg-s: 2.0 T: 0.02 T-out: N T-r: 78.20%
+c [occ] mem usage for occur     11 MB
+c [occ] Linked in IRRED BIN by default: 197016
+c [occ] Linked in RED   BIN by default: 0
+c [occ] mem usage for occur      4 MB
+c Mem for watch alloc      : 8           MB (21.36     %)
+c Mem for watch array      : 3           MB (7.49      %)
+c [arjun-simp] GATE-based Potential was: 0 Non-zero OCCs were: 0 removed: 0 perc: 0.00 T: 0.28
+c [occ] mem usage for occur     11 MB
+c [occ] Linked in IRRED BIN by default: 197016
+c [occ] Linked in RED   BIN by default: 0
+c [occ] mem usage for occur      4 MB
+c Mem for watch alloc      : 8           MB (22.94     %)
+c Mem for watch array      : 3           MB (8.05      %)
+c [gate-definable] no-cls-match-filt: 0 pico ran: 31 unsat: 0 0-occ: 0 too-many-occ: 1 empty-res: 0
+c [arjun-simp] IRREG-GATE-based removed: 0 perc: 0.00 T: 0.06
+c [occ] mem usage for occur     11 MB
+c [occ] Linked in IRRED BIN by default: 197016
+c [occ] Linked in RED   BIN by default: 0
+c [occ] mem usage for occur      4 MB
+c Mem for watch alloc      : 8           MB (22.94     %)
+c Mem for watch array      : 3           MB (8.05      %)
+c [cms-equiv-sub] equiv_subformula: 0 empty_occ: 0 T: 0.00
+c [arjun-simp] equiv-subform removed: 0 perc: 0.00 total equiv_subform now: 0 T: 0.04
+c [arjun-simp] CMS::simplify() with no BVE, intree probe...
+c [arjun-simp] CMS::simplify() with no BVE finished. T: 0.77
+c [arjun-simp] Removed eq lits: 0 new size: 32
+c [arjun-simp] Removed set       : 0 new size: 32
+c [arjun-simp] Removed set       : 0 new size: 32
+c [arjun-simp] Removed eq lits: 0 new size: 32
+c [arjun-simp] probe removed: 0 perc: 0.00 T: 0.09
+c [occ] mem usage for occur     10 MB
+c [occ] Linked in IRRED BIN by default: 204550
+c [occ] Linked in RED   BIN by default: 147
+c [occ] mem usage for occur      3 MB
+c Mem for watch alloc      : 13          MB (26.24     %)
+c Mem for watch array      : 2           MB (4.83      %)
+c [cms-equiv-sub] equiv_subformula: 0 empty_occ: 0 T: 0.00
+c [arjun-simp] equiv-subform removed: 1 perc: 3.12 total equiv_subform now: 0 T: 0.17
+c [arjun-simp] IRREG-GATE-based removed: 0 perc: 0.00 T: 0.18
+c [arjun] simplification finished  removed: 1 perc: 3.12 T: 1.70
+c [arjun] Duplicating CNF...
+c [arjun] Duplicated CNF. T: 0.22
+c [arjun] CMS::simplify() with *only* BVE...
+c [arjun] CMS::simplify() with *only* BVE finished. T: 15.15
+c [arjun] Adding fixed clauses time: 0.00
+c [arjun] Start unknown size: 31
+c [arjun] backward round finished T: 2.32
+c [arjun] get_indep_set finished T: 19.41
+c ind 53144 53143 53149 53148 53147 53146 53145 53171 53142 53109 0
+c [arjun] final set size:           10 percent of original: 31.2500 %
+c [arjun] of which empty occs:       0 percent of original: 0.0000 %
+c [appmc] Sampling set size: 10
+c [appmc] Sampling set: 53109, 53142, 53143, 53144, 53145, 53146, 53147, 53148, 53149, 53171, 
+c [appmc] threshold set to 72 sparse: 0
+c [appmc] Starting up, initial measurement
+c [appmc] Checking if there are at least threshold+1 solutions...
+c [appmc] simplifying
+c [appmc] [    7.66 ] bounded_sol_count looking for   73 solutions -- hashes active: 0
+c [appmc] repeat solutions:      0 checked:      0 out of:      0
+c [appmc] Starting at hash count: 1
+c [appmc] [    9.48 ] round:  0 hashes:      1
+c [appmc] [    9.48 ] bounded_sol_count looking for   73 solutions -- hashes active: 1
+c [appmc] repeat solutions:     37 checked:     73 out of:     73
+c [appmc] [   10.53 ] round:  0 hashes:      2
+c [appmc] [   10.53 ] bounded_sol_count looking for   73 solutions -- hashes active: 2
+c [appmc] repeat solutions:     36 checked:    109 out of:    109
+c [appmc] [   11.68 ] round:  0 hashes:      4
+c [appmc] [   11.68 ] bounded_sol_count looking for   73 solutions -- hashes active: 4
+c [appmc] repeat solutions:     16 checked:    146 out of:    146
+c [appmc] [   12.23 ] round:  0 hashes:      3
+c [appmc] [   12.23 ] bounded_sol_count looking for   73 solutions -- hashes active: 3
+c [appmc] repeat solutions:     51 checked:    146 out of:    161
+c [appmc] simplifying
+c [appmc] [   16.70 ] round:  1 hashes:      3
+c [appmc] [   16.70 ] bounded_sol_count looking for   73 solutions -- hashes active: 3
+c [appmc] repeat solutions:     10 checked:     73 out of:     73
+c [appmc] [   18.20 ] round:  1 hashes:      2
+c [appmc] [   18.20 ] bounded_sol_count looking for   73 solutions -- hashes active: 2
+c [appmc] repeat solutions:     72 checked:     73 out of:    126
+c [appmc] simplifying
+c [appmc] [   22.06 ] round:  2 hashes:      3
+c [appmc] [   22.06 ] bounded_sol_count looking for   73 solutions -- hashes active: 3
+c [appmc] repeat solutions:      9 checked:     73 out of:     73
+c [appmc] [   23.52 ] round:  2 hashes:      2
+c [appmc] [   23.52 ] bounded_sol_count looking for   73 solutions -- hashes active: 2
+c [appmc] repeat solutions:     72 checked:     73 out of:    127
+c [appmc] simplifying
+c [appmc] [   27.54 ] round:  3 hashes:      3
+c [appmc] [   27.54 ] bounded_sol_count looking for   73 solutions -- hashes active: 3
+c [appmc] repeat solutions:      8 checked:     73 out of:     73
+c [appmc] [   29.09 ] round:  3 hashes:      2
+c [appmc] [   29.09 ] bounded_sol_count looking for   73 solutions -- hashes active: 2
+c [appmc] repeat solutions:     70 checked:     73 out of:    127
+c [appmc] simplifying
+c [appmc] [   32.99 ] round:  4 hashes:      3
+c [appmc] [   32.99 ] bounded_sol_count looking for   73 solutions -- hashes active: 3
+c [appmc] repeat solutions:     10 checked:     73 out of:     73
+c [appmc] [   34.57 ] round:  4 hashes:      2
+c [appmc] [   34.57 ] bounded_sol_count looking for   73 solutions -- hashes active: 2
+c [appmc] repeat solutions:     72 checked:     73 out of:    127
+c [appmc] simplifying
+c [appmc] [   38.47 ] round:  5 hashes:      3
+c [appmc] [   38.47 ] bounded_sol_count looking for   73 solutions -- hashes active: 3
+c [appmc] repeat solutions:     10 checked:     73 out of:     73
+c [appmc] [   40.06 ] round:  5 hashes:      2
+c [appmc] [   40.06 ] bounded_sol_count looking for   73 solutions -- hashes active: 2
+c [appmc] repeat solutions:     73 checked:     73 out of:    127
+c [appmc] simplifying
+c [appmc] [   43.83 ] round:  6 hashes:      3
+c [appmc] [   43.83 ] bounded_sol_count looking for   73 solutions -- hashes active: 3
+c [appmc] repeat solutions:     11 checked:     73 out of:     73
+c [appmc] [   45.42 ] round:  6 hashes:      2
+c [appmc] [   45.42 ] bounded_sol_count looking for   73 solutions -- hashes active: 2
+c [appmc] repeat solutions:     72 checked:     73 out of:    124
+c [appmc] simplifying
+c [appmc] [   49.37 ] round:  7 hashes:      3
+c [appmc] [   49.37 ] bounded_sol_count looking for   73 solutions -- hashes active: 3
+c [appmc] repeat solutions:     10 checked:     73 out of:     73
+c [appmc] [   50.90 ] round:  7 hashes:      2
+c [appmc] [   50.90 ] bounded_sol_count looking for   73 solutions -- hashes active: 2
+c [appmc] repeat solutions:     70 checked:     73 out of:    124
+c [appmc] simplifying
+c [appmc] [   54.89 ] round:  8 hashes:      3
+c [appmc] [   54.89 ] bounded_sol_count looking for   73 solutions -- hashes active: 3
+c [appmc] repeat solutions:     10 checked:     73 out of:     73
+c [appmc] [   56.44 ] round:  8 hashes:      2
+c [appmc] [   56.44 ] bounded_sol_count looking for   73 solutions -- hashes active: 2
+c [appmc] repeat solutions:     72 checked:     73 out of:    125
+c [appmc] ApproxMC T: 56.46 s
+c ------- FINAL TOTAL SEARCH STATS ---------
+c UIP search time          : 16.30       (21.36     % time)
+c restarts                 : 616         (2.11      confls per restart)
+c blocked restarts         : 0           (0.00      per normal restart)
+c time                     : 16.30       
+c decisions                : 5995        (0.00      % random)
+c propagations             : 21M         (1320K     props/s)
+c decisions/conflicts      : 4.61        
+c conflicts                : 1301        
+c conf lits non-minim      : 974395      (748.96    lit/confl)
+c conf lits final          : 10.96       
+c red which0               : 15          (1.15      % of confl)
+c props/decision           : 0.00        
+c props/conflict           : 0.00        
+c 0-depth assigns          : 536         (2.23      % vars)
+c 0-depth assigns by CNF   : 536         (2.23      % vars)
+c reduceDB time            : 0.00        (0.00      % time)
+c OccSimplifier time       : 35.37       (46.34     % time)
+c [occur] 1.58 is overhead
+c [occur] link-in T: 0.92 cleanup T: 0.66
+c [occ-substr] long subBySub: 17501 subByStr: 19812 lits-rem-str: 168155 T: 31.69
+c SCC time                 : 0.22        (0.28      % time)
+c [scc] new: 1151 BP 3M  T: 0.22
+c vrep replace time        : 0.07        (0.09      % time)
+c vrep tree roots          : 511         
+c vrep trees' crown        : 1108        (2.17      leafs/tree)
+c distill long time        : 0.00        (0.00      % time)
+c distill bin time         : 0.00        (0.00      % time)
+c strength cache-irred time: 0.00        (0.00      % time)
+c strength cache-red time  : 0.00        (0.00      % time)
+c avg cls in red 0         : 21.92       
+c avg cls in red 1         : 32910.34    
+c avg cls in red 2         : 71.31       
+c Conflicts in UIP         : 1301        (17.05     confl/time_this_thread)
+c Max Memory (rss) used    : 157508 kB   
+c Total time (this thread) : 76.32       
+c [appmc+arjun] Total time: 76.32
+c [appmc] Number of solutions is: 62*2**3
+s SATISFIABLE
+s mc 496
+** ASH **
+c ApproxMC SHA revision efa1667e4e09b2d5f2c61042efe377ce3107fdd3
+c ApproxMC version 4.0.1
+c ApproxMC compilation env CMAKE_CXX_COMPILER = /usr/bin/c++ | CMAKE_CXX_FLAGS =  -Wall -Wextra -Wunused -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -fvisibility=hidden -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -g -fvisibility=hidden -Wlogical-op -Wrestrict -Wnull-dereference -Wdouble-promotion -Wshadow -Wformat=2 -Wextra-semi -pedantic | COMPILE_DEFINES =  -DBOOST_TEST_DYN_LINK | STATICCOMPILE = OFF | Boost_FOUND = TRUE | ZLIB_FOUND = TRUE | VALGRIND_FOUND =  | GMP_FOUND = TRUE | ENABLE_ASSERTIONS = ON | MY_TARGETS =  | compilation date time = Aug  8 2022 16:18:18
+c ApproxMC compiled with gcc version 9.4.0
+c CryptoMiniSat version 5.11.0
+c CMS Copyright (C) 2009-2020 Authors of CryptoMiniSat, see AUTHORS file
+c CMS SHA revision 716b89be078f98fb615cf30a1f663b4903c08d9d
+c CMS is MIT licensed
+c Using VMTF code by Armin Biere from CaDiCaL
+c Using Yalsat by Armin Biere, see Balint et al. Improving implementation of SLS solvers [...], SAT'14
+c Using WalkSAT by Henry Kautz, see Kautz and Selman Pushing the envelope: planning, propositional logic, and stochastic search, AAAI'96,
+c Using code from 'When Boolean Satisfiability Meets Gauss-E. in a Simplex Way'
+c       by C.-S. Han and J.-H. Roland Jiang in CAV 2012. Fixes by M. Soos
+c Using CCAnr from 'CCAnr: A Conf. Checking Based Local Search Solver [...]'
+c       by Shaowei Cai, Chuan Luo, and Kaile Su, SAT 2015
+c CMS compilation env CMAKE_CXX_COMPILER = /usr/bin/c++ | CMAKE_CXX_FLAGS =  -fvisibility=hidden -Wall -Wextra -Wunused -Wsign-compare -fno-omit-frame-pointer -Wtype-limits -Wuninitialized -Wno-deprecated -Wstrict-aliasing -Wpointer-arith -Wpointer-arith -Wformat-nonliteral -Winit-self -Wparentheses -Wunreachable-code -g -Wno-class-memaccess -mpopcnt -msse4.2 -ggdb3 -Wlogical-op -Wrestrict -Wnull-dereference -Wdouble-promotion -Wshadow -Wformat=2 -Wextra-semi -pedantic | COMPILE_DEFINES =  -DRDB0_ONLY_FEATURES -DBOOST_TEST_DYN_LINK -DUSE_ZLIB -DYALSAT_FPU | STATICCOMPILE = OFF | ONLY_SIMPLE = OFF | Boost_FOUND = TRUE | STATS = OFF | SQLITE3_FOUND = FALSE | ZLIB_FOUND = TRUE | VALGRIND_FOUND =  | ENABLE_TESTING = OFF | M4RI_FOUND =  | NOM4RI = ON | SLOW_DEBUG = OFF | ENABLE_ASSERTIONS = ON | PYTHON_EXECUTABLE =  | PYTHON_LIBRARY =  | PYTHON_INCLUDE_DIRS =  | MY_TARGETS =  | LARGEMEM = OFF | LIMITMEM = OFF | BREAKID_LIBRARIES =  | BREAKID-VER = . | BOSPHORUS_LIBRARIES =  | BOSPH-VER = . | compilation date time = Aug  8 2022 16:16:45
+c CMS compiled with gcc version 9.4.0
+c executed with command line: approxmc -s 02 /experiments/results/count_up_down_true-unreach-call_true-termination-2.c/02/counterSharp/ash.dimacs
+c Arjun SHA revision 416b100492d00bc51dbe98963e981906ddb47d83
+c -- header says num vars:          53204
+c -- header says num clauses:      314675
+c WARNING: Empty line at line number 316190 -- this is not part of the DIMACS specifications (http://www.satcompetition.org/2009/format-benchmarks2009.html). Ignoring.
+c -- clauses added: 314675
+c -- xor clauses added: 0
+c -- vars added 53204
+c Original sampling vars: 1003 1004 1005 1006 1007 1008 1009 1010 1011 1012 1013 1014 1015 1016 1017 1018 1019 1020 1021 1022 1023 1024 1025 1026 1027 1028 1029 1030 1031 1032 1033 1034 
+c [appmc] Orig sampling vars size: 32
+c --> Executing OCC strategy token(s): 'occ-xor,'
+c [occ] mem usage for occur     11 MB
+c [occ] Linked in IRRED BIN by default: 196909
+c [occ] Linked in RED   BIN by default: 0
+c [occ] mem usage for occur      4 MB
+c Mem for watch alloc      : 8           MB (25.23     %)
+c Mem for watch array      : 3           MB (8.86      %)
+c --> Executing OCC strategy token: occ-xor
+c [occ-xor] sort occur list T: 0.02
+c [xor-clean-equiv] removed equivalent xors: 0 left with: 15945
+c [occ-xor] found  15945 avg sz 3.0 min sz  3 max sz  3 T: 0.04 T-out: N T-r: 99.69%
+c [occ] mem usage for occur     11 MB
+c [occ] Linked in IRRED BIN by default: 196909
+c [occ] Linked in RED   BIN by default: 0
+c [occ] mem usage for occur      4 MB
+c Mem for watch alloc      : 8           MB (22.15     %)
+c Mem for watch array      : 3           MB (7.78      %)
+c [occ-gates] found: 20000 avg-s: 2.0 T: 0.02 T-out: N T-r: 78.23%
+c [occ] mem usage for occur     11 MB
+c [occ] Linked in IRRED BIN by default: 196909
+c [occ] Linked in RED   BIN by default: 0
+c [occ] mem usage for occur      4 MB
+c Mem for watch alloc      : 8           MB (21.32     %)
+c Mem for watch array      : 3           MB (7.48      %)
+c [arjun-simp] GATE-based Potential was: 0 Non-zero OCCs were: 0 removed: 0 perc: 0.00 T: 0.25
+c [occ] mem usage for occur     11 MB
+c [occ] Linked in IRRED BIN by default: 196909
+c [occ] Linked in RED   BIN by default: 0
+c [occ] mem usage for occur      4 MB
+c Mem for watch alloc      : 8           MB (22.88     %)
+c Mem for watch array      : 3           MB (8.03      %)
+c [gate-definable] no-cls-match-filt: 0 pico ran: 8 unsat: 0 0-occ: 0 too-many-occ: 1 empty-res: 0
+c [arjun-simp] IRREG-GATE-based removed: 23 perc: 71.88 T: 0.05
+c [occ] mem usage for occur     11 MB
+c [occ] Linked in IRRED BIN by default: 196909
+c [occ] Linked in RED   BIN by default: 0
+c [occ] mem usage for occur      4 MB
+c Mem for watch alloc      : 8           MB (22.88     %)
+c Mem for watch array      : 3           MB (8.03      %)
+c [cms-equiv-sub] equiv_subformula: 0 empty_occ: 0 T: 0.00
+c [arjun-simp] equiv-subform removed: 0 perc: 0.00 total equiv_subform now: 0 T: 0.04
+c [arjun-simp] CMS::simplify() with no BVE, intree probe...
+c [arjun-simp] CMS::simplify() with no BVE finished. T: 0.71
+c [arjun-simp] Removed eq lits: 0 new size: 9
+c [arjun-simp] Removed set       : 0 new size: 9
+c [arjun-simp] Removed set       : 0 new size: 9
+c [arjun-simp] Removed eq lits: 0 new size: 9
+c [arjun-simp] probe removed: 0 perc: 0.00 T: 0.10
+c [occ] mem usage for occur     10 MB
+c [occ] Linked in IRRED BIN by default: 204358
+c [occ] Linked in RED   BIN by default: 120
+c [occ] mem usage for occur      3 MB
+c Mem for watch alloc      : 13          MB (26.14     %)
+c Mem for watch array      : 2           MB (4.82      %)
+c [cms-equiv-sub] equiv_subformula: 0 empty_occ: 0 T: 0.00
+c [arjun-simp] equiv-subform removed: 0 perc: 0.00 total equiv_subform now: 0 T: 0.14
+c [arjun-simp] IRREG-GATE-based removed: 0 perc: 0.00 T: 0.16
+c [arjun] simplification finished  removed: 23 perc: 71.88 T: 1.56
+c [arjun] Duplicating CNF...
+c [arjun] Duplicated CNF. T: 0.17
+c [arjun] CMS::simplify() with *only* BVE...
+c [arjun] CMS::simplify() with *only* BVE finished. T: 14.65
+c [arjun] Adding fixed clauses time: 0.00
+c [arjun] Start unknown size: 9
+c [arjun] backward round finished T: 0.32
+c [arjun] get_indep_set finished T: 16.72
+c ind 53094 53088 53087 53093 53092 53091 53090 53089 53109 0
+c [arjun] final set size:            9 percent of original: 28.1250 %
+c [arjun] of which empty occs:       0 percent of original: 0.0000 %
+c [appmc] Sampling set size: 9
+c [appmc] Sampling set: 53087, 53088, 53089, 53090, 53091, 53092, 53093, 53094, 53109, 
+c [appmc] threshold set to 72 sparse: 0
+c [appmc] Starting up, initial measurement
+c [appmc] Checking if there are at least threshold+1 solutions...
+c [appmc] simplifying
+c [appmc] [    7.75 ] bounded_sol_count looking for   73 solutions -- hashes active: 0
+c [appmc] repeat solutions:      0 checked:      0 out of:      0
+c [appmc] Starting at hash count: 1
+c [appmc] [    9.18 ] round:  0 hashes:      1
+c [appmc] [    9.18 ] bounded_sol_count looking for   73 solutions -- hashes active: 1
+c [appmc] repeat solutions:     37 checked:     73 out of:     73
+c [appmc] [    9.87 ] round:  0 hashes:      2
+c [appmc] [    9.87 ] bounded_sol_count looking for   73 solutions -- hashes active: 2
+c [appmc] repeat solutions:     35 checked:    109 out of:    109
+c [appmc] [   10.63 ] round:  0 hashes:      4
+c [appmc] [   10.63 ] bounded_sol_count looking for   73 solutions -- hashes active: 4
+c [appmc] repeat solutions:     18 checked:    147 out of:    147
+c [appmc] [   10.96 ] round:  0 hashes:      3
+c [appmc] [   10.96 ] bounded_sol_count looking for   73 solutions -- hashes active: 3
+c [appmc] repeat solutions:     48 checked:    147 out of:    159
+c [appmc] simplifying
+c [appmc] [   15.16 ] round:  1 hashes:      3
+c [appmc] [   15.16 ] bounded_sol_count looking for   73 solutions -- hashes active: 3
+c [appmc] repeat solutions:     10 checked:     73 out of:     73
+c [appmc] [   16.18 ] round:  1 hashes:      2
+c [appmc] [   16.18 ] bounded_sol_count looking for   73 solutions -- hashes active: 2
+c [appmc] repeat solutions:     71 checked:     73 out of:    126
+c [appmc] simplifying
+c [appmc] [   19.94 ] round:  2 hashes:      3
+c [appmc] [   19.94 ] bounded_sol_count looking for   73 solutions -- hashes active: 3
+c [appmc] repeat solutions:      9 checked:     73 out of:     73
+c [appmc] [   20.97 ] round:  2 hashes:      2
+c [appmc] [   20.97 ] bounded_sol_count looking for   73 solutions -- hashes active: 2
+c [appmc] repeat solutions:     72 checked:     73 out of:    128
+c [appmc] simplifying
+c [appmc] [   25.07 ] round:  3 hashes:      3
+c [appmc] [   25.07 ] bounded_sol_count looking for   73 solutions -- hashes active: 3
+c [appmc] repeat solutions:      4 checked:     73 out of:     73
+c [appmc] [   26.16 ] round:  3 hashes:      2
+c [appmc] [   26.16 ] bounded_sol_count looking for   73 solutions -- hashes active: 2
+c [appmc] repeat solutions:     66 checked:     73 out of:    131
+c [appmc] simplifying
+c [appmc] [   30.09 ] round:  4 hashes:      3
+c [appmc] [   30.09 ] bounded_sol_count looking for   73 solutions -- hashes active: 3
+c [appmc] repeat solutions:      8 checked:     73 out of:     73
+c [appmc] [   31.34 ] round:  4 hashes:      2
+c [appmc] [   31.34 ] bounded_sol_count looking for   73 solutions -- hashes active: 2
+c [appmc] repeat solutions:     72 checked:     73 out of:    129
+c [appmc] simplifying
+c [appmc] [   35.15 ] round:  5 hashes:      3
+c [appmc] [   35.15 ] bounded_sol_count looking for   73 solutions -- hashes active: 3
+c [appmc] repeat solutions:     12 checked:     73 out of:     73
+c [appmc] [   36.03 ] round:  5 hashes:      2
+c [appmc] [   36.03 ] bounded_sol_count looking for   73 solutions -- hashes active: 2
+c [appmc] repeat solutions:     67 checked:     73 out of:    122
+c [appmc] simplifying
+c [appmc] [   39.86 ] round:  6 hashes:      3
+c [appmc] [   39.86 ] bounded_sol_count looking for   73 solutions -- hashes active: 3
+c [appmc] repeat solutions:     12 checked:     73 out of:     73
+c [appmc] [   40.81 ] round:  6 hashes:      2
+c [appmc] [   40.81 ] bounded_sol_count looking for   73 solutions -- hashes active: 2
+c [appmc] repeat solutions:     69 checked:     73 out of:    124
+c [appmc] simplifying
+c [appmc] [   44.77 ] round:  7 hashes:      3
+c [appmc] [   44.77 ] bounded_sol_count looking for   73 solutions -- hashes active: 3
+c [appmc] repeat solutions:     20 checked:     73 out of:     73
+c [appmc] [   45.55 ] round:  7 hashes:      2
+c [appmc] [   45.55 ] bounded_sol_count looking for   73 solutions -- hashes active: 2
+c [appmc] repeat solutions:     84 checked:     73 out of:    116
+c [appmc] simplifying
+c [appmc] [   49.18 ] round:  8 hashes:      3
+c [appmc] [   49.18 ] bounded_sol_count looking for   73 solutions -- hashes active: 3
+c [appmc] repeat solutions:      9 checked:     73 out of:     73
+c [appmc] [   50.18 ] round:  8 hashes:      2
+c [appmc] [   50.18 ] bounded_sol_count looking for   73 solutions -- hashes active: 2
+c [appmc] repeat solutions:     72 checked:     73 out of:    127
+c [appmc] ApproxMC T: 50.20 s
+c ------- FINAL TOTAL SEARCH STATS ---------
+c UIP search time          : 10.58       (15.72     % time)
+c restarts                 : 623         (1.15      confls per restart)
+c blocked restarts         : 0           (0.00      per normal restart)
+c time                     : 10.58       
+c decisions                : 4962        (0.00      % random)
+c propagations             : 15287K      (1444K     props/s)
+c decisions/conflicts      : 6.91        
+c conflicts                : 718         
+c conf lits non-minim      : 16579       (23.09     lit/confl)
+c conf lits final          : 8.89        
+c red which0               : 19          (2.65      % of confl)
+c props/decision           : 0.00        
+c props/conflict           : 0.00        
+c 0-depth assigns          : 663         (2.77      % vars)
+c 0-depth assigns by CNF   : 663         (2.77      % vars)
+c reduceDB time            : 0.00        (0.00      % time)
+c OccSimplifier time       : 36.12       (53.66     % time)
+c [occur] 1.55 is overhead
+c [occur] link-in T: 0.91 cleanup T: 0.64
+c [occ-substr] long subBySub: 18588 subByStr: 22239 lits-rem-str: 168813 T: 32.56
+c SCC time                 : 0.23        (0.34      % time)
+c [scc] new: 1182 BP 3M  T: 0.23
+c vrep replace time        : 0.07        (0.10      % time)
+c vrep tree roots          : 513         
+c vrep trees' crown        : 1115        (2.17      leafs/tree)
+c distill long time        : 0.00        (0.00      % time)
+c distill bin time         : 0.00        (0.00      % time)
+c strength cache-irred time: 0.00        (0.00      % time)
+c strength cache-red time  : 0.00        (0.00      % time)
+c avg cls in red 0         : 2.99        
+c avg cls in red 1         : 33101.31    
+c avg cls in red 2         : 56.16       
+c Conflicts in UIP         : 718         (10.67     confl/time_this_thread)
+c Max Memory (rss) used    : 157356 kB   
+c Total time (this thread) : 67.32       
+c [appmc+arjun] Total time: 67.32
+c [appmc] Number of solutions is: 63*2**3
+s SATISFIABLE
+s mc 504

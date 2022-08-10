@@ -1,0 +1,95 @@
+** CON **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		approxmc
+[runlim] argv[1]:		-s
+[runlim] argv[2]:		02
+[runlim] argv[3]:		/experiments/results/confidence.c/02/counterSharp/con.dimacs
+[runlim] start:			Mon Aug  8 17:38:49 2022
+[runlim] main pid:		1017
+[runlim] end:			Mon Aug  8 17:38:49 2022
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			0.31 seconds
+[runlim] time:			0.07 seconds
+[runlim] space:			9.2 MB
+[runlim] samples:		1
+** AMM **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		approxmc
+[runlim] argv[1]:		-s
+[runlim] argv[2]:		02
+[runlim] argv[3]:		/experiments/results/confidence.c/02/counterSharp/amm.dimacs
+[runlim] start:			Mon Aug  8 17:38:49 2022
+[runlim] main pid:		1019
+[runlim] end:			Mon Aug  8 17:38:52 2022
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			3.75 seconds
+[runlim] time:			3.37 seconds
+[runlim] space:			12.9 MB
+[runlim] samples:		34
+** AMH **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		approxmc
+[runlim] argv[1]:		-s
+[runlim] argv[2]:		02
+[runlim] argv[3]:		/experiments/results/confidence.c/02/counterSharp/amh.dimacs
+[runlim] start:			Mon Aug  8 17:38:52 2022
+[runlim] main pid:		1021
+[runlim] end:			Mon Aug  8 17:38:56 2022
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			4.91 seconds
+[runlim] time:			4.07 seconds
+[runlim] space:			12.9 MB
+[runlim] samples:		41
+** ASM **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		approxmc
+[runlim] argv[1]:		-s
+[runlim] argv[2]:		02
+[runlim] argv[3]:		/experiments/results/confidence.c/02/counterSharp/asm.dimacs
+[runlim] start:			Mon Aug  8 17:38:56 2022
+[runlim] main pid:		1023
+[runlim] end:			Mon Aug  8 17:38:57 2022
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			1.03 seconds
+[runlim] time:			0.03 seconds
+[runlim] space:			7.9 MB
+[runlim] samples:		1
+** ASH **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		approxmc
+[runlim] argv[1]:		-s
+[runlim] argv[2]:		02
+[runlim] argv[3]:		/experiments/results/confidence.c/02/counterSharp/ash.dimacs
+[runlim] start:			Mon Aug  8 17:38:57 2022
+[runlim] main pid:		1025
+[runlim] end:			Mon Aug  8 17:39:02 2022
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			5.34 seconds
+[runlim] time:			4.56 seconds
+[runlim] space:			13.3 MB
+[runlim] samples:		53

@@ -1,0 +1,120 @@
+** CON **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		approxmc
+[runlim] argv[1]:		-s
+[runlim] argv[2]:		05
+[runlim] argv[3]:		/experiments/results/Problem10_16.c/05/counterSharp/con.dimacs
+[runlim] start:			Mon Aug  8 17:06:42 2022
+[runlim] main pid:		602
+ERROR! Could not open file '/experiments/results/Problem10_16.c/05/counterSharp/con.dimacs' for reading: No such file or directory
+[runlim] end:			Mon Aug  8 17:06:42 2022
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			0.14 seconds
+[runlim] time:			0.00 seconds
+[runlim] space:			0.0 MB
+[runlim] samples:		0
+** AMM **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		approxmc
+[runlim] argv[1]:		-s
+[runlim] argv[2]:		05
+[runlim] argv[3]:		/experiments/results/Problem10_16.c/05/counterSharp/amm.dimacs
+[runlim] start:			Mon Aug  8 17:06:42 2022
+[runlim] main pid:		604
+[runlim] sample:		9.9 time, 10.1 real, 161.2 MB
+[runlim] sample:		19.9 time, 20.1 real, 181.3 MB
+[runlim] sample:		29.9 time, 30.1 real, 166.3 MB
+[runlim] sample:		39.9 time, 40.1 real, 178.4 MB
+[runlim] sample:		49.9 time, 50.1 real, 183.7 MB
+[runlim] sample:		59.9 time, 60.1 real, 183.7 MB
+[runlim] end:			Mon Aug  8 17:07:51 2022
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			69.65 seconds
+[runlim] time:			69.36 seconds
+[runlim] space:			220.3 MB
+[runlim] samples:		695
+** AMH **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		approxmc
+[runlim] argv[1]:		-s
+[runlim] argv[2]:		05
+[runlim] argv[3]:		/experiments/results/Problem10_16.c/05/counterSharp/amh.dimacs
+[runlim] start:			Mon Aug  8 17:07:51 2022
+[runlim] main pid:		606
+[runlim] sample:		10.0 time, 10.7 real, 153.8 MB
+[runlim] sample:		20.0 time, 20.7 real, 180.7 MB
+[runlim] sample:		30.0 time, 30.7 real, 135.7 MB
+[runlim] sample:		40.0 time, 40.7 real, 146.8 MB
+[runlim] sample:		50.0 time, 50.7 real, 154.0 MB
+[runlim] sample:		60.0 time, 60.7 real, 155.6 MB
+[runlim] end:			Mon Aug  8 17:08:59 2022
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			68.54 seconds
+[runlim] time:			67.75 seconds
+[runlim] space:			213.6 MB
+[runlim] samples:		678
+** ASM **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		approxmc
+[runlim] argv[1]:		-s
+[runlim] argv[2]:		05
+[runlim] argv[3]:		/experiments/results/Problem10_16.c/05/counterSharp/asm.dimacs
+[runlim] start:			Mon Aug  8 17:08:59 2022
+[runlim] main pid:		608
+[runlim] sample:		9.8 time, 10.5 real, 151.9 MB
+[runlim] sample:		19.8 time, 20.5 real, 172.4 MB
+[runlim] sample:		29.8 time, 30.5 real, 132.7 MB
+[runlim] sample:		39.8 time, 40.5 real, 147.2 MB
+[runlim] sample:		49.8 time, 50.5 real, 154.6 MB
+[runlim] sample:		59.8 time, 60.5 real, 154.6 MB
+[runlim] sample:		69.8 time, 70.5 real, 154.9 MB
+[runlim] end:			Mon Aug  8 17:10:10 2022
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			71.83 seconds
+[runlim] time:			70.96 seconds
+[runlim] space:			217.0 MB
+[runlim] samples:		712
+** ASH **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		approxmc
+[runlim] argv[1]:		-s
+[runlim] argv[2]:		05
+[runlim] argv[3]:		/experiments/results/Problem10_16.c/05/counterSharp/ash.dimacs
+[runlim] start:			Mon Aug  8 17:10:10 2022
+[runlim] main pid:		610
+[runlim] sample:		9.8 time, 10.8 real, 121.8 MB
+[runlim] sample:		19.8 time, 20.8 real, 119.5 MB
+[runlim] sample:		29.8 time, 30.8 real, 125.6 MB
+[runlim] sample:		39.8 time, 40.8 real, 125.8 MB
+[runlim] sample:		49.8 time, 50.8 real, 125.8 MB
+[runlim] end:			Mon Aug  8 17:11:01 2022
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			51.40 seconds
+[runlim] time:			50.29 seconds
+[runlim] space:			138.1 MB
+[runlim] samples:		505

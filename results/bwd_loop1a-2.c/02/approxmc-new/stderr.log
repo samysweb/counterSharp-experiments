@@ -1,0 +1,98 @@
+** CON **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		approxmc
+[runlim] argv[1]:		-s
+[runlim] argv[2]:		02
+[runlim] argv[3]:		/experiments/results/bwd_loop1a-2.c/02/counterSharp/con.dimacs
+[runlim] start:			Mon Aug  8 17:50:20 2022
+[runlim] main pid:		1501
+[runlim] end:			Mon Aug  8 17:50:20 2022
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			0.95 seconds
+[runlim] time:			0.15 seconds
+[runlim] space:			15.1 MB
+[runlim] samples:		3
+** AMM **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		approxmc
+[runlim] argv[1]:		-s
+[runlim] argv[2]:		02
+[runlim] argv[3]:		/experiments/results/bwd_loop1a-2.c/02/counterSharp/amm.dimacs
+[runlim] start:			Mon Aug  8 17:50:20 2022
+[runlim] main pid:		1503
+[runlim] end:			Mon Aug  8 17:50:25 2022
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			5.09 seconds
+[runlim] time:			4.09 seconds
+[runlim] space:			36.1 MB
+[runlim] samples:		41
+** AMH **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		approxmc
+[runlim] argv[1]:		-s
+[runlim] argv[2]:		02
+[runlim] argv[3]:		/experiments/results/bwd_loop1a-2.c/02/counterSharp/amh.dimacs
+[runlim] start:			Mon Aug  8 17:50:25 2022
+[runlim] main pid:		1505
+[runlim] sample:		10.0 time, 10.1 real, 32.9 MB
+[runlim] end:			Mon Aug  8 17:50:38 2022
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			13.26 seconds
+[runlim] time:			13.08 seconds
+[runlim] space:			37.2 MB
+[runlim] samples:		131
+** ASM **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		approxmc
+[runlim] argv[1]:		-s
+[runlim] argv[2]:		02
+[runlim] argv[3]:		/experiments/results/bwd_loop1a-2.c/02/counterSharp/asm.dimacs
+[runlim] start:			Mon Aug  8 17:50:38 2022
+[runlim] main pid:		1507
+[runlim] sample:		10.0 time, 10.3 real, 32.1 MB
+[runlim] end:			Mon Aug  8 17:50:52 2022
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			14.50 seconds
+[runlim] time:			14.18 seconds
+[runlim] space:			36.6 MB
+[runlim] samples:		142
+** ASH **
+[runlim] version:		1.10
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	300 seconds
+[runlim] space limit:		2048 MB
+[runlim] argv[0]:		approxmc
+[runlim] argv[1]:		-s
+[runlim] argv[2]:		02
+[runlim] argv[3]:		/experiments/results/bwd_loop1a-2.c/02/counterSharp/ash.dimacs
+[runlim] start:			Mon Aug  8 17:50:52 2022
+[runlim] main pid:		1509
+[runlim] sample:		10.0 time, 10.5 real, 32.2 MB
+[runlim] end:			Mon Aug  8 17:51:04 2022
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] real:			12.85 seconds
+[runlim] time:			12.28 seconds
+[runlim] space:			38.8 MB
+[runlim] samples:		123

@@ -1,0 +1,109 @@
+******* Machine details *******
+$ hostname
+646f4ce0ee92
+$ lscpu
+Architecture:                    x86_64
+CPU op-mode(s):                  32-bit, 64-bit
+Byte Order:                      Little Endian
+Address sizes:                   40 bits physical, 48 bits virtual
+CPU(s):                          2
+On-line CPU(s) list:             0,1
+Thread(s) per core:              1
+Core(s) per socket:              2
+Socket(s):                       1
+NUMA node(s):                    1
+Vendor ID:                       GenuineIntel
+CPU family:                      6
+Model:                           85
+Model name:                      Intel(R) Xeon(R) Gold 6140 CPU @ 2.30GHz
+Stepping:                        4
+CPU MHz:                         2294.608
+BogoMIPS:                        4589.21
+Hypervisor vendor:               KVM
+Virtualization type:             full
+L1d cache:                       64 KiB
+L1i cache:                       64 KiB
+L2 cache:                        8 MiB
+L3 cache:                        16 MiB
+NUMA node0 CPU(s):               0,1
+Vulnerability Itlb multihit:     KVM: Vulnerable
+Vulnerability L1tf:              Mitigation; PTE Inversion
+Vulnerability Mds:               Mitigation; Clear CPU buffers; SMT Host state unknown
+Vulnerability Meltdown:          Mitigation; PTI
+Vulnerability Spec store bypass: Mitigation; Speculative Store Bypass disabled via prctl and seccomp
+Vulnerability Spectre v1:        Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+Vulnerability Spectre v2:        Mitigation; Full generic retpoline, IBPB conditional, IBRS_FW, STIBP disabled, RSB filling
+Vulnerability Tsx async abort:   Mitigation; Clear CPU buffers; SMT Host state unknown
+Flags:                           fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch cpuid_fault invpcid_single pti ssbd ibrs ibpb fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm mpx avx512f avx512dq rdseed adx smap clflushopt clwb avx512cd avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves arat umip pku ospke md_clear
+$ cat /proc/meminfo
+MemTotal:        8168260 kB
+MemFree:         1531352 kB
+MemAvailable:    7328356 kB
+Buffers:          742216 kB
+Cached:          4805632 kB
+SwapCached:       131304 kB
+Active:          3462240 kB
+Inactive:        2645276 kB
+Active(anon):     303024 kB
+Inactive(anon):   225888 kB
+Active(file):    3159216 kB
+Inactive(file):  2419388 kB
+Unevictable:           0 kB
+Mlocked:               0 kB
+SwapTotal:       8388604 kB
+SwapFree:        7417820 kB
+Dirty:                32 kB
+Writeback:             0 kB
+AnonPages:        532744 kB
+Mapped:           241448 kB
+Shmem:             36952 kB
+Slab:             447748 kB
+SReclaimable:     319900 kB
+SUnreclaim:       127848 kB
+KernelStack:        7920 kB
+PageTables:        17236 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:    12472732 kB
+Committed_AS:    5447936 kB
+VmallocTotal:   34359738367 kB
+VmallocUsed:           0 kB
+VmallocChunk:          0 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:         0 kB
+ShmemHugePages:        0 kB
+ShmemPmdMapped:        0 kB
+CmaTotal:              0 kB
+CmaFree:               0 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+DirectMap4k:     3710832 kB
+DirectMap2M:     4677632 kB
+DirectMap1G:     2097152 kB
+$ cat /proc/version
+Linux version 4.15.0-72-generic (buildd@lcy01-amd64-026) (gcc version 7.4.0 (Ubuntu 7.4.0-1ubuntu1~18.04.1)) #81-Ubuntu SMP Tue Nov 26 12:20:02 UTC 2019
+$ lsblk
+NAME   MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+sda      8:0    0  320G  0 disk 
+├─sda1   8:1    0    2M  0 part 
+├─sda2   8:2    0    1G  0 part 
+└─sda3   8:3    0  319G  0 part /etc/hosts
+sr0     11:0    1 1024M  0 rom  
+******* Experiment Repository *******
+fatal: not a git repository (or any of the parent directories): .git
+fatal: not a git repository (or any of the parent directories): .git
+******* CounterSharp Repository *******
+commit c7ea00a626bc52d9f5c271daf0e1ac1ee26cd8d3
+Author: Samuel Teuber <bub@samweb.org>
+
+    Added information on publication
+
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
